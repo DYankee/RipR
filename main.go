@@ -36,7 +36,8 @@ type Audacity struct {
 	connection Connection
 }
 
-func (a Audacity) connect() {
+// Establish a connection to audacity
+func (a *Audacity) connect() {
 	fmt.Println("Write to  \"" + TONAME + "\"")
 	if _, err := os.Stat(TONAME); err != nil {
 		fmt.Println(" ..does not exist.  Ensure Audacity is running with mod-script-pipe.")
@@ -71,7 +72,8 @@ func (a Audacity) close() {
 	a.connection.send.Close()
 }
 
-func (a Audacity) do_command(command string) {
+// send custom command to audacity. reffer to https://manual.audacityteam.org/man/scripting_reference.html for formatting.
+func (a Audacity) do_command(command string) (res string) {
 
 	//send command
 	fmt.Println("Send: >>> \n" + command)
@@ -79,20 +81,19 @@ func (a Audacity) do_command(command string) {
 
 	//get response
 	scanner := bufio.NewScanner(a.connection.recieve)
-	res := ""
 	for scanner.Scan() {
 		text := scanner.Text()
 		res += text
 		if text == "" && len(res) != 0 {
 			break
 		}
-		fmt.Println("Rcvd: <<< \n" + res)
 	}
+	return res
 }
 
 func main() {
 	audacity := Audacity{}
 	audacity.connect()
-	audacity.do_command("Help: ")
-	audacity.close()
+	res := audacity.do_command("Help: ")
+	fmt.Println(res)
 }
