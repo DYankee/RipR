@@ -23,11 +23,12 @@ func main() {
 	if err != nil {
 		fmt.Println(err)
 	}
-	var id int
+	var id = -1
 	for _, release := range resp.Releases {
+		id += 1
 		if release.Mediums[0].Format == `12" Vinyl` {
-			id += 1
-			fmt.Printf("%s Name: %-20s  Artist: %-20s  Format %-15s  Release Date: %d Country: %s\n",
+			fmt.Printf("%d %s Name: %-20s  Artist: %-20s  Format %-15s  Release Date: %d Country: %s\n",
+				id,
 				release.ID,
 				release.Title,
 				release.ArtistCredit.NameCredits[0].Artist.Name,
@@ -37,16 +38,16 @@ func main() {
 			)
 		}
 	}
-	choice := resp.Releases[0].ID
+	choice := resp.Releases[8].ID
 
 	resp2, err := client.LookupRelease(choice)
 	if err != nil {
 		fmt.Println(err)
 	}
 
-	fmt.Printf("%s %s",
+	fmt.Printf("%s %s \n",
 		resp2.Title,
-		resp2.ArtistCredit.NameCredits[0].Artist.Name,
+		resp2.Mediums,
 	)
 
 	//audacity code
