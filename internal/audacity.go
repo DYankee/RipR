@@ -1,4 +1,4 @@
-package Audacity
+package Internal
 
 import (
 	"bufio"
