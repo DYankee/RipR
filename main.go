@@ -129,8 +129,6 @@ func main() {
 	//	resp2.ID,
 	//)
 
-	//audacity code
-	//audacity := a.Audacity{}
 	//audacity.Connect()
 	//res := audacity.Do_command("StoreCursorPosition:")
 	//fmt.Println(res)
