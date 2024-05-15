@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/mewkiz/flac"
 	"github.com/michiwend/gomusicbrainz"
 )
 
@@ -112,6 +113,8 @@ func main() {
 	}
 
 	DisplayReleaseRes(res)
+
+	song, err := flac.Open("")
 
 	//choice := resp.Releases[8-1].ID
 	//resp2, err := Musicbrainz.client.LookupRelease(choice, "media+recordings")
