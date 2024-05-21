@@ -35,7 +35,7 @@ type Connection struct {
 
 type Audacity struct {
 	connection Connection
-	status     bool
+	Status     bool
 }
 
 // Establish a connection to audacity
@@ -48,20 +48,20 @@ func (a *Audacity) Open(fileName string) {
 }
 
 func (a *Audacity) Connect() {
-	for !a.status {
+	for !a.Status {
 		fmt.Println("Write to  \"" + TONAME + "\"")
 		if _, err := os.Stat(TONAME); err != nil {
 			fmt.Println(" ..does not exist.  Ensure Audacity is running with mod-script-pipe.")
-			a.status = false
+			a.Status = false
 		} else {
-			a.status = true
+			a.Status = true
 		}
 		fmt.Println("Read from \"" + FROMNAME + "\"")
 		if _, err := os.Stat(FROMNAME); err != nil {
 			fmt.Println(" ..does not exist.  Ensure Audacity is running with mod-script-pipe.")
-			a.status = false
+			a.Status = false
 		} else {
-			a.status = true
+			a.Status = true
 		}
 	}
 	fmt.Println("-- Both pipes exist.  Good.")

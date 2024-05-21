@@ -1,14 +1,22 @@
 package main
 
 import (
+	"fmt"
+
 	Internal "github.com/DYankee/RRipper/internal"
 )
 
 func main() {
 	a := Internal.Audacity{}
-	a.Open("Thriller.aup3")
+	// a.Open("Thriller.aup3")
 
 	a.Connect()
+	for !a.Status {
+		fmt.Println("waiting to connect")
+	}
+	a.Do_command("SelectTime: End=\"120\" RelativeTo=\"ProjectStart\" Start=\"0\"")
+	a.Do_command("Split:")
+
 	// c := exec.Command("audacity", "Thriller.aup3")
 	// c.Run()
 	//	mb := Internal.MusicBrainz{}
