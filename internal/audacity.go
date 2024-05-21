@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	"os/exec"
 	"runtime"
 )
 
@@ -34,22 +35,36 @@ type Connection struct {
 
 type Audacity struct {
 	connection Connection
+	status     bool
 }
 
 // Establish a connection to audacity
-func (a *Audacity) Connect() {
-	fmt.Println("Write to  \"" + TONAME + "\"")
-	if _, err := os.Stat(TONAME); err != nil {
-		fmt.Println(" ..does not exist.  Ensure Audacity is running with mod-script-pipe.")
-		os.Exit(1)
+func (a *Audacity) Open(fileName string) {
+	c := exec.Command("audacity", fileName)
+	err := c.Start()
+	if err != nil {
+		fmt.Println(err)
 	}
-	fmt.Println("Read from \"" + FROMNAME + "\"")
-	if _, err := os.Stat(FROMNAME); err != nil {
-		fmt.Println(" ..does not exist.  Ensure Audacity is running with mod-script-pipe.")
-		os.Exit(1)
+}
+
+func (a *Audacity) Connect() {
+	for !a.status {
+		fmt.Println("Write to  \"" + TONAME + "\"")
+		if _, err := os.Stat(TONAME); err != nil {
+			fmt.Println(" ..does not exist.  Ensure Audacity is running with mod-script-pipe.")
+			a.status = false
+		} else {
+			a.status = true
+		}
+		fmt.Println("Read from \"" + FROMNAME + "\"")
+		if _, err := os.Stat(FROMNAME); err != nil {
+			fmt.Println(" ..does not exist.  Ensure Audacity is running with mod-script-pipe.")
+			a.status = false
+		} else {
+			a.status = true
+		}
 	}
 	fmt.Println("-- Both pipes exist.  Good.")
-
 	toFile, err := os.OpenFile(TONAME, os.O_RDWR, os.ModeNamedPipe)
 	if err != nil {
 		fmt.Println("-- Failed to open file to write to:", err)
@@ -65,6 +80,10 @@ func (a *Audacity) Connect() {
 	}
 	fmt.Println("-- File to read from has now been opened too\r")
 	a.connection.recieve = fromFile
+}
+
+func (a Audacity) OpenFile(f string) {
+	exec.Command("Audacity", f)
 }
 
 func (a Audacity) Close() {
