@@ -28,3 +28,9 @@ rriper -a "artist" -r "release" -f "audacity project file"
 6. calculate song lengths based on recorded side length
 7. split songs in audacity acording to calculated length
 8. export each song as a flec file
+
+
+Current todo:
+
+add audacity commands
+    AddLabel:

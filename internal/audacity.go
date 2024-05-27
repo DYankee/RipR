@@ -82,8 +82,8 @@ func (a *Audacity) Connect() {
 	a.connection.recieve = fromFile
 }
 
-func (a Audacity) OpenFile(f string) {
-	exec.Command("Audacity", f)
+func (a Audacity) OpenFile(file string) {
+	exec.Command("Audacity", file, "&")
 }
 
 func (a Audacity) Close() {
@@ -93,7 +93,6 @@ func (a Audacity) Close() {
 
 // send custom command to audacity. reffer to https://manual.audacityteam.org/man/scripting_reference.html for formatting.
 func (a Audacity) Do_command(command string) (res string) {
-
 	//send command
 	fmt.Println("Send: >>> \n" + command)
 	a.connection.send.Write([]byte(command + EOL))
@@ -107,5 +106,26 @@ func (a Audacity) Do_command(command string) (res string) {
 			break
 		}
 	}
+	fmt.Println("Received: <<< \n" + res)
 	return res
+}
+
+func (a Audacity) SelectRegion(startTime float64, endTime float64) (err error) {
+	cmd := fmt.Sprintf("Select: End=\"%f\" RelativeTo=\"ProjectStart\" Start=\"%f\"", endTime, startTime)
+	a.Do_command(cmd)
+	return err
+}
+
+func (a Audacity) Split() {
+	a.Do_command("SplitNew:")
+}
+
+func (a Audacity) SetLabel(labelId int, labelText string) {
+	cmd := fmt.Sprintf("SetLabel: Label=\"%d\" Text=\"%s\"", labelId, labelText)
+	a.Do_command(cmd)
+}
+
+func (a Audacity) ExportAudio(destination string, fileName string) {
+	cmd := fmt.Sprintf("Export2: Filename=\"%s/%s\"", destination, fileName)
+	a.Do_command(cmd)
 }
