@@ -6,18 +6,18 @@ import (
 
 func main() {
 	a := Internal.Audacity{}
-	a.Open("testdata/Thriller.aup3")
+	mb := Internal.MusicBrainz{}
+	// a.Open("testdata/Thriller.aup3")
 	a.Connect()
+	// a.SelectRegion(0, 10)
+	// a.ExportAudio("/home/z-geary/code/rripper/testdata", "test.flac")
 
-	a.SelectRegion(0, 10)
-	a.ExportAudio("/home/z-geary/code/rripper/testdata", "test.flac")
-
-	//	mb := Internal.MusicBrainz{}
-	//	mb.Init()
-	//	mb.GetQuerry()
-	//	mb.SearchRelease(&mb.ReleaseQuerrys[0])
-
-	//	fmt.Println(mb.ReleaseSearchResponses[0].Releases[0].Title)
+	mb.Init()
+	mb.GetQuerry()
+	mb.SearchRelease(&mb.ReleaseQuerrys[0])
+	mb.DisplayReleaseRes(mb.ReleaseSearchResponses[0])
+	mb.ChooseRelease()
+	mb.DisplayReleaseData()
 
 	//choice := resp.Releases[8-1].ID
 	//resp2, err := Musicbrainz.client.LookupRelease(choice, "media+recordings")
