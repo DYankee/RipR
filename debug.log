@@ -1,0 +1,29 @@
+debug 2024/06/05 09:02:39 Question: Enter Artist Name, Answer: pink floyd
+debug 2024/06/05 09:02:42 Question: Enter Release Name, Answer: the wall
+debug 2024/06/05 09:33:45 Question: Enter Artist Name, Answer: 
+debug 2024/06/05 09:33:46 Question: Enter Release Name, Answer: 
+debug 2024/06/05 09:33:46 Question: Enter Artist Name, Answer: 
+debug 2024/06/05 09:33:47 Question: Enter Release Name, Answer: 
+debug 2024/06/05 09:33:52 Question: Enter Artist Name, Answer: 
+debug 2024/06/05 09:33:53 Question: Enter Release Name, Answer: 
+debug 2024/06/05 09:33:53 Question: Enter Artist Name, Answer: 
+debug 2024/06/05 09:33:54 Question: Enter Release Name, Answer: 
+debug 2024/06/05 09:33:54 Question: Enter Artist Name, Answer: 
+debug 2024/06/05 09:34:52 Question: Enter Artist Name, Answer: test
+debug 2024/06/05 09:34:52 Question: Enter Release Name, Answer: test
+debug 2024/06/05 09:55:08 Question: Enter Artist Name, Answer: pink floyd
+debug 2024/06/05 09:55:11 Question: Enter Release Name, Answer: the wall
+debug 2024/06/05 09:56:40 Question: Enter Artist Name, Answer: pink floyd
+debug 2024/06/05 09:56:42 Question: Enter Release Name, Answer: the wall
+debug 2024/06/05 09:59:25 Question: Artist Name, Answer: pink floyd
+debug 2024/06/05 09:59:27 Question: Release Name, Answer: the wall
+debug 2024/06/05 10:00:10 Question: Artist Name: , Answer: pink floyd
+debug 2024/06/05 10:00:13 Question: Release Name: , Answer: the wall
+debug 2024/06/05 10:00:53 Question: Artist Name: , Answer: pink floyd
+debug 2024/06/05 10:00:55 Question: Release Name: , Answer: the wall
+debug 2024/06/05 10:18:10 Question: Artist Name: , Answer: 
+debug 2024/06/05 10:18:11 Question: Release Name: , Answer: 
+debug 2024/06/05 10:18:13 Question: Artist Name: , Answer: t
+debug 2024/06/05 10:18:14 Question: Release Name: , Answer: t
+debug 2024/06/05 10:18:16 Question: Artist Name: , Answer: y
+debug 2024/06/05 10:18:16 Question: Release Name: , Answer: y
