@@ -1,19 +1,16 @@
 package Internal
 
 import (
-	"bufio"
 	"fmt"
-	"os"
-	"strings"
 
 	"github.com/michiwend/gomusicbrainz"
 	"github.com/ryanuber/columnize"
 )
 
 type ReleaseQuerry struct {
-	album  string
-	artist string
-	format string
+	Album  string
+	Artist string
+	Format string
 }
 
 type MusicBrainz struct {
@@ -95,7 +92,7 @@ func (m *MusicBrainz) DisplayReleaseRes(resData *gomusicbrainz.ReleaseSearchResp
 }
 
 func (m *MusicBrainz) SearchRelease(q *ReleaseQuerry) error {
-	querry := fmt.Sprintf("release:%s AND artist:%s AND format:%s", q.album, q.artist, q.format)
+	querry := fmt.Sprintf("release:%s AND artist:%s AND format:%s", q.Album, q.Artist, q.Format)
 
 	res, err := m.Client.SearchRelease(querry, -1, -1)
 	if err != nil {
@@ -113,53 +110,20 @@ func (m *MusicBrainz) GetReleaseData(i int) {
 	m.ReleaseData = data
 }
 
-func (m *MusicBrainz) GetQuerry() {
-	reader := bufio.NewReader(os.Stdin)
-
-	querryData := ReleaseQuerry{}
-	// get album name
-	fmt.Println("Please enter the album name")
-	album, err := reader.ReadString('\n')
-	if err != nil {
-		fmt.Print(err)
+func (m *MusicBrainz) GetQuerry(album string, artist string) {
+	querryData := ReleaseQuerry{
+		Album:  album,
+		Artist: artist,
+		Format: "12vinyl",
 	}
-	querryData.album = strings.Replace(album, "\n", "", -1)
-
-	fmt.Println("Please enter the artist name")
-	artist, err := reader.ReadString('\n')
-	if err != nil {
-		fmt.Print(err)
-	}
-	querryData.artist = strings.Replace(artist, "\n", "", -1)
-
-	fmt.Println("Please Select a release format")
-	fmt.Println(`1: 12" Vinyl`)
-	fmt.Println(`2: CD`)
-	fmt.Println(`3: Digital Media`)
-
-	res, err := reader.ReadByte()
-	if err != nil {
-		fmt.Println(err)
-	}
-	switch res {
-	case '1':
-		querryData.format = "12vinyl"
-	case '2':
-		querryData.format = "cd"
-	case '3':
-		querryData.format = "digital media"
-	}
-
-	fmt.Printf("Album: %s Artist: %s Format: %s \n", querryData.album, querryData.artist, querryData.format)
-
 	m.ReleaseQuerrys = append(m.ReleaseQuerrys, querryData)
 }
 
 func (m *MusicBrainz) TestQuerry(album string, artist string, format string) {
 	querryData := ReleaseQuerry{
-		artist: artist,
-		album:  album,
-		format: format,
+		Artist: artist,
+		Album:  album,
+		Format: format,
 	}
 	m.ReleaseQuerrys = append(m.ReleaseQuerrys, querryData)
 }

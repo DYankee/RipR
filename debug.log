@@ -27,3 +27,99 @@ debug 2024/06/05 10:18:13 Question: Artist Name: , Answer: t
 debug 2024/06/05 10:18:14 Question: Release Name: , Answer: t
 debug 2024/06/05 10:18:16 Question: Artist Name: , Answer: y
 debug 2024/06/05 10:18:16 Question: Release Name: , Answer: y
+debug 2024/06/05 11:06:14 Question: Artist Name: , Answer: pink floyd
+debug 2024/06/05 11:06:17 Question: Release Name: , Answer: the wall
+debug 2024/06/05 11:44:59 Question: Artist Name: , Answer: pink floyd
+debug 2024/06/05 11:45:04 Question: Release Name: , Answer: the wall
+debug 2024/06/05 11:46:04 Question: Artist Name: , Answer: 
+debug 2024/06/05 11:46:05 Question: Release Name: , Answer: 
+debug 2024/06/05 11:56:07 Question: Artist Name: , Answer: 
+debug 2024/06/05 11:56:07 Question: Release Name: , Answer: 
+debug 2024/06/05 11:56:09 Question: Artist Name: , Answer: 
+debug 2024/06/05 11:56:09 Question: Release Name: , Answer: 
+debug 2024/06/05 11:56:11 Question: Artist Name: , Answer: 
+debug 2024/06/05 11:56:11 Question: Release Name: , Answer: 
+debug 2024/06/05 11:56:11 Question: Artist Name: , Answer: 
+debug 2024/06/05 11:56:11 Question: Release Name: , Answer: 
+debug 2024/06/05 11:56:12 Question: Artist Name: , Answer: 
+debug 2024/06/05 11:56:12 Question: Release Name: , Answer: 
+debug 2024/06/05 12:38:50 Question: Artist Name: , Answer: 
+debug 2024/06/05 12:38:51 Question: Release Name: , Answer: 
+debug 2024/06/05 12:49:24 Question: Artist Name: , Answer: pink floyd
+debug 2024/06/05 12:49:31 Question: Artist Name: , Answer: pink floyd
+debug 2024/06/05 12:49:46 Question: Artist Name: , Answer: pink floyd
+debug 2024/06/05 12:58:50 Question: Artist Name: , Answer: pink floyd
+debug 2024/06/05 12:59:14 Question: Artist Name: , Answer: pink floyd
+debug 2024/06/05 12:59:18 Question: Release Name: , Answer: the wall
+debug 2024/06/05 13:04:00 Question: Artist Name: , Answer: pink floyd
+debug 2024/06/05 13:05:43 Question: Release Name: , Answer: the wall
+debug 2024/06/05 13:06:34 Question: Artist Name: , Answer: pink floyd
+debug 2024/06/05 13:06:41 Question: Artist Name: , Answer: pink floyd
+debug 2024/06/05 13:06:43 Question: Release Name: , Answer: the wall
+debug 2024/06/05 13:08:28 Question: Artist Name: , Answer: pink floyd
+debug 2024/06/05 13:08:30 Question: Release Name: , Answer: the wall
+debug 2024/06/05 13:08:30 Artist: pink floyd, Release: the wall, Format: 12vinyl
+debug 2024/06/05 13:09:27 Question: Artist Name: , Answer: pink floyd
+debug 2024/06/05 13:09:29 Question: Release Name: , Answer: the wall
+debug 2024/06/05 13:09:29 Artist: pink floyd, Release: the wall, Format: 12vinyl
+debug 2024/06/05 13:13:08 Question: Artist Name: , Answer: pink floyd
+debug 2024/06/05 13:13:10 Question: Release Name: , Answer: the wall
+debug 2024/06/05 13:13:10 Artist: pink floyd, Release: the wall, Format: 12vinyl
+debug 2024/06/05 13:14:42 Question: Artist Name: , Answer: pink floyd
+debug 2024/06/05 13:14:45 Question: Release Name: , Answer: the wall
+debug 2024/06/05 13:14:45 Artist: pink floyd, Release: the wall, Format: 12vinyl
+debug 2024/06/05 13:16:41 Question: Artist Name: , Answer: pinkfloyd
+debug 2024/06/05 13:16:44 Question: Release Name: , Answer: the wall
+debug 2024/06/05 13:16:44 Artist: pinkfloyd, Release: the wall, Format: 12vinyl
+debug 2024/06/05 13:16:51 Question: Artist Name: , Answer: pink floyd
+debug 2024/06/05 13:16:53 Question: Release Name: , Answer: the wall
+debug 2024/06/05 13:16:53 Artist: pink floyd, Release: the wall, Format: 12vinyl
+debug 2024/06/05 13:16:54 1In the Flesh?
+debug 2024/06/05 13:19:33 Question: Artist Name: , Answer: pink floyd
+debug 2024/06/05 13:19:35 Question: Release Name: , Answer: the wall
+debug 2024/06/05 13:19:35 Artist: pink floyd, Release: the wall, Format: 12vinyl
+debug 2024/06/05 13:21:11 Question: Artist Name: , Answer: pink floyd
+debug 2024/06/05 13:21:13 Question: Release Name: , Answer: the wall
+debug 2024/06/05 13:21:13 Artist: pink floyd, Release: the wall, Format: 12vinyl
+debug 2024/06/05 13:24:14 Question: Artist Name: , Answer: 
+debug 2024/06/05 13:24:14 Question: Release Name: , Answer: 
+debug 2024/06/05 13:24:14 Artist: , Release: , Format: 12vinyl
+debug 2024/06/05 13:29:26 Question: Artist Name: , Answer: pink floyd
+debug 2024/06/05 13:29:28 Question: Release Name: , Answer: the wall
+debug 2024/06/05 13:29:28 Artist: pink floyd, Release: the wall, Format: 12vinyl
+debug 2024/06/05 13:35:24 Question: Artist Name: , Answer: pink floyd
+debug 2024/06/05 13:35:26 Question: Release Name: , Answer: the wall
+debug 2024/06/05 13:35:26 Artist: pink floyd, Release: the wall, Format: 12vinyl
+debug 2024/06/05 13:35:26 1, In the Flesh?
+debug 2024/06/05 13:38:48 Question: Artist Name: , Answer: pink floyd
+debug 2024/06/05 13:38:50 Question: Release Name: , Answer: the wall
+debug 2024/06/05 13:38:50 Artist: pink floyd, Release: the wall, Format: 12vinyl
+debug 2024/06/05 13:38:50 1, In the Flesh?
+debug 2024/06/05 13:39:18 Question: Artist Name: , Answer: pink floyd
+debug 2024/06/05 13:39:20 Question: Release Name: , Answer: the wall
+debug 2024/06/05 13:39:20 Artist: pink floyd, Release: the wall, Format: 12vinyl
+debug 2024/06/05 13:39:21 1, In the Flesh?
+debug 2024/06/05 13:44:03 Question: Artist Name: , Answer: pink floyd
+debug 2024/06/05 13:44:05 Question: Release Name: , Answer: the wall
+debug 2024/06/05 13:44:05 Artist: pink floyd, Release: the wall, Format: 12vinyl
+debug 2024/06/05 13:44:06 1, In the Flesh?
+debug 2024/06/05 13:45:32 Question: Artist Name: , Answer: pink floyd
+debug 2024/06/05 13:45:34 Question: Release Name: , Answer: the wall
+debug 2024/06/05 13:45:34 Artist: pink floyd, Release: the wall, Format: 12vinyl
+debug 2024/06/05 13:45:35 1, In the Flesh?
+debug 2024/06/05 13:46:11 Question: Artist Name: , Answer: 
+debug 2024/06/05 13:46:12 Question: Release Name: , Answer: 
+debug 2024/06/05 13:46:12 Artist: , Release: , Format: 12vinyl
+debug 2024/06/05 13:46:13 1, In the Flesh?
+debug 2024/06/05 13:46:14 Question: Artist Name: , Answer: 
+debug 2024/06/05 13:46:15 Question: Release Name: , Answer: 
+debug 2024/06/05 13:46:15 Artist: , Release: , Format: 12vinyl
+debug 2024/06/05 13:46:15 1, In the Flesh?
+debug 2024/06/05 13:46:30 Question: Artist Name: , Answer: the beatles
+debug 2024/06/05 13:46:35 Question: Release Name: , Answer: abby road
+debug 2024/06/05 13:46:35 Artist: the beatles, Release: abby road, Format: 12vinyl
+debug 2024/06/05 13:46:35 1, In the Flesh?
+debug 2024/06/10 05:23:55 Question: Artist Name: , Answer: pink floyd
+debug 2024/06/10 05:23:57 Question: Release Name: , Answer: the wall
+debug 2024/06/10 05:23:57 Artist: pink floyd, Release: the wall, Format: 12vinyl
+debug 2024/06/10 05:23:58 1, In the Flesh?
