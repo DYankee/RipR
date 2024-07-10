@@ -123,3 +123,61 @@ debug 2024/06/10 05:23:55 Question: Artist Name: , Answer: pink floyd
 debug 2024/06/10 05:23:57 Question: Release Name: , Answer: the wall
 debug 2024/06/10 05:23:57 Artist: pink floyd, Release: the wall, Format: 12vinyl
 debug 2024/06/10 05:23:58 1, In the Flesh?
+debug 2024/06/10 13:31:08 Question: Artist Name: , Answer: pink pppp
+debug 2024/06/10 13:31:09 Question: Release Name: , Answer: 
+debug 2024/06/10 13:31:09 Artist: pink pppp, Release: , Format: 12vinyl
+debug 2024/06/10 13:37:54 Question: Artist Name: , Answer: 
+debug 2024/06/10 13:37:54 Question: Release Name: , Answer: 
+debug 2024/06/10 13:37:54 Artist: , Release: , Format: 12vinyl
+debug 2024/06/10 13:37:56 1, Ouvertyr
+debug 2024/06/10 13:37:56 Question: Artist Name: , Answer: 
+debug 2024/06/10 13:37:56 Question: Release Name: , Answer: 
+debug 2024/06/10 13:37:56 Artist: , Release: , Format: 12vinyl
+debug 2024/06/10 13:37:56 1, Ouvertyr
+debug 2024/06/10 13:37:56 Question: Artist Name: , Answer: 
+debug 2024/06/10 13:37:56 Question: Release Name: , Answer: 
+debug 2024/06/10 13:37:56 Artist: , Release: , Format: 12vinyl
+debug 2024/06/10 13:37:56 1, Ouvertyr
+debug 2024/06/10 13:38:01 Question: Artist Name: , Answer: rrrrgrgrgrg
+debug 2024/06/10 13:38:04 Question: Release Name: , Answer: 
+debug 2024/06/10 13:38:04 Artist: rrrrgrgrgrg, Release: , Format: 12vinyl
+debug 2024/06/10 13:38:04 1, Ouvertyr
+debug 2024/06/26 12:40:15 Artist: test Release: test2
+debug 2024/06/26 12:45:36 Artist: test Release: test2
+debug 2024/06/26 12:45:40 Artist: test Release: test2
+debug 2024/06/26 12:45:44 Artist: test Release: test2
+debug 2024/06/26 13:19:29 Artist: test Release: test2
+debug 2024/06/26 13:19:31 Artist: test Release: test2
+debug 2024/06/26 13:19:33 Artist: test Release: test2
+debug 2024/06/26 13:19:36 Artist: test Release: test2
+debug 2024/06/26 13:19:38 Artist: test Release: test2
+debug 2024/06/27 03:36:03 Artist: test Release: test2
+debug 2024/06/27 03:36:05 Artist: test Release: test2
+debug 2024/06/27 03:36:06 Artist: test Release: test2
+debug 2024/06/27 03:36:07 Artist: test Release: test2
+debug 2024/06/27 03:36:08 Artist: test Release: test2
+debug 2024/07/10 00:47:15 Artist: t Release: ttt
+debug 2024/07/10 01:21:22 Artist:  Release: 
+debug 2024/07/10 01:21:24 Artist:  Release: 
+debug 2024/07/10 01:21:25 Artist:  Release: 
+debug 2024/07/10 01:21:29 Artist:  Release: 
+debug 2024/07/10 01:22:26 Artist: eefef Release: efefef
+debug 2024/07/10 01:25:39 Artist:  Release: 
+debug 2024/07/10 01:26:16 Artist: pink floyd Release: the wall
+debug 2024/07/10 01:28:06 Artist: rgrg Release: 
+debug 2024/07/10 01:28:09 Artist: rgrg Release: 
+debug 2024/07/10 01:28:17 Artist: rgrggeegegqegqqgqegqe Release: qegqeg
+debug 2024/07/10 01:28:38 Artist: sfasf Release: 
+debug 2024/07/10 01:29:27 Artist:  Release: 
+debug 2024/07/10 01:29:33 Artist:  Release: 
+debug 2024/07/10 01:31:15 Artist:  Release: 
+debug 2024/07/10 01:31:41 Artist: fef Release: efef
+debug 2024/07/10 01:31:49 Artist: fefef Release: efef
+debug 2024/07/10 01:32:16 Artist: fff Release: fff
+debug 2024/07/10 01:34:04 Artist: qwfqwf Release: qwfqwf
+debug 2024/07/10 01:36:03 Artist: fsfsf Release: sfsfsf
+debug 2024/07/10 01:36:09 Artist: fsfs Release: sfsfsf
+debug 2024/07/10 01:37:36 Artist:  Release: 
+debug 2024/07/10 01:40:33 Artist:  Release: 
+debug 2024/07/10 01:40:34 Artist:  Release: 
+debug 2024/07/10 01:40:35 Artist:  Release: 

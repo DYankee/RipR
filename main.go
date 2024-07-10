@@ -1,214 +1,222 @@
 package main
 
 import (
+	"fmt"
 	"log"
-	"strconv"
 
-	Internal "github.com/DYankee/RRipper/internal"
-	"github.com/charmbracelet/bubbles/table"
 	"github.com/charmbracelet/bubbles/textinput"
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
 )
 
-type Styles struct {
-	BorderColor lipgloss.Color
-	InputField  lipgloss.Style
-	table       lipgloss.Style
-}
+var (
+	focusedStyle        = lipgloss.NewStyle().Foreground(lipgloss.Color("205"))
+	blurredStyle        = lipgloss.NewStyle().Foreground(lipgloss.Color("240"))
+	cursorStyle         = focusedStyle
+	noStyle             = lipgloss.NewStyle()
+	helpStyle           = blurredStyle
+	cursorModeHelpStyle = lipgloss.NewStyle().Foreground(lipgloss.Color("244"))
 
-var tableStyle = lipgloss.NewStyle().BorderStyle(lipgloss.NormalBorder()).BorderForeground(lipgloss.Color("240"))
+	focusedButton = focusedStyle.Render("[ Submit ]")
+	blurredButton = fmt.Sprintf("[ %s ]", blurredStyle.Render("Submit"))
+)
 
-func DefaultStyles() *Styles {
-	s := new(Styles)
-	s.BorderColor = lipgloss.Color("36")
-	s.InputField = lipgloss.NewStyle().BorderForeground(s.BorderColor).BorderStyle(lipgloss.NormalBorder()).Padding(1).Width(80)
-	return s
-}
-
-type Question struct {
-	question string
-	answer   string
-}
-
-func NewQuestion(q string) Question {
-	return Question{question: q}
-}
-
+// Model and its functions
 type model struct {
-	currentView  string
-	Styles       *Styles
-	width        int
-	height       int
-	searchIndex  int
-	searchfields []Question
-	querry       Internal.ReleaseQuerry
-	searchRes    table.Model
-	answerField  textinput.Model
-	audacity     Internal.Audacity
-	musicBrainz  Internal.MusicBrainz
+	currentView string
+	inputs      []textinput.Model
+	focusIndex  int
+	Width       int
+	Height      int
 }
 
-func New(searchfields []Question) *model {
-	Styles := DefaultStyles()
-	answerField := textinput.New()
-	answerField.Focus()
-	mb := Internal.MusicBrainz{}
-	mb.Init()
-	return &model{
-		currentView:  "main",
-		searchfields: searchfields,
-		answerField:  answerField,
-		Styles:       Styles,
-		querry:       Internal.ReleaseQuerry{},
-		musicBrainz:  mb,
-		audacity:     Internal.Audacity{},
+func New() *model {
+	m := model{
+		currentView: "Search",
+		inputs:      make([]textinput.Model, 2),
 	}
+
+	var t textinput.Model
+	for i := range m.inputs {
+		t = textinput.New()
+		t.Cursor.Style = cursorStyle
+		t.CharLimit = 32
+
+		switch i {
+		case 0:
+			t.Placeholder = "Artist"
+			t.Focus()
+			t.PromptStyle = focusedStyle
+			t.TextStyle = focusedStyle
+		case 1:
+			t.Placeholder = "Release"
+		}
+
+		m.inputs[i] = t
+	}
+
+	return &m
 }
 
 func (m model) Init() tea.Cmd {
 	return nil
 }
 
-// update function
+//-------------------------------------------------------------------
+
+// Update and helper functions
 func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
-	var cmd tea.Cmd
-	current := &m.searchfields[m.searchIndex]
 
 	switch msg := msg.(type) {
-	case tea.WindowSizeMsg:
-		m.width = msg.Width
-		m.height = msg.Height
 	case tea.KeyMsg:
-		if msg.String() == "ctrl+c" {
-			return m, tea.Quit
-		}
-		switch m.currentView {
-		case "main":
-			switch msg.String() {
-			case "ctrl+c":
-				return m, tea.Quit
-			case "enter":
-				m.currentView = "input"
-				return m, nil
-			}
-		case "input":
-			switch msg.String() {
-			case "ctrl+c":
-				return m, tea.Quit
-			case "enter":
-				current.answer = m.answerField.Value()
-				m.answerField.SetValue("")
-				log.Printf("Question: %s, Answer: %s", current.question, current.answer)
-				m.Next()
-				return m, nil
-			}
-		case "result":
-			switch msg.String() {
-			case "enter":
-				m.currentView = "main"
-				return m, nil
-			}
-		}
+		return m.inputHandler(msg)
+	case tea.WindowSizeMsg:
+		m.Width = msg.Width
+		m.Height = msg.Height
 	}
-	m.answerField, cmd = m.answerField.Update(msg)
+
+	// Handle character input and blinking
+	var cmd tea.Cmd
 	return m, cmd
 }
 
-// update helper functions
-func (m *model) Next() {
-	if m.searchIndex < len(m.searchfields)-1 {
-		m.searchIndex++
-	} else {
-		m.searchIndex = 0
-		m.querry.Artist = m.searchfields[0].answer
-		m.querry.Album = m.searchfields[1].answer
-		m.querry.Format = "12vinyl"
-		m.currentView = "result"
-		log.Printf("Artist: %s, Release: %s, Format: %s", m.querry.Artist, m.querry.Album, m.querry.Format)
-		m.musicBrainz.SearchRelease(&m.querry)
-		m.musicBrainz.GetReleaseData(0)
-		m.FormatTable()
-	}
-}
-
-func (m *model) FormatTable() {
-	resData := m.musicBrainz.ReleaseData.Mediums[0].Tracks
-	colums := []table.Column{
-		{Title: "#", Width: 5},
-		{Title: "Track", Width: 30},
-		{Title: "Length", Width: 10},
+func (m *model) inputHandler(msg tea.KeyMsg) (tea.Model, tea.Cmd) {
+	var cmd tea.Cmd
+	if msg.String() == "ctrl+c" {
+		return m, tea.Quit
 	}
 
-	//build rows
-	rows := []table.Row{
-		{strconv.Itoa(resData[0].Position), resData[0].Recording.Title, strconv.Itoa(resData[0].Length)},
-		{strconv.Itoa(resData[1].Position), resData[1].Recording.Title, strconv.Itoa(resData[1].Length)},
-		{strconv.Itoa(resData[2].Position), resData[2].Recording.Title, strconv.Itoa(resData[2].Length)},
-		{strconv.Itoa(resData[3].Position), resData[3].Recording.Title, strconv.Itoa(resData[3].Length)},
-	}
-	t := table.New(
-		table.WithColumns(colums),
-		table.WithRows(rows),
-	)
-	m.searchRes = t
-	log.Printf("%s, %s", rows[0][0], rows[0][1])
-}
-
-// view function
-func (m model) View() string {
-	if m.width == 0 {
-		return "Loading..."
-	}
 	switch m.currentView {
-	case "main":
-		return lipgloss.Place(
-			m.width,
-			m.height,
-			lipgloss.Center,
-			lipgloss.Center,
+	case "Search":
+		switch msg.String() {
 
-			lipgloss.JoinVertical(
-				lipgloss.Center,
-				lipgloss.JoinHorizontal(
-					lipgloss.Center,
-					m.searchfields[0].question,
-					m.searchfields[0].answer,
-				),
-				lipgloss.JoinHorizontal(
-					lipgloss.Center,
-					m.searchfields[1].question,
-					m.searchfields[1].answer,
-				),
-			),
-		)
-	case "input":
-		return lipgloss.Place(
-			m.width,
-			m.height,
-			lipgloss.Center,
-			lipgloss.Center,
+		// Set focus to next input
+		case "tab", "shift+tab", "enter", "up", "down":
+			s := msg.String()
 
-			lipgloss.JoinVertical(
-				lipgloss.Center,
-				m.searchfields[m.searchIndex].question,
-				m.Styles.InputField.Render(m.answerField.View()),
-			),
-		)
-	case "result":
-		return tableStyle.Render(m.searchRes.View()) + "\n"
+			// Did the user press enter while the submit button was focused?
+			// If so, exit.
+			if s == "enter" && m.focusIndex == len(m.inputs) {
+				m.nextView()
+				log.Printf("Artist: %s Release: %s",
+					m.inputs[0].Value(),
+					m.inputs[1].Value(),
+				)
+			}
+
+			// Cycle indexes
+			if s == "up" || s == "shift+tab" {
+				m.focusIndex--
+			} else {
+				m.focusIndex++
+			}
+
+			if m.focusIndex > len(m.inputs) {
+				m.focusIndex = 0
+			} else if m.focusIndex < 0 {
+				m.focusIndex = len(m.inputs)
+			}
+
+			cmds := make([]tea.Cmd, len(m.inputs))
+			for i := 0; i <= len(m.inputs)-1; i++ {
+				if i == m.focusIndex {
+					// Set focused state
+					cmds[i] = m.inputs[i].Focus()
+					m.inputs[i].PromptStyle = focusedStyle
+					m.inputs[i].TextStyle = focusedStyle
+					continue
+				}
+				// Remove focused state
+				m.inputs[i].Blur()
+				m.inputs[i].PromptStyle = noStyle
+				m.inputs[i].TextStyle = noStyle
+			}
+
+			return m, tea.Batch(cmds...)
+		}
+
+	// result screan controls
+	case "Result":
+		switch msg.String() {
+		case "enter":
+			m.nextView()
+		}
 	}
-	return "error"
+	if m.currentView == "Search" {
+		cmd = m.updateInputs(msg)
+	}
+
+	return m, cmd
 }
 
-// view helper func
+func (m *model) nextView() {
+	switch m.currentView {
+	case "Search":
+		m.currentView = "Result"
+	case "Result":
+		m.currentView = "Search"
+	}
+}
+
+func (m *model) updateInputs(msg tea.Msg) tea.Cmd {
+	cmds := make([]tea.Cmd, len(m.inputs))
+
+	// Only text inputs with Focus() set will respond, so it's safe to simply
+	// update all of them here without any further logic.
+	for i := range m.inputs {
+		m.inputs[i], cmds[i] = m.inputs[i].Update(msg)
+	}
+
+	return tea.Batch(cmds...)
+}
+
+// ------------------------------------------------------------------------------------
+
+// view and helper functions
+func (m model) View() string {
+	var view string
+	switch m.currentView {
+	case "Search":
+		view = m.formatSearchView()
+	case "Result":
+		view = m.formatResultView()
+	}
+	return view
+}
+func (m *model) formatSearchView() string {
+
+	button := &blurredButton
+	if m.focusIndex == len(m.inputs) {
+		button = &focusedButton
+	}
+
+	return lipgloss.Place(
+		m.Width,
+		m.Height,
+		lipgloss.Center,
+		lipgloss.Center,
+		lipgloss.JoinVertical(
+			lipgloss.Center,
+			lipgloss.JoinVertical(
+				lipgloss.Center,
+				m.inputs[0].View(),
+				m.inputs[1].View()),
+			*button),
+	)
+}
+
+func (m *model) formatResultView() string {
+	return lipgloss.Place(
+		m.Width,
+		m.Height,
+		lipgloss.Center,
+		lipgloss.Center,
+		fmt.Sprintf("Artist: %s Release: %s", m.inputs[0].Value(), m.inputs[1].Value()),
+	)
+}
 
 func main() {
-	questions := []Question{
-		NewQuestion("Artist Name: "),
-		NewQuestion("Release Name: "),
-	}
-	m := New(questions)
+	m := New()
 
 	f, err := tea.LogToFile("debug.log", "debug")
 	if err != nil {
