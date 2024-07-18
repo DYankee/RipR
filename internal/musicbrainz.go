@@ -91,8 +91,8 @@ func (m *MusicBrainz) DisplayReleaseRes(resData *gomusicbrainz.ReleaseSearchResp
 	fmt.Println(fin)
 }
 
-func (m *MusicBrainz) SearchRelease(q *ReleaseQuerry) error {
-	querry := fmt.Sprintf("release:%s AND artist:%s AND format:%s", q.Album, q.Artist, q.Format)
+func (m *MusicBrainz) SearchRelease(artist string, release string, format string) error {
+	querry := fmt.Sprintf("release:%s AND artist:%s AND format:%s", release, artist, format)
 
 	res, err := m.Client.SearchRelease(querry, -1, -1)
 	if err != nil {

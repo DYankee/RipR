@@ -181,3 +181,657 @@ debug 2024/07/10 01:37:36 Artist:  Release:
 debug 2024/07/10 01:40:33 Artist:  Release: 
 debug 2024/07/10 01:40:34 Artist:  Release: 
 debug 2024/07/10 01:40:35 Artist:  Release: 
+debug 2024/07/15 01:09:49 Artist:  Release: ddd
+debug 2024/07/15 01:09:53 Artist: eeded Release: ddd
+debug 2024/07/17 21:17:59 Artist: test Release: test
+debug 2024/07/17 21:23:20 Artist: test Release: test
+debug 2024/07/17 21:24:18 Artist: pink floyd Release: the wall
+debug 2024/07/17 21:24:19 Artist: pink floyd Release: the wall
+debug 2024/07/17 21:24:20 Artist: pink floyd Release: the wall
+debug 2024/07/17 21:24:21 Artist: pink floyd Release: the wall
+debug 2024/07/17 21:32:49 Artist: pink floyd Release: the wall
+debug 2024/07/17 21:37:16 Artist: test Release: test
+debug 2024/07/17 21:43:07 Artist: tetet Release: teet
+debug 2024/07/17 21:43:07 [{<nil> >  Artist 0 42 {530ms [38;5;205m[0m   0 false true 0xc000012150 7 0} 0s   [38;5;240m[0m [38;5;240m[0m  32 0 {{[right ctrl+f] { } false} {[left ctrl+b] { } false} {[alt+right alt+f] { } false} {[alt+left alt+b] { } false} {[alt+backspace ctrl+w] { } false} {[alt+delete alt+d] { } false} {[ctrl+k] { } false} {[ctrl+u] { } false} {[backspace ctrl+h] { } false} {[delete ctrl+d] { } false} {[home ctrl+a] { } false} {[end ctrl+e] { } false} {[ctrl+v] { } false} {[tab] { } false} {[down ctrl+n] { } false} {[up ctrl+p] { } false}} [116 101 116 101 116] false 5 0 5 <nil> 0xc0001061e0 false [] [] 0} {<nil> >  Release 0 42 {530ms [38;5;205m[0m   0 false true 0xc000012168 6 0} 0s   [38;5;240m[0m [38;5;240m[0m  32 0 {{[right ctrl+f] { } false} {[left ctrl+b] { } false} {[alt+right alt+f] { } false} {[alt+left alt+b] { } false} {[alt+backspace ctrl+w] { } false} {[alt+delete alt+d] { } false} {[ctrl+k] { } false} {[ctrl+u] { } false} {[backspace ctrl+h] { } false} {[delete ctrl+d] { } false} {[home ctrl+a] { } false} {[end ctrl+e] { } false} {[ctrl+v] { } false} {[tab] { } false} {[down ctrl+n] { } false} {[up ctrl+p] { } false}} [116 101 101 116] false 4 0 4 <nil> 0xc000106030 false [] [] 0}]
+debug 2024/07/17 21:43:56 Artist: pink Release: wall
+debug 2024/07/17 21:43:56 pink> wall 
+debug 2024/07/17 21:44:19 Artist: pink Release: wall
+debug 2024/07/17 21:44:19 pink> wall 
+debug 2024/07/17 21:45:57 Artist: pink floyd Release: the wall
+debug 2024/07/17 21:45:57 > pink floyd > the wall 
+debug 2024/07/17 21:46:23 Artist: ttt Release: ttt
+debug 2024/07/17 21:46:23 > ttt  > ttt 
+debug 2024/07/17 21:46:59 Artist: trtt Release: tttt
+debug 2024/07/17 21:46:59 > trtt > tttt 
+debug 2024/07/17 21:49:21 Artist: trst Release: testt
+debug 2024/07/17 21:49:21 > trst > testt 
+debug 2024/07/17 21:49:37 Artist: trst Release: testt
+debug 2024/07/17 21:49:37 > trst > testt 
+debug 2024/07/17 21:49:40 Artist: trst Release: testt
+debug 2024/07/17 21:49:40 > trst > testt 
+debug 2024/07/17 21:49:52 Artist: pink floyd Release: the wall
+debug 2024/07/17 21:49:52 > pink floyd > the wall 
+debug 2024/07/17 21:52:33 Artist: pink floyd Release: the wall
+debug 2024/07/17 21:52:33 > pink floyd > the wall 
+debug 2024/07/17 21:52:34 result view 2
+
+debug 2024/07/17 21:54:54 Artist: test Release: test
+debug 2024/07/17 21:54:54 > test > test 
+debug 2024/07/17 21:56:01 Artist: pink floyd Release: the wall
+debug 2024/07/17 21:56:01 > pink floyd > the wall 
+debug 2024/07/17 21:56:03 result view 2
+
+debug 2024/07/17 21:56:46 Artist: pink floyd Release: the wall
+debug 2024/07/17 21:56:46 > pink floyd > the wall 
+debug 2024/07/17 21:56:47 result view 2
+
+debug 2024/07/17 21:56:53 result view 2
+
+debug 2024/07/17 21:56:53 result view 2
+
+debug 2024/07/17 21:57:01 Artist: pink floyd Release: the wall
+debug 2024/07/17 21:57:01 > pink floyd > the wall 
+debug 2024/07/17 21:57:03 result view2: 
+
+debug 2024/07/17 22:00:26 result view2: 
+
+debug 2024/07/17 22:00:26 result view2: 
+
+debug 2024/07/17 22:00:34 Artist: pink floyd Release: the wall
+debug 2024/07/17 22:00:34 > pink floyd > the wall 
+debug 2024/07/17 22:00:35 result view2: 
+
+debug 2024/07/17 22:03:32 result view2: 
+
+debug 2024/07/17 22:03:32 result view2: 
+
+debug 2024/07/17 22:03:37 Artist: tet Release: tet
+debug 2024/07/17 22:03:37 > tet > tet 
+debug 2024/07/17 22:03:38 result view2: 
+
+debug 2024/07/17 22:05:00 result view2: 
+
+debug 2024/07/17 22:05:00 result view2: 
+
+debug 2024/07/17 22:05:04 Artist: tet Release: tet
+debug 2024/07/17 22:05:04 > tet > tet 
+debug 2024/07/17 22:05:57 [38;5;205m> [0m[7;38;5;205mA[0m[38;5;240mrtist[0m> [38;5;240mR[0m[38;5;240melease[0m
+debug 2024/07/17 22:06:03 Artist: pink floyd Release: the wall
+debug 2024/07/17 22:06:03 > pink floyd > the wall 
+debug 2024/07/17 22:07:54 [38;5;205m> [0m[7;38;5;205mA[0m[38;5;240mrtist[0m> [38;5;240mR[0m[38;5;240melease[0m
+debug 2024/07/17 22:08:01 Artist: tet Release: tet
+debug 2024/07/17 22:08:01 > tet > tet 
+debug 2024/07/17 22:08:07 Artist: tet Release: tet
+debug 2024/07/17 22:08:07 > tet > tet 
+debug 2024/07/17 22:12:43 [38;5;205m> [0m[7;38;5;205mA[0m[38;5;240mrtist[0m> [38;5;240mR[0m[38;5;240melease[0m
+debug 2024/07/17 22:12:45 we got here
+debug 2024/07/17 22:12:45  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
+[1;38;5;212m 0      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  [0m
+ 1      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+debug 2024/07/17 22:12:45 result view2:  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
+[1;38;5;212m 0      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  [0m
+ 1      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+debug 2024/07/17 22:12:48 Artist: tet Release: tet
+debug 2024/07/17 22:12:48 > tet > tet 
+debug 2024/07/17 22:12:52 Artist: tet Release: tet
+debug 2024/07/17 22:12:52 > tet > tet 
+debug 2024/07/17 22:13:10 Artist: tet Release: tet
+debug 2024/07/17 22:13:10 > tet > tet 
+debug 2024/07/17 22:15:36 [38;5;205m> [0m[7;38;5;205mA[0m[38;5;240mrtist[0m> [38;5;240mR[0m[38;5;240melease[0m
+debug 2024/07/17 22:15:37 we got here
+debug 2024/07/17 22:15:37  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
+[1;38;5;212m 0      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  [0m
+ 1      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+debug 2024/07/17 22:15:37 result view2:  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
+[1;38;5;212m 0      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  [0m
+ 1      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+debug 2024/07/17 22:15:37 result view2:  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
+[1;38;5;212m 0      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  [0m
+ 1      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+debug 2024/07/17 22:15:38 result view2:  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
+[1;38;5;212m 0      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  [0m
+ 1      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+debug 2024/07/17 22:15:38 result view2:  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
+[1;38;5;212m 0      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  [0m
+ 1      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+debug 2024/07/17 22:15:38 result view2:  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
+[1;38;5;212m 0      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  [0m
+ 1      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+debug 2024/07/17 22:15:54 result view2:  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
+[1;38;5;212m 0      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  [0m
+ 1      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+debug 2024/07/17 22:15:55 result view2:  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
+[1;38;5;212m 0      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  [0m
+ 1      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+debug 2024/07/17 22:16:03 Artist: pink floyd Release: the wall
+debug 2024/07/17 22:16:03 > pink floyd > the wall 
+debug 2024/07/17 22:24:30 [38;5;205m> [0m[7;38;5;205mA[0m[38;5;240mrtist[0m> [38;5;240mR[0m[38;5;240melease[0m
+debug 2024/07/17 22:24:32 we got here
+debug 2024/07/17 22:24:32  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
+[1;38;5;212m 0      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  [0m
+ 1      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+debug 2024/07/17 22:24:32 result view2:  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
+[1;38;5;212m 0      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  [0m
+ 1      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+debug 2024/07/17 22:24:32 result view2:  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
+[1;38;5;212m 0      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  [0m
+ 1      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                   
+debug 2024/07/17 22:24:42 Artist: pink floyd Release: the wall
+debug 2024/07/17 22:24:42 > pink floyd > the wall 
+debug 2024/07/17 22:24:43 we got here
+debug 2024/07/17 22:24:43  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
+[1;38;5;212m 0      The Wall                        Album       2015-12-31 19:00:00 -0500 EST  [0m
+ 1      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
+ 2      The Wall                        Album       2016-08-25 20:00:00 -0400 EDT  
+ 3      The Wall                        Album       1981-12-31 19:00:00 -0500 EST  
+ 4      The Wall                        Album       2012-02-24 19:00:00 -0500 EST  
+ 5      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
+ 6      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
+ 7      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
+ 8      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
+ 9      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
+ 10     The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
+ 11     The Wall                        Album       0000-12-31 19:03:58 -0456 LMT  
+ 12     The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
+ 13     The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
+ 14     The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
+ 15     Off the Wall                    EP          1978-12-31 19:00:00 -0500 EST  
+ 16     Another Brick in the Wall (Pa…  Single      1978-12-31 19:00:00 -0500 EST  
+ 17     Another Brick in the Wall (Pa…  Single      1978-12-31 19:00:00 -0500 EST  
+                                                                                   
+                                                                                   
+debug 2024/07/17 22:24:43 result view2:  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
+[1;38;5;212m 0      The Wall                        Album       2015-12-31 19:00:00 -0500 EST  [0m
+ 1      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
+ 2      The Wall                        Album       2016-08-25 20:00:00 -0400 EDT  
+ 3      The Wall                        Album       1981-12-31 19:00:00 -0500 EST  
+ 4      The Wall                        Album       2012-02-24 19:00:00 -0500 EST  
+ 5      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
+ 6      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
+ 7      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
+ 8      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
+ 9      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
+ 10     The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
+ 11     The Wall                        Album       0000-12-31 19:03:58 -0456 LMT  
+ 12     The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
+ 13     The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
+ 14     The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
+ 15     Off the Wall                    EP          1978-12-31 19:00:00 -0500 EST  
+ 16     Another Brick in the Wall (Pa…  Single      1978-12-31 19:00:00 -0500 EST  
+ 17     Another Brick in the Wall (Pa…  Single      1978-12-31 19:00:00 -0500 EST  
+                                                                                   
+                                                                                   
+debug 2024/07/17 22:24:44 result view2:  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
+[1;38;5;212m 0      The Wall                        Album       2015-12-31 19:00:00 -0500 EST  [0m
+ 1      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
+ 2      The Wall                        Album       2016-08-25 20:00:00 -0400 EDT  
+ 3      The Wall                        Album       1981-12-31 19:00:00 -0500 EST  
+ 4      The Wall                        Album       2012-02-24 19:00:00 -0500 EST  
+ 5      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
+ 6      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
+ 7      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
+ 8      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
+ 9      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
+ 10     The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
+ 11     The Wall                        Album       0000-12-31 19:03:58 -0456 LMT  
+ 12     The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
+ 13     The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
+ 14     The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
+ 15     Off the Wall                    EP          1978-12-31 19:00:00 -0500 EST  
+ 16     Another Brick in the Wall (Pa…  Single      1978-12-31 19:00:00 -0500 EST  
+ 17     Another Brick in the Wall (Pa…  Single      1978-12-31 19:00:00 -0500 EST  
+                                                                                   
+                                                                                   
+debug 2024/07/17 22:24:54 result view2:  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
+[1;38;5;212m 0      The Wall                        Album       2015-12-31 19:00:00 -0500 EST  [0m
+ 1      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
+ 2      The Wall                        Album       2016-08-25 20:00:00 -0400 EDT  
+ 3      The Wall                        Album       1981-12-31 19:00:00 -0500 EST  
+ 4      The Wall                        Album       2012-02-24 19:00:00 -0500 EST  
+ 5      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
+ 6      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
+ 7      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
+ 8      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
+ 9      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
+ 10     The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
+ 11     The Wall                        Album       0000-12-31 19:03:58 -0456 LMT  
+ 12     The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
+ 13     The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
+ 14     The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
+ 15     Off the Wall                    EP          1978-12-31 19:00:00 -0500 EST  
+ 16     Another Brick in the Wall (Pa…  Single      1978-12-31 19:00:00 -0500 EST  
+ 17     Another Brick in the Wall (Pa…  Single      1978-12-31 19:00:00 -0500 EST  
+                                                                                   
+                                                                                   
+debug 2024/07/17 22:24:54 result view2:  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
+[1;38;5;212m 0      The Wall                        Album       2015-12-31 19:00:00 -0500 EST  [0m
+ 1      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
+ 2      The Wall                        Album       2016-08-25 20:00:00 -0400 EDT  
+ 3      The Wall                        Album       1981-12-31 19:00:00 -0500 EST  
+ 4      The Wall                        Album       2012-02-24 19:00:00 -0500 EST  
+ 5      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
+ 6      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
+ 7      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
+ 8      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
+ 9      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
+ 10     The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
+ 11     The Wall                        Album       0000-12-31 19:03:58 -0456 LMT  
+ 12     The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
+ 13     The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
+ 14     The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
+ 15     Off the Wall                    EP          1978-12-31 19:00:00 -0500 EST  
+ 16     Another Brick in the Wall (Pa…  Single      1978-12-31 19:00:00 -0500 EST  
+ 17     Another Brick in the Wall (Pa…  Single      1978-12-31 19:00:00 -0500 EST  
+                                                                                   
+                                                                                   
+debug 2024/07/17 22:25:06 Artist: pink floyd Release: the wall
+debug 2024/07/17 22:25:06 > pink floyd > the wall 
+debug 2024/07/17 22:25:07 we got here
+debug 2024/07/17 22:25:07  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
+[1;38;5;212m 0      The Wall                        Album       2015-12-31 19:00:00 -0500 EST  [0m
+ 1      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
+ 2      The Wall                        Album       2016-08-25 20:00:00 -0400 EDT  
+ 3      The Wall                        Album       1981-12-31 19:00:00 -0500 EST  
+ 4      The Wall                        Album       2012-02-24 19:00:00 -0500 EST  
+ 5      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
+ 6      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
+ 7      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
+ 8      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
+ 9      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
+ 10     The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
+ 11     The Wall                        Album       0000-12-31 19:03:58 -0456 LMT  
+ 12     The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
+ 13     The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
+ 14     The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
+ 15     Off the Wall                    EP          1978-12-31 19:00:00 -0500 EST  
+ 16     Another Brick in the Wall (Pa…  Single      1978-12-31 19:00:00 -0500 EST  
+ 17     Another Brick in the Wall (Pa…  Single      1978-12-31 19:00:00 -0500 EST  
+                                                                                   
+                                                                                   
+debug 2024/07/17 22:25:07 result view2:  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
+[1;38;5;212m 0      The Wall                        Album       2015-12-31 19:00:00 -0500 EST  [0m
+ 1      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
+ 2      The Wall                        Album       2016-08-25 20:00:00 -0400 EDT  
+ 3      The Wall                        Album       1981-12-31 19:00:00 -0500 EST  
+ 4      The Wall                        Album       2012-02-24 19:00:00 -0500 EST  
+ 5      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
+ 6      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
+ 7      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
+ 8      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
+ 9      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
+ 10     The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
+ 11     The Wall                        Album       0000-12-31 19:03:58 -0456 LMT  
+ 12     The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
+ 13     The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
+ 14     The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
+ 15     Off the Wall                    EP          1978-12-31 19:00:00 -0500 EST  
+ 16     Another Brick in the Wall (Pa…  Single      1978-12-31 19:00:00 -0500 EST  
+ 17     Another Brick in the Wall (Pa…  Single      1978-12-31 19:00:00 -0500 EST  
+                                                                                   
+                                                                                   
+debug 2024/07/17 22:27:45 result view2:  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
+[1;38;5;212m 0      The Wall                        Album       2015-12-31 19:00:00 -0500 EST  [0m
+ 1      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
+ 2      The Wall                        Album       2016-08-25 20:00:00 -0400 EDT  
+ 3      The Wall                        Album       1981-12-31 19:00:00 -0500 EST  
+ 4      The Wall                        Album       2012-02-24 19:00:00 -0500 EST  
+ 5      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
+ 6      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
+ 7      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
+ 8      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
+ 9      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
+ 10     The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
+ 11     The Wall                        Album       0000-12-31 19:03:58 -0456 LMT  
+ 12     The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
+ 13     The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
+ 14     The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
+ 15     Off the Wall                    EP          1978-12-31 19:00:00 -0500 EST  
+ 16     Another Brick in the Wall (Pa…  Single      1978-12-31 19:00:00 -0500 EST  
+ 17     Another Brick in the Wall (Pa…  Single      1978-12-31 19:00:00 -0500 EST  
+                                                                                   
+                                                                                   
+debug 2024/07/17 22:27:45 result view2:  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
+[1;38;5;212m 0      The Wall                        Album       2015-12-31 19:00:00 -0500 EST  [0m
+ 1      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
+ 2      The Wall                        Album       2016-08-25 20:00:00 -0400 EDT  
+ 3      The Wall                        Album       1981-12-31 19:00:00 -0500 EST  
+ 4      The Wall                        Album       2012-02-24 19:00:00 -0500 EST  
+ 5      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
+ 6      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
+ 7      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
+ 8      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
+ 9      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
+ 10     The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
+ 11     The Wall                        Album       0000-12-31 19:03:58 -0456 LMT  
+ 12     The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
+ 13     The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
+ 14     The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
+ 15     Off the Wall                    EP          1978-12-31 19:00:00 -0500 EST  
+ 16     Another Brick in the Wall (Pa…  Single      1978-12-31 19:00:00 -0500 EST  
+ 17     Another Brick in the Wall (Pa…  Single      1978-12-31 19:00:00 -0500 EST  
+                                                                                   
+                                                                                   
+debug 2024/07/17 22:27:53 Artist: pink floyd Release: the wall
+debug 2024/07/17 22:27:53 > pink floyd > the wall 
+debug 2024/07/17 22:27:54 we got here
+debug 2024/07/17 22:27:54  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
+[1;38;5;212m 0      The Wall                        Pink Floyd  2016-01-01 00:00:00 +0000 UTC  [0m
+ 1      The Wall                        Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
+ 2      The Wall                        Pink Floyd  2016-08-26 00:00:00 +0000 UTC  
+ 3      The Wall                        Pink Floyd  1982-01-01 00:00:00 +0000 UTC  
+ 4      The Wall                        Pink Floyd  2012-02-25 00:00:00 +0000 UTC  
+ 5      The Wall                        Pink Floyd  1979-11-30 00:00:00 +0000 UTC  
+ 6      The Wall                        Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
+ 7      The Wall                        Pink Floyd  1979-11-30 00:00:00 +0000 UTC  
+ 8      The Wall                        Pink Floyd  1979-11-30 00:00:00 +0000 UTC  
+ 9      The Wall                        Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
+ 10     The Wall                        Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
+ 11     The Wall                        Pink Floyd  0001-01-01 00:00:00 +0000 UTC  
+ 12     The Wall                        Pink Floyd  1979-11-30 00:00:00 +0000 UTC  
+ 13     The Wall                        Pink Floyd  1979-11-30 00:00:00 +0000 UTC  
+ 14     The Wall                        Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
+ 15     Off the Wall                    Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
+ 16     Another Brick in the Wall (Pa…  Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
+ 17     Another Brick in the Wall (Pa…  Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
+                                                                                   
+                                                                                   
+debug 2024/07/17 22:27:54 result view2:  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
+[1;38;5;212m 0      The Wall                        Pink Floyd  2016-01-01 00:00:00 +0000 UTC  [0m
+ 1      The Wall                        Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
+ 2      The Wall                        Pink Floyd  2016-08-26 00:00:00 +0000 UTC  
+ 3      The Wall                        Pink Floyd  1982-01-01 00:00:00 +0000 UTC  
+ 4      The Wall                        Pink Floyd  2012-02-25 00:00:00 +0000 UTC  
+ 5      The Wall                        Pink Floyd  1979-11-30 00:00:00 +0000 UTC  
+ 6      The Wall                        Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
+ 7      The Wall                        Pink Floyd  1979-11-30 00:00:00 +0000 UTC  
+ 8      The Wall                        Pink Floyd  1979-11-30 00:00:00 +0000 UTC  
+ 9      The Wall                        Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
+ 10     The Wall                        Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
+ 11     The Wall                        Pink Floyd  0001-01-01 00:00:00 +0000 UTC  
+ 12     The Wall                        Pink Floyd  1979-11-30 00:00:00 +0000 UTC  
+ 13     The Wall                        Pink Floyd  1979-11-30 00:00:00 +0000 UTC  
+ 14     The Wall                        Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
+ 15     Off the Wall                    Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
+ 16     Another Brick in the Wall (Pa…  Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
+ 17     Another Brick in the Wall (Pa…  Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
+                                                                                   
+                                                                                   
+debug 2024/07/17 22:28:00 Artist: pink floyd Release: the wall
+debug 2024/07/17 22:28:00 > pink floyd > the wall 
+debug 2024/07/17 22:28:00 we got here
+debug 2024/07/17 22:28:00  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
+[1;38;5;212m 0      The Wall                        Pink Floyd  2016-01-01 00:00:00 +0000 UTC  [0m
+ 1      The Wall                        Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
+ 2      The Wall                        Pink Floyd  2016-08-26 00:00:00 +0000 UTC  
+ 3      The Wall                        Pink Floyd  1982-01-01 00:00:00 +0000 UTC  
+ 4      The Wall                        Pink Floyd  2012-02-25 00:00:00 +0000 UTC  
+ 5      The Wall                        Pink Floyd  1979-11-30 00:00:00 +0000 UTC  
+ 6      The Wall                        Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
+ 7      The Wall                        Pink Floyd  1979-11-30 00:00:00 +0000 UTC  
+ 8      The Wall                        Pink Floyd  1979-11-30 00:00:00 +0000 UTC  
+ 9      The Wall                        Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
+ 10     The Wall                        Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
+ 11     The Wall                        Pink Floyd  0001-01-01 00:00:00 +0000 UTC  
+ 12     The Wall                        Pink Floyd  1979-11-30 00:00:00 +0000 UTC  
+ 13     The Wall                        Pink Floyd  1979-11-30 00:00:00 +0000 UTC  
+ 14     The Wall                        Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
+ 15     Off the Wall                    Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
+ 16     Another Brick in the Wall (Pa…  Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
+ 17     Another Brick in the Wall (Pa…  Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
+                                                                                   
+                                                                                   
+debug 2024/07/17 22:28:00 result view2:  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
+[1;38;5;212m 0      The Wall                        Pink Floyd  2016-01-01 00:00:00 +0000 UTC  [0m
+ 1      The Wall                        Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
+ 2      The Wall                        Pink Floyd  2016-08-26 00:00:00 +0000 UTC  
+ 3      The Wall                        Pink Floyd  1982-01-01 00:00:00 +0000 UTC  
+ 4      The Wall                        Pink Floyd  2012-02-25 00:00:00 +0000 UTC  
+ 5      The Wall                        Pink Floyd  1979-11-30 00:00:00 +0000 UTC  
+ 6      The Wall                        Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
+ 7      The Wall                        Pink Floyd  1979-11-30 00:00:00 +0000 UTC  
+ 8      The Wall                        Pink Floyd  1979-11-30 00:00:00 +0000 UTC  
+ 9      The Wall                        Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
+ 10     The Wall                        Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
+ 11     The Wall                        Pink Floyd  0001-01-01 00:00:00 +0000 UTC  
+ 12     The Wall                        Pink Floyd  1979-11-30 00:00:00 +0000 UTC  
+ 13     The Wall                        Pink Floyd  1979-11-30 00:00:00 +0000 UTC  
+ 14     The Wall                        Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
+ 15     Off the Wall                    Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
+ 16     Another Brick in the Wall (Pa…  Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
+ 17     Another Brick in the Wall (Pa…  Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
+                                                                                   
+                                                                                   
