@@ -1,837 +1,890 @@
-debug 2024/06/05 09:02:39 Question: Enter Artist Name, Answer: pink floyd
-debug 2024/06/05 09:02:42 Question: Enter Release Name, Answer: the wall
-debug 2024/06/05 09:33:45 Question: Enter Artist Name, Answer: 
-debug 2024/06/05 09:33:46 Question: Enter Release Name, Answer: 
-debug 2024/06/05 09:33:46 Question: Enter Artist Name, Answer: 
-debug 2024/06/05 09:33:47 Question: Enter Release Name, Answer: 
-debug 2024/06/05 09:33:52 Question: Enter Artist Name, Answer: 
-debug 2024/06/05 09:33:53 Question: Enter Release Name, Answer: 
-debug 2024/06/05 09:33:53 Question: Enter Artist Name, Answer: 
-debug 2024/06/05 09:33:54 Question: Enter Release Name, Answer: 
-debug 2024/06/05 09:33:54 Question: Enter Artist Name, Answer: 
-debug 2024/06/05 09:34:52 Question: Enter Artist Name, Answer: test
-debug 2024/06/05 09:34:52 Question: Enter Release Name, Answer: test
-debug 2024/06/05 09:55:08 Question: Enter Artist Name, Answer: pink floyd
-debug 2024/06/05 09:55:11 Question: Enter Release Name, Answer: the wall
-debug 2024/06/05 09:56:40 Question: Enter Artist Name, Answer: pink floyd
-debug 2024/06/05 09:56:42 Question: Enter Release Name, Answer: the wall
-debug 2024/06/05 09:59:25 Question: Artist Name, Answer: pink floyd
-debug 2024/06/05 09:59:27 Question: Release Name, Answer: the wall
-debug 2024/06/05 10:00:10 Question: Artist Name: , Answer: pink floyd
-debug 2024/06/05 10:00:13 Question: Release Name: , Answer: the wall
-debug 2024/06/05 10:00:53 Question: Artist Name: , Answer: pink floyd
-debug 2024/06/05 10:00:55 Question: Release Name: , Answer: the wall
-debug 2024/06/05 10:18:10 Question: Artist Name: , Answer: 
-debug 2024/06/05 10:18:11 Question: Release Name: , Answer: 
-debug 2024/06/05 10:18:13 Question: Artist Name: , Answer: t
-debug 2024/06/05 10:18:14 Question: Release Name: , Answer: t
-debug 2024/06/05 10:18:16 Question: Artist Name: , Answer: y
-debug 2024/06/05 10:18:16 Question: Release Name: , Answer: y
-debug 2024/06/05 11:06:14 Question: Artist Name: , Answer: pink floyd
-debug 2024/06/05 11:06:17 Question: Release Name: , Answer: the wall
-debug 2024/06/05 11:44:59 Question: Artist Name: , Answer: pink floyd
-debug 2024/06/05 11:45:04 Question: Release Name: , Answer: the wall
-debug 2024/06/05 11:46:04 Question: Artist Name: , Answer: 
-debug 2024/06/05 11:46:05 Question: Release Name: , Answer: 
-debug 2024/06/05 11:56:07 Question: Artist Name: , Answer: 
-debug 2024/06/05 11:56:07 Question: Release Name: , Answer: 
-debug 2024/06/05 11:56:09 Question: Artist Name: , Answer: 
-debug 2024/06/05 11:56:09 Question: Release Name: , Answer: 
-debug 2024/06/05 11:56:11 Question: Artist Name: , Answer: 
-debug 2024/06/05 11:56:11 Question: Release Name: , Answer: 
-debug 2024/06/05 11:56:11 Question: Artist Name: , Answer: 
-debug 2024/06/05 11:56:11 Question: Release Name: , Answer: 
-debug 2024/06/05 11:56:12 Question: Artist Name: , Answer: 
-debug 2024/06/05 11:56:12 Question: Release Name: , Answer: 
-debug 2024/06/05 12:38:50 Question: Artist Name: , Answer: 
-debug 2024/06/05 12:38:51 Question: Release Name: , Answer: 
-debug 2024/06/05 12:49:24 Question: Artist Name: , Answer: pink floyd
-debug 2024/06/05 12:49:31 Question: Artist Name: , Answer: pink floyd
-debug 2024/06/05 12:49:46 Question: Artist Name: , Answer: pink floyd
-debug 2024/06/05 12:58:50 Question: Artist Name: , Answer: pink floyd
-debug 2024/06/05 12:59:14 Question: Artist Name: , Answer: pink floyd
-debug 2024/06/05 12:59:18 Question: Release Name: , Answer: the wall
-debug 2024/06/05 13:04:00 Question: Artist Name: , Answer: pink floyd
-debug 2024/06/05 13:05:43 Question: Release Name: , Answer: the wall
-debug 2024/06/05 13:06:34 Question: Artist Name: , Answer: pink floyd
-debug 2024/06/05 13:06:41 Question: Artist Name: , Answer: pink floyd
-debug 2024/06/05 13:06:43 Question: Release Name: , Answer: the wall
-debug 2024/06/05 13:08:28 Question: Artist Name: , Answer: pink floyd
-debug 2024/06/05 13:08:30 Question: Release Name: , Answer: the wall
-debug 2024/06/05 13:08:30 Artist: pink floyd, Release: the wall, Format: 12vinyl
-debug 2024/06/05 13:09:27 Question: Artist Name: , Answer: pink floyd
-debug 2024/06/05 13:09:29 Question: Release Name: , Answer: the wall
-debug 2024/06/05 13:09:29 Artist: pink floyd, Release: the wall, Format: 12vinyl
-debug 2024/06/05 13:13:08 Question: Artist Name: , Answer: pink floyd
-debug 2024/06/05 13:13:10 Question: Release Name: , Answer: the wall
-debug 2024/06/05 13:13:10 Artist: pink floyd, Release: the wall, Format: 12vinyl
-debug 2024/06/05 13:14:42 Question: Artist Name: , Answer: pink floyd
-debug 2024/06/05 13:14:45 Question: Release Name: , Answer: the wall
-debug 2024/06/05 13:14:45 Artist: pink floyd, Release: the wall, Format: 12vinyl
-debug 2024/06/05 13:16:41 Question: Artist Name: , Answer: pinkfloyd
-debug 2024/06/05 13:16:44 Question: Release Name: , Answer: the wall
-debug 2024/06/05 13:16:44 Artist: pinkfloyd, Release: the wall, Format: 12vinyl
-debug 2024/06/05 13:16:51 Question: Artist Name: , Answer: pink floyd
-debug 2024/06/05 13:16:53 Question: Release Name: , Answer: the wall
-debug 2024/06/05 13:16:53 Artist: pink floyd, Release: the wall, Format: 12vinyl
-debug 2024/06/05 13:16:54 1In the Flesh?
-debug 2024/06/05 13:19:33 Question: Artist Name: , Answer: pink floyd
-debug 2024/06/05 13:19:35 Question: Release Name: , Answer: the wall
-debug 2024/06/05 13:19:35 Artist: pink floyd, Release: the wall, Format: 12vinyl
-debug 2024/06/05 13:21:11 Question: Artist Name: , Answer: pink floyd
-debug 2024/06/05 13:21:13 Question: Release Name: , Answer: the wall
-debug 2024/06/05 13:21:13 Artist: pink floyd, Release: the wall, Format: 12vinyl
-debug 2024/06/05 13:24:14 Question: Artist Name: , Answer: 
-debug 2024/06/05 13:24:14 Question: Release Name: , Answer: 
-debug 2024/06/05 13:24:14 Artist: , Release: , Format: 12vinyl
-debug 2024/06/05 13:29:26 Question: Artist Name: , Answer: pink floyd
-debug 2024/06/05 13:29:28 Question: Release Name: , Answer: the wall
-debug 2024/06/05 13:29:28 Artist: pink floyd, Release: the wall, Format: 12vinyl
-debug 2024/06/05 13:35:24 Question: Artist Name: , Answer: pink floyd
-debug 2024/06/05 13:35:26 Question: Release Name: , Answer: the wall
-debug 2024/06/05 13:35:26 Artist: pink floyd, Release: the wall, Format: 12vinyl
-debug 2024/06/05 13:35:26 1, In the Flesh?
-debug 2024/06/05 13:38:48 Question: Artist Name: , Answer: pink floyd
-debug 2024/06/05 13:38:50 Question: Release Name: , Answer: the wall
-debug 2024/06/05 13:38:50 Artist: pink floyd, Release: the wall, Format: 12vinyl
-debug 2024/06/05 13:38:50 1, In the Flesh?
-debug 2024/06/05 13:39:18 Question: Artist Name: , Answer: pink floyd
-debug 2024/06/05 13:39:20 Question: Release Name: , Answer: the wall
-debug 2024/06/05 13:39:20 Artist: pink floyd, Release: the wall, Format: 12vinyl
-debug 2024/06/05 13:39:21 1, In the Flesh?
-debug 2024/06/05 13:44:03 Question: Artist Name: , Answer: pink floyd
-debug 2024/06/05 13:44:05 Question: Release Name: , Answer: the wall
-debug 2024/06/05 13:44:05 Artist: pink floyd, Release: the wall, Format: 12vinyl
-debug 2024/06/05 13:44:06 1, In the Flesh?
-debug 2024/06/05 13:45:32 Question: Artist Name: , Answer: pink floyd
-debug 2024/06/05 13:45:34 Question: Release Name: , Answer: the wall
-debug 2024/06/05 13:45:34 Artist: pink floyd, Release: the wall, Format: 12vinyl
-debug 2024/06/05 13:45:35 1, In the Flesh?
-debug 2024/06/05 13:46:11 Question: Artist Name: , Answer: 
-debug 2024/06/05 13:46:12 Question: Release Name: , Answer: 
-debug 2024/06/05 13:46:12 Artist: , Release: , Format: 12vinyl
-debug 2024/06/05 13:46:13 1, In the Flesh?
-debug 2024/06/05 13:46:14 Question: Artist Name: , Answer: 
-debug 2024/06/05 13:46:15 Question: Release Name: , Answer: 
-debug 2024/06/05 13:46:15 Artist: , Release: , Format: 12vinyl
-debug 2024/06/05 13:46:15 1, In the Flesh?
-debug 2024/06/05 13:46:30 Question: Artist Name: , Answer: the beatles
-debug 2024/06/05 13:46:35 Question: Release Name: , Answer: abby road
-debug 2024/06/05 13:46:35 Artist: the beatles, Release: abby road, Format: 12vinyl
-debug 2024/06/05 13:46:35 1, In the Flesh?
-debug 2024/06/10 05:23:55 Question: Artist Name: , Answer: pink floyd
-debug 2024/06/10 05:23:57 Question: Release Name: , Answer: the wall
-debug 2024/06/10 05:23:57 Artist: pink floyd, Release: the wall, Format: 12vinyl
-debug 2024/06/10 05:23:58 1, In the Flesh?
-debug 2024/06/10 13:31:08 Question: Artist Name: , Answer: pink pppp
-debug 2024/06/10 13:31:09 Question: Release Name: , Answer: 
-debug 2024/06/10 13:31:09 Artist: pink pppp, Release: , Format: 12vinyl
-debug 2024/06/10 13:37:54 Question: Artist Name: , Answer: 
-debug 2024/06/10 13:37:54 Question: Release Name: , Answer: 
-debug 2024/06/10 13:37:54 Artist: , Release: , Format: 12vinyl
-debug 2024/06/10 13:37:56 1, Ouvertyr
-debug 2024/06/10 13:37:56 Question: Artist Name: , Answer: 
-debug 2024/06/10 13:37:56 Question: Release Name: , Answer: 
-debug 2024/06/10 13:37:56 Artist: , Release: , Format: 12vinyl
-debug 2024/06/10 13:37:56 1, Ouvertyr
-debug 2024/06/10 13:37:56 Question: Artist Name: , Answer: 
-debug 2024/06/10 13:37:56 Question: Release Name: , Answer: 
-debug 2024/06/10 13:37:56 Artist: , Release: , Format: 12vinyl
-debug 2024/06/10 13:37:56 1, Ouvertyr
-debug 2024/06/10 13:38:01 Question: Artist Name: , Answer: rrrrgrgrgrg
-debug 2024/06/10 13:38:04 Question: Release Name: , Answer: 
-debug 2024/06/10 13:38:04 Artist: rrrrgrgrgrg, Release: , Format: 12vinyl
-debug 2024/06/10 13:38:04 1, Ouvertyr
-debug 2024/06/26 12:40:15 Artist: test Release: test2
-debug 2024/06/26 12:45:36 Artist: test Release: test2
-debug 2024/06/26 12:45:40 Artist: test Release: test2
-debug 2024/06/26 12:45:44 Artist: test Release: test2
-debug 2024/06/26 13:19:29 Artist: test Release: test2
-debug 2024/06/26 13:19:31 Artist: test Release: test2
-debug 2024/06/26 13:19:33 Artist: test Release: test2
-debug 2024/06/26 13:19:36 Artist: test Release: test2
-debug 2024/06/26 13:19:38 Artist: test Release: test2
-debug 2024/06/27 03:36:03 Artist: test Release: test2
-debug 2024/06/27 03:36:05 Artist: test Release: test2
-debug 2024/06/27 03:36:06 Artist: test Release: test2
-debug 2024/06/27 03:36:07 Artist: test Release: test2
-debug 2024/06/27 03:36:08 Artist: test Release: test2
-debug 2024/07/10 00:47:15 Artist: t Release: ttt
-debug 2024/07/10 01:21:22 Artist:  Release: 
-debug 2024/07/10 01:21:24 Artist:  Release: 
-debug 2024/07/10 01:21:25 Artist:  Release: 
-debug 2024/07/10 01:21:29 Artist:  Release: 
-debug 2024/07/10 01:22:26 Artist: eefef Release: efefef
-debug 2024/07/10 01:25:39 Artist:  Release: 
-debug 2024/07/10 01:26:16 Artist: pink floyd Release: the wall
-debug 2024/07/10 01:28:06 Artist: rgrg Release: 
-debug 2024/07/10 01:28:09 Artist: rgrg Release: 
-debug 2024/07/10 01:28:17 Artist: rgrggeegegqegqqgqegqe Release: qegqeg
-debug 2024/07/10 01:28:38 Artist: sfasf Release: 
-debug 2024/07/10 01:29:27 Artist:  Release: 
-debug 2024/07/10 01:29:33 Artist:  Release: 
-debug 2024/07/10 01:31:15 Artist:  Release: 
-debug 2024/07/10 01:31:41 Artist: fef Release: efef
-debug 2024/07/10 01:31:49 Artist: fefef Release: efef
-debug 2024/07/10 01:32:16 Artist: fff Release: fff
-debug 2024/07/10 01:34:04 Artist: qwfqwf Release: qwfqwf
-debug 2024/07/10 01:36:03 Artist: fsfsf Release: sfsfsf
-debug 2024/07/10 01:36:09 Artist: fsfs Release: sfsfsf
-debug 2024/07/10 01:37:36 Artist:  Release: 
-debug 2024/07/10 01:40:33 Artist:  Release: 
-debug 2024/07/10 01:40:34 Artist:  Release: 
-debug 2024/07/10 01:40:35 Artist:  Release: 
-debug 2024/07/15 01:09:49 Artist:  Release: ddd
-debug 2024/07/15 01:09:53 Artist: eeded Release: ddd
-debug 2024/07/17 21:17:59 Artist: test Release: test
-debug 2024/07/17 21:23:20 Artist: test Release: test
-debug 2024/07/17 21:24:18 Artist: pink floyd Release: the wall
-debug 2024/07/17 21:24:19 Artist: pink floyd Release: the wall
-debug 2024/07/17 21:24:20 Artist: pink floyd Release: the wall
-debug 2024/07/17 21:24:21 Artist: pink floyd Release: the wall
-debug 2024/07/17 21:32:49 Artist: pink floyd Release: the wall
-debug 2024/07/17 21:37:16 Artist: test Release: test
-debug 2024/07/17 21:43:07 Artist: tetet Release: teet
-debug 2024/07/17 21:43:07 [{<nil> >  Artist 0 42 {530ms [38;5;205m[0m   0 false true 0xc000012150 7 0} 0s   [38;5;240m[0m [38;5;240m[0m  32 0 {{[right ctrl+f] { } false} {[left ctrl+b] { } false} {[alt+right alt+f] { } false} {[alt+left alt+b] { } false} {[alt+backspace ctrl+w] { } false} {[alt+delete alt+d] { } false} {[ctrl+k] { } false} {[ctrl+u] { } false} {[backspace ctrl+h] { } false} {[delete ctrl+d] { } false} {[home ctrl+a] { } false} {[end ctrl+e] { } false} {[ctrl+v] { } false} {[tab] { } false} {[down ctrl+n] { } false} {[up ctrl+p] { } false}} [116 101 116 101 116] false 5 0 5 <nil> 0xc0001061e0 false [] [] 0} {<nil> >  Release 0 42 {530ms [38;5;205m[0m   0 false true 0xc000012168 6 0} 0s   [38;5;240m[0m [38;5;240m[0m  32 0 {{[right ctrl+f] { } false} {[left ctrl+b] { } false} {[alt+right alt+f] { } false} {[alt+left alt+b] { } false} {[alt+backspace ctrl+w] { } false} {[alt+delete alt+d] { } false} {[ctrl+k] { } false} {[ctrl+u] { } false} {[backspace ctrl+h] { } false} {[delete ctrl+d] { } false} {[home ctrl+a] { } false} {[end ctrl+e] { } false} {[ctrl+v] { } false} {[tab] { } false} {[down ctrl+n] { } false} {[up ctrl+p] { } false}} [116 101 101 116] false 4 0 4 <nil> 0xc000106030 false [] [] 0}]
-debug 2024/07/17 21:43:56 Artist: pink Release: wall
-debug 2024/07/17 21:43:56 pink> wall 
-debug 2024/07/17 21:44:19 Artist: pink Release: wall
-debug 2024/07/17 21:44:19 pink> wall 
-debug 2024/07/17 21:45:57 Artist: pink floyd Release: the wall
-debug 2024/07/17 21:45:57 > pink floyd > the wall 
-debug 2024/07/17 21:46:23 Artist: ttt Release: ttt
-debug 2024/07/17 21:46:23 > ttt  > ttt 
-debug 2024/07/17 21:46:59 Artist: trtt Release: tttt
-debug 2024/07/17 21:46:59 > trtt > tttt 
-debug 2024/07/17 21:49:21 Artist: trst Release: testt
-debug 2024/07/17 21:49:21 > trst > testt 
-debug 2024/07/17 21:49:37 Artist: trst Release: testt
-debug 2024/07/17 21:49:37 > trst > testt 
-debug 2024/07/17 21:49:40 Artist: trst Release: testt
-debug 2024/07/17 21:49:40 > trst > testt 
-debug 2024/07/17 21:49:52 Artist: pink floyd Release: the wall
-debug 2024/07/17 21:49:52 > pink floyd > the wall 
-debug 2024/07/17 21:52:33 Artist: pink floyd Release: the wall
-debug 2024/07/17 21:52:33 > pink floyd > the wall 
-debug 2024/07/17 21:52:34 result view 2
-
-debug 2024/07/17 21:54:54 Artist: test Release: test
-debug 2024/07/17 21:54:54 > test > test 
-debug 2024/07/17 21:56:01 Artist: pink floyd Release: the wall
-debug 2024/07/17 21:56:01 > pink floyd > the wall 
-debug 2024/07/17 21:56:03 result view 2
-
-debug 2024/07/17 21:56:46 Artist: pink floyd Release: the wall
-debug 2024/07/17 21:56:46 > pink floyd > the wall 
-debug 2024/07/17 21:56:47 result view 2
-
-debug 2024/07/17 21:56:53 result view 2
-
-debug 2024/07/17 21:56:53 result view 2
-
-debug 2024/07/17 21:57:01 Artist: pink floyd Release: the wall
-debug 2024/07/17 21:57:01 > pink floyd > the wall 
-debug 2024/07/17 21:57:03 result view2: 
-
-debug 2024/07/17 22:00:26 result view2: 
-
-debug 2024/07/17 22:00:26 result view2: 
-
-debug 2024/07/17 22:00:34 Artist: pink floyd Release: the wall
-debug 2024/07/17 22:00:34 > pink floyd > the wall 
-debug 2024/07/17 22:00:35 result view2: 
-
-debug 2024/07/17 22:03:32 result view2: 
-
-debug 2024/07/17 22:03:32 result view2: 
-
-debug 2024/07/17 22:03:37 Artist: tet Release: tet
-debug 2024/07/17 22:03:37 > tet > tet 
-debug 2024/07/17 22:03:38 result view2: 
-
-debug 2024/07/17 22:05:00 result view2: 
-
-debug 2024/07/17 22:05:00 result view2: 
-
-debug 2024/07/17 22:05:04 Artist: tet Release: tet
-debug 2024/07/17 22:05:04 > tet > tet 
-debug 2024/07/17 22:05:57 [38;5;205m> [0m[7;38;5;205mA[0m[38;5;240mrtist[0m> [38;5;240mR[0m[38;5;240melease[0m
-debug 2024/07/17 22:06:03 Artist: pink floyd Release: the wall
-debug 2024/07/17 22:06:03 > pink floyd > the wall 
-debug 2024/07/17 22:07:54 [38;5;205m> [0m[7;38;5;205mA[0m[38;5;240mrtist[0m> [38;5;240mR[0m[38;5;240melease[0m
-debug 2024/07/17 22:08:01 Artist: tet Release: tet
-debug 2024/07/17 22:08:01 > tet > tet 
-debug 2024/07/17 22:08:07 Artist: tet Release: tet
-debug 2024/07/17 22:08:07 > tet > tet 
-debug 2024/07/17 22:12:43 [38;5;205m> [0m[7;38;5;205mA[0m[38;5;240mrtist[0m> [38;5;240mR[0m[38;5;240melease[0m
-debug 2024/07/17 22:12:45 we got here
-debug 2024/07/17 22:12:45  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
-[1;38;5;212m 0      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  [0m
- 1      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-debug 2024/07/17 22:12:45 result view2:  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
-[1;38;5;212m 0      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  [0m
- 1      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-debug 2024/07/17 22:12:48 Artist: tet Release: tet
-debug 2024/07/17 22:12:48 > tet > tet 
-debug 2024/07/17 22:12:52 Artist: tet Release: tet
-debug 2024/07/17 22:12:52 > tet > tet 
-debug 2024/07/17 22:13:10 Artist: tet Release: tet
-debug 2024/07/17 22:13:10 > tet > tet 
-debug 2024/07/17 22:15:36 [38;5;205m> [0m[7;38;5;205mA[0m[38;5;240mrtist[0m> [38;5;240mR[0m[38;5;240melease[0m
-debug 2024/07/17 22:15:37 we got here
-debug 2024/07/17 22:15:37  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
-[1;38;5;212m 0      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  [0m
- 1      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-debug 2024/07/17 22:15:37 result view2:  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
-[1;38;5;212m 0      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  [0m
- 1      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-debug 2024/07/17 22:15:37 result view2:  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
-[1;38;5;212m 0      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  [0m
- 1      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-debug 2024/07/17 22:15:38 result view2:  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
-[1;38;5;212m 0      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  [0m
- 1      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-debug 2024/07/17 22:15:38 result view2:  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
-[1;38;5;212m 0      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  [0m
- 1      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-debug 2024/07/17 22:15:38 result view2:  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
-[1;38;5;212m 0      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  [0m
- 1      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-debug 2024/07/17 22:15:54 result view2:  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
-[1;38;5;212m 0      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  [0m
- 1      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-debug 2024/07/17 22:15:55 result view2:  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
-[1;38;5;212m 0      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  [0m
- 1      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-debug 2024/07/17 22:16:03 Artist: pink floyd Release: the wall
-debug 2024/07/17 22:16:03 > pink floyd > the wall 
-debug 2024/07/17 22:24:30 [38;5;205m> [0m[7;38;5;205mA[0m[38;5;240mrtist[0m> [38;5;240mR[0m[38;5;240melease[0m
-debug 2024/07/17 22:24:32 we got here
-debug 2024/07/17 22:24:32  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
-[1;38;5;212m 0      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  [0m
- 1      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-debug 2024/07/17 22:24:32 result view2:  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
-[1;38;5;212m 0      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  [0m
- 1      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-debug 2024/07/17 22:24:32 result view2:  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
-[1;38;5;212m 0      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  [0m
- 1      Elden är lös                    Album       1978-12-31 19:00:00 -0500 EST  
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-                                                                                   
-debug 2024/07/17 22:24:42 Artist: pink floyd Release: the wall
-debug 2024/07/17 22:24:42 > pink floyd > the wall 
-debug 2024/07/17 22:24:43 we got here
-debug 2024/07/17 22:24:43  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
-[1;38;5;212m 0      The Wall                        Album       2015-12-31 19:00:00 -0500 EST  [0m
- 1      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
- 2      The Wall                        Album       2016-08-25 20:00:00 -0400 EDT  
- 3      The Wall                        Album       1981-12-31 19:00:00 -0500 EST  
- 4      The Wall                        Album       2012-02-24 19:00:00 -0500 EST  
- 5      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
- 6      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
- 7      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
- 8      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
- 9      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
- 10     The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
- 11     The Wall                        Album       0000-12-31 19:03:58 -0456 LMT  
- 12     The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
- 13     The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
- 14     The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
- 15     Off the Wall                    EP          1978-12-31 19:00:00 -0500 EST  
- 16     Another Brick in the Wall (Pa…  Single      1978-12-31 19:00:00 -0500 EST  
- 17     Another Brick in the Wall (Pa…  Single      1978-12-31 19:00:00 -0500 EST  
-                                                                                   
-                                                                                   
-debug 2024/07/17 22:24:43 result view2:  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
-[1;38;5;212m 0      The Wall                        Album       2015-12-31 19:00:00 -0500 EST  [0m
- 1      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
- 2      The Wall                        Album       2016-08-25 20:00:00 -0400 EDT  
- 3      The Wall                        Album       1981-12-31 19:00:00 -0500 EST  
- 4      The Wall                        Album       2012-02-24 19:00:00 -0500 EST  
- 5      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
- 6      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
- 7      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
- 8      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
- 9      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
- 10     The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
- 11     The Wall                        Album       0000-12-31 19:03:58 -0456 LMT  
- 12     The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
- 13     The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
- 14     The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
- 15     Off the Wall                    EP          1978-12-31 19:00:00 -0500 EST  
- 16     Another Brick in the Wall (Pa…  Single      1978-12-31 19:00:00 -0500 EST  
- 17     Another Brick in the Wall (Pa…  Single      1978-12-31 19:00:00 -0500 EST  
-                                                                                   
-                                                                                   
-debug 2024/07/17 22:24:44 result view2:  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
-[1;38;5;212m 0      The Wall                        Album       2015-12-31 19:00:00 -0500 EST  [0m
- 1      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
- 2      The Wall                        Album       2016-08-25 20:00:00 -0400 EDT  
- 3      The Wall                        Album       1981-12-31 19:00:00 -0500 EST  
- 4      The Wall                        Album       2012-02-24 19:00:00 -0500 EST  
- 5      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
- 6      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
- 7      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
- 8      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
- 9      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
- 10     The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
- 11     The Wall                        Album       0000-12-31 19:03:58 -0456 LMT  
- 12     The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
- 13     The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
- 14     The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
- 15     Off the Wall                    EP          1978-12-31 19:00:00 -0500 EST  
- 16     Another Brick in the Wall (Pa…  Single      1978-12-31 19:00:00 -0500 EST  
- 17     Another Brick in the Wall (Pa…  Single      1978-12-31 19:00:00 -0500 EST  
-                                                                                   
-                                                                                   
-debug 2024/07/17 22:24:54 result view2:  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
-[1;38;5;212m 0      The Wall                        Album       2015-12-31 19:00:00 -0500 EST  [0m
- 1      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
- 2      The Wall                        Album       2016-08-25 20:00:00 -0400 EDT  
- 3      The Wall                        Album       1981-12-31 19:00:00 -0500 EST  
- 4      The Wall                        Album       2012-02-24 19:00:00 -0500 EST  
- 5      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
- 6      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
- 7      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
- 8      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
- 9      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
- 10     The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
- 11     The Wall                        Album       0000-12-31 19:03:58 -0456 LMT  
- 12     The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
- 13     The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
- 14     The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
- 15     Off the Wall                    EP          1978-12-31 19:00:00 -0500 EST  
- 16     Another Brick in the Wall (Pa…  Single      1978-12-31 19:00:00 -0500 EST  
- 17     Another Brick in the Wall (Pa…  Single      1978-12-31 19:00:00 -0500 EST  
-                                                                                   
-                                                                                   
-debug 2024/07/17 22:24:54 result view2:  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
-[1;38;5;212m 0      The Wall                        Album       2015-12-31 19:00:00 -0500 EST  [0m
- 1      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
- 2      The Wall                        Album       2016-08-25 20:00:00 -0400 EDT  
- 3      The Wall                        Album       1981-12-31 19:00:00 -0500 EST  
- 4      The Wall                        Album       2012-02-24 19:00:00 -0500 EST  
- 5      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
- 6      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
- 7      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
- 8      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
- 9      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
- 10     The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
- 11     The Wall                        Album       0000-12-31 19:03:58 -0456 LMT  
- 12     The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
- 13     The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
- 14     The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
- 15     Off the Wall                    EP          1978-12-31 19:00:00 -0500 EST  
- 16     Another Brick in the Wall (Pa…  Single      1978-12-31 19:00:00 -0500 EST  
- 17     Another Brick in the Wall (Pa…  Single      1978-12-31 19:00:00 -0500 EST  
-                                                                                   
-                                                                                   
-debug 2024/07/17 22:25:06 Artist: pink floyd Release: the wall
-debug 2024/07/17 22:25:06 > pink floyd > the wall 
-debug 2024/07/17 22:25:07 we got here
-debug 2024/07/17 22:25:07  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
-[1;38;5;212m 0      The Wall                        Album       2015-12-31 19:00:00 -0500 EST  [0m
- 1      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
- 2      The Wall                        Album       2016-08-25 20:00:00 -0400 EDT  
- 3      The Wall                        Album       1981-12-31 19:00:00 -0500 EST  
- 4      The Wall                        Album       2012-02-24 19:00:00 -0500 EST  
- 5      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
- 6      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
- 7      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
- 8      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
- 9      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
- 10     The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
- 11     The Wall                        Album       0000-12-31 19:03:58 -0456 LMT  
- 12     The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
- 13     The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
- 14     The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
- 15     Off the Wall                    EP          1978-12-31 19:00:00 -0500 EST  
- 16     Another Brick in the Wall (Pa…  Single      1978-12-31 19:00:00 -0500 EST  
- 17     Another Brick in the Wall (Pa…  Single      1978-12-31 19:00:00 -0500 EST  
-                                                                                   
-                                                                                   
-debug 2024/07/17 22:25:07 result view2:  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
-[1;38;5;212m 0      The Wall                        Album       2015-12-31 19:00:00 -0500 EST  [0m
- 1      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
- 2      The Wall                        Album       2016-08-25 20:00:00 -0400 EDT  
- 3      The Wall                        Album       1981-12-31 19:00:00 -0500 EST  
- 4      The Wall                        Album       2012-02-24 19:00:00 -0500 EST  
- 5      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
- 6      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
- 7      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
- 8      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
- 9      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
- 10     The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
- 11     The Wall                        Album       0000-12-31 19:03:58 -0456 LMT  
- 12     The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
- 13     The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
- 14     The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
- 15     Off the Wall                    EP          1978-12-31 19:00:00 -0500 EST  
- 16     Another Brick in the Wall (Pa…  Single      1978-12-31 19:00:00 -0500 EST  
- 17     Another Brick in the Wall (Pa…  Single      1978-12-31 19:00:00 -0500 EST  
-                                                                                   
-                                                                                   
-debug 2024/07/17 22:27:45 result view2:  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
-[1;38;5;212m 0      The Wall                        Album       2015-12-31 19:00:00 -0500 EST  [0m
- 1      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
- 2      The Wall                        Album       2016-08-25 20:00:00 -0400 EDT  
- 3      The Wall                        Album       1981-12-31 19:00:00 -0500 EST  
- 4      The Wall                        Album       2012-02-24 19:00:00 -0500 EST  
- 5      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
- 6      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
- 7      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
- 8      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
- 9      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
- 10     The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
- 11     The Wall                        Album       0000-12-31 19:03:58 -0456 LMT  
- 12     The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
- 13     The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
- 14     The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
- 15     Off the Wall                    EP          1978-12-31 19:00:00 -0500 EST  
- 16     Another Brick in the Wall (Pa…  Single      1978-12-31 19:00:00 -0500 EST  
- 17     Another Brick in the Wall (Pa…  Single      1978-12-31 19:00:00 -0500 EST  
-                                                                                   
-                                                                                   
-debug 2024/07/17 22:27:45 result view2:  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
-[1;38;5;212m 0      The Wall                        Album       2015-12-31 19:00:00 -0500 EST  [0m
- 1      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
- 2      The Wall                        Album       2016-08-25 20:00:00 -0400 EDT  
- 3      The Wall                        Album       1981-12-31 19:00:00 -0500 EST  
- 4      The Wall                        Album       2012-02-24 19:00:00 -0500 EST  
- 5      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
- 6      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
- 7      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
- 8      The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
- 9      The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
- 10     The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
- 11     The Wall                        Album       0000-12-31 19:03:58 -0456 LMT  
- 12     The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
- 13     The Wall                        Album       1979-11-29 19:00:00 -0500 EST  
- 14     The Wall                        Album       1978-12-31 19:00:00 -0500 EST  
- 15     Off the Wall                    EP          1978-12-31 19:00:00 -0500 EST  
- 16     Another Brick in the Wall (Pa…  Single      1978-12-31 19:00:00 -0500 EST  
- 17     Another Brick in the Wall (Pa…  Single      1978-12-31 19:00:00 -0500 EST  
-                                                                                   
-                                                                                   
-debug 2024/07/17 22:27:53 Artist: pink floyd Release: the wall
-debug 2024/07/17 22:27:53 > pink floyd > the wall 
-debug 2024/07/17 22:27:54 we got here
-debug 2024/07/17 22:27:54  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
-[1;38;5;212m 0      The Wall                        Pink Floyd  2016-01-01 00:00:00 +0000 UTC  [0m
- 1      The Wall                        Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
- 2      The Wall                        Pink Floyd  2016-08-26 00:00:00 +0000 UTC  
- 3      The Wall                        Pink Floyd  1982-01-01 00:00:00 +0000 UTC  
- 4      The Wall                        Pink Floyd  2012-02-25 00:00:00 +0000 UTC  
- 5      The Wall                        Pink Floyd  1979-11-30 00:00:00 +0000 UTC  
- 6      The Wall                        Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
- 7      The Wall                        Pink Floyd  1979-11-30 00:00:00 +0000 UTC  
- 8      The Wall                        Pink Floyd  1979-11-30 00:00:00 +0000 UTC  
- 9      The Wall                        Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
- 10     The Wall                        Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
- 11     The Wall                        Pink Floyd  0001-01-01 00:00:00 +0000 UTC  
- 12     The Wall                        Pink Floyd  1979-11-30 00:00:00 +0000 UTC  
- 13     The Wall                        Pink Floyd  1979-11-30 00:00:00 +0000 UTC  
- 14     The Wall                        Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
- 15     Off the Wall                    Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
- 16     Another Brick in the Wall (Pa…  Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
- 17     Another Brick in the Wall (Pa…  Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
-                                                                                   
-                                                                                   
-debug 2024/07/17 22:27:54 result view2:  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
-[1;38;5;212m 0      The Wall                        Pink Floyd  2016-01-01 00:00:00 +0000 UTC  [0m
- 1      The Wall                        Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
- 2      The Wall                        Pink Floyd  2016-08-26 00:00:00 +0000 UTC  
- 3      The Wall                        Pink Floyd  1982-01-01 00:00:00 +0000 UTC  
- 4      The Wall                        Pink Floyd  2012-02-25 00:00:00 +0000 UTC  
- 5      The Wall                        Pink Floyd  1979-11-30 00:00:00 +0000 UTC  
- 6      The Wall                        Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
- 7      The Wall                        Pink Floyd  1979-11-30 00:00:00 +0000 UTC  
- 8      The Wall                        Pink Floyd  1979-11-30 00:00:00 +0000 UTC  
- 9      The Wall                        Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
- 10     The Wall                        Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
- 11     The Wall                        Pink Floyd  0001-01-01 00:00:00 +0000 UTC  
- 12     The Wall                        Pink Floyd  1979-11-30 00:00:00 +0000 UTC  
- 13     The Wall                        Pink Floyd  1979-11-30 00:00:00 +0000 UTC  
- 14     The Wall                        Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
- 15     Off the Wall                    Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
- 16     Another Brick in the Wall (Pa…  Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
- 17     Another Brick in the Wall (Pa…  Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
-                                                                                   
-                                                                                   
-debug 2024/07/17 22:28:00 Artist: pink floyd Release: the wall
-debug 2024/07/17 22:28:00 > pink floyd > the wall 
-debug 2024/07/17 22:28:00 we got here
-debug 2024/07/17 22:28:00  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
-[1;38;5;212m 0      The Wall                        Pink Floyd  2016-01-01 00:00:00 +0000 UTC  [0m
- 1      The Wall                        Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
- 2      The Wall                        Pink Floyd  2016-08-26 00:00:00 +0000 UTC  
- 3      The Wall                        Pink Floyd  1982-01-01 00:00:00 +0000 UTC  
- 4      The Wall                        Pink Floyd  2012-02-25 00:00:00 +0000 UTC  
- 5      The Wall                        Pink Floyd  1979-11-30 00:00:00 +0000 UTC  
- 6      The Wall                        Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
- 7      The Wall                        Pink Floyd  1979-11-30 00:00:00 +0000 UTC  
- 8      The Wall                        Pink Floyd  1979-11-30 00:00:00 +0000 UTC  
- 9      The Wall                        Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
- 10     The Wall                        Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
- 11     The Wall                        Pink Floyd  0001-01-01 00:00:00 +0000 UTC  
- 12     The Wall                        Pink Floyd  1979-11-30 00:00:00 +0000 UTC  
- 13     The Wall                        Pink Floyd  1979-11-30 00:00:00 +0000 UTC  
- 14     The Wall                        Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
- 15     Off the Wall                    Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
- 16     Another Brick in the Wall (Pa…  Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
- 17     Another Brick in the Wall (Pa…  Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
-                                                                                   
-                                                                                   
-debug 2024/07/17 22:28:00 result view2:  [1m#    [0m  [1mRelease Name                  [0m  [1mArtist    [0m  [1mRelease date                  [0m 
-[1;38;5;212m 0      The Wall                        Pink Floyd  2016-01-01 00:00:00 +0000 UTC  [0m
- 1      The Wall                        Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
- 2      The Wall                        Pink Floyd  2016-08-26 00:00:00 +0000 UTC  
- 3      The Wall                        Pink Floyd  1982-01-01 00:00:00 +0000 UTC  
- 4      The Wall                        Pink Floyd  2012-02-25 00:00:00 +0000 UTC  
- 5      The Wall                        Pink Floyd  1979-11-30 00:00:00 +0000 UTC  
- 6      The Wall                        Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
- 7      The Wall                        Pink Floyd  1979-11-30 00:00:00 +0000 UTC  
- 8      The Wall                        Pink Floyd  1979-11-30 00:00:00 +0000 UTC  
- 9      The Wall                        Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
- 10     The Wall                        Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
- 11     The Wall                        Pink Floyd  0001-01-01 00:00:00 +0000 UTC  
- 12     The Wall                        Pink Floyd  1979-11-30 00:00:00 +0000 UTC  
- 13     The Wall                        Pink Floyd  1979-11-30 00:00:00 +0000 UTC  
- 14     The Wall                        Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
- 15     Off the Wall                    Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
- 16     Another Brick in the Wall (Pa…  Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
- 17     Another Brick in the Wall (Pa…  Pink Floyd  1979-01-01 00:00:00 +0000 UTC  
-                                                                                   
-                                                                                   
+debug 2024/07/23 04:09:50 result view:
+debug 2024/07/23 04:09:50 result view:
+debug 2024/07/23 04:09:50 result view:
+debug 2024/07/23 04:09:51 result view:
+debug 2024/07/23 04:09:53 result view:
+debug 2024/07/23 04:09:53 result view:
+debug 2024/07/23 04:09:56 Artist: t Release: t
+debug 2024/07/23 04:09:56 > t > t 
+debug 2024/07/23 04:12:31 Artist: t Release: t
+debug 2024/07/23 04:12:31 > t > t 
+debug 2024/07/23 04:12:32 0
+debug 2024/07/23 04:12:33 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc000480360] map[]}
+debug 2024/07/23 04:12:39 Artist: t Release: t
+debug 2024/07/23 04:12:39 > t > t 
+debug 2024/07/23 04:12:40 1
+debug 2024/07/23 04:12:40 &{260721d2-383e-4ad2-890e-8b5b6f40b26d T·Rex Official 200g {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 2007-01-01 00:00:00 +0000 UTC JP 4988005479730  normal [] [0xc000480960] map[]}
+debug 2024/07/23 04:12:42 Artist: t Release: t
+debug 2024/07/23 04:12:42 > t > t 
+debug 2024/07/23 04:12:43 2
+debug 2024/07/23 04:12:43 &{9580edea-419c-4318-9d3c-926758931f03 't Kliekske   { } {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1969-01-01 00:00:00 +0000 UTC BE   normal [] [0xc000112390] map[]}
+debug 2024/07/23 04:13:06 Artist: j Release: j
+debug 2024/07/23 04:13:06 > j > j 
+debug 2024/07/23 04:13:09 1
+debug 2024/07/23 04:13:09 &{52ea64ad-5b08-4d7f-aa34-faf9cddbd723 Donuts: J Rocc’s Picks Promotion  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 2006-01-01 00:00:00 +0000 UTC US   normal [] [0xc0001863c0] map[]}
+debug 2024/07/23 04:13:12 Artist: j Release: j
+debug 2024/07/23 04:13:12 > j > j 
+debug 2024/07/23 04:13:13 1
+debug 2024/07/23 04:13:13 &{52ea64ad-5b08-4d7f-aa34-faf9cddbd723 Donuts: J Rocc’s Picks Promotion  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 2006-01-01 00:00:00 +0000 UTC US   normal [] [0xc00015e360] map[]}
+debug 2024/07/23 04:13:17 Artist: j Release: j
+debug 2024/07/23 04:13:17 > j > j 
+debug 2024/07/23 04:13:19 0
+debug 2024/07/23 04:13:19 &{4d59ae39-72da-4bd7-a0be-4b3308126062 J.J.! Official original release {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1965-01-01 00:00:00 +0000 UTC US   normal [] [0xc00042e2a0] map[]}
+debug 2024/07/23 04:13:21 Artist: j Release: j
+debug 2024/07/23 04:13:21 > j > j 
+debug 2024/07/23 04:13:22 0
+debug 2024/07/23 04:13:22 &{4d59ae39-72da-4bd7-a0be-4b3308126062 J.J.! Official original release {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1965-01-01 00:00:00 +0000 UTC US   normal [] [0xc00015e4e0] map[]}
+debug 2024/07/23 04:13:24 Artist: j Release: j
+debug 2024/07/23 04:13:24 > j > j 
+debug 2024/07/23 04:13:25 1
+debug 2024/07/23 04:13:25 &{52ea64ad-5b08-4d7f-aa34-faf9cddbd723 Donuts: J Rocc’s Picks Promotion  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 2006-01-01 00:00:00 +0000 UTC US   normal [] [0xc00030a330] map[]}
+debug 2024/07/23 04:13:27 Artist: j Release: j
+debug 2024/07/23 04:13:27 > j > j 
+debug 2024/07/23 04:13:29 16
+debug 2024/07/23 04:13:30 &{51554a5b-ab98-40ba-9f92-77cc5082d20f The Way to Become The Sensuous Woman by "J" Official has sticker with catalog number "K40280" {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1971-01-01 00:00:00 +0000 UTC US   normal [] [0xc00030a300] map[]}
+debug 2024/07/23 04:13:34 Artist: j Release: j
+debug 2024/07/23 04:13:34 > j > j 
+debug 2024/07/23 04:13:39 Artist: t Release: t
+debug 2024/07/23 04:13:39 > t > t 
+debug 2024/07/23 04:13:40 0
+debug 2024/07/23 04:15:25 Artist: t Release: t
+debug 2024/07/23 04:15:27 0
+debug 2024/07/23 04:17:12 Artist: t Release: t
+debug 2024/07/23 04:17:14 0
+debug 2024/07/23 04:19:52 Artist: t Release: t
+debug 2024/07/23 04:19:54 0
+debug 2024/07/23 04:19:54 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc00014e0f0] map[]}
+debug 2024/07/23 04:19:59 Artist: t Release: t
+debug 2024/07/23 04:20:00 Artist: t Release: t
+debug 2024/07/23 04:20:02 0
+debug 2024/07/23 04:22:40 batch cmd abt to be run
+debug 2024/07/23 04:22:40 batch cmd abt to be run
+debug 2024/07/23 04:22:41 Artist: t Release: t
+debug 2024/07/23 04:22:42 0
+debug 2024/07/23 04:24:26 batch cmd abt to be run
+debug 2024/07/23 04:24:26 batch cmd abt to be run
+debug 2024/07/23 04:24:26 Artist: t Release: t
+debug 2024/07/23 04:24:27 0
+debug 2024/07/23 04:26:29 batch cmd abt to be run
+debug 2024/07/23 04:26:29 batch cmd abt to be run
+debug 2024/07/23 04:26:29 Artist: t Release: t
+debug 2024/07/23 04:26:32 0
+debug 2024/07/23 04:26:32 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc0002a2450] map[]}
+debug 2024/07/23 04:26:35 Artist: t Release: t
+debug 2024/07/23 04:26:36 1
+debug 2024/07/23 04:26:36 &{260721d2-383e-4ad2-890e-8b5b6f40b26d T·Rex Official 200g {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 2007-01-01 00:00:00 +0000 UTC JP 4988005479730  normal [] [0xc00035c420] map[]}
+debug 2024/07/23 04:26:37 Artist: t Release: t
+debug 2024/07/23 04:26:38 0
+debug 2024/07/23 04:26:38 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc00018a570] map[]}
+debug 2024/07/23 04:26:39 Artist: t Release: t
+debug 2024/07/23 04:26:40 3
+debug 2024/07/23 04:26:40 &{7945b148-467a-4a27-8ef3-9f158a03d75f 't Kliekske Official  {nld Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1971-01-01 00:00:00 +0000 UTC BE   normal [] [0xc0002a2330] map[]}
+debug 2024/07/23 04:26:42 Artist: t Release: t
+debug 2024/07/23 04:26:46 batch cmd abt to be run
+debug 2024/07/23 04:26:46 batch cmd abt to be run
+debug 2024/07/23 04:26:46 Artist: t Release: t
+debug 2024/07/23 04:26:48 0
+debug 2024/07/23 04:26:53 batch cmd abt to be run
+debug 2024/07/23 04:26:53 batch cmd abt to be run
+debug 2024/07/23 04:26:53 Artist: t Release: t
+debug 2024/07/23 04:26:55 1
+debug 2024/07/23 04:26:55 &{260721d2-383e-4ad2-890e-8b5b6f40b26d T·Rex Official 200g {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 2007-01-01 00:00:00 +0000 UTC JP 4988005479730  normal [] [0xc000098f90] map[]}
+debug 2024/07/23 04:30:41 batch cmd abt to be run
+debug 2024/07/23 04:30:43 batch cmd abt to be run
+debug 2024/07/23 04:30:45 batch cmd abt to be run
+debug 2024/07/23 04:31:03 batch cmd abt to be run
+debug 2024/07/23 04:31:03 Artist: t Release: t
+debug 2024/07/23 04:31:05 0
+debug 2024/07/23 04:31:05 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc00029a6c0] map[]}
+debug 2024/07/23 04:31:24 Artist: t Release: t
+debug 2024/07/23 04:31:25 0
+debug 2024/07/23 04:31:25 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc00029a6f0] map[]}
+debug 2024/07/23 04:31:32 batch cmd abt to be run
+debug 2024/07/23 04:31:34 batch cmd abt to be run
+debug 2024/07/23 04:31:34 Artist: t Release: t
+debug 2024/07/23 04:31:35 0
+debug 2024/07/23 04:31:35 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc0002944b0] map[]}
+debug 2024/07/23 04:35:13 batch cmd abt to be run
+debug 2024/07/23 04:35:14 batch cmd abt to be run
+debug 2024/07/23 04:35:14 Artist:  Release: 
+debug 2024/07/23 04:35:17 0
+debug 2024/07/23 04:35:17 &{d3ceb2e8-2103-4bf4-a947-88b4445f86b0 Elden är lös Official with "Kabaréorkestern" as release artist {swe Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1979-01-01 00:00:00 +0000 UTC SE   normal [] [0xc000098e10] map[]}
+debug 2024/07/23 04:35:19 batch cmd abt to be run
+debug 2024/07/23 04:35:19 batch cmd abt to be run
+debug 2024/07/23 04:35:20 batch cmd abt to be run
+debug 2024/07/23 04:35:21 batch cmd abt to be run
+debug 2024/07/23 04:35:21 Artist: t Release: t
+debug 2024/07/23 04:35:22 0
+debug 2024/07/23 04:35:22 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc000186330] map[]}
+debug 2024/07/23 04:35:26 batch cmd abt to be run
+debug 2024/07/23 04:35:26 batch cmd abt to be run
+debug 2024/07/23 04:35:27 Artist: t Release: t
+debug 2024/07/23 04:35:28 0
+debug 2024/07/23 04:35:28 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc000488480] map[]}
+debug 2024/07/23 04:38:28 batch cmd abt to be run
+debug 2024/07/23 04:38:29 batch cmd abt to be run
+debug 2024/07/23 04:38:29 Artist: t Release: t
+debug 2024/07/23 04:42:26 1
+debug 2024/07/23 04:42:34 batch cmd abt to be run
+debug 2024/07/23 04:42:35 batch cmd abt to be run
+debug 2024/07/23 04:42:35 Artist: t Release: t
+debug 2024/07/23 04:42:36 0
+debug 2024/07/23 04:42:36 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc000099290] map[]}
+debug 2024/07/23 04:42:38 Artist: t Release: t
+debug 2024/07/23 04:42:39 1
+debug 2024/07/23 04:42:39 &{260721d2-383e-4ad2-890e-8b5b6f40b26d T·Rex Official 200g {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 2007-01-01 00:00:00 +0000 UTC JP 4988005479730  normal [] [0xc0003bc330] map[]}
+debug 2024/07/23 04:42:41 Artist: t Release: t
+debug 2024/07/23 04:42:44 3
+debug 2024/07/23 04:42:44 &{7945b148-467a-4a27-8ef3-9f158a03d75f 't Kliekske Official  {nld Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1971-01-01 00:00:00 +0000 UTC BE   normal [] [0xc0003bc030] map[]}
+debug 2024/07/23 04:42:46 Artist: t Release: t
+debug 2024/07/23 04:42:47 0
+debug 2024/07/23 04:42:47 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc000112450] map[]}
+debug 2024/07/23 04:42:49 Artist: t Release: t
+debug 2024/07/23 04:42:55 3
+debug 2024/07/23 04:42:55 &{7945b148-467a-4a27-8ef3-9f158a03d75f 't Kliekske Official  {nld Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1971-01-01 00:00:00 +0000 UTC BE   normal [] [0xc000098f30] map[]}
+debug 2024/07/23 04:42:57 Artist: t Release: t
+debug 2024/07/23 04:42:59 13
+debug 2024/07/23 04:43:00 &{705246b0-2b1f-4f19-af1e-9c54d5cd29b1 T‐Bone Blues Official stereo (electronically re-processed for stereo from the original monophonic recordings) {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1970-01-01 00:00:00 +0000 UTC US   normal [] [0xc000112540] map[]}
+debug 2024/07/23 04:43:00 Artist: t Release: t
+debug 2024/07/23 04:43:01 0
+debug 2024/07/23 04:43:01 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc00047c3f0] map[]}
+debug 2024/07/23 04:43:01 Artist: t Release: t
+debug 2024/07/23 04:43:01 0
+debug 2024/07/23 04:43:01 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc000099050] map[]}
+debug 2024/07/23 04:43:02 Artist: t Release: t
+debug 2024/07/23 04:43:02 0
+debug 2024/07/23 04:43:02 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc000099170] map[]}
+debug 2024/07/23 04:43:02 Artist: t Release: t
+debug 2024/07/23 04:43:02 0
+debug 2024/07/23 04:43:03 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc00048c540] map[]}
+debug 2024/07/23 04:43:05 Artist: t Release: t
+debug 2024/07/23 04:43:08 1
+debug 2024/07/23 04:43:09 &{260721d2-383e-4ad2-890e-8b5b6f40b26d T·Rex Official 200g {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 2007-01-01 00:00:00 +0000 UTC JP 4988005479730  normal [] [0xc00028a330] map[]}
+debug 2024/07/23 04:43:13 batch cmd abt to be run
+debug 2024/07/23 04:43:13 batch cmd abt to be run
+debug 2024/07/23 04:43:21 batch cmd abt to be run
+debug 2024/07/23 04:43:23 batch cmd abt to be run
+debug 2024/07/23 04:43:23 Artist: pink floyd Release: the wall
+debug 2024/07/23 04:43:23 0
+debug 2024/07/23 04:43:24 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc000099320] map[]}
+debug 2024/07/23 04:43:27 Artist: pink floyd Release: the wall
+debug 2024/07/23 04:43:28 0
+debug 2024/07/23 04:43:28 &{3c6cfce2-ea1b-4599-b964-ba7a737cf619 The Wall Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 2016-01-01 00:00:00 +0000 UTC XE 5099902988313  normal [] [0xc00048c3f0 0xc00048c960] map[]}
+debug 2024/07/23 04:43:46 Artist: pink floyd Release: the wall
+debug 2024/07/23 04:43:47 0
+debug 2024/07/23 04:43:47 &{3c6cfce2-ea1b-4599-b964-ba7a737cf619 The Wall Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 2016-01-01 00:00:00 +0000 UTC XE 5099902988313  normal [] [0xc00028a3f0 0xc00028a960] map[]}
+debug 2024/07/23 04:43:50 Artist: pink floyd Release: the wall
+debug 2024/07/23 04:44:05 12
+debug 2024/07/23 04:44:05 &{18e9464b-bf9f-427d-9ce2-0eb8a5358108 The Wall Promotion  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1979-01-01 00:00:00 +0000 UTC US   normal [] [0xc000112600 0xc000112b70] map[]}
+debug 2024/07/23 04:45:31 Artist: pink floyd Release: the wall
+debug 2024/07/23 04:45:32 0
+debug 2024/07/23 04:45:32 &{3c6cfce2-ea1b-4599-b964-ba7a737cf619 The Wall Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 2016-01-01 00:00:00 +0000 UTC XE 5099902988313  normal [] [0xc00048c3c0 0xc00048ca20] map[]}
+debug 2024/07/23 04:45:50 batch cmd abt to be run
+debug 2024/07/23 04:45:51 batch cmd abt to be run
+debug 2024/07/23 04:45:51 Artist: t Release: t
+debug 2024/07/23 04:45:52 0
+debug 2024/07/23 04:45:52 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc00028a450] map[]}
+debug 2024/07/23 04:45:57 Artist: t Release: t
+debug 2024/07/23 04:46:00 1
+debug 2024/07/23 04:46:00 &{260721d2-383e-4ad2-890e-8b5b6f40b26d T·Rex Official 200g {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 2007-01-01 00:00:00 +0000 UTC JP 4988005479730  normal [] [0xc00023c690] map[]}
+debug 2024/07/23 04:46:19 batch cmd abt to be run
+debug 2024/07/23 04:46:20 batch cmd abt to be run
+debug 2024/07/23 04:46:20 Artist: t Release: t
+debug 2024/07/23 04:46:21 0
+debug 2024/07/23 04:48:53 batch cmd abt to be run
+debug 2024/07/23 04:48:54 batch cmd abt to be run
+debug 2024/07/23 04:48:54 Artist: t Release: t
+debug 2024/07/23 04:48:55 0
+debug 2024/07/23 04:49:10 batch cmd abt to be run
+debug 2024/07/23 04:49:10 batch cmd abt to be run
+debug 2024/07/23 04:49:10 Artist: t Release: t
+debug 2024/07/23 04:49:12 0
+debug 2024/07/23 04:49:14 batch cmd abt to be run
+debug 2024/07/23 04:49:15 batch cmd abt to be run
+debug 2024/07/23 04:49:15 Artist: t Release: t
+debug 2024/07/23 04:49:17 1
+debug 2024/07/23 04:49:20 batch cmd abt to be run
+debug 2024/07/23 04:49:20 batch cmd abt to be run
+debug 2024/07/23 04:49:20 Artist: t Release: t
+debug 2024/07/23 04:49:22 2
+debug 2024/07/23 04:49:28 batch cmd abt to be run
+debug 2024/07/23 04:49:29 batch cmd abt to be run
+debug 2024/07/23 04:49:30 Artist: pink floyd Release: the wall
+debug 2024/07/23 04:49:31 0
+debug 2024/07/23 04:49:31 &{3c6cfce2-ea1b-4599-b964-ba7a737cf619 The Wall Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 2016-01-01 00:00:00 +0000 UTC XE 5099902988313  normal [] [0xc0002ac420 0xc0002ac9c0] map[]}
+debug 2024/07/23 04:49:41 Artist: pink floyd Release: the wall
+debug 2024/07/23 04:49:41 0
+debug 2024/07/23 04:49:41 &{3c6cfce2-ea1b-4599-b964-ba7a737cf619 The Wall Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 2016-01-01 00:00:00 +0000 UTC XE 5099902988313  normal [] [0xc0001685a0 0xc000168d50] map[]}
+debug 2024/07/23 04:49:43 Artist: pink floyd Release: the wall
+debug 2024/07/23 04:49:43 0
+debug 2024/07/23 04:49:43 &{3c6cfce2-ea1b-4599-b964-ba7a737cf619 The Wall Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 2016-01-01 00:00:00 +0000 UTC XE 5099902988313  normal [] [0xc00008a5d0 0xc00008ac60] map[]}
+debug 2024/07/23 04:51:34 batch cmd abt to be run
+debug 2024/07/23 04:51:35 Artist: t Release: t
+debug 2024/07/23 04:51:37 0
+debug 2024/07/23 04:51:37 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc00028a480] map[]}
+debug 2024/07/23 04:51:39 Artist: t Release: t
+debug 2024/07/23 04:54:01 batch cmd abt to be run
+debug 2024/07/23 04:54:02 batch cmd abt to be run
+debug 2024/07/23 04:54:04 batch cmd abt to be run
+debug 2024/07/23 04:54:08 batch cmd abt to be run
+debug 2024/07/23 04:54:09 Artist: t Release: 
+debug 2024/07/23 04:54:10 0
+debug 2024/07/23 04:54:14 batch cmd abt to be run
+debug 2024/07/23 04:54:15 batch cmd abt to be run
+debug 2024/07/23 04:54:16 batch cmd abt to be run
+debug 2024/07/23 04:54:16 batch cmd abt to be run
+debug 2024/07/23 04:54:16 batch cmd abt to be run
+debug 2024/07/23 04:54:17 batch cmd abt to be run
+debug 2024/07/23 04:54:18 Artist: t Release: 
+debug 2024/07/23 04:57:51 batch cmd abt to be run
+debug 2024/07/23 04:57:54 batch cmd abt to be run
+debug 2024/07/23 04:57:55 batch cmd abt to be run
+debug 2024/07/23 04:57:55 Artist: t Release: t
+debug 2024/07/23 04:57:56 0
+debug 2024/07/23 04:57:56 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc000242510] map[]}
+debug 2024/07/23 04:57:58 Artist: t Release: t
+debug 2024/07/23 04:57:59 2
+debug 2024/07/23 04:58:00 &{9580edea-419c-4318-9d3c-926758931f03 't Kliekske   { } {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1969-01-01 00:00:00 +0000 UTC BE   normal [] [0xc0002425a0] map[]}
+debug 2024/07/23 04:58:04 batch cmd abt to be run
+debug 2024/07/23 04:58:05 batch cmd abt to be run
+debug 2024/07/23 04:58:05 Artist: test Release: test
+debug 2024/07/23 04:58:08 0
+debug 2024/07/23 04:58:15 batch cmd abt to be run
+debug 2024/07/23 04:58:15 batch cmd abt to be run
+debug 2024/07/23 04:58:15 Artist: t Release: t
+debug 2024/07/23 04:58:17 0
+debug 2024/07/23 04:58:22 batch cmd abt to be run
+debug 2024/07/23 04:58:23 batch cmd abt to be run
+debug 2024/07/23 04:58:23 batch cmd abt to be run
+debug 2024/07/23 04:58:24 batch cmd abt to be run
+debug 2024/07/23 04:58:24 Artist: t Release: t
+debug 2024/07/23 04:58:25 0
+debug 2024/07/23 04:58:25 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc0001ca2d0] map[]}
+debug 2024/07/23 04:58:27 Artist: t Release: t
+debug 2024/07/23 04:58:28 0
+debug 2024/07/23 04:58:28 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc000099170] map[]}
+debug 2024/07/23 04:58:33 batch cmd abt to be run
+debug 2024/07/23 04:58:34 batch cmd abt to be run
+debug 2024/07/23 04:58:34 Artist: t Release: t
+debug 2024/07/23 04:58:36 0
+debug 2024/07/23 05:03:41 batch cmd abt to be run
+debug 2024/07/23 05:03:42 batch cmd abt to be run
+debug 2024/07/23 05:03:42 Artist: t Release: t
+debug 2024/07/23 05:03:44 0
+debug 2024/07/23 05:03:53 batch cmd abt to be run
+debug 2024/07/23 05:03:53 batch cmd abt to be run
+debug 2024/07/23 05:03:54 Artist: t Release: t
+debug 2024/07/23 05:03:55 0
+debug 2024/07/23 05:04:01 batch cmd abt to be run
+debug 2024/07/23 05:04:02 batch cmd abt to be run
+debug 2024/07/23 05:04:02 Artist: t Release: t
+debug 2024/07/23 05:04:03 0
+debug 2024/07/23 05:04:09 batch cmd abt to be run
+debug 2024/07/23 05:04:10 batch cmd abt to be run
+debug 2024/07/23 05:04:11 batch cmd abt to be run
+debug 2024/07/23 05:04:13 batch cmd abt to be run
+debug 2024/07/23 05:04:13 batch cmd abt to be run
+debug 2024/07/23 05:04:13 batch cmd abt to be run
+debug 2024/07/23 05:04:14 Artist: t Release: t
+debug 2024/07/23 05:04:15 0
+debug 2024/07/23 05:04:15 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc000098e10] map[]}
+debug 2024/07/23 05:06:27 Artist: t Release: t
+debug 2024/07/23 05:06:28 2
+debug 2024/07/23 05:06:28 &{9580edea-419c-4318-9d3c-926758931f03 't Kliekske   { } {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1969-01-01 00:00:00 +0000 UTC BE   normal [] [0xc0000990b0] map[]}
+debug 2024/07/23 05:06:34 batch cmd abt to be run
+debug 2024/07/23 05:06:34 batch cmd abt to be run
+debug 2024/07/23 05:06:34 Artist: t Release: t
+debug 2024/07/23 05:06:35 0
+debug 2024/07/23 05:06:41 batch cmd abt to be run
+debug 2024/07/23 05:06:42 batch cmd abt to be run
+debug 2024/07/23 05:06:43 Artist: t Release: t
+debug 2024/07/23 05:06:46 0
+debug 2024/07/23 05:06:46 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc0003125a0] map[]}
+debug 2024/07/23 05:09:27 batch cmd abt to be run
+debug 2024/07/23 05:09:28 batch cmd abt to be run
+debug 2024/07/23 05:09:28 Artist: t Release: t
+debug 2024/07/23 05:09:34 -1
+debug 2024/07/23 05:09:46 batch cmd abt to be run
+debug 2024/07/23 05:09:46 batch cmd abt to be run
+debug 2024/07/23 05:09:47 Artist: t Release: t
+debug 2024/07/23 05:09:49 0
+debug 2024/07/23 05:10:29 batch cmd abt to be run
+debug 2024/07/23 05:10:29 batch cmd abt to be run
+debug 2024/07/23 05:10:29 Artist: t Release: t
+debug 2024/07/23 05:10:31 1
+debug 2024/07/23 05:10:33 batch cmd abt to be run
+debug 2024/07/23 05:10:33 batch cmd abt to be run
+debug 2024/07/23 05:10:35 Artist: t Release: t
+debug 2024/07/23 05:10:37 0
+debug 2024/07/23 05:10:37 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc000230360] map[]}
+debug 2024/07/23 05:24:39 batch cmd abt to be run
+debug 2024/07/23 05:24:39 batch cmd abt to be run
+debug 2024/07/23 05:24:40 batch cmd abt to be run
+debug 2024/07/23 05:24:40 batch cmd abt to be run
+debug 2024/07/23 05:24:40 Artist: t Release: t
+debug 2024/07/23 05:24:42 0
+debug 2024/07/23 05:24:42 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc000312510] map[]}
+debug 2024/07/23 05:24:43 batch cmd abt to be run
+debug 2024/07/23 05:24:43 Artist: t Release: t
+debug 2024/07/23 05:24:44 0
+debug 2024/07/23 05:24:44 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc0004323f0] map[]}
+debug 2024/07/23 05:24:45 batch cmd abt to be run
+debug 2024/07/23 05:24:45 batch cmd abt to be run
+debug 2024/07/23 05:24:46 batch cmd abt to be run
+debug 2024/07/23 05:24:46 batch cmd abt to be run
+debug 2024/07/23 05:24:46 Artist: t Release: t
+debug 2024/07/23 05:24:50 batch cmd abt to be run
+debug 2024/07/23 05:24:50 batch cmd abt to be run
+debug 2024/07/23 05:24:51 batch cmd abt to be run
+debug 2024/07/23 05:24:51 batch cmd abt to be run
+debug 2024/07/23 05:24:51 batch cmd abt to be run
+debug 2024/07/23 05:24:51 batch cmd abt to be run
+debug 2024/07/23 05:24:52 Artist: t Release: t
+debug 2024/07/23 05:24:53 0
+debug 2024/07/23 05:27:32 batch cmd abt to be run
+debug 2024/07/23 05:27:33 batch cmd abt to be run
+debug 2024/07/23 05:27:34 batch cmd abt to be run
+debug 2024/07/23 05:27:34 batch cmd abt to be run
+debug 2024/07/23 05:27:35 batch cmd abt to be run
+debug 2024/07/23 05:27:35 Artist:  Release: 
+debug 2024/07/23 05:27:36 0
+debug 2024/07/23 05:27:37 &{d3ceb2e8-2103-4bf4-a947-88b4445f86b0 Elden är lös Official with "Kabaréorkestern" as release artist {swe Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1979-01-01 00:00:00 +0000 UTC SE   normal [] [0xc0002a4420] map[]}
+debug 2024/07/23 05:27:53 batch cmd abt to be run
+debug 2024/07/23 05:27:54 batch cmd abt to be run
+debug 2024/07/23 05:27:54 batch cmd abt to be run
+debug 2024/07/23 05:27:55 batch cmd abt to be run
+debug 2024/07/23 05:27:55 batch cmd abt to be run
+debug 2024/07/23 05:27:56 Artist: t Release: t
+debug 2024/07/23 05:27:57 0
+debug 2024/07/23 05:27:58 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc000236240] map[]}
+debug 2024/07/23 05:27:59 batch cmd abt to be run
+debug 2024/07/23 05:28:00 Artist: t Release: t
+debug 2024/07/23 05:28:01 0
+debug 2024/07/23 05:28:01 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc000112390] map[]}
+debug 2024/07/23 05:28:03 batch cmd abt to be run
+debug 2024/07/23 05:28:03 batch cmd abt to be run
+debug 2024/07/23 05:28:04 batch cmd abt to be run
+debug 2024/07/23 05:28:04 batch cmd abt to be run
+debug 2024/07/23 05:28:04 batch cmd abt to be run
+debug 2024/07/23 05:28:06 batch cmd abt to be run
+debug 2024/07/23 05:28:06 batch cmd abt to be run
+debug 2024/07/23 05:28:06 batch cmd abt to be run
+debug 2024/07/23 05:28:07 batch cmd abt to be run
+debug 2024/07/23 05:28:08 batch cmd abt to be run
+debug 2024/07/23 05:28:09 batch cmd abt to be run
+debug 2024/07/23 05:28:09 batch cmd abt to be run
+debug 2024/07/23 05:28:10 batch cmd abt to be run
+debug 2024/07/23 05:28:11 batch cmd abt to be run
+debug 2024/07/23 05:28:14 batch cmd abt to be run
+debug 2024/07/23 05:28:14 batch cmd abt to be run
+debug 2024/07/23 05:28:15 batch cmd abt to be run
+debug 2024/07/23 05:28:15 batch cmd abt to be run
+debug 2024/07/23 05:28:15 batch cmd abt to be run
+debug 2024/07/23 05:28:16 batch cmd abt to be run
+debug 2024/07/23 05:28:17 batch cmd abt to be run
+debug 2024/07/23 05:28:17 batch cmd abt to be run
+debug 2024/07/23 05:28:19 Artist: tttt Release: ttt
+debug 2024/07/23 05:28:23 batch cmd abt to be run
+debug 2024/07/23 05:28:24 batch cmd abt to be run
+debug 2024/07/23 05:28:24 batch cmd abt to be run
+debug 2024/07/23 05:28:24 batch cmd abt to be run
+debug 2024/07/23 05:28:24 batch cmd abt to be run
+debug 2024/07/23 05:28:25 batch cmd abt to be run
+debug 2024/07/23 05:28:25 batch cmd abt to be run
+debug 2024/07/23 05:28:25 batch cmd abt to be run
+debug 2024/07/23 05:28:25 batch cmd abt to be run
+debug 2024/07/23 05:28:26 batch cmd abt to be run
+debug 2024/07/23 05:28:26 batch cmd abt to be run
+debug 2024/07/23 05:29:46 batch cmd abt to be run
+debug 2024/07/23 05:29:47 batch cmd abt to be run
+debug 2024/07/23 05:29:47 batch cmd abt to be run
+debug 2024/07/23 05:29:48 Artist: t Release: t
+debug 2024/07/23 05:29:49 0
+debug 2024/07/23 05:29:52 batch cmd abt to be run
+debug 2024/07/23 05:29:52 batch cmd abt to be run
+debug 2024/07/23 05:29:53 batch cmd abt to be run
+debug 2024/07/23 05:29:53 Artist: t Release: t
+debug 2024/07/23 05:29:54 0
+debug 2024/07/23 05:30:12 batch cmd abt to be run
+debug 2024/07/23 05:30:12 batch cmd abt to be run
+debug 2024/07/23 05:30:12 batch cmd abt to be run
+debug 2024/07/23 05:30:12 batch cmd abt to be run
+debug 2024/07/23 05:30:13 Artist: t Release: t
+debug 2024/07/23 05:30:16 0
+debug 2024/07/23 05:30:16 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc000098f60] map[]}
+debug 2024/07/23 05:46:47 batch cmd abt to be run
+debug 2024/07/23 05:46:50 batch cmd abt to be run
+debug 2024/07/23 05:46:50 batch cmd abt to be run
+debug 2024/07/23 05:47:35 batch cmd abt to be run
+debug 2024/07/23 05:47:37 batch cmd abt to be run
+debug 2024/07/23 06:04:25 batch cmd abt to be run
+debug 2024/07/23 06:04:25 batch cmd abt to be run
+debug 2024/07/23 06:04:25 batch cmd abt to be run
+debug 2024/07/23 06:04:25 batch cmd abt to be run
+debug 2024/07/23 06:04:25 batch cmd abt to be run
+debug 2024/07/23 06:04:26 batch cmd abt to be run
+debug 2024/07/23 06:04:26 batch cmd abt to be run
+debug 2024/07/23 06:04:30 batch cmd abt to be run
+debug 2024/07/23 06:04:31 batch cmd abt to be run
+debug 2024/07/23 06:04:31 batch cmd abt to be run
+debug 2024/07/23 06:04:31 batch cmd abt to be run
+debug 2024/07/23 06:04:31 batch cmd abt to be run
+debug 2024/07/23 06:04:31 batch cmd abt to be run
+debug 2024/07/23 06:04:32 batch cmd abt to be run
+debug 2024/07/23 06:04:33 batch cmd abt to be run
+debug 2024/07/23 06:04:33 batch cmd abt to be run
+debug 2024/07/23 06:04:33 batch cmd abt to be run
+debug 2024/07/23 06:04:33 batch cmd abt to be run
+debug 2024/07/23 06:04:34 batch cmd abt to be run
+debug 2024/07/23 06:04:34 batch cmd abt to be run
+debug 2024/07/23 06:04:34 batch cmd abt to be run
+debug 2024/07/23 06:04:35 batch cmd abt to be run
+debug 2024/07/23 06:04:36 batch cmd abt to be run
+debug 2024/07/23 06:04:36 batch cmd abt to be run
+debug 2024/07/23 06:04:36 batch cmd abt to be run
+debug 2024/07/23 06:04:36 batch cmd abt to be run
+debug 2024/07/23 06:04:36 batch cmd abt to be run
+debug 2024/07/23 06:04:37 batch cmd abt to be run
+debug 2024/07/23 06:04:37 batch cmd abt to be run
+debug 2024/07/23 06:04:37 batch cmd abt to be run
+debug 2024/07/23 06:04:38 batch cmd abt to be run
+debug 2024/07/23 06:04:38 Artist: michael jackson Release: thriller
+debug 2024/07/23 06:04:43 0
+debug 2024/07/23 06:04:43 &{9c4c939e-5697-44d3-b2f2-b04226cf15f8 Thriller Official half-speed mastered {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1982-01-01 00:00:00 +0000 UTC US 074644811216  normal [] [0xc000104750] map[]}
+debug 2024/07/23 06:07:08 batch cmd abt to be run
+debug 2024/07/23 06:07:09 batch cmd abt to be run
+debug 2024/07/23 06:07:16 batch cmd abt to be run
+debug 2024/07/23 06:07:18 batch cmd abt to be run
+debug 2024/07/23 06:07:20 batch cmd abt to be run
+debug 2024/07/23 06:07:20 batch cmd abt to be run
+debug 2024/07/23 06:07:20 batch cmd abt to be run
+debug 2024/07/23 06:07:20 batch cmd abt to be run
+debug 2024/07/23 06:07:20 batch cmd abt to be run
+debug 2024/07/23 06:07:21 batch cmd abt to be run
+debug 2024/07/23 06:07:21 batch cmd abt to be run
+debug 2024/07/23 06:07:21 batch cmd abt to be run
+debug 2024/07/23 06:07:22 batch cmd abt to be run
+debug 2024/07/23 06:07:22 batch cmd abt to be run
+debug 2024/07/23 06:07:22 batch cmd abt to be run
+debug 2024/07/23 06:07:23 batch cmd abt to be run
+debug 2024/07/23 06:07:23 batch cmd abt to be run
+debug 2024/07/23 06:07:23 batch cmd abt to be run
+debug 2024/07/23 06:07:23 batch cmd abt to be run
+debug 2024/07/23 06:07:23 batch cmd abt to be run
+debug 2024/07/23 06:07:24 batch cmd abt to be run
+debug 2024/07/23 06:07:24 batch cmd abt to be run
+debug 2024/07/23 06:07:24 batch cmd abt to be run
+debug 2024/07/23 06:07:25 batch cmd abt to be run
+debug 2024/07/23 06:07:25 batch cmd abt to be run
+debug 2024/07/23 06:07:25 batch cmd abt to be run
+debug 2024/07/23 06:07:26 batch cmd abt to be run
+debug 2024/07/23 06:07:26 batch cmd abt to be run
+debug 2024/07/23 06:07:26 batch cmd abt to be run
+debug 2024/07/23 06:07:26 batch cmd abt to be run
+debug 2024/07/23 06:07:27 batch cmd abt to be run
+debug 2024/07/23 06:07:27 batch cmd abt to be run
+debug 2024/07/23 06:07:27 batch cmd abt to be run
+debug 2024/07/23 06:07:27 batch cmd abt to be run
+debug 2024/07/23 06:07:27 batch cmd abt to be run
+debug 2024/07/23 06:07:28 batch cmd abt to be run
+debug 2024/07/23 06:07:28 batch cmd abt to be run
+debug 2024/07/23 06:07:29 batch cmd abt to be run
+debug 2024/07/23 06:07:29 batch cmd abt to be run
+debug 2024/07/23 06:07:29 batch cmd abt to be run
+debug 2024/07/23 06:07:29 batch cmd abt to be run
+debug 2024/07/23 06:07:30 batch cmd abt to be run
+debug 2024/07/23 06:07:31 batch cmd abt to be run
+debug 2024/07/23 06:07:31 batch cmd abt to be run
+debug 2024/07/23 06:07:31 batch cmd abt to be run
+debug 2024/07/23 06:07:31 batch cmd abt to be run
+debug 2024/07/23 06:07:32 batch cmd abt to be run
+debug 2024/07/23 06:07:32 batch cmd abt to be run
+debug 2024/07/23 06:07:32 batch cmd abt to be run
+debug 2024/07/23 06:07:33 batch cmd abt to be run
+debug 2024/07/23 06:07:34 batch cmd abt to be run
+debug 2024/07/23 06:07:34 batch cmd abt to be run
+debug 2024/07/23 06:07:34 batch cmd abt to be run
+debug 2024/07/23 06:07:34 batch cmd abt to be run
+debug 2024/07/23 06:07:35 batch cmd abt to be run
+debug 2024/07/23 06:07:35 batch cmd abt to be run
+debug 2024/07/23 06:07:35 batch cmd abt to be run
+debug 2024/07/23 06:07:35 batch cmd abt to be run
+debug 2024/07/23 06:07:35 batch cmd abt to be run
+debug 2024/07/23 06:07:36 Artist: michael jackson Release: thriller
+debug 2024/07/23 06:07:38 0
+debug 2024/07/23 06:07:39 &{9c4c939e-5697-44d3-b2f2-b04226cf15f8 Thriller Official half-speed mastered {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1982-01-01 00:00:00 +0000 UTC US 074644811216  normal [] [0xc000174390] map[]}
+debug 2024/07/23 06:08:17 batch cmd abt to be run
+debug 2024/07/23 06:08:17 batch cmd abt to be run
+debug 2024/07/23 06:08:17 batch cmd abt to be run
+debug 2024/07/23 06:08:18 batch cmd abt to be run
+debug 2024/07/23 06:08:18 Artist: t Release: t
+debug 2024/07/23 06:08:21 0
+debug 2024/07/23 06:08:24 batch cmd abt to be run
+debug 2024/07/23 06:08:24 batch cmd abt to be run
+debug 2024/07/23 06:08:25 batch cmd abt to be run
+debug 2024/07/23 06:08:25 batch cmd abt to be run
+debug 2024/07/23 06:08:25 Artist: t Release: t
+debug 2024/07/23 06:08:29 0
+debug 2024/07/23 06:08:32 batch cmd abt to be run
+debug 2024/07/23 06:08:32 batch cmd abt to be run
+debug 2024/07/23 06:08:32 batch cmd abt to be run
+debug 2024/07/23 06:08:32 batch cmd abt to be run
+debug 2024/07/23 06:08:33 Artist: t Release: t
+debug 2024/07/23 06:08:35 5
+debug 2024/07/23 06:08:40 batch cmd abt to be run
+debug 2024/07/23 06:08:41 batch cmd abt to be run
+debug 2024/07/23 06:08:41 batch cmd abt to be run
+debug 2024/07/23 06:08:42 batch cmd abt to be run
+debug 2024/07/23 06:08:42 Artist: t Release: 2
+debug 2024/07/23 06:08:43 0
+debug 2024/07/23 06:08:44 &{2cdc6873-72da-4697-b07c-1fef8da37da5 Police State, Part 2 Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1996-01-04 00:00:00 +0000 UTC GB 5024538197167 B000057WTN normal [] [0xc000121050] map[]}
+debug 2024/07/23 06:09:20 batch cmd abt to be run
+debug 2024/07/23 06:09:21 batch cmd abt to be run
+debug 2024/07/23 06:09:21 batch cmd abt to be run
+debug 2024/07/23 06:09:21 batch cmd abt to be run
+debug 2024/07/23 06:09:21 Artist: t Release: t
+debug 2024/07/23 06:09:22 0
+debug 2024/07/23 06:09:26 batch cmd abt to be run
+debug 2024/07/23 06:09:26 batch cmd abt to be run
+debug 2024/07/23 06:09:26 batch cmd abt to be run
+debug 2024/07/23 06:09:27 batch cmd abt to be run
+debug 2024/07/23 06:09:27 Artist: t Release: t
+debug 2024/07/23 06:09:31 5
+debug 2024/07/23 06:09:31 &{b233cca7-ec41-4249-a684-d1e67b6fd439 T. Gold Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 2019-06-19 00:00:00 +0000 UTC US 659696515819  normal [] [0xc000240780] map[]}
+debug 2024/07/23 06:14:24 batch cmd abt to be run
+debug 2024/07/23 06:14:24 batch cmd abt to be run
+debug 2024/07/23 06:14:24 batch cmd abt to be run
+debug 2024/07/23 06:14:25 batch cmd abt to be run
+debug 2024/07/23 06:14:25 batch cmd abt to be run
+debug 2024/07/23 06:14:25 batch cmd abt to be run
+debug 2024/07/23 06:14:25 batch cmd abt to be run
+debug 2024/07/23 06:14:25 batch cmd abt to be run
+debug 2024/07/23 06:14:26 batch cmd abt to be run
+debug 2024/07/23 06:14:26 batch cmd abt to be run
+debug 2024/07/23 06:14:26 batch cmd abt to be run
+debug 2024/07/23 06:14:26 batch cmd abt to be run
+debug 2024/07/23 06:14:26 batch cmd abt to be run
+debug 2024/07/23 06:14:27 batch cmd abt to be run
+debug 2024/07/23 06:14:27 batch cmd abt to be run
+debug 2024/07/23 06:14:27 batch cmd abt to be run
+debug 2024/07/23 06:14:28 batch cmd abt to be run
+debug 2024/07/23 06:14:28 batch cmd abt to be run
+debug 2024/07/23 06:14:28 batch cmd abt to be run
+debug 2024/07/23 06:14:28 batch cmd abt to be run
+debug 2024/07/23 06:14:28 batch cmd abt to be run
+debug 2024/07/23 06:14:28 batch cmd abt to be run
+debug 2024/07/23 06:14:28 batch cmd abt to be run
+debug 2024/07/23 06:14:28 batch cmd abt to be run
+debug 2024/07/23 06:14:29 batch cmd abt to be run
+debug 2024/07/23 06:14:29 Artist: michael jackson Release: thriller
+debug 2024/07/23 06:14:31 0
+debug 2024/07/23 06:14:35 batch cmd abt to be run
+debug 2024/07/23 06:14:35 batch cmd abt to be run
+debug 2024/07/23 06:14:35 batch cmd abt to be run
+debug 2024/07/23 06:14:35 batch cmd abt to be run
+debug 2024/07/23 06:14:35 batch cmd abt to be run
+debug 2024/07/23 06:14:35 batch cmd abt to be run
+debug 2024/07/23 06:14:35 batch cmd abt to be run
+debug 2024/07/23 06:14:36 batch cmd abt to be run
+debug 2024/07/23 06:14:36 batch cmd abt to be run
+debug 2024/07/23 06:14:36 batch cmd abt to be run
+debug 2024/07/23 06:14:37 batch cmd abt to be run
+debug 2024/07/23 06:14:37 batch cmd abt to be run
+debug 2024/07/23 06:14:37 batch cmd abt to be run
+debug 2024/07/23 06:14:37 batch cmd abt to be run
+debug 2024/07/23 06:14:37 batch cmd abt to be run
+debug 2024/07/23 06:14:38 batch cmd abt to be run
+debug 2024/07/23 06:14:39 batch cmd abt to be run
+debug 2024/07/23 06:14:39 batch cmd abt to be run
+debug 2024/07/23 06:14:39 batch cmd abt to be run
+debug 2024/07/23 06:14:39 batch cmd abt to be run
+debug 2024/07/23 06:14:39 batch cmd abt to be run
+debug 2024/07/23 06:14:39 batch cmd abt to be run
+debug 2024/07/23 06:14:40 batch cmd abt to be run
+debug 2024/07/23 06:14:40 batch cmd abt to be run
+debug 2024/07/23 06:14:41 batch cmd abt to be run
+debug 2024/07/23 06:14:46 Artist: michael jackson Release: thriller
+debug 2024/07/23 06:14:51 0
+debug 2024/07/23 06:14:51 &{9c4c939e-5697-44d3-b2f2-b04226cf15f8 Thriller Official half-speed mastered {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1982-01-01 00:00:00 +0000 UTC US 074644811216  normal [] [0xc000098fc0] map[]}
+debug 2024/07/23 06:20:57 batch cmd abt to be run
+debug 2024/07/23 06:20:58 batch cmd abt to be run
+debug 2024/07/23 06:20:58 batch cmd abt to be run
+debug 2024/07/23 06:20:58 batch cmd abt to be run
+debug 2024/07/23 06:20:58 Artist: t Release: t
+debug 2024/07/23 06:21:01 0
+debug 2024/07/23 06:21:02 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc00019afc0] map[]}
+debug 2024/07/23 06:21:53 batch cmd abt to be run
+debug 2024/07/23 06:21:53 batch cmd abt to be run
+debug 2024/07/23 06:21:53 batch cmd abt to be run
+debug 2024/07/23 06:21:54 batch cmd abt to be run
+debug 2024/07/23 06:21:54 Artist: t Release: t
+debug 2024/07/23 06:21:56 0
+debug 2024/07/23 06:22:00 batch cmd abt to be run
+debug 2024/07/23 06:22:00 batch cmd abt to be run
+debug 2024/07/23 06:22:00 batch cmd abt to be run
+debug 2024/07/23 06:22:00 batch cmd abt to be run
+debug 2024/07/23 06:22:01 batch cmd abt to be run
+debug 2024/07/23 06:22:02 batch cmd abt to be run
+debug 2024/07/23 06:22:02 batch cmd abt to be run
+debug 2024/07/23 06:22:02 batch cmd abt to be run
+debug 2024/07/23 06:22:02 Artist: t Release: t
+debug 2024/07/23 06:22:09 0
+debug 2024/07/23 06:22:12 batch cmd abt to be run
+debug 2024/07/23 06:22:12 batch cmd abt to be run
+debug 2024/07/23 06:22:12 batch cmd abt to be run
+debug 2024/07/23 06:22:13 batch cmd abt to be run
+debug 2024/07/23 06:22:14 batch cmd abt to be run
+debug 2024/07/23 06:22:14 batch cmd abt to be run
+debug 2024/07/23 06:22:14 Artist: t Release: t
+debug 2024/07/23 06:22:16 0
+debug 2024/07/23 06:22:16 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc000524360] map[]}
+debug 2024/07/23 06:23:09 batch cmd abt to be run
+debug 2024/07/23 06:23:09 batch cmd abt to be run
+debug 2024/07/23 06:23:09 batch cmd abt to be run
+debug 2024/07/23 06:23:09 batch cmd abt to be run
+debug 2024/07/23 06:23:10 batch cmd abt to be run
+debug 2024/07/23 06:23:10 batch cmd abt to be run
+debug 2024/07/23 06:23:11 batch cmd abt to be run
+debug 2024/07/23 06:23:11 batch cmd abt to be run
+debug 2024/07/23 06:23:11 batch cmd abt to be run
+debug 2024/07/23 06:23:11 Artist: t Release: t
+debug 2024/07/23 06:23:15 0
+debug 2024/07/23 06:23:15 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc000099380] map[]}
+debug 2024/07/23 06:24:02 batch cmd abt to be run
+debug 2024/07/23 06:24:02 batch cmd abt to be run
+debug 2024/07/23 06:24:02 batch cmd abt to be run
+debug 2024/07/23 06:24:03 batch cmd abt to be run
+debug 2024/07/23 06:24:03 Artist: t Release: t
+debug 2024/07/23 06:24:04 0
+debug 2024/07/23 06:24:08 batch cmd abt to be run
+debug 2024/07/23 06:24:08 batch cmd abt to be run
+debug 2024/07/23 06:24:08 batch cmd abt to be run
+debug 2024/07/23 06:24:09 batch cmd abt to be run
+debug 2024/07/23 06:24:09 Artist: t Release: t
+debug 2024/07/23 06:24:11 2
+debug 2024/07/23 06:24:15 batch cmd abt to be run
+debug 2024/07/23 06:24:15 batch cmd abt to be run
+debug 2024/07/23 06:24:15 batch cmd abt to be run
+debug 2024/07/23 06:24:15 batch cmd abt to be run
+debug 2024/07/23 06:24:16 Artist: t Release: t
+debug 2024/07/23 06:24:17 0
+debug 2024/07/23 06:24:17 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc000414330] map[]}
+debug 2024/07/23 06:25:11 batch cmd abt to be run
+debug 2024/07/23 06:25:11 batch cmd abt to be run
+debug 2024/07/23 06:25:12 batch cmd abt to be run
+debug 2024/07/23 06:25:12 batch cmd abt to be run
+debug 2024/07/23 06:25:12 Artist: t Release: t
+debug 2024/07/23 06:25:15 0
+debug 2024/07/23 06:25:15 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc000392480] map[]}
+debug 2024/07/23 06:28:36 batch cmd abt to be run
+debug 2024/07/23 06:28:36 batch cmd abt to be run
+debug 2024/07/23 06:28:36 batch cmd abt to be run
+debug 2024/07/23 06:28:36 batch cmd abt to be run
+debug 2024/07/23 06:28:37 Artist: t Release: t
+debug 2024/07/23 06:28:39 0
+debug 2024/07/23 06:28:42 batch cmd abt to be run
+debug 2024/07/23 06:28:43 batch cmd abt to be run
+debug 2024/07/23 06:28:43 batch cmd abt to be run
+debug 2024/07/23 06:28:43 batch cmd abt to be run
+debug 2024/07/23 06:28:43 Artist: t Release: t
+debug 2024/07/23 06:28:45 0
+debug 2024/07/23 06:28:47 batch cmd abt to be run
+debug 2024/07/23 06:28:48 batch cmd abt to be run
+debug 2024/07/23 06:28:48 batch cmd abt to be run
+debug 2024/07/23 06:28:48 batch cmd abt to be run
+debug 2024/07/23 06:28:49 Artist: t Release: 2
+debug 2024/07/23 06:28:50 0
+debug 2024/07/23 06:28:53 batch cmd abt to be run
+debug 2024/07/23 06:28:53 batch cmd abt to be run
+debug 2024/07/23 06:28:54 batch cmd abt to be run
+debug 2024/07/23 06:28:54 batch cmd abt to be run
+debug 2024/07/23 06:28:54 Artist: t Release: t
+debug 2024/07/23 06:28:58 0
+debug 2024/07/23 06:29:01 batch cmd abt to be run
+debug 2024/07/23 06:29:01 batch cmd abt to be run
+debug 2024/07/23 06:29:01 batch cmd abt to be run
+debug 2024/07/23 06:29:02 batch cmd abt to be run
+debug 2024/07/23 06:29:02 Artist: t Release: t
+debug 2024/07/23 06:29:08 7
+debug 2024/07/23 06:29:11 batch cmd abt to be run
+debug 2024/07/23 06:29:11 batch cmd abt to be run
+debug 2024/07/23 06:29:11 batch cmd abt to be run
+debug 2024/07/23 06:29:11 batch cmd abt to be run
+debug 2024/07/23 06:29:12 Artist: t Release: t
+debug 2024/07/23 06:29:13 0
+debug 2024/07/23 06:29:18 batch cmd abt to be run
+debug 2024/07/23 06:29:18 batch cmd abt to be run
+debug 2024/07/23 06:29:18 batch cmd abt to be run
+debug 2024/07/23 06:29:19 batch cmd abt to be run
+debug 2024/07/23 06:29:19 Artist: 1 Release: 1
+debug 2024/07/23 06:29:20 0
+debug 2024/07/23 06:29:21 &{abbfe385-2cb7-4f83-9135-08599c29bef1 Mark 1 Promotion  {mul Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1996-01-01 00:00:00 +0000 UTC NL   normal [] [0xc00018cbd0] map[]}
+debug 2024/07/23 06:31:52 batch cmd abt to be run
+debug 2024/07/23 06:31:52 batch cmd abt to be run
+debug 2024/07/23 06:31:52 batch cmd abt to be run
+debug 2024/07/23 06:31:52 batch cmd abt to be run
+debug 2024/07/23 06:31:53 batch cmd abt to be run
+debug 2024/07/23 06:31:53 batch cmd abt to be run
+debug 2024/07/23 06:31:53 batch cmd abt to be run
+debug 2024/07/23 06:31:54 batch cmd abt to be run
+debug 2024/07/23 06:31:55 batch cmd abt to be run
+debug 2024/07/23 06:31:55 batch cmd abt to be run
+debug 2024/07/23 06:31:56 batch cmd abt to be run
+debug 2024/07/23 06:31:56 batch cmd abt to be run
+debug 2024/07/23 06:31:56 batch cmd abt to be run
+debug 2024/07/23 06:31:56 batch cmd abt to be run
+debug 2024/07/23 06:31:56 batch cmd abt to be run
+debug 2024/07/23 06:31:57 batch cmd abt to be run
+debug 2024/07/23 06:31:57 batch cmd abt to be run
+debug 2024/07/23 06:31:57 batch cmd abt to be run
+debug 2024/07/23 06:31:58 batch cmd abt to be run
+debug 2024/07/23 06:31:58 batch cmd abt to be run
+debug 2024/07/23 06:31:58 batch cmd abt to be run
+debug 2024/07/23 06:31:58 batch cmd abt to be run
+debug 2024/07/23 06:31:59 batch cmd abt to be run
+debug 2024/07/23 06:31:59 batch cmd abt to be run
+debug 2024/07/23 06:31:59 batch cmd abt to be run
+debug 2024/07/23 06:31:59 batch cmd abt to be run
+debug 2024/07/23 06:31:59 batch cmd abt to be run
+debug 2024/07/23 06:32:00 Artist: michael jackson Release: thriller
+debug 2024/07/23 06:32:05 0
+debug 2024/07/23 06:32:05 &{9c4c939e-5697-44d3-b2f2-b04226cf15f8 Thriller Official half-speed mastered {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1982-01-01 00:00:00 +0000 UTC US 074644811216  normal [] [0xc0003fa360] map[]}
+debug 2024/07/23 06:32:24 batch cmd abt to be run
+debug 2024/07/23 06:32:24 batch cmd abt to be run
+debug 2024/07/23 06:32:25 batch cmd abt to be run
+debug 2024/07/23 06:32:25 batch cmd abt to be run
+debug 2024/07/23 06:32:26 batch cmd abt to be run
+debug 2024/07/23 06:32:26 batch cmd abt to be run
+debug 2024/07/23 06:32:26 batch cmd abt to be run
+debug 2024/07/23 06:32:26 batch cmd abt to be run
+debug 2024/07/23 06:32:26 batch cmd abt to be run
+debug 2024/07/23 06:32:27 batch cmd abt to be run
+debug 2024/07/23 06:32:27 batch cmd abt to be run
+debug 2024/07/23 06:32:27 Artist: t Release: t
+debug 2024/07/23 06:32:30 0
+debug 2024/07/23 06:32:33 batch cmd abt to be run
+debug 2024/07/23 06:32:33 batch cmd abt to be run
+debug 2024/07/23 06:32:33 batch cmd abt to be run
+debug 2024/07/23 06:32:33 batch cmd abt to be run
+debug 2024/07/23 06:32:34 Artist: t Release: t
+debug 2024/07/23 06:32:38 3
+debug 2024/07/23 06:32:38 &{7945b148-467a-4a27-8ef3-9f158a03d75f 't Kliekske Official  {nld Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1971-01-01 00:00:00 +0000 UTC BE   normal [] [0xc000121140] map[]}
+debug 2024/07/23 06:34:33 batch cmd abt to be run
+debug 2024/07/23 06:34:33 batch cmd abt to be run
+debug 2024/07/23 06:34:34 batch cmd abt to be run
+debug 2024/07/23 06:34:34 batch cmd abt to be run
+debug 2024/07/23 06:34:34 Artist: t Release: t
+debug 2024/07/23 06:34:38 0
+debug 2024/07/23 06:34:42 batch cmd abt to be run
+debug 2024/07/23 06:34:43 batch cmd abt to be run
+debug 2024/07/23 06:34:43 batch cmd abt to be run
+debug 2024/07/23 06:34:43 batch cmd abt to be run
+debug 2024/07/23 06:34:43 Artist: t Release: t
+debug 2024/07/23 06:34:48 0
+debug 2024/07/23 06:34:53 batch cmd abt to be run
+debug 2024/07/23 06:34:53 batch cmd abt to be run
+debug 2024/07/23 06:34:54 batch cmd abt to be run
+debug 2024/07/23 06:34:54 batch cmd abt to be run
+debug 2024/07/23 06:34:55 batch cmd abt to be run
+debug 2024/07/23 06:34:55 batch cmd abt to be run
+debug 2024/07/23 06:34:55 batch cmd abt to be run
+debug 2024/07/23 06:34:55 batch cmd abt to be run
+debug 2024/07/23 06:34:56 Artist: t Release: t
+debug 2024/07/23 06:34:59 0
+debug 2024/07/23 06:35:02 batch cmd abt to be run
+debug 2024/07/23 06:35:02 batch cmd abt to be run
+debug 2024/07/23 06:35:03 batch cmd abt to be run
+debug 2024/07/23 06:35:03 batch cmd abt to be run
+debug 2024/07/23 06:35:03 Artist: t Release: t
+debug 2024/07/23 06:35:08 5
+debug 2024/07/23 06:35:12 batch cmd abt to be run
+debug 2024/07/23 06:35:13 batch cmd abt to be run
+debug 2024/07/23 06:35:13 batch cmd abt to be run
+debug 2024/07/23 06:35:13 batch cmd abt to be run
+debug 2024/07/23 06:35:13 Artist: t Release: 4
+debug 2024/07/23 06:35:16 0
+debug 2024/07/23 06:35:16 &{fee1d5b0-da7b-4acf-a439-8bfc22473894 T 4 II Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1995-01-01 00:00:00 +0000 UTC FR   normal [] [0xc0000d4660] map[]}
+debug 2024/07/23 06:35:20 batch cmd abt to be run
+debug 2024/07/23 06:35:21 batch cmd abt to be run
+debug 2024/07/23 06:35:22 batch cmd abt to be run
+debug 2024/07/23 06:35:22 batch cmd abt to be run
+debug 2024/07/23 06:35:23 batch cmd abt to be run
+debug 2024/07/23 06:35:23 batch cmd abt to be run
+debug 2024/07/23 06:35:23 batch cmd abt to be run
+debug 2024/07/23 06:35:23 Artist: t Release: 3
+debug 2024/07/23 06:35:25 0
+debug 2024/07/23 06:35:25 &{dbc8469a-6603-4c1d-be75-562a4cb0cbbf Gustaf Fröding, del 3 Official  {swe Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1981-01-01 00:00:00 +0000 UTC SE   normal [] [0xc0000d46f0] map[]}
+debug 2024/07/23 06:35:28 batch cmd abt to be run
+debug 2024/07/23 06:35:29 batch cmd abt to be run
+debug 2024/07/23 06:35:29 batch cmd abt to be run
+debug 2024/07/23 06:35:29 batch cmd abt to be run
+debug 2024/07/23 06:35:30 batch cmd abt to be run
+debug 2024/07/23 06:35:30 batch cmd abt to be run
+debug 2024/07/23 06:35:30 batch cmd abt to be run
+debug 2024/07/23 06:35:31 batch cmd abt to be run
+debug 2024/07/23 06:35:31 batch cmd abt to be run
+debug 2024/07/23 06:35:31 Artist: t Release: t
+debug 2024/07/23 06:35:33 0
+debug 2024/07/23 06:35:33 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc000121170] map[]}
+debug 2024/07/23 06:38:27 batch cmd abt to be run
+debug 2024/07/23 06:38:27 batch cmd abt to be run
+debug 2024/07/23 06:38:28 batch cmd abt to be run
+debug 2024/07/23 06:38:28 batch cmd abt to be run
+debug 2024/07/23 06:38:28 Artist: t Release: t
+debug 2024/07/23 06:38:30 0
+debug 2024/07/23 06:38:34 batch cmd abt to be run
+debug 2024/07/23 06:38:35 batch cmd abt to be run
+debug 2024/07/23 06:38:36 batch cmd abt to be run
+debug 2024/07/23 06:38:36 batch cmd abt to be run
+debug 2024/07/23 06:38:39 Artist: t Release: t
+debug 2024/07/23 06:38:43 0
+debug 2024/07/23 06:38:43 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc0001210b0] map[]}
+debug 2024/07/23 06:40:04 batch cmd abt to be run
+debug 2024/07/23 06:40:05 batch cmd abt to be run
+debug 2024/07/23 06:40:05 batch cmd abt to be run
+debug 2024/07/23 06:40:05 batch cmd abt to be run
+debug 2024/07/23 06:40:06 batch cmd abt to be run
+debug 2024/07/23 06:40:06 batch cmd abt to be run
+debug 2024/07/23 06:40:06 batch cmd abt to be run
+debug 2024/07/23 06:40:06 batch cmd abt to be run
+debug 2024/07/23 06:40:06 batch cmd abt to be run
+debug 2024/07/23 06:40:07 batch cmd abt to be run
+debug 2024/07/23 06:40:07 batch cmd abt to be run
+debug 2024/07/23 06:40:07 batch cmd abt to be run
+debug 2024/07/23 06:40:07 batch cmd abt to be run
+debug 2024/07/23 06:40:07 batch cmd abt to be run
+debug 2024/07/23 06:40:07 batch cmd abt to be run
+debug 2024/07/23 06:40:08 batch cmd abt to be run
+debug 2024/07/23 06:40:08 batch cmd abt to be run
+debug 2024/07/23 06:40:08 batch cmd abt to be run
+debug 2024/07/23 06:40:08 batch cmd abt to be run
+debug 2024/07/23 06:40:08 batch cmd abt to be run
+debug 2024/07/23 06:40:09 batch cmd abt to be run
+debug 2024/07/23 06:40:09 batch cmd abt to be run
+debug 2024/07/23 06:40:09 batch cmd abt to be run
+debug 2024/07/23 06:40:09 batch cmd abt to be run
+debug 2024/07/23 06:40:09 Artist: pink floyd Release: the wall
+debug 2024/07/23 06:40:13 7
+debug 2024/07/23 06:40:17 batch cmd abt to be run
+debug 2024/07/23 06:40:17 batch cmd abt to be run
+debug 2024/07/23 06:40:17 batch cmd abt to be run
+debug 2024/07/23 06:40:17 batch cmd abt to be run
+debug 2024/07/23 06:40:18 batch cmd abt to be run
+debug 2024/07/23 06:40:18 batch cmd abt to be run
+debug 2024/07/23 06:40:18 batch cmd abt to be run
+debug 2024/07/23 06:40:18 batch cmd abt to be run
+debug 2024/07/23 06:40:18 batch cmd abt to be run
+debug 2024/07/23 06:40:18 batch cmd abt to be run
+debug 2024/07/23 06:40:19 batch cmd abt to be run
+debug 2024/07/23 06:40:20 batch cmd abt to be run
+debug 2024/07/23 06:40:20 batch cmd abt to be run
+debug 2024/07/23 06:40:20 batch cmd abt to be run
+debug 2024/07/23 06:40:20 batch cmd abt to be run
+debug 2024/07/23 06:40:20 batch cmd abt to be run
+debug 2024/07/23 06:40:20 batch cmd abt to be run
+debug 2024/07/23 06:40:20 batch cmd abt to be run
+debug 2024/07/23 06:40:21 batch cmd abt to be run
+debug 2024/07/23 06:40:21 batch cmd abt to be run
+debug 2024/07/23 06:40:21 Artist: pink floyd Release: the wall
+debug 2024/07/23 06:40:26 7
+debug 2024/07/23 06:40:27 &{527992ea-944f-3f5e-a078-3841f39afcec The Wall Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1979-11-30 00:00:00 +0000 UTC US   normal [] [0xc00031c450 0xc00031c9f0] map[]}

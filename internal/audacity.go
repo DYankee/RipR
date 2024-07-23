@@ -6,6 +6,7 @@ import (
 	"os"
 	"os/exec"
 	"runtime"
+	"time"
 )
 
 var (
@@ -63,6 +64,7 @@ func (a *Audacity) Connect() {
 		} else {
 			a.Status = true
 		}
+		time.Sleep(1 * time.Second)
 	}
 	fmt.Println("-- Both pipes exist.  Good.")
 	toFile, err := os.OpenFile(TONAME, os.O_RDWR, os.ModeNamedPipe)
@@ -126,6 +128,6 @@ func (a Audacity) SetLabel(labelId int, labelText string) {
 }
 
 func (a Audacity) ExportAudio(destination string, fileName string) {
-	cmd := fmt.Sprintf("Export2: Filename=\"%s/%s\"", destination, fileName)
+	cmd := fmt.Sprintf("Export2: Filename=\"%s/%s\" NumChannels=\"2\"", destination, fileName)
 	a.Do_command(cmd)
 }

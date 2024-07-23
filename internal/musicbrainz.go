@@ -15,7 +15,7 @@ type ReleaseQuerry struct {
 
 type MusicBrainz struct {
 	Client                 *gomusicbrainz.WS2Client
-	ReleaseSearchResponses []*gomusicbrainz.ReleaseSearchResponse
+	ReleaseSearchResponses *gomusicbrainz.ReleaseSearchResponse
 	ReleaseQuerrys         []ReleaseQuerry
 	ReleaseData            *gomusicbrainz.Release
 }
@@ -36,17 +36,6 @@ func (m *MusicBrainz) DisplayReleaseData() {
 	}
 	fin := columnize.SimpleFormat(output)
 	fmt.Println(fin)
-}
-
-func (m *MusicBrainz) ChooseRelease() {
-	fmt.Println("Enter number of chosen release")
-	var res int
-	_, err := fmt.Scan(&res)
-	if err != nil {
-		fmt.Println(err)
-	}
-
-	m.GetReleaseData(res)
 }
 
 func (m *MusicBrainz) Init() error {
@@ -98,16 +87,17 @@ func (m *MusicBrainz) SearchRelease(artist string, release string, format string
 	if err != nil {
 		return err
 	}
-	m.ReleaseSearchResponses = append(m.ReleaseSearchResponses, res)
+	m.ReleaseSearchResponses = res
 	return nil
 }
 
-func (m *MusicBrainz) GetReleaseData(i int) {
-	data, err := m.Client.LookupRelease(m.ReleaseSearchResponses[0].Releases[i].ID, "media+recordings")
+func (m *MusicBrainz) GetReleaseData(id gomusicbrainz.MBID) error {
+	data, err := m.Client.LookupRelease(id, "media+recordings")
 	if err != nil {
-		fmt.Println(err)
+		return err
 	}
 	m.ReleaseData = data
+	return nil
 }
 
 func (m *MusicBrainz) GetQuerry(album string, artist string) {

@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log"
 	"strconv"
+	"time"
 
 	Internal "github.com/DYankee/RRipper/internal"
 	"github.com/charmbracelet/bubbles/table"
@@ -29,10 +30,13 @@ type errMsg struct {
 // Model and its functions
 type model struct {
 	mb          Internal.MusicBrainz
+	audacity    Internal.Audacity
 	searchRes   table.Model
+	releaseData table.Model
 	currentView string
 	inputs      []textinput.Model
 	focusIndex  int
+	focusIndexY int
 	Width       int
 	Height      int
 }
@@ -43,6 +47,7 @@ func New() *model {
 		inputs:      make([]textinput.Model, 2),
 	}
 	m.mb.Init()
+	m.audacity.Connect()
 	var t textinput.Model
 	for i := range m.inputs {
 		t = textinput.New()
@@ -66,33 +71,83 @@ func New() *model {
 }
 
 type searchRes table.Model
+type releaseData table.Model
 
 func (m *model) searchRelease() tea.Cmd {
 	return func() tea.Msg {
-		log.Printf(m.inputs[0].View() + m.inputs[1].View())
 		err := m.mb.SearchRelease(m.inputs[0].Value(), m.inputs[1].Value(), "12vinyl")
 		if err != nil {
 			return errMsg{err}
 		}
 		resData := m.mb.ReleaseSearchResponses
+
 		colums := []table.Column{
 			{Title: "#", Width: 5},
+			{Title: "MB ID", Width: 10},
 			{Title: "Release Name", Width: 30},
 			{Title: "Artist", Width: 10},
-			{Title: "Release date", Width: 30},
+			{Title: "County", Width: 10},
+			{Title: "Year", Width: 30},
 		}
 
 		//build rows
-		rows := make([]table.Row, len(resData[0].Releases))
-		for i, k := range resData[0].Releases {
-			rows[i] = table.Row{strconv.Itoa(i), k.Title, k.ArtistCredit.NameCredits[0].Artist.Name, k.Date.String()}
+		rows := make([]table.Row, len(resData.Releases))
+		for i, k := range resData.Releases {
+			rows[i] = table.Row{strconv.Itoa(i), string(k.ID), k.Title, k.ArtistCredit.NameCredits[0].Artist.Name, k.CountryCode, strconv.Itoa(k.Date.Year())}
 		}
 		t := table.New(
 			table.WithColumns(colums),
 			table.WithRows(rows))
-
+		m.searchRes = t
 		return searchRes(t)
 	}
+}
+
+func (m *model) GetReleaseData() tea.Cmd {
+	return func() tea.Msg {
+		log.Println(m.searchRes.Cursor())
+		id := m.mb.ReleaseSearchResponses.Releases[m.searchRes.Cursor()].ID
+		err := m.mb.GetReleaseData(id)
+		if err != nil {
+			return errMsg{err}
+		}
+		resData := m.mb.ReleaseData
+		colums := []table.Column{
+			{Title: "Track #", Width: 10},
+			{Title: "Name", Width: 30},
+			{Title: "length", Width: 30},
+		}
+		log.Println(resData)
+		//build rows
+
+		rows := make([]table.Row, 0)
+		for _, k := range resData.Mediums {
+			for _, k := range k.Tracks {
+				length := time.Millisecond * time.Duration(k.Length)
+				rows = append(rows, table.Row{k.Number, k.Recording.Title, length.String()})
+			}
+		}
+
+		t := table.New(
+			table.WithColumns(colums),
+			table.WithRows(rows))
+		m.currentView = "Loading"
+		return releaseData(t)
+	}
+}
+
+func (m *model) ExportSong() {
+	var releaseLength int
+	for _, k := range m.mb.ReleaseData.Mediums {
+		for _, k := range k.Tracks {
+			releaseLength += k.Length
+		}
+	}
+	mod := releaseLength - 
+	data := m.mb.ReleaseData.Mediums[0]
+	idx := m.searchRes.Cursor()
+	m.audacity.SelectRegion(0.0, float64(data.Tracks[idx].Length)/1000)
+	// m.audacity.ExportAudio("code/rripper/testdata", data.Mediums[0].Tracks[idx].Recording.Title+".flac")
 }
 
 func (m model) Init() tea.Cmd {
@@ -105,6 +160,8 @@ func (m model) Init() tea.Cmd {
 func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	var cmd tea.Cmd
 	switch msg := msg.(type) {
+	case errMsg:
+		m.errorHandler(msg)
 	case tea.WindowSizeMsg:
 		m.Width = msg.Width
 		m.Height = msg.Height
@@ -112,14 +169,21 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	case tea.KeyMsg:
 		return m.inputHandler(msg)
 	case searchRes:
-		log.Println(table.Model(msg).View())
+		m.currentView = "SearchResult"
 		m.searchRes = table.Model(msg)
-		m.currentView = "Result"
+		return m, cmd
+	case releaseData:
+		m.currentView = "ReleaseResult"
+		m.releaseData = table.Model(msg)
 		return m, cmd
 	}
 
 	// Handle character input and blinking
 	return m, cmd
+}
+
+func (m *model) errorHandler(msg errMsg) {
+	log.Println(msg.err)
 }
 
 func (m *model) inputHandler(msg tea.KeyMsg) (tea.Model, tea.Cmd) {
@@ -131,7 +195,6 @@ func (m *model) inputHandler(msg tea.KeyMsg) (tea.Model, tea.Cmd) {
 	switch m.currentView {
 	case "Search":
 		switch msg.String() {
-
 		// Set focus to next input
 		case "tab", "shift+tab", "enter", "up", "down":
 			s := msg.String()
@@ -143,6 +206,7 @@ func (m *model) inputHandler(msg tea.KeyMsg) (tea.Model, tea.Cmd) {
 					m.inputs[0].Value(),
 					m.inputs[1].Value(),
 				)
+				m.currentView = "Loading"
 				return m, m.searchRelease()
 			}
 
@@ -158,30 +222,41 @@ func (m *model) inputHandler(msg tea.KeyMsg) (tea.Model, tea.Cmd) {
 			} else if m.focusIndex < 0 {
 				m.focusIndex = len(m.inputs)
 			}
-
-			cmds := make([]tea.Cmd, len(m.inputs))
-			for i := 0; i <= len(m.inputs)-1; i++ {
-				if i == m.focusIndex {
-					// Set focused state
-					cmds[i] = m.inputs[i].Focus()
-					m.inputs[i].PromptStyle = focusedStyle
-					m.inputs[i].TextStyle = focusedStyle
-					continue
-				}
-				// Remove focused state
-				m.inputs[i].Blur()
-				m.inputs[i].PromptStyle = noStyle
-				m.inputs[i].TextStyle = noStyle
-			}
-
-			return m, tea.Batch(cmds...)
 		}
 
 	// result screen controls
-	case "Result":
+	case "SearchResult":
 		switch msg.String() {
 		case "enter":
-			m.viewHandler()
+			return m, m.GetReleaseData()
+		case "esc":
+			m.currentView = "Search"
+		case "up", "down":
+			s := msg.String()
+
+			// Cycle indexes
+			if s == "up" || s == "shift+tab" {
+				m.searchRes.MoveUp(1)
+			} else {
+				m.searchRes.MoveDown(1)
+			}
+
+		}
+	case "ReleaseResult":
+		switch msg.String() {
+		case "enter":
+			m.ExportSong()
+		case "esc":
+			m.currentView = "Search"
+		case "up", "down":
+			s := msg.String()
+
+			// Cycle indexes
+			if s == "up" || s == "shift+tab" {
+				m.releaseData.MoveUp(1)
+			} else {
+				m.releaseData.MoveDown(1)
+			}
 		}
 	}
 	if m.currentView == "Search" {
@@ -199,7 +274,20 @@ func (m *model) updateInputs(msg tea.Msg) tea.Cmd {
 	for i := range m.inputs {
 		m.inputs[i], cmds[i] = m.inputs[i].Update(msg)
 	}
-
+	for i := 0; i <= len(m.inputs)-1; i++ {
+		if i == m.focusIndex {
+			// Set focused state
+			cmds[i] = m.inputs[i].Focus()
+			m.inputs[i].PromptStyle = focusedStyle
+			m.inputs[i].TextStyle = focusedStyle
+			continue
+		}
+		// Remove focused state
+		m.inputs[i].Blur()
+		m.inputs[i].PromptStyle = noStyle
+		m.inputs[i].TextStyle = noStyle
+	}
+	log.Println("batch cmd abt to be run")
 	return tea.Batch(cmds...)
 }
 
@@ -211,19 +299,24 @@ func (m model) View() string {
 	switch m.currentView {
 	case "Search":
 		view = m.SearchView()
-	case "Result":
-		view = m.ResultView2()
+	case "Loading":
+		view = m.LoadingView()
+	case "SearchResult":
+		view = m.ResultView()
+	case "ReleaseResult":
+		view = m.ReleaseView()
 	}
 	return view
 }
 
-func (m *model) viewHandler() {
-	switch m.currentView {
-	case "Search":
-		m.currentView = "Result"
-	case "Result":
-		m.currentView = "Search"
-	}
+func (m *model) LoadingView() string {
+	return lipgloss.Place(
+		m.Width,
+		m.Height,
+		lipgloss.Center,
+		lipgloss.Center,
+		"loading",
+	)
 }
 
 func (m *model) SearchView() string {
@@ -253,18 +346,16 @@ func (m *model) ResultView() string {
 		m.Height,
 		lipgloss.Center,
 		lipgloss.Center,
-		fmt.Sprintf("Artist: %s Release: %s", m.inputs[0].Value(), m.inputs[1].Value()),
-	)
+		m.searchRes.View())
 }
 
-func (m *model) ResultView2() string {
-	log.Println("result view2: " + m.searchRes.View())
+func (m *model) ReleaseView() string {
 	return lipgloss.Place(
 		m.Width,
 		m.Height,
 		lipgloss.Center,
 		lipgloss.Center,
-		m.searchRes.View())
+		m.releaseData.View())
 }
 
 //-------------------------------------------------------------------------------------------------------------------------------------
