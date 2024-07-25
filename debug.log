@@ -1,890 +1,794 @@
-debug 2024/07/23 04:09:50 result view:
-debug 2024/07/23 04:09:50 result view:
-debug 2024/07/23 04:09:50 result view:
-debug 2024/07/23 04:09:51 result view:
-debug 2024/07/23 04:09:53 result view:
-debug 2024/07/23 04:09:53 result view:
-debug 2024/07/23 04:09:56 Artist: t Release: t
-debug 2024/07/23 04:09:56 > t > t 
-debug 2024/07/23 04:12:31 Artist: t Release: t
-debug 2024/07/23 04:12:31 > t > t 
-debug 2024/07/23 04:12:32 0
-debug 2024/07/23 04:12:33 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc000480360] map[]}
-debug 2024/07/23 04:12:39 Artist: t Release: t
-debug 2024/07/23 04:12:39 > t > t 
-debug 2024/07/23 04:12:40 1
-debug 2024/07/23 04:12:40 &{260721d2-383e-4ad2-890e-8b5b6f40b26d T·Rex Official 200g {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 2007-01-01 00:00:00 +0000 UTC JP 4988005479730  normal [] [0xc000480960] map[]}
-debug 2024/07/23 04:12:42 Artist: t Release: t
-debug 2024/07/23 04:12:42 > t > t 
-debug 2024/07/23 04:12:43 2
-debug 2024/07/23 04:12:43 &{9580edea-419c-4318-9d3c-926758931f03 't Kliekske   { } {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1969-01-01 00:00:00 +0000 UTC BE   normal [] [0xc000112390] map[]}
-debug 2024/07/23 04:13:06 Artist: j Release: j
-debug 2024/07/23 04:13:06 > j > j 
-debug 2024/07/23 04:13:09 1
-debug 2024/07/23 04:13:09 &{52ea64ad-5b08-4d7f-aa34-faf9cddbd723 Donuts: J Rocc’s Picks Promotion  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 2006-01-01 00:00:00 +0000 UTC US   normal [] [0xc0001863c0] map[]}
-debug 2024/07/23 04:13:12 Artist: j Release: j
-debug 2024/07/23 04:13:12 > j > j 
-debug 2024/07/23 04:13:13 1
-debug 2024/07/23 04:13:13 &{52ea64ad-5b08-4d7f-aa34-faf9cddbd723 Donuts: J Rocc’s Picks Promotion  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 2006-01-01 00:00:00 +0000 UTC US   normal [] [0xc00015e360] map[]}
-debug 2024/07/23 04:13:17 Artist: j Release: j
-debug 2024/07/23 04:13:17 > j > j 
-debug 2024/07/23 04:13:19 0
-debug 2024/07/23 04:13:19 &{4d59ae39-72da-4bd7-a0be-4b3308126062 J.J.! Official original release {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1965-01-01 00:00:00 +0000 UTC US   normal [] [0xc00042e2a0] map[]}
-debug 2024/07/23 04:13:21 Artist: j Release: j
-debug 2024/07/23 04:13:21 > j > j 
-debug 2024/07/23 04:13:22 0
-debug 2024/07/23 04:13:22 &{4d59ae39-72da-4bd7-a0be-4b3308126062 J.J.! Official original release {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1965-01-01 00:00:00 +0000 UTC US   normal [] [0xc00015e4e0] map[]}
-debug 2024/07/23 04:13:24 Artist: j Release: j
-debug 2024/07/23 04:13:24 > j > j 
-debug 2024/07/23 04:13:25 1
-debug 2024/07/23 04:13:25 &{52ea64ad-5b08-4d7f-aa34-faf9cddbd723 Donuts: J Rocc’s Picks Promotion  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 2006-01-01 00:00:00 +0000 UTC US   normal [] [0xc00030a330] map[]}
-debug 2024/07/23 04:13:27 Artist: j Release: j
-debug 2024/07/23 04:13:27 > j > j 
-debug 2024/07/23 04:13:29 16
-debug 2024/07/23 04:13:30 &{51554a5b-ab98-40ba-9f92-77cc5082d20f The Way to Become The Sensuous Woman by "J" Official has sticker with catalog number "K40280" {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1971-01-01 00:00:00 +0000 UTC US   normal [] [0xc00030a300] map[]}
-debug 2024/07/23 04:13:34 Artist: j Release: j
-debug 2024/07/23 04:13:34 > j > j 
-debug 2024/07/23 04:13:39 Artist: t Release: t
-debug 2024/07/23 04:13:39 > t > t 
-debug 2024/07/23 04:13:40 0
-debug 2024/07/23 04:15:25 Artist: t Release: t
-debug 2024/07/23 04:15:27 0
-debug 2024/07/23 04:17:12 Artist: t Release: t
-debug 2024/07/23 04:17:14 0
-debug 2024/07/23 04:19:52 Artist: t Release: t
-debug 2024/07/23 04:19:54 0
-debug 2024/07/23 04:19:54 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc00014e0f0] map[]}
-debug 2024/07/23 04:19:59 Artist: t Release: t
-debug 2024/07/23 04:20:00 Artist: t Release: t
-debug 2024/07/23 04:20:02 0
-debug 2024/07/23 04:22:40 batch cmd abt to be run
-debug 2024/07/23 04:22:40 batch cmd abt to be run
-debug 2024/07/23 04:22:41 Artist: t Release: t
-debug 2024/07/23 04:22:42 0
-debug 2024/07/23 04:24:26 batch cmd abt to be run
-debug 2024/07/23 04:24:26 batch cmd abt to be run
-debug 2024/07/23 04:24:26 Artist: t Release: t
-debug 2024/07/23 04:24:27 0
-debug 2024/07/23 04:26:29 batch cmd abt to be run
-debug 2024/07/23 04:26:29 batch cmd abt to be run
-debug 2024/07/23 04:26:29 Artist: t Release: t
-debug 2024/07/23 04:26:32 0
-debug 2024/07/23 04:26:32 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc0002a2450] map[]}
-debug 2024/07/23 04:26:35 Artist: t Release: t
-debug 2024/07/23 04:26:36 1
-debug 2024/07/23 04:26:36 &{260721d2-383e-4ad2-890e-8b5b6f40b26d T·Rex Official 200g {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 2007-01-01 00:00:00 +0000 UTC JP 4988005479730  normal [] [0xc00035c420] map[]}
-debug 2024/07/23 04:26:37 Artist: t Release: t
-debug 2024/07/23 04:26:38 0
-debug 2024/07/23 04:26:38 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc00018a570] map[]}
-debug 2024/07/23 04:26:39 Artist: t Release: t
-debug 2024/07/23 04:26:40 3
-debug 2024/07/23 04:26:40 &{7945b148-467a-4a27-8ef3-9f158a03d75f 't Kliekske Official  {nld Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1971-01-01 00:00:00 +0000 UTC BE   normal [] [0xc0002a2330] map[]}
-debug 2024/07/23 04:26:42 Artist: t Release: t
-debug 2024/07/23 04:26:46 batch cmd abt to be run
-debug 2024/07/23 04:26:46 batch cmd abt to be run
-debug 2024/07/23 04:26:46 Artist: t Release: t
-debug 2024/07/23 04:26:48 0
-debug 2024/07/23 04:26:53 batch cmd abt to be run
-debug 2024/07/23 04:26:53 batch cmd abt to be run
-debug 2024/07/23 04:26:53 Artist: t Release: t
-debug 2024/07/23 04:26:55 1
-debug 2024/07/23 04:26:55 &{260721d2-383e-4ad2-890e-8b5b6f40b26d T·Rex Official 200g {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 2007-01-01 00:00:00 +0000 UTC JP 4988005479730  normal [] [0xc000098f90] map[]}
-debug 2024/07/23 04:30:41 batch cmd abt to be run
-debug 2024/07/23 04:30:43 batch cmd abt to be run
-debug 2024/07/23 04:30:45 batch cmd abt to be run
-debug 2024/07/23 04:31:03 batch cmd abt to be run
-debug 2024/07/23 04:31:03 Artist: t Release: t
-debug 2024/07/23 04:31:05 0
-debug 2024/07/23 04:31:05 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc00029a6c0] map[]}
-debug 2024/07/23 04:31:24 Artist: t Release: t
-debug 2024/07/23 04:31:25 0
-debug 2024/07/23 04:31:25 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc00029a6f0] map[]}
-debug 2024/07/23 04:31:32 batch cmd abt to be run
-debug 2024/07/23 04:31:34 batch cmd abt to be run
-debug 2024/07/23 04:31:34 Artist: t Release: t
-debug 2024/07/23 04:31:35 0
-debug 2024/07/23 04:31:35 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc0002944b0] map[]}
-debug 2024/07/23 04:35:13 batch cmd abt to be run
-debug 2024/07/23 04:35:14 batch cmd abt to be run
-debug 2024/07/23 04:35:14 Artist:  Release: 
-debug 2024/07/23 04:35:17 0
-debug 2024/07/23 04:35:17 &{d3ceb2e8-2103-4bf4-a947-88b4445f86b0 Elden är lös Official with "Kabaréorkestern" as release artist {swe Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1979-01-01 00:00:00 +0000 UTC SE   normal [] [0xc000098e10] map[]}
-debug 2024/07/23 04:35:19 batch cmd abt to be run
-debug 2024/07/23 04:35:19 batch cmd abt to be run
-debug 2024/07/23 04:35:20 batch cmd abt to be run
-debug 2024/07/23 04:35:21 batch cmd abt to be run
-debug 2024/07/23 04:35:21 Artist: t Release: t
-debug 2024/07/23 04:35:22 0
-debug 2024/07/23 04:35:22 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc000186330] map[]}
-debug 2024/07/23 04:35:26 batch cmd abt to be run
-debug 2024/07/23 04:35:26 batch cmd abt to be run
-debug 2024/07/23 04:35:27 Artist: t Release: t
-debug 2024/07/23 04:35:28 0
-debug 2024/07/23 04:35:28 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc000488480] map[]}
-debug 2024/07/23 04:38:28 batch cmd abt to be run
-debug 2024/07/23 04:38:29 batch cmd abt to be run
-debug 2024/07/23 04:38:29 Artist: t Release: t
-debug 2024/07/23 04:42:26 1
-debug 2024/07/23 04:42:34 batch cmd abt to be run
-debug 2024/07/23 04:42:35 batch cmd abt to be run
-debug 2024/07/23 04:42:35 Artist: t Release: t
-debug 2024/07/23 04:42:36 0
-debug 2024/07/23 04:42:36 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc000099290] map[]}
-debug 2024/07/23 04:42:38 Artist: t Release: t
-debug 2024/07/23 04:42:39 1
-debug 2024/07/23 04:42:39 &{260721d2-383e-4ad2-890e-8b5b6f40b26d T·Rex Official 200g {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 2007-01-01 00:00:00 +0000 UTC JP 4988005479730  normal [] [0xc0003bc330] map[]}
-debug 2024/07/23 04:42:41 Artist: t Release: t
-debug 2024/07/23 04:42:44 3
-debug 2024/07/23 04:42:44 &{7945b148-467a-4a27-8ef3-9f158a03d75f 't Kliekske Official  {nld Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1971-01-01 00:00:00 +0000 UTC BE   normal [] [0xc0003bc030] map[]}
-debug 2024/07/23 04:42:46 Artist: t Release: t
-debug 2024/07/23 04:42:47 0
-debug 2024/07/23 04:42:47 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc000112450] map[]}
-debug 2024/07/23 04:42:49 Artist: t Release: t
-debug 2024/07/23 04:42:55 3
-debug 2024/07/23 04:42:55 &{7945b148-467a-4a27-8ef3-9f158a03d75f 't Kliekske Official  {nld Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1971-01-01 00:00:00 +0000 UTC BE   normal [] [0xc000098f30] map[]}
-debug 2024/07/23 04:42:57 Artist: t Release: t
-debug 2024/07/23 04:42:59 13
-debug 2024/07/23 04:43:00 &{705246b0-2b1f-4f19-af1e-9c54d5cd29b1 T‐Bone Blues Official stereo (electronically re-processed for stereo from the original monophonic recordings) {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1970-01-01 00:00:00 +0000 UTC US   normal [] [0xc000112540] map[]}
-debug 2024/07/23 04:43:00 Artist: t Release: t
-debug 2024/07/23 04:43:01 0
-debug 2024/07/23 04:43:01 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc00047c3f0] map[]}
-debug 2024/07/23 04:43:01 Artist: t Release: t
-debug 2024/07/23 04:43:01 0
-debug 2024/07/23 04:43:01 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc000099050] map[]}
-debug 2024/07/23 04:43:02 Artist: t Release: t
-debug 2024/07/23 04:43:02 0
-debug 2024/07/23 04:43:02 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc000099170] map[]}
-debug 2024/07/23 04:43:02 Artist: t Release: t
-debug 2024/07/23 04:43:02 0
-debug 2024/07/23 04:43:03 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc00048c540] map[]}
-debug 2024/07/23 04:43:05 Artist: t Release: t
-debug 2024/07/23 04:43:08 1
-debug 2024/07/23 04:43:09 &{260721d2-383e-4ad2-890e-8b5b6f40b26d T·Rex Official 200g {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 2007-01-01 00:00:00 +0000 UTC JP 4988005479730  normal [] [0xc00028a330] map[]}
-debug 2024/07/23 04:43:13 batch cmd abt to be run
-debug 2024/07/23 04:43:13 batch cmd abt to be run
-debug 2024/07/23 04:43:21 batch cmd abt to be run
-debug 2024/07/23 04:43:23 batch cmd abt to be run
-debug 2024/07/23 04:43:23 Artist: pink floyd Release: the wall
-debug 2024/07/23 04:43:23 0
-debug 2024/07/23 04:43:24 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc000099320] map[]}
-debug 2024/07/23 04:43:27 Artist: pink floyd Release: the wall
-debug 2024/07/23 04:43:28 0
-debug 2024/07/23 04:43:28 &{3c6cfce2-ea1b-4599-b964-ba7a737cf619 The Wall Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 2016-01-01 00:00:00 +0000 UTC XE 5099902988313  normal [] [0xc00048c3f0 0xc00048c960] map[]}
-debug 2024/07/23 04:43:46 Artist: pink floyd Release: the wall
-debug 2024/07/23 04:43:47 0
-debug 2024/07/23 04:43:47 &{3c6cfce2-ea1b-4599-b964-ba7a737cf619 The Wall Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 2016-01-01 00:00:00 +0000 UTC XE 5099902988313  normal [] [0xc00028a3f0 0xc00028a960] map[]}
-debug 2024/07/23 04:43:50 Artist: pink floyd Release: the wall
-debug 2024/07/23 04:44:05 12
-debug 2024/07/23 04:44:05 &{18e9464b-bf9f-427d-9ce2-0eb8a5358108 The Wall Promotion  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1979-01-01 00:00:00 +0000 UTC US   normal [] [0xc000112600 0xc000112b70] map[]}
-debug 2024/07/23 04:45:31 Artist: pink floyd Release: the wall
-debug 2024/07/23 04:45:32 0
-debug 2024/07/23 04:45:32 &{3c6cfce2-ea1b-4599-b964-ba7a737cf619 The Wall Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 2016-01-01 00:00:00 +0000 UTC XE 5099902988313  normal [] [0xc00048c3c0 0xc00048ca20] map[]}
-debug 2024/07/23 04:45:50 batch cmd abt to be run
-debug 2024/07/23 04:45:51 batch cmd abt to be run
-debug 2024/07/23 04:45:51 Artist: t Release: t
-debug 2024/07/23 04:45:52 0
-debug 2024/07/23 04:45:52 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc00028a450] map[]}
-debug 2024/07/23 04:45:57 Artist: t Release: t
-debug 2024/07/23 04:46:00 1
-debug 2024/07/23 04:46:00 &{260721d2-383e-4ad2-890e-8b5b6f40b26d T·Rex Official 200g {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 2007-01-01 00:00:00 +0000 UTC JP 4988005479730  normal [] [0xc00023c690] map[]}
-debug 2024/07/23 04:46:19 batch cmd abt to be run
-debug 2024/07/23 04:46:20 batch cmd abt to be run
-debug 2024/07/23 04:46:20 Artist: t Release: t
-debug 2024/07/23 04:46:21 0
-debug 2024/07/23 04:48:53 batch cmd abt to be run
-debug 2024/07/23 04:48:54 batch cmd abt to be run
-debug 2024/07/23 04:48:54 Artist: t Release: t
-debug 2024/07/23 04:48:55 0
-debug 2024/07/23 04:49:10 batch cmd abt to be run
-debug 2024/07/23 04:49:10 batch cmd abt to be run
-debug 2024/07/23 04:49:10 Artist: t Release: t
-debug 2024/07/23 04:49:12 0
-debug 2024/07/23 04:49:14 batch cmd abt to be run
-debug 2024/07/23 04:49:15 batch cmd abt to be run
-debug 2024/07/23 04:49:15 Artist: t Release: t
-debug 2024/07/23 04:49:17 1
-debug 2024/07/23 04:49:20 batch cmd abt to be run
-debug 2024/07/23 04:49:20 batch cmd abt to be run
-debug 2024/07/23 04:49:20 Artist: t Release: t
-debug 2024/07/23 04:49:22 2
-debug 2024/07/23 04:49:28 batch cmd abt to be run
-debug 2024/07/23 04:49:29 batch cmd abt to be run
-debug 2024/07/23 04:49:30 Artist: pink floyd Release: the wall
-debug 2024/07/23 04:49:31 0
-debug 2024/07/23 04:49:31 &{3c6cfce2-ea1b-4599-b964-ba7a737cf619 The Wall Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 2016-01-01 00:00:00 +0000 UTC XE 5099902988313  normal [] [0xc0002ac420 0xc0002ac9c0] map[]}
-debug 2024/07/23 04:49:41 Artist: pink floyd Release: the wall
-debug 2024/07/23 04:49:41 0
-debug 2024/07/23 04:49:41 &{3c6cfce2-ea1b-4599-b964-ba7a737cf619 The Wall Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 2016-01-01 00:00:00 +0000 UTC XE 5099902988313  normal [] [0xc0001685a0 0xc000168d50] map[]}
-debug 2024/07/23 04:49:43 Artist: pink floyd Release: the wall
-debug 2024/07/23 04:49:43 0
-debug 2024/07/23 04:49:43 &{3c6cfce2-ea1b-4599-b964-ba7a737cf619 The Wall Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 2016-01-01 00:00:00 +0000 UTC XE 5099902988313  normal [] [0xc00008a5d0 0xc00008ac60] map[]}
-debug 2024/07/23 04:51:34 batch cmd abt to be run
-debug 2024/07/23 04:51:35 Artist: t Release: t
-debug 2024/07/23 04:51:37 0
-debug 2024/07/23 04:51:37 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc00028a480] map[]}
-debug 2024/07/23 04:51:39 Artist: t Release: t
-debug 2024/07/23 04:54:01 batch cmd abt to be run
-debug 2024/07/23 04:54:02 batch cmd abt to be run
-debug 2024/07/23 04:54:04 batch cmd abt to be run
-debug 2024/07/23 04:54:08 batch cmd abt to be run
-debug 2024/07/23 04:54:09 Artist: t Release: 
-debug 2024/07/23 04:54:10 0
-debug 2024/07/23 04:54:14 batch cmd abt to be run
-debug 2024/07/23 04:54:15 batch cmd abt to be run
-debug 2024/07/23 04:54:16 batch cmd abt to be run
-debug 2024/07/23 04:54:16 batch cmd abt to be run
-debug 2024/07/23 04:54:16 batch cmd abt to be run
-debug 2024/07/23 04:54:17 batch cmd abt to be run
-debug 2024/07/23 04:54:18 Artist: t Release: 
-debug 2024/07/23 04:57:51 batch cmd abt to be run
-debug 2024/07/23 04:57:54 batch cmd abt to be run
-debug 2024/07/23 04:57:55 batch cmd abt to be run
-debug 2024/07/23 04:57:55 Artist: t Release: t
-debug 2024/07/23 04:57:56 0
-debug 2024/07/23 04:57:56 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc000242510] map[]}
-debug 2024/07/23 04:57:58 Artist: t Release: t
-debug 2024/07/23 04:57:59 2
-debug 2024/07/23 04:58:00 &{9580edea-419c-4318-9d3c-926758931f03 't Kliekske   { } {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1969-01-01 00:00:00 +0000 UTC BE   normal [] [0xc0002425a0] map[]}
-debug 2024/07/23 04:58:04 batch cmd abt to be run
-debug 2024/07/23 04:58:05 batch cmd abt to be run
-debug 2024/07/23 04:58:05 Artist: test Release: test
-debug 2024/07/23 04:58:08 0
-debug 2024/07/23 04:58:15 batch cmd abt to be run
-debug 2024/07/23 04:58:15 batch cmd abt to be run
-debug 2024/07/23 04:58:15 Artist: t Release: t
-debug 2024/07/23 04:58:17 0
-debug 2024/07/23 04:58:22 batch cmd abt to be run
-debug 2024/07/23 04:58:23 batch cmd abt to be run
-debug 2024/07/23 04:58:23 batch cmd abt to be run
-debug 2024/07/23 04:58:24 batch cmd abt to be run
-debug 2024/07/23 04:58:24 Artist: t Release: t
-debug 2024/07/23 04:58:25 0
-debug 2024/07/23 04:58:25 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc0001ca2d0] map[]}
-debug 2024/07/23 04:58:27 Artist: t Release: t
-debug 2024/07/23 04:58:28 0
-debug 2024/07/23 04:58:28 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc000099170] map[]}
-debug 2024/07/23 04:58:33 batch cmd abt to be run
-debug 2024/07/23 04:58:34 batch cmd abt to be run
-debug 2024/07/23 04:58:34 Artist: t Release: t
-debug 2024/07/23 04:58:36 0
-debug 2024/07/23 05:03:41 batch cmd abt to be run
-debug 2024/07/23 05:03:42 batch cmd abt to be run
-debug 2024/07/23 05:03:42 Artist: t Release: t
-debug 2024/07/23 05:03:44 0
-debug 2024/07/23 05:03:53 batch cmd abt to be run
-debug 2024/07/23 05:03:53 batch cmd abt to be run
-debug 2024/07/23 05:03:54 Artist: t Release: t
-debug 2024/07/23 05:03:55 0
-debug 2024/07/23 05:04:01 batch cmd abt to be run
-debug 2024/07/23 05:04:02 batch cmd abt to be run
-debug 2024/07/23 05:04:02 Artist: t Release: t
-debug 2024/07/23 05:04:03 0
-debug 2024/07/23 05:04:09 batch cmd abt to be run
-debug 2024/07/23 05:04:10 batch cmd abt to be run
-debug 2024/07/23 05:04:11 batch cmd abt to be run
-debug 2024/07/23 05:04:13 batch cmd abt to be run
-debug 2024/07/23 05:04:13 batch cmd abt to be run
-debug 2024/07/23 05:04:13 batch cmd abt to be run
-debug 2024/07/23 05:04:14 Artist: t Release: t
-debug 2024/07/23 05:04:15 0
-debug 2024/07/23 05:04:15 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc000098e10] map[]}
-debug 2024/07/23 05:06:27 Artist: t Release: t
-debug 2024/07/23 05:06:28 2
-debug 2024/07/23 05:06:28 &{9580edea-419c-4318-9d3c-926758931f03 't Kliekske   { } {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1969-01-01 00:00:00 +0000 UTC BE   normal [] [0xc0000990b0] map[]}
-debug 2024/07/23 05:06:34 batch cmd abt to be run
-debug 2024/07/23 05:06:34 batch cmd abt to be run
-debug 2024/07/23 05:06:34 Artist: t Release: t
-debug 2024/07/23 05:06:35 0
-debug 2024/07/23 05:06:41 batch cmd abt to be run
-debug 2024/07/23 05:06:42 batch cmd abt to be run
-debug 2024/07/23 05:06:43 Artist: t Release: t
-debug 2024/07/23 05:06:46 0
-debug 2024/07/23 05:06:46 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc0003125a0] map[]}
-debug 2024/07/23 05:09:27 batch cmd abt to be run
-debug 2024/07/23 05:09:28 batch cmd abt to be run
-debug 2024/07/23 05:09:28 Artist: t Release: t
-debug 2024/07/23 05:09:34 -1
-debug 2024/07/23 05:09:46 batch cmd abt to be run
-debug 2024/07/23 05:09:46 batch cmd abt to be run
-debug 2024/07/23 05:09:47 Artist: t Release: t
-debug 2024/07/23 05:09:49 0
-debug 2024/07/23 05:10:29 batch cmd abt to be run
-debug 2024/07/23 05:10:29 batch cmd abt to be run
-debug 2024/07/23 05:10:29 Artist: t Release: t
-debug 2024/07/23 05:10:31 1
-debug 2024/07/23 05:10:33 batch cmd abt to be run
-debug 2024/07/23 05:10:33 batch cmd abt to be run
-debug 2024/07/23 05:10:35 Artist: t Release: t
-debug 2024/07/23 05:10:37 0
-debug 2024/07/23 05:10:37 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc000230360] map[]}
-debug 2024/07/23 05:24:39 batch cmd abt to be run
-debug 2024/07/23 05:24:39 batch cmd abt to be run
-debug 2024/07/23 05:24:40 batch cmd abt to be run
-debug 2024/07/23 05:24:40 batch cmd abt to be run
-debug 2024/07/23 05:24:40 Artist: t Release: t
-debug 2024/07/23 05:24:42 0
-debug 2024/07/23 05:24:42 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc000312510] map[]}
-debug 2024/07/23 05:24:43 batch cmd abt to be run
-debug 2024/07/23 05:24:43 Artist: t Release: t
-debug 2024/07/23 05:24:44 0
-debug 2024/07/23 05:24:44 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc0004323f0] map[]}
-debug 2024/07/23 05:24:45 batch cmd abt to be run
-debug 2024/07/23 05:24:45 batch cmd abt to be run
-debug 2024/07/23 05:24:46 batch cmd abt to be run
-debug 2024/07/23 05:24:46 batch cmd abt to be run
-debug 2024/07/23 05:24:46 Artist: t Release: t
-debug 2024/07/23 05:24:50 batch cmd abt to be run
-debug 2024/07/23 05:24:50 batch cmd abt to be run
-debug 2024/07/23 05:24:51 batch cmd abt to be run
-debug 2024/07/23 05:24:51 batch cmd abt to be run
-debug 2024/07/23 05:24:51 batch cmd abt to be run
-debug 2024/07/23 05:24:51 batch cmd abt to be run
-debug 2024/07/23 05:24:52 Artist: t Release: t
-debug 2024/07/23 05:24:53 0
-debug 2024/07/23 05:27:32 batch cmd abt to be run
-debug 2024/07/23 05:27:33 batch cmd abt to be run
-debug 2024/07/23 05:27:34 batch cmd abt to be run
-debug 2024/07/23 05:27:34 batch cmd abt to be run
-debug 2024/07/23 05:27:35 batch cmd abt to be run
-debug 2024/07/23 05:27:35 Artist:  Release: 
-debug 2024/07/23 05:27:36 0
-debug 2024/07/23 05:27:37 &{d3ceb2e8-2103-4bf4-a947-88b4445f86b0 Elden är lös Official with "Kabaréorkestern" as release artist {swe Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1979-01-01 00:00:00 +0000 UTC SE   normal [] [0xc0002a4420] map[]}
-debug 2024/07/23 05:27:53 batch cmd abt to be run
-debug 2024/07/23 05:27:54 batch cmd abt to be run
-debug 2024/07/23 05:27:54 batch cmd abt to be run
-debug 2024/07/23 05:27:55 batch cmd abt to be run
-debug 2024/07/23 05:27:55 batch cmd abt to be run
-debug 2024/07/23 05:27:56 Artist: t Release: t
-debug 2024/07/23 05:27:57 0
-debug 2024/07/23 05:27:58 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc000236240] map[]}
-debug 2024/07/23 05:27:59 batch cmd abt to be run
-debug 2024/07/23 05:28:00 Artist: t Release: t
-debug 2024/07/23 05:28:01 0
-debug 2024/07/23 05:28:01 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc000112390] map[]}
-debug 2024/07/23 05:28:03 batch cmd abt to be run
-debug 2024/07/23 05:28:03 batch cmd abt to be run
-debug 2024/07/23 05:28:04 batch cmd abt to be run
-debug 2024/07/23 05:28:04 batch cmd abt to be run
-debug 2024/07/23 05:28:04 batch cmd abt to be run
-debug 2024/07/23 05:28:06 batch cmd abt to be run
-debug 2024/07/23 05:28:06 batch cmd abt to be run
-debug 2024/07/23 05:28:06 batch cmd abt to be run
-debug 2024/07/23 05:28:07 batch cmd abt to be run
-debug 2024/07/23 05:28:08 batch cmd abt to be run
-debug 2024/07/23 05:28:09 batch cmd abt to be run
-debug 2024/07/23 05:28:09 batch cmd abt to be run
-debug 2024/07/23 05:28:10 batch cmd abt to be run
-debug 2024/07/23 05:28:11 batch cmd abt to be run
-debug 2024/07/23 05:28:14 batch cmd abt to be run
-debug 2024/07/23 05:28:14 batch cmd abt to be run
-debug 2024/07/23 05:28:15 batch cmd abt to be run
-debug 2024/07/23 05:28:15 batch cmd abt to be run
-debug 2024/07/23 05:28:15 batch cmd abt to be run
-debug 2024/07/23 05:28:16 batch cmd abt to be run
-debug 2024/07/23 05:28:17 batch cmd abt to be run
-debug 2024/07/23 05:28:17 batch cmd abt to be run
-debug 2024/07/23 05:28:19 Artist: tttt Release: ttt
-debug 2024/07/23 05:28:23 batch cmd abt to be run
-debug 2024/07/23 05:28:24 batch cmd abt to be run
-debug 2024/07/23 05:28:24 batch cmd abt to be run
-debug 2024/07/23 05:28:24 batch cmd abt to be run
-debug 2024/07/23 05:28:24 batch cmd abt to be run
-debug 2024/07/23 05:28:25 batch cmd abt to be run
-debug 2024/07/23 05:28:25 batch cmd abt to be run
-debug 2024/07/23 05:28:25 batch cmd abt to be run
-debug 2024/07/23 05:28:25 batch cmd abt to be run
-debug 2024/07/23 05:28:26 batch cmd abt to be run
-debug 2024/07/23 05:28:26 batch cmd abt to be run
-debug 2024/07/23 05:29:46 batch cmd abt to be run
-debug 2024/07/23 05:29:47 batch cmd abt to be run
-debug 2024/07/23 05:29:47 batch cmd abt to be run
-debug 2024/07/23 05:29:48 Artist: t Release: t
-debug 2024/07/23 05:29:49 0
-debug 2024/07/23 05:29:52 batch cmd abt to be run
-debug 2024/07/23 05:29:52 batch cmd abt to be run
-debug 2024/07/23 05:29:53 batch cmd abt to be run
-debug 2024/07/23 05:29:53 Artist: t Release: t
-debug 2024/07/23 05:29:54 0
-debug 2024/07/23 05:30:12 batch cmd abt to be run
-debug 2024/07/23 05:30:12 batch cmd abt to be run
-debug 2024/07/23 05:30:12 batch cmd abt to be run
-debug 2024/07/23 05:30:12 batch cmd abt to be run
-debug 2024/07/23 05:30:13 Artist: t Release: t
-debug 2024/07/23 05:30:16 0
-debug 2024/07/23 05:30:16 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc000098f60] map[]}
-debug 2024/07/23 05:46:47 batch cmd abt to be run
-debug 2024/07/23 05:46:50 batch cmd abt to be run
-debug 2024/07/23 05:46:50 batch cmd abt to be run
-debug 2024/07/23 05:47:35 batch cmd abt to be run
-debug 2024/07/23 05:47:37 batch cmd abt to be run
-debug 2024/07/23 06:04:25 batch cmd abt to be run
-debug 2024/07/23 06:04:25 batch cmd abt to be run
-debug 2024/07/23 06:04:25 batch cmd abt to be run
-debug 2024/07/23 06:04:25 batch cmd abt to be run
-debug 2024/07/23 06:04:25 batch cmd abt to be run
-debug 2024/07/23 06:04:26 batch cmd abt to be run
-debug 2024/07/23 06:04:26 batch cmd abt to be run
-debug 2024/07/23 06:04:30 batch cmd abt to be run
-debug 2024/07/23 06:04:31 batch cmd abt to be run
-debug 2024/07/23 06:04:31 batch cmd abt to be run
-debug 2024/07/23 06:04:31 batch cmd abt to be run
-debug 2024/07/23 06:04:31 batch cmd abt to be run
-debug 2024/07/23 06:04:31 batch cmd abt to be run
-debug 2024/07/23 06:04:32 batch cmd abt to be run
-debug 2024/07/23 06:04:33 batch cmd abt to be run
-debug 2024/07/23 06:04:33 batch cmd abt to be run
-debug 2024/07/23 06:04:33 batch cmd abt to be run
-debug 2024/07/23 06:04:33 batch cmd abt to be run
-debug 2024/07/23 06:04:34 batch cmd abt to be run
-debug 2024/07/23 06:04:34 batch cmd abt to be run
-debug 2024/07/23 06:04:34 batch cmd abt to be run
-debug 2024/07/23 06:04:35 batch cmd abt to be run
-debug 2024/07/23 06:04:36 batch cmd abt to be run
-debug 2024/07/23 06:04:36 batch cmd abt to be run
-debug 2024/07/23 06:04:36 batch cmd abt to be run
-debug 2024/07/23 06:04:36 batch cmd abt to be run
-debug 2024/07/23 06:04:36 batch cmd abt to be run
-debug 2024/07/23 06:04:37 batch cmd abt to be run
-debug 2024/07/23 06:04:37 batch cmd abt to be run
-debug 2024/07/23 06:04:37 batch cmd abt to be run
-debug 2024/07/23 06:04:38 batch cmd abt to be run
-debug 2024/07/23 06:04:38 Artist: michael jackson Release: thriller
-debug 2024/07/23 06:04:43 0
-debug 2024/07/23 06:04:43 &{9c4c939e-5697-44d3-b2f2-b04226cf15f8 Thriller Official half-speed mastered {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1982-01-01 00:00:00 +0000 UTC US 074644811216  normal [] [0xc000104750] map[]}
-debug 2024/07/23 06:07:08 batch cmd abt to be run
-debug 2024/07/23 06:07:09 batch cmd abt to be run
-debug 2024/07/23 06:07:16 batch cmd abt to be run
-debug 2024/07/23 06:07:18 batch cmd abt to be run
-debug 2024/07/23 06:07:20 batch cmd abt to be run
-debug 2024/07/23 06:07:20 batch cmd abt to be run
-debug 2024/07/23 06:07:20 batch cmd abt to be run
-debug 2024/07/23 06:07:20 batch cmd abt to be run
-debug 2024/07/23 06:07:20 batch cmd abt to be run
-debug 2024/07/23 06:07:21 batch cmd abt to be run
-debug 2024/07/23 06:07:21 batch cmd abt to be run
-debug 2024/07/23 06:07:21 batch cmd abt to be run
-debug 2024/07/23 06:07:22 batch cmd abt to be run
-debug 2024/07/23 06:07:22 batch cmd abt to be run
-debug 2024/07/23 06:07:22 batch cmd abt to be run
-debug 2024/07/23 06:07:23 batch cmd abt to be run
-debug 2024/07/23 06:07:23 batch cmd abt to be run
-debug 2024/07/23 06:07:23 batch cmd abt to be run
-debug 2024/07/23 06:07:23 batch cmd abt to be run
-debug 2024/07/23 06:07:23 batch cmd abt to be run
-debug 2024/07/23 06:07:24 batch cmd abt to be run
-debug 2024/07/23 06:07:24 batch cmd abt to be run
-debug 2024/07/23 06:07:24 batch cmd abt to be run
-debug 2024/07/23 06:07:25 batch cmd abt to be run
-debug 2024/07/23 06:07:25 batch cmd abt to be run
-debug 2024/07/23 06:07:25 batch cmd abt to be run
-debug 2024/07/23 06:07:26 batch cmd abt to be run
-debug 2024/07/23 06:07:26 batch cmd abt to be run
-debug 2024/07/23 06:07:26 batch cmd abt to be run
-debug 2024/07/23 06:07:26 batch cmd abt to be run
-debug 2024/07/23 06:07:27 batch cmd abt to be run
-debug 2024/07/23 06:07:27 batch cmd abt to be run
-debug 2024/07/23 06:07:27 batch cmd abt to be run
-debug 2024/07/23 06:07:27 batch cmd abt to be run
-debug 2024/07/23 06:07:27 batch cmd abt to be run
-debug 2024/07/23 06:07:28 batch cmd abt to be run
-debug 2024/07/23 06:07:28 batch cmd abt to be run
-debug 2024/07/23 06:07:29 batch cmd abt to be run
-debug 2024/07/23 06:07:29 batch cmd abt to be run
-debug 2024/07/23 06:07:29 batch cmd abt to be run
-debug 2024/07/23 06:07:29 batch cmd abt to be run
-debug 2024/07/23 06:07:30 batch cmd abt to be run
-debug 2024/07/23 06:07:31 batch cmd abt to be run
-debug 2024/07/23 06:07:31 batch cmd abt to be run
-debug 2024/07/23 06:07:31 batch cmd abt to be run
-debug 2024/07/23 06:07:31 batch cmd abt to be run
-debug 2024/07/23 06:07:32 batch cmd abt to be run
-debug 2024/07/23 06:07:32 batch cmd abt to be run
-debug 2024/07/23 06:07:32 batch cmd abt to be run
-debug 2024/07/23 06:07:33 batch cmd abt to be run
-debug 2024/07/23 06:07:34 batch cmd abt to be run
-debug 2024/07/23 06:07:34 batch cmd abt to be run
-debug 2024/07/23 06:07:34 batch cmd abt to be run
-debug 2024/07/23 06:07:34 batch cmd abt to be run
-debug 2024/07/23 06:07:35 batch cmd abt to be run
-debug 2024/07/23 06:07:35 batch cmd abt to be run
-debug 2024/07/23 06:07:35 batch cmd abt to be run
-debug 2024/07/23 06:07:35 batch cmd abt to be run
-debug 2024/07/23 06:07:35 batch cmd abt to be run
-debug 2024/07/23 06:07:36 Artist: michael jackson Release: thriller
-debug 2024/07/23 06:07:38 0
-debug 2024/07/23 06:07:39 &{9c4c939e-5697-44d3-b2f2-b04226cf15f8 Thriller Official half-speed mastered {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1982-01-01 00:00:00 +0000 UTC US 074644811216  normal [] [0xc000174390] map[]}
-debug 2024/07/23 06:08:17 batch cmd abt to be run
-debug 2024/07/23 06:08:17 batch cmd abt to be run
-debug 2024/07/23 06:08:17 batch cmd abt to be run
-debug 2024/07/23 06:08:18 batch cmd abt to be run
-debug 2024/07/23 06:08:18 Artist: t Release: t
-debug 2024/07/23 06:08:21 0
-debug 2024/07/23 06:08:24 batch cmd abt to be run
-debug 2024/07/23 06:08:24 batch cmd abt to be run
-debug 2024/07/23 06:08:25 batch cmd abt to be run
-debug 2024/07/23 06:08:25 batch cmd abt to be run
-debug 2024/07/23 06:08:25 Artist: t Release: t
-debug 2024/07/23 06:08:29 0
-debug 2024/07/23 06:08:32 batch cmd abt to be run
-debug 2024/07/23 06:08:32 batch cmd abt to be run
-debug 2024/07/23 06:08:32 batch cmd abt to be run
-debug 2024/07/23 06:08:32 batch cmd abt to be run
-debug 2024/07/23 06:08:33 Artist: t Release: t
-debug 2024/07/23 06:08:35 5
-debug 2024/07/23 06:08:40 batch cmd abt to be run
-debug 2024/07/23 06:08:41 batch cmd abt to be run
-debug 2024/07/23 06:08:41 batch cmd abt to be run
-debug 2024/07/23 06:08:42 batch cmd abt to be run
-debug 2024/07/23 06:08:42 Artist: t Release: 2
-debug 2024/07/23 06:08:43 0
-debug 2024/07/23 06:08:44 &{2cdc6873-72da-4697-b07c-1fef8da37da5 Police State, Part 2 Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1996-01-04 00:00:00 +0000 UTC GB 5024538197167 B000057WTN normal [] [0xc000121050] map[]}
-debug 2024/07/23 06:09:20 batch cmd abt to be run
-debug 2024/07/23 06:09:21 batch cmd abt to be run
-debug 2024/07/23 06:09:21 batch cmd abt to be run
-debug 2024/07/23 06:09:21 batch cmd abt to be run
-debug 2024/07/23 06:09:21 Artist: t Release: t
-debug 2024/07/23 06:09:22 0
-debug 2024/07/23 06:09:26 batch cmd abt to be run
-debug 2024/07/23 06:09:26 batch cmd abt to be run
-debug 2024/07/23 06:09:26 batch cmd abt to be run
-debug 2024/07/23 06:09:27 batch cmd abt to be run
-debug 2024/07/23 06:09:27 Artist: t Release: t
-debug 2024/07/23 06:09:31 5
-debug 2024/07/23 06:09:31 &{b233cca7-ec41-4249-a684-d1e67b6fd439 T. Gold Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 2019-06-19 00:00:00 +0000 UTC US 659696515819  normal [] [0xc000240780] map[]}
-debug 2024/07/23 06:14:24 batch cmd abt to be run
-debug 2024/07/23 06:14:24 batch cmd abt to be run
-debug 2024/07/23 06:14:24 batch cmd abt to be run
-debug 2024/07/23 06:14:25 batch cmd abt to be run
-debug 2024/07/23 06:14:25 batch cmd abt to be run
-debug 2024/07/23 06:14:25 batch cmd abt to be run
-debug 2024/07/23 06:14:25 batch cmd abt to be run
-debug 2024/07/23 06:14:25 batch cmd abt to be run
-debug 2024/07/23 06:14:26 batch cmd abt to be run
-debug 2024/07/23 06:14:26 batch cmd abt to be run
-debug 2024/07/23 06:14:26 batch cmd abt to be run
-debug 2024/07/23 06:14:26 batch cmd abt to be run
-debug 2024/07/23 06:14:26 batch cmd abt to be run
-debug 2024/07/23 06:14:27 batch cmd abt to be run
-debug 2024/07/23 06:14:27 batch cmd abt to be run
-debug 2024/07/23 06:14:27 batch cmd abt to be run
-debug 2024/07/23 06:14:28 batch cmd abt to be run
-debug 2024/07/23 06:14:28 batch cmd abt to be run
-debug 2024/07/23 06:14:28 batch cmd abt to be run
-debug 2024/07/23 06:14:28 batch cmd abt to be run
-debug 2024/07/23 06:14:28 batch cmd abt to be run
-debug 2024/07/23 06:14:28 batch cmd abt to be run
-debug 2024/07/23 06:14:28 batch cmd abt to be run
-debug 2024/07/23 06:14:28 batch cmd abt to be run
-debug 2024/07/23 06:14:29 batch cmd abt to be run
-debug 2024/07/23 06:14:29 Artist: michael jackson Release: thriller
-debug 2024/07/23 06:14:31 0
-debug 2024/07/23 06:14:35 batch cmd abt to be run
-debug 2024/07/23 06:14:35 batch cmd abt to be run
-debug 2024/07/23 06:14:35 batch cmd abt to be run
-debug 2024/07/23 06:14:35 batch cmd abt to be run
-debug 2024/07/23 06:14:35 batch cmd abt to be run
-debug 2024/07/23 06:14:35 batch cmd abt to be run
-debug 2024/07/23 06:14:35 batch cmd abt to be run
-debug 2024/07/23 06:14:36 batch cmd abt to be run
-debug 2024/07/23 06:14:36 batch cmd abt to be run
-debug 2024/07/23 06:14:36 batch cmd abt to be run
-debug 2024/07/23 06:14:37 batch cmd abt to be run
-debug 2024/07/23 06:14:37 batch cmd abt to be run
-debug 2024/07/23 06:14:37 batch cmd abt to be run
-debug 2024/07/23 06:14:37 batch cmd abt to be run
-debug 2024/07/23 06:14:37 batch cmd abt to be run
-debug 2024/07/23 06:14:38 batch cmd abt to be run
-debug 2024/07/23 06:14:39 batch cmd abt to be run
-debug 2024/07/23 06:14:39 batch cmd abt to be run
-debug 2024/07/23 06:14:39 batch cmd abt to be run
-debug 2024/07/23 06:14:39 batch cmd abt to be run
-debug 2024/07/23 06:14:39 batch cmd abt to be run
-debug 2024/07/23 06:14:39 batch cmd abt to be run
-debug 2024/07/23 06:14:40 batch cmd abt to be run
-debug 2024/07/23 06:14:40 batch cmd abt to be run
-debug 2024/07/23 06:14:41 batch cmd abt to be run
-debug 2024/07/23 06:14:46 Artist: michael jackson Release: thriller
-debug 2024/07/23 06:14:51 0
-debug 2024/07/23 06:14:51 &{9c4c939e-5697-44d3-b2f2-b04226cf15f8 Thriller Official half-speed mastered {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1982-01-01 00:00:00 +0000 UTC US 074644811216  normal [] [0xc000098fc0] map[]}
-debug 2024/07/23 06:20:57 batch cmd abt to be run
-debug 2024/07/23 06:20:58 batch cmd abt to be run
-debug 2024/07/23 06:20:58 batch cmd abt to be run
-debug 2024/07/23 06:20:58 batch cmd abt to be run
-debug 2024/07/23 06:20:58 Artist: t Release: t
-debug 2024/07/23 06:21:01 0
-debug 2024/07/23 06:21:02 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc00019afc0] map[]}
-debug 2024/07/23 06:21:53 batch cmd abt to be run
-debug 2024/07/23 06:21:53 batch cmd abt to be run
-debug 2024/07/23 06:21:53 batch cmd abt to be run
-debug 2024/07/23 06:21:54 batch cmd abt to be run
-debug 2024/07/23 06:21:54 Artist: t Release: t
-debug 2024/07/23 06:21:56 0
-debug 2024/07/23 06:22:00 batch cmd abt to be run
-debug 2024/07/23 06:22:00 batch cmd abt to be run
-debug 2024/07/23 06:22:00 batch cmd abt to be run
-debug 2024/07/23 06:22:00 batch cmd abt to be run
-debug 2024/07/23 06:22:01 batch cmd abt to be run
-debug 2024/07/23 06:22:02 batch cmd abt to be run
-debug 2024/07/23 06:22:02 batch cmd abt to be run
-debug 2024/07/23 06:22:02 batch cmd abt to be run
-debug 2024/07/23 06:22:02 Artist: t Release: t
-debug 2024/07/23 06:22:09 0
-debug 2024/07/23 06:22:12 batch cmd abt to be run
-debug 2024/07/23 06:22:12 batch cmd abt to be run
-debug 2024/07/23 06:22:12 batch cmd abt to be run
-debug 2024/07/23 06:22:13 batch cmd abt to be run
-debug 2024/07/23 06:22:14 batch cmd abt to be run
-debug 2024/07/23 06:22:14 batch cmd abt to be run
-debug 2024/07/23 06:22:14 Artist: t Release: t
-debug 2024/07/23 06:22:16 0
-debug 2024/07/23 06:22:16 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc000524360] map[]}
-debug 2024/07/23 06:23:09 batch cmd abt to be run
-debug 2024/07/23 06:23:09 batch cmd abt to be run
-debug 2024/07/23 06:23:09 batch cmd abt to be run
-debug 2024/07/23 06:23:09 batch cmd abt to be run
-debug 2024/07/23 06:23:10 batch cmd abt to be run
-debug 2024/07/23 06:23:10 batch cmd abt to be run
-debug 2024/07/23 06:23:11 batch cmd abt to be run
-debug 2024/07/23 06:23:11 batch cmd abt to be run
-debug 2024/07/23 06:23:11 batch cmd abt to be run
-debug 2024/07/23 06:23:11 Artist: t Release: t
-debug 2024/07/23 06:23:15 0
-debug 2024/07/23 06:23:15 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc000099380] map[]}
-debug 2024/07/23 06:24:02 batch cmd abt to be run
-debug 2024/07/23 06:24:02 batch cmd abt to be run
-debug 2024/07/23 06:24:02 batch cmd abt to be run
-debug 2024/07/23 06:24:03 batch cmd abt to be run
-debug 2024/07/23 06:24:03 Artist: t Release: t
-debug 2024/07/23 06:24:04 0
-debug 2024/07/23 06:24:08 batch cmd abt to be run
-debug 2024/07/23 06:24:08 batch cmd abt to be run
-debug 2024/07/23 06:24:08 batch cmd abt to be run
-debug 2024/07/23 06:24:09 batch cmd abt to be run
-debug 2024/07/23 06:24:09 Artist: t Release: t
-debug 2024/07/23 06:24:11 2
-debug 2024/07/23 06:24:15 batch cmd abt to be run
-debug 2024/07/23 06:24:15 batch cmd abt to be run
-debug 2024/07/23 06:24:15 batch cmd abt to be run
-debug 2024/07/23 06:24:15 batch cmd abt to be run
-debug 2024/07/23 06:24:16 Artist: t Release: t
-debug 2024/07/23 06:24:17 0
-debug 2024/07/23 06:24:17 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc000414330] map[]}
-debug 2024/07/23 06:25:11 batch cmd abt to be run
-debug 2024/07/23 06:25:11 batch cmd abt to be run
-debug 2024/07/23 06:25:12 batch cmd abt to be run
-debug 2024/07/23 06:25:12 batch cmd abt to be run
-debug 2024/07/23 06:25:12 Artist: t Release: t
-debug 2024/07/23 06:25:15 0
-debug 2024/07/23 06:25:15 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc000392480] map[]}
-debug 2024/07/23 06:28:36 batch cmd abt to be run
-debug 2024/07/23 06:28:36 batch cmd abt to be run
-debug 2024/07/23 06:28:36 batch cmd abt to be run
-debug 2024/07/23 06:28:36 batch cmd abt to be run
-debug 2024/07/23 06:28:37 Artist: t Release: t
-debug 2024/07/23 06:28:39 0
-debug 2024/07/23 06:28:42 batch cmd abt to be run
-debug 2024/07/23 06:28:43 batch cmd abt to be run
-debug 2024/07/23 06:28:43 batch cmd abt to be run
-debug 2024/07/23 06:28:43 batch cmd abt to be run
-debug 2024/07/23 06:28:43 Artist: t Release: t
-debug 2024/07/23 06:28:45 0
-debug 2024/07/23 06:28:47 batch cmd abt to be run
-debug 2024/07/23 06:28:48 batch cmd abt to be run
-debug 2024/07/23 06:28:48 batch cmd abt to be run
-debug 2024/07/23 06:28:48 batch cmd abt to be run
-debug 2024/07/23 06:28:49 Artist: t Release: 2
-debug 2024/07/23 06:28:50 0
-debug 2024/07/23 06:28:53 batch cmd abt to be run
-debug 2024/07/23 06:28:53 batch cmd abt to be run
-debug 2024/07/23 06:28:54 batch cmd abt to be run
-debug 2024/07/23 06:28:54 batch cmd abt to be run
-debug 2024/07/23 06:28:54 Artist: t Release: t
-debug 2024/07/23 06:28:58 0
-debug 2024/07/23 06:29:01 batch cmd abt to be run
-debug 2024/07/23 06:29:01 batch cmd abt to be run
-debug 2024/07/23 06:29:01 batch cmd abt to be run
-debug 2024/07/23 06:29:02 batch cmd abt to be run
-debug 2024/07/23 06:29:02 Artist: t Release: t
-debug 2024/07/23 06:29:08 7
-debug 2024/07/23 06:29:11 batch cmd abt to be run
-debug 2024/07/23 06:29:11 batch cmd abt to be run
-debug 2024/07/23 06:29:11 batch cmd abt to be run
-debug 2024/07/23 06:29:11 batch cmd abt to be run
-debug 2024/07/23 06:29:12 Artist: t Release: t
-debug 2024/07/23 06:29:13 0
-debug 2024/07/23 06:29:18 batch cmd abt to be run
-debug 2024/07/23 06:29:18 batch cmd abt to be run
-debug 2024/07/23 06:29:18 batch cmd abt to be run
-debug 2024/07/23 06:29:19 batch cmd abt to be run
-debug 2024/07/23 06:29:19 Artist: 1 Release: 1
-debug 2024/07/23 06:29:20 0
-debug 2024/07/23 06:29:21 &{abbfe385-2cb7-4f83-9135-08599c29bef1 Mark 1 Promotion  {mul Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1996-01-01 00:00:00 +0000 UTC NL   normal [] [0xc00018cbd0] map[]}
-debug 2024/07/23 06:31:52 batch cmd abt to be run
-debug 2024/07/23 06:31:52 batch cmd abt to be run
-debug 2024/07/23 06:31:52 batch cmd abt to be run
-debug 2024/07/23 06:31:52 batch cmd abt to be run
-debug 2024/07/23 06:31:53 batch cmd abt to be run
-debug 2024/07/23 06:31:53 batch cmd abt to be run
-debug 2024/07/23 06:31:53 batch cmd abt to be run
-debug 2024/07/23 06:31:54 batch cmd abt to be run
-debug 2024/07/23 06:31:55 batch cmd abt to be run
-debug 2024/07/23 06:31:55 batch cmd abt to be run
-debug 2024/07/23 06:31:56 batch cmd abt to be run
-debug 2024/07/23 06:31:56 batch cmd abt to be run
-debug 2024/07/23 06:31:56 batch cmd abt to be run
-debug 2024/07/23 06:31:56 batch cmd abt to be run
-debug 2024/07/23 06:31:56 batch cmd abt to be run
-debug 2024/07/23 06:31:57 batch cmd abt to be run
-debug 2024/07/23 06:31:57 batch cmd abt to be run
-debug 2024/07/23 06:31:57 batch cmd abt to be run
-debug 2024/07/23 06:31:58 batch cmd abt to be run
-debug 2024/07/23 06:31:58 batch cmd abt to be run
-debug 2024/07/23 06:31:58 batch cmd abt to be run
-debug 2024/07/23 06:31:58 batch cmd abt to be run
-debug 2024/07/23 06:31:59 batch cmd abt to be run
-debug 2024/07/23 06:31:59 batch cmd abt to be run
-debug 2024/07/23 06:31:59 batch cmd abt to be run
-debug 2024/07/23 06:31:59 batch cmd abt to be run
-debug 2024/07/23 06:31:59 batch cmd abt to be run
-debug 2024/07/23 06:32:00 Artist: michael jackson Release: thriller
-debug 2024/07/23 06:32:05 0
-debug 2024/07/23 06:32:05 &{9c4c939e-5697-44d3-b2f2-b04226cf15f8 Thriller Official half-speed mastered {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1982-01-01 00:00:00 +0000 UTC US 074644811216  normal [] [0xc0003fa360] map[]}
-debug 2024/07/23 06:32:24 batch cmd abt to be run
-debug 2024/07/23 06:32:24 batch cmd abt to be run
-debug 2024/07/23 06:32:25 batch cmd abt to be run
-debug 2024/07/23 06:32:25 batch cmd abt to be run
-debug 2024/07/23 06:32:26 batch cmd abt to be run
-debug 2024/07/23 06:32:26 batch cmd abt to be run
-debug 2024/07/23 06:32:26 batch cmd abt to be run
-debug 2024/07/23 06:32:26 batch cmd abt to be run
-debug 2024/07/23 06:32:26 batch cmd abt to be run
-debug 2024/07/23 06:32:27 batch cmd abt to be run
-debug 2024/07/23 06:32:27 batch cmd abt to be run
-debug 2024/07/23 06:32:27 Artist: t Release: t
-debug 2024/07/23 06:32:30 0
-debug 2024/07/23 06:32:33 batch cmd abt to be run
-debug 2024/07/23 06:32:33 batch cmd abt to be run
-debug 2024/07/23 06:32:33 batch cmd abt to be run
-debug 2024/07/23 06:32:33 batch cmd abt to be run
-debug 2024/07/23 06:32:34 Artist: t Release: t
-debug 2024/07/23 06:32:38 3
-debug 2024/07/23 06:32:38 &{7945b148-467a-4a27-8ef3-9f158a03d75f 't Kliekske Official  {nld Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1971-01-01 00:00:00 +0000 UTC BE   normal [] [0xc000121140] map[]}
-debug 2024/07/23 06:34:33 batch cmd abt to be run
-debug 2024/07/23 06:34:33 batch cmd abt to be run
-debug 2024/07/23 06:34:34 batch cmd abt to be run
-debug 2024/07/23 06:34:34 batch cmd abt to be run
-debug 2024/07/23 06:34:34 Artist: t Release: t
-debug 2024/07/23 06:34:38 0
-debug 2024/07/23 06:34:42 batch cmd abt to be run
-debug 2024/07/23 06:34:43 batch cmd abt to be run
-debug 2024/07/23 06:34:43 batch cmd abt to be run
-debug 2024/07/23 06:34:43 batch cmd abt to be run
-debug 2024/07/23 06:34:43 Artist: t Release: t
-debug 2024/07/23 06:34:48 0
-debug 2024/07/23 06:34:53 batch cmd abt to be run
-debug 2024/07/23 06:34:53 batch cmd abt to be run
-debug 2024/07/23 06:34:54 batch cmd abt to be run
-debug 2024/07/23 06:34:54 batch cmd abt to be run
-debug 2024/07/23 06:34:55 batch cmd abt to be run
-debug 2024/07/23 06:34:55 batch cmd abt to be run
-debug 2024/07/23 06:34:55 batch cmd abt to be run
-debug 2024/07/23 06:34:55 batch cmd abt to be run
-debug 2024/07/23 06:34:56 Artist: t Release: t
-debug 2024/07/23 06:34:59 0
-debug 2024/07/23 06:35:02 batch cmd abt to be run
-debug 2024/07/23 06:35:02 batch cmd abt to be run
-debug 2024/07/23 06:35:03 batch cmd abt to be run
-debug 2024/07/23 06:35:03 batch cmd abt to be run
-debug 2024/07/23 06:35:03 Artist: t Release: t
-debug 2024/07/23 06:35:08 5
-debug 2024/07/23 06:35:12 batch cmd abt to be run
-debug 2024/07/23 06:35:13 batch cmd abt to be run
-debug 2024/07/23 06:35:13 batch cmd abt to be run
-debug 2024/07/23 06:35:13 batch cmd abt to be run
-debug 2024/07/23 06:35:13 Artist: t Release: 4
-debug 2024/07/23 06:35:16 0
-debug 2024/07/23 06:35:16 &{fee1d5b0-da7b-4acf-a439-8bfc22473894 T 4 II Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1995-01-01 00:00:00 +0000 UTC FR   normal [] [0xc0000d4660] map[]}
-debug 2024/07/23 06:35:20 batch cmd abt to be run
-debug 2024/07/23 06:35:21 batch cmd abt to be run
-debug 2024/07/23 06:35:22 batch cmd abt to be run
-debug 2024/07/23 06:35:22 batch cmd abt to be run
-debug 2024/07/23 06:35:23 batch cmd abt to be run
-debug 2024/07/23 06:35:23 batch cmd abt to be run
-debug 2024/07/23 06:35:23 batch cmd abt to be run
-debug 2024/07/23 06:35:23 Artist: t Release: 3
-debug 2024/07/23 06:35:25 0
-debug 2024/07/23 06:35:25 &{dbc8469a-6603-4c1d-be75-562a4cb0cbbf Gustaf Fröding, del 3 Official  {swe Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1981-01-01 00:00:00 +0000 UTC SE   normal [] [0xc0000d46f0] map[]}
-debug 2024/07/23 06:35:28 batch cmd abt to be run
-debug 2024/07/23 06:35:29 batch cmd abt to be run
-debug 2024/07/23 06:35:29 batch cmd abt to be run
-debug 2024/07/23 06:35:29 batch cmd abt to be run
-debug 2024/07/23 06:35:30 batch cmd abt to be run
-debug 2024/07/23 06:35:30 batch cmd abt to be run
-debug 2024/07/23 06:35:30 batch cmd abt to be run
-debug 2024/07/23 06:35:31 batch cmd abt to be run
-debug 2024/07/23 06:35:31 batch cmd abt to be run
-debug 2024/07/23 06:35:31 Artist: t Release: t
-debug 2024/07/23 06:35:33 0
-debug 2024/07/23 06:35:33 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc000121170] map[]}
-debug 2024/07/23 06:38:27 batch cmd abt to be run
-debug 2024/07/23 06:38:27 batch cmd abt to be run
-debug 2024/07/23 06:38:28 batch cmd abt to be run
-debug 2024/07/23 06:38:28 batch cmd abt to be run
-debug 2024/07/23 06:38:28 Artist: t Release: t
-debug 2024/07/23 06:38:30 0
-debug 2024/07/23 06:38:34 batch cmd abt to be run
-debug 2024/07/23 06:38:35 batch cmd abt to be run
-debug 2024/07/23 06:38:36 batch cmd abt to be run
-debug 2024/07/23 06:38:36 batch cmd abt to be run
-debug 2024/07/23 06:38:39 Artist: t Release: t
-debug 2024/07/23 06:38:43 0
-debug 2024/07/23 06:38:43 &{75336aae-e0d4-474a-a5dd-4c9a5948a593 T-Connection Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1978-11-09 00:00:00 +0000 UTC US   normal [] [0xc0001210b0] map[]}
-debug 2024/07/23 06:40:04 batch cmd abt to be run
-debug 2024/07/23 06:40:05 batch cmd abt to be run
-debug 2024/07/23 06:40:05 batch cmd abt to be run
-debug 2024/07/23 06:40:05 batch cmd abt to be run
-debug 2024/07/23 06:40:06 batch cmd abt to be run
-debug 2024/07/23 06:40:06 batch cmd abt to be run
-debug 2024/07/23 06:40:06 batch cmd abt to be run
-debug 2024/07/23 06:40:06 batch cmd abt to be run
-debug 2024/07/23 06:40:06 batch cmd abt to be run
-debug 2024/07/23 06:40:07 batch cmd abt to be run
-debug 2024/07/23 06:40:07 batch cmd abt to be run
-debug 2024/07/23 06:40:07 batch cmd abt to be run
-debug 2024/07/23 06:40:07 batch cmd abt to be run
-debug 2024/07/23 06:40:07 batch cmd abt to be run
-debug 2024/07/23 06:40:07 batch cmd abt to be run
-debug 2024/07/23 06:40:08 batch cmd abt to be run
-debug 2024/07/23 06:40:08 batch cmd abt to be run
-debug 2024/07/23 06:40:08 batch cmd abt to be run
-debug 2024/07/23 06:40:08 batch cmd abt to be run
-debug 2024/07/23 06:40:08 batch cmd abt to be run
-debug 2024/07/23 06:40:09 batch cmd abt to be run
-debug 2024/07/23 06:40:09 batch cmd abt to be run
-debug 2024/07/23 06:40:09 batch cmd abt to be run
-debug 2024/07/23 06:40:09 batch cmd abt to be run
-debug 2024/07/23 06:40:09 Artist: pink floyd Release: the wall
-debug 2024/07/23 06:40:13 7
-debug 2024/07/23 06:40:17 batch cmd abt to be run
-debug 2024/07/23 06:40:17 batch cmd abt to be run
-debug 2024/07/23 06:40:17 batch cmd abt to be run
-debug 2024/07/23 06:40:17 batch cmd abt to be run
-debug 2024/07/23 06:40:18 batch cmd abt to be run
-debug 2024/07/23 06:40:18 batch cmd abt to be run
-debug 2024/07/23 06:40:18 batch cmd abt to be run
-debug 2024/07/23 06:40:18 batch cmd abt to be run
-debug 2024/07/23 06:40:18 batch cmd abt to be run
-debug 2024/07/23 06:40:18 batch cmd abt to be run
-debug 2024/07/23 06:40:19 batch cmd abt to be run
-debug 2024/07/23 06:40:20 batch cmd abt to be run
-debug 2024/07/23 06:40:20 batch cmd abt to be run
-debug 2024/07/23 06:40:20 batch cmd abt to be run
-debug 2024/07/23 06:40:20 batch cmd abt to be run
-debug 2024/07/23 06:40:20 batch cmd abt to be run
-debug 2024/07/23 06:40:20 batch cmd abt to be run
-debug 2024/07/23 06:40:20 batch cmd abt to be run
-debug 2024/07/23 06:40:21 batch cmd abt to be run
-debug 2024/07/23 06:40:21 batch cmd abt to be run
-debug 2024/07/23 06:40:21 Artist: pink floyd Release: the wall
-debug 2024/07/23 06:40:26 7
-debug 2024/07/23 06:40:27 &{527992ea-944f-3f5e-a078-3841f39afcec The Wall Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1979-11-30 00:00:00 +0000 UTC US   normal [] [0xc00031c450 0xc00031c9f0] map[]}
+debug 2024/07/25 02:19:30 batch cmd abt to be run
+debug 2024/07/25 02:19:30 batch cmd abt to be run
+debug 2024/07/25 02:19:30 batch cmd abt to be run
+debug 2024/07/25 02:19:30 batch cmd abt to be run
+debug 2024/07/25 02:19:31 batch cmd abt to be run
+debug 2024/07/25 02:19:31 batch cmd abt to be run
+debug 2024/07/25 02:19:31 batch cmd abt to be run
+debug 2024/07/25 02:19:32 batch cmd abt to be run
+debug 2024/07/25 02:19:32 batch cmd abt to be run
+debug 2024/07/25 02:19:32 batch cmd abt to be run
+debug 2024/07/25 02:19:33 batch cmd abt to be run
+debug 2024/07/25 02:19:33 batch cmd abt to be run
+debug 2024/07/25 02:19:33 batch cmd abt to be run
+debug 2024/07/25 02:19:33 batch cmd abt to be run
+debug 2024/07/25 02:19:34 batch cmd abt to be run
+debug 2024/07/25 02:19:34 batch cmd abt to be run
+debug 2024/07/25 02:19:34 batch cmd abt to be run
+debug 2024/07/25 02:19:34 batch cmd abt to be run
+debug 2024/07/25 02:19:35 batch cmd abt to be run
+debug 2024/07/25 02:19:35 batch cmd abt to be run
+debug 2024/07/25 02:19:35 batch cmd abt to be run
+debug 2024/07/25 02:19:35 batch cmd abt to be run
+debug 2024/07/25 02:19:35 Artist: genesis Release: genesis
+debug 2024/07/25 02:19:37 0
+debug 2024/07/25 02:19:37 &{3d1b2a9d-9e31-49ac-9b3d-15569ecf8405 Genesis Official  { } {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1983-10-03 00:00:00 +0000 UTC NL 042281428715  normal [] [0xc0000948d0] map[]}
+debug 2024/07/25 02:19:41 batch cmd abt to be run
+debug 2024/07/25 02:19:41 Artist: genesis Release: genesis
+debug 2024/07/25 02:19:45 3
+debug 2024/07/25 02:19:45 &{72ce18dd-f6fc-449b-b542-2abc5d56e548 Genesis Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1983-10-03 00:00:00 +0000 UTC US 075678011610  normal [] [0xc0003aa360] map[]}
+debug 2024/07/25 02:19:48 {Audio 1 1 1 wave 0 2779.92 0 1 2 0 0 -1 1}
+debug 2024/07/25 02:19:48 Release length: 2759.356000
+debug 2024/07/25 02:19:48 Length mod: -0.007425
+debug 2024/07/25 02:19:48 [{Mama 410.8943222659424} {That’s-All 268.2701714758391} {Home-by-the-Sea 295.04047060735013} {Second-Home-by-the-Sea 385.70870234016144} {Illegal-Alien 317.58059301612707} {Taking-It-All-Too-Hard 240.1297746203656} {Just-a-Job-to-Do 289.6406736952627} {Silver-Rainbow 271.9371977370328} {It’s-Gonna-Get-Better 300.64175247884384}]
+debug 2024/07/25 02:19:48 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:19:50 Export res:Exported to FLAC format: ./code/rripper/testdata/Mama.flacBatchCommand finished: OK
+debug 2024/07/25 02:19:50 410.8943222659424
+debug 2024/07/25 02:19:51 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:19:52 Export res:Exported to FLAC format: ./code/rripper/testdata/That’s-All.flacBatchCommand finished: OK
+debug 2024/07/25 02:19:52 679.1644937417815
+debug 2024/07/25 02:19:53 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:19:55 Export res:Exported to FLAC format: ./code/rripper/testdata/Home-by-the-Sea.flacBatchCommand finished: OK
+debug 2024/07/25 02:19:55 974.2049643491316
+debug 2024/07/25 02:19:56 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:19:57 Export res:Exported to FLAC format: ./code/rripper/testdata/Second-Home-by-the-Sea.flacBatchCommand finished: OK
+debug 2024/07/25 02:19:57 1359.913666689293
+debug 2024/07/25 02:19:58 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:20:00 Export res:Exported to FLAC format: ./code/rripper/testdata/Illegal-Alien.flacBatchCommand finished: OK
+debug 2024/07/25 02:20:00 1677.49425970542
+debug 2024/07/25 02:20:01 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:20:02 Export res:Exported to FLAC format: ./code/rripper/testdata/Taking-It-All-Too-Hard.flacBatchCommand finished: OK
+debug 2024/07/25 02:20:02 1917.6240343257857
+debug 2024/07/25 02:20:03 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:20:04 Export res:Exported to FLAC format: ./code/rripper/testdata/Just-a-Job-to-Do.flacBatchCommand finished: OK
+debug 2024/07/25 02:20:04 2207.2647080210486
+debug 2024/07/25 02:20:05 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:20:07 Export res:Exported to FLAC format: ./code/rripper/testdata/Silver-Rainbow.flacBatchCommand finished: OK
+debug 2024/07/25 02:20:07 2479.2019057580815
+debug 2024/07/25 02:20:08 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:20:09 Export res:Exported to FLAC format: ./code/rripper/testdata/It’s-Gonna-Get-Better.flacBatchCommand finished: OK
+debug 2024/07/25 02:20:09 2779.8436582369254
+debug 2024/07/25 02:20:10 batch cmd abt to be run
+debug 2024/07/25 02:29:10 batch cmd abt to be run
+debug 2024/07/25 02:29:10 batch cmd abt to be run
+debug 2024/07/25 02:29:11 batch cmd abt to be run
+debug 2024/07/25 02:29:11 batch cmd abt to be run
+debug 2024/07/25 02:29:11 batch cmd abt to be run
+debug 2024/07/25 02:29:12 batch cmd abt to be run
+debug 2024/07/25 02:29:12 batch cmd abt to be run
+debug 2024/07/25 02:29:12 batch cmd abt to be run
+debug 2024/07/25 02:29:17 batch cmd abt to be run
+debug 2024/07/25 02:29:17 batch cmd abt to be run
+debug 2024/07/25 02:29:17 batch cmd abt to be run
+debug 2024/07/25 02:29:17 batch cmd abt to be run
+debug 2024/07/25 02:29:18 batch cmd abt to be run
+debug 2024/07/25 02:29:18 batch cmd abt to be run
+debug 2024/07/25 02:29:18 batch cmd abt to be run
+debug 2024/07/25 02:29:18 batch cmd abt to be run
+debug 2024/07/25 02:29:19 Artist: genesis Release: genesis
+debug 2024/07/25 02:29:22 3
+debug 2024/07/25 02:29:22 &{72ce18dd-f6fc-449b-b542-2abc5d56e548 Genesis Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1983-10-03 00:00:00 +0000 UTC US 075678011610  normal [] [0xc0001862a0] map[]}
+debug 2024/07/25 02:29:23 {Audio 1 1 1 wave 0 2779.92 0 1 2 0 0 -1 1}
+debug 2024/07/25 02:29:23 Release length: 2759.356000
+debug 2024/07/25 02:29:23 Length mod: -0.007425
+debug 2024/07/25 02:29:23 [{Mama 410.86403904328296} {That’s-All 268.2503997610807} {Home-by-the-Sea 295.01872590127664} {Second-Home-by-the-Sea 385.68027531675983} {Illegal-Alien 317.5571870859658} {Taking-It-All-Too-Hard 240.11207687416194} {Just-a-Job-to-Do 289.61932695831007} {Silver-Rainbow 271.9171557596625} {It’s-Gonna-Get-Better 300.6195949540554}]
+debug 2024/07/25 02:29:23 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:29:25 Export res:Exported to FLAC format: ./code/rripper/testdata/Mama.flacBatchCommand finished: OK
+debug 2024/07/25 02:29:25 410.86403904328296
+debug 2024/07/25 02:29:26 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:29:27 Export res:Exported to FLAC format: ./code/rripper/testdata/That’s-All.flacBatchCommand finished: OK
+debug 2024/07/25 02:29:27 679.1144388043637
+debug 2024/07/25 02:29:28 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:29:30 Export res:Exported to FLAC format: ./code/rripper/testdata/Home-by-the-Sea.flacBatchCommand finished: OK
+debug 2024/07/25 02:29:30 974.1331647056403
+debug 2024/07/25 02:29:31 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:29:32 Export res:Exported to FLAC format: ./code/rripper/testdata/Second-Home-by-the-Sea.flacBatchCommand finished: OK
+debug 2024/07/25 02:29:32 1359.8134400224
+debug 2024/07/25 02:29:33 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:29:35 Export res:Exported to FLAC format: ./code/rripper/testdata/Illegal-Alien.flacBatchCommand finished: OK
+debug 2024/07/25 02:29:35 1677.3706271083659
+debug 2024/07/25 02:29:36 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:29:37 Export res:Exported to FLAC format: ./code/rripper/testdata/Taking-It-All-Too-Hard.flacBatchCommand finished: OK
+debug 2024/07/25 02:29:37 1917.4827039825277
+debug 2024/07/25 02:29:38 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:29:39 Export res:Exported to FLAC format: ./code/rripper/testdata/Just-a-Job-to-Do.flacBatchCommand finished: OK
+debug 2024/07/25 02:29:39 2207.1020309408377
+debug 2024/07/25 02:29:40 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:29:41 Export res:Exported to FLAC format: ./code/rripper/testdata/Silver-Rainbow.flacBatchCommand finished: OK
+debug 2024/07/25 02:29:41 2479.0191867005
+debug 2024/07/25 02:29:42 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:29:44 Export res:Exported to FLAC format: ./code/rripper/testdata/It’s-Gonna-Get-Better.flacBatchCommand finished: OK
+debug 2024/07/25 02:29:44 2779.6387816545557
+debug 2024/07/25 02:29:45 batch cmd abt to be run
+debug 2024/07/25 02:31:17 batch cmd abt to be run
+debug 2024/07/25 02:31:18 batch cmd abt to be run
+debug 2024/07/25 02:31:18 batch cmd abt to be run
+debug 2024/07/25 02:31:18 batch cmd abt to be run
+debug 2024/07/25 02:31:19 batch cmd abt to be run
+debug 2024/07/25 02:31:19 batch cmd abt to be run
+debug 2024/07/25 02:31:20 batch cmd abt to be run
+debug 2024/07/25 02:31:20 batch cmd abt to be run
+debug 2024/07/25 02:31:20 batch cmd abt to be run
+debug 2024/07/25 02:31:21 batch cmd abt to be run
+debug 2024/07/25 02:31:21 batch cmd abt to be run
+debug 2024/07/25 02:31:21 batch cmd abt to be run
+debug 2024/07/25 02:31:21 batch cmd abt to be run
+debug 2024/07/25 02:31:21 batch cmd abt to be run
+debug 2024/07/25 02:31:22 batch cmd abt to be run
+debug 2024/07/25 02:31:23 batch cmd abt to be run
+debug 2024/07/25 02:31:23 batch cmd abt to be run
+debug 2024/07/25 02:31:23 batch cmd abt to be run
+debug 2024/07/25 02:31:27 Artist: genesis Release: genesis
+debug 2024/07/25 02:31:38 3
+debug 2024/07/25 02:31:39 &{72ce18dd-f6fc-449b-b542-2abc5d56e548 Genesis Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1983-10-03 00:00:00 +0000 UTC US 075678011610  normal [] [0xc000186450] map[]}
+debug 2024/07/25 02:31:40 {Audio 1 1 0 wave 0 2781.22 0 1 2 0 0 -1 1}
+debug 2024/07/25 02:31:40 Release length: 2759.356000
+debug 2024/07/25 02:31:40 Length mod: -0.007892
+debug 2024/07/25 02:31:40 [{Mama 411.05281898840843} {That’s-All 268.3736529322872} {Home-by-the-Sea 295.15427833126375} {Second-Home-by-the-Sea 385.8574840629422} {Illegal-Alien 317.70309527615905} {Taking-It-All-Too-Hard 240.22240131336528} {Just-a-Job-to-Do 289.75239852324376} {Silver-Rainbow 272.04209369743506} {It’s-Gonna-Get-Better 300.75772081868746}]
+debug 2024/07/25 02:31:40 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:31:42 Export res:Exported to FLAC format: ./code/rripper/testdata/Mama.flacBatchCommand finished: OK
+debug 2024/07/25 02:31:42 411.05281898840843
+debug 2024/07/25 02:31:43 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:31:44 Export res:Exported to FLAC format: ./code/rripper/testdata/That’s-All.flacBatchCommand finished: OK
+debug 2024/07/25 02:31:44 679.4264719206956
+debug 2024/07/25 02:31:45 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:31:47 Export res:Exported to FLAC format: ./code/rripper/testdata/Home-by-the-Sea.flacBatchCommand finished: OK
+debug 2024/07/25 02:31:47 974.5807502519593
+debug 2024/07/25 02:31:48 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:31:49 Export res:Exported to FLAC format: ./code/rripper/testdata/Second-Home-by-the-Sea.flacBatchCommand finished: OK
+debug 2024/07/25 02:31:49 1360.4382343149016
+debug 2024/07/25 02:31:50 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:31:52 Export res:Exported to FLAC format: ./code/rripper/testdata/Illegal-Alien.flacBatchCommand finished: OK
+debug 2024/07/25 02:31:52 1678.1413295910606
+debug 2024/07/25 02:31:53 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:31:54 Export res:Exported to FLAC format: ./code/rripper/testdata/Taking-It-All-Too-Hard.flacBatchCommand finished: OK
+debug 2024/07/25 02:31:54 1918.363730904426
+debug 2024/07/25 02:31:55 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:31:56 Export res:Exported to FLAC format: ./code/rripper/testdata/Just-a-Job-to-Do.flacBatchCommand finished: OK
+debug 2024/07/25 02:31:56 2208.11612942767
+debug 2024/07/25 02:31:57 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:31:58 Export res:Exported to FLAC format: ./code/rripper/testdata/Silver-Rainbow.flacBatchCommand finished: OK
+debug 2024/07/25 02:31:58 2480.158223125105
+debug 2024/07/25 02:31:59 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:32:01 Export res:Exported to FLAC format: ./code/rripper/testdata/It’s-Gonna-Get-Better.flacBatchCommand finished: OK
+debug 2024/07/25 02:32:01 2780.9159439437926
+debug 2024/07/25 02:32:02 batch cmd abt to be run
+debug 2024/07/25 02:33:14 batch cmd abt to be run
+debug 2024/07/25 02:33:14 batch cmd abt to be run
+debug 2024/07/25 02:33:15 batch cmd abt to be run
+debug 2024/07/25 02:33:15 batch cmd abt to be run
+debug 2024/07/25 02:33:15 batch cmd abt to be run
+debug 2024/07/25 02:33:15 batch cmd abt to be run
+debug 2024/07/25 02:33:16 batch cmd abt to be run
+debug 2024/07/25 02:33:16 batch cmd abt to be run
+debug 2024/07/25 02:33:16 batch cmd abt to be run
+debug 2024/07/25 02:33:17 batch cmd abt to be run
+debug 2024/07/25 02:33:17 batch cmd abt to be run
+debug 2024/07/25 02:33:17 batch cmd abt to be run
+debug 2024/07/25 02:33:17 batch cmd abt to be run
+debug 2024/07/25 02:33:17 batch cmd abt to be run
+debug 2024/07/25 02:33:17 batch cmd abt to be run
+debug 2024/07/25 02:33:18 batch cmd abt to be run
+debug 2024/07/25 02:33:19 Artist: genesis Release: genesis
+debug 2024/07/25 02:33:22 3
+debug 2024/07/25 02:33:22 &{72ce18dd-f6fc-449b-b542-2abc5d56e548 Genesis Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1983-10-03 00:00:00 +0000 UTC US 075678011610  normal [] [0xc000300390] map[]}
+debug 2024/07/25 02:33:24 {Audio 1 1 0 wave 0 2782.31 0 1 2 0 0 -1 1}
+debug 2024/07/25 02:33:24 Release length: 2759.356000
+debug 2024/07/25 02:33:24 Length mod: -0.008284
+debug 2024/07/25 02:33:24 [{Mama 411.21103544687105} {That’s-All 268.47695140623057} {Home-by-the-Sea 295.26788481310854} {Second-Home-by-the-Sea 386.0060027004009} {Illegal-Alien 317.8253809198895} {Taking-It-All-Too-Hard 240.3148642179446} {Just-a-Job-to-Do 289.8639257922654} {Silver-Rainbow 272.1468041741166} {It’s-Gonna-Get-Better 300.8734840959235}]
+debug 2024/07/25 02:33:24 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:33:25 Export res:Exported to FLAC format: ./code/rripper/testdata/Mama.flacBatchCommand finished: OK
+debug 2024/07/25 02:33:25 411.21103544687105
+debug 2024/07/25 02:33:26 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:33:28 Export res:Exported to FLAC format: ./code/rripper/testdata/That’s-All.flacBatchCommand finished: OK
+debug 2024/07/25 02:33:28 679.6879868531016
+debug 2024/07/25 02:33:29 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:33:30 Export res:Exported to FLAC format: ./code/rripper/testdata/Home-by-the-Sea.flacBatchCommand finished: OK
+debug 2024/07/25 02:33:30 974.9558716662102
+debug 2024/07/25 02:33:31 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:33:33 Export res:Exported to FLAC format: ./code/rripper/testdata/Second-Home-by-the-Sea.flacBatchCommand finished: OK
+debug 2024/07/25 02:33:33 1360.961874366611
+debug 2024/07/25 02:33:34 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:33:35 Export res:Exported to FLAC format: ./code/rripper/testdata/Illegal-Alien.flacBatchCommand finished: OK
+debug 2024/07/25 02:33:35 1678.7872552865006
+debug 2024/07/25 02:33:36 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:33:37 Export res:Exported to FLAC format: ./code/rripper/testdata/Taking-It-All-Too-Hard.flacBatchCommand finished: OK
+debug 2024/07/25 02:33:37 1919.1021195044452
+debug 2024/07/25 02:33:38 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:33:40 Export res:Exported to FLAC format: ./code/rripper/testdata/Just-a-Job-to-Do.flacBatchCommand finished: OK
+debug 2024/07/25 02:33:40 2208.9660452967105
+debug 2024/07/25 02:33:41 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:33:42 Export res:Exported to FLAC format: ./code/rripper/testdata/Silver-Rainbow.flacBatchCommand finished: OK
+debug 2024/07/25 02:33:42 2481.1128494708273
+debug 2024/07/25 02:33:43 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:33:44 Export res:Exported to FLAC format: ./code/rripper/testdata/It’s-Gonna-Get-Better.flacBatchCommand finished: OK
+debug 2024/07/25 02:33:44 2781.986333566751
+debug 2024/07/25 02:33:45 batch cmd abt to be run
+debug 2024/07/25 02:38:27 batch cmd abt to be run
+debug 2024/07/25 02:38:28 batch cmd abt to be run
+debug 2024/07/25 02:38:29 batch cmd abt to be run
+debug 2024/07/25 02:38:29 batch cmd abt to be run
+debug 2024/07/25 02:38:29 batch cmd abt to be run
+debug 2024/07/25 02:38:29 batch cmd abt to be run
+debug 2024/07/25 02:38:29 batch cmd abt to be run
+debug 2024/07/25 02:38:30 batch cmd abt to be run
+debug 2024/07/25 02:38:30 batch cmd abt to be run
+debug 2024/07/25 02:38:31 batch cmd abt to be run
+debug 2024/07/25 02:38:31 batch cmd abt to be run
+debug 2024/07/25 02:38:31 batch cmd abt to be run
+debug 2024/07/25 02:38:31 batch cmd abt to be run
+debug 2024/07/25 02:38:31 batch cmd abt to be run
+debug 2024/07/25 02:38:31 batch cmd abt to be run
+debug 2024/07/25 02:38:32 batch cmd abt to be run
+debug 2024/07/25 02:38:32 Artist: genesis Release: genesis
+debug 2024/07/25 02:38:36 3
+debug 2024/07/25 02:38:36 &{72ce18dd-f6fc-449b-b542-2abc5d56e548 Genesis Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1983-10-03 00:00:00 +0000 UTC US 075678011610  normal [] [0xc000436330] map[]}
+debug 2024/07/25 02:38:37 {Audio 1 1 1 wave 0 2782.31 0 1 2 0 0 -1 1}
+debug 2024/07/25 02:38:37 Release length: 2759.356000
+debug 2024/07/25 02:38:37 Length mod: -0.008284
+debug 2024/07/25 02:38:37 [{0-Mama 411.21103544687105} {1-That’s-All 268.47695140623057} {2-Home-by-the-Sea 295.26788481310854} {3-Second-Home-by-the-Sea 386.0060027004009} {4-Illegal-Alien 317.8253809198895} {5-Taking-It-All-Too-Hard 240.3148642179446} {6-Just-a-Job-to-Do 289.8639257922654} {7-Silver-Rainbow 272.1468041741166} {8-It’s-Gonna-Get-Better 300.8734840959235}]
+debug 2024/07/25 02:38:37 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:38:39 Export res:Exported to FLAC format: ./code/rripper/testdata/0-Mama.flacBatchCommand finished: OK
+debug 2024/07/25 02:38:39 411.21103544687105
+debug 2024/07/25 02:38:40 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:38:41 Export res:Exported to FLAC format: ./code/rripper/testdata/1-That’s-All.flacBatchCommand finished: OK
+debug 2024/07/25 02:38:41 679.6879868531016
+debug 2024/07/25 02:38:42 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:38:43 Export res:Exported to FLAC format: ./code/rripper/testdata/2-Home-by-the-Sea.flacBatchCommand finished: OK
+debug 2024/07/25 02:38:43 974.9558716662102
+debug 2024/07/25 02:38:44 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:38:46 Export res:Exported to FLAC format: ./code/rripper/testdata/3-Second-Home-by-the-Sea.flacBatchCommand finished: OK
+debug 2024/07/25 02:38:46 1360.961874366611
+debug 2024/07/25 02:38:47 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:38:48 Export res:Exported to FLAC format: ./code/rripper/testdata/4-Illegal-Alien.flacBatchCommand finished: OK
+debug 2024/07/25 02:38:48 1678.7872552865006
+debug 2024/07/25 02:38:49 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:38:50 Export res:Exported to FLAC format: ./code/rripper/testdata/5-Taking-It-All-Too-Hard.flacBatchCommand finished: OK
+debug 2024/07/25 02:38:50 1919.1021195044452
+debug 2024/07/25 02:38:51 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:38:53 Export res:Exported to FLAC format: ./code/rripper/testdata/6-Just-a-Job-to-Do.flacBatchCommand finished: OK
+debug 2024/07/25 02:38:53 2208.9660452967105
+debug 2024/07/25 02:38:54 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:38:55 Export res:Exported to FLAC format: ./code/rripper/testdata/7-Silver-Rainbow.flacBatchCommand finished: OK
+debug 2024/07/25 02:38:55 2481.1128494708273
+debug 2024/07/25 02:38:56 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:38:57 Export res:Exported to FLAC format: ./code/rripper/testdata/8-It’s-Gonna-Get-Better.flacBatchCommand finished: OK
+debug 2024/07/25 02:38:57 2781.986333566751
+debug 2024/07/25 02:38:58 batch cmd abt to be run
+debug 2024/07/25 02:39:37 batch cmd abt to be run
+debug 2024/07/25 02:39:37 batch cmd abt to be run
+debug 2024/07/25 02:39:37 batch cmd abt to be run
+debug 2024/07/25 02:39:37 batch cmd abt to be run
+debug 2024/07/25 02:39:38 batch cmd abt to be run
+debug 2024/07/25 02:39:38 batch cmd abt to be run
+debug 2024/07/25 02:39:38 batch cmd abt to be run
+debug 2024/07/25 02:39:38 batch cmd abt to be run
+debug 2024/07/25 02:39:39 batch cmd abt to be run
+debug 2024/07/25 02:39:39 batch cmd abt to be run
+debug 2024/07/25 02:39:39 batch cmd abt to be run
+debug 2024/07/25 02:39:39 batch cmd abt to be run
+debug 2024/07/25 02:39:39 batch cmd abt to be run
+debug 2024/07/25 02:39:39 batch cmd abt to be run
+debug 2024/07/25 02:39:39 batch cmd abt to be run
+debug 2024/07/25 02:39:40 batch cmd abt to be run
+debug 2024/07/25 02:39:40 Artist: genesis Release: genesis
+debug 2024/07/25 02:39:43 3
+debug 2024/07/25 02:39:43 &{72ce18dd-f6fc-449b-b542-2abc5d56e548 Genesis Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1983-10-03 00:00:00 +0000 UTC US 075678011610  normal [] [0xc0002f6360] map[]}
+debug 2024/07/25 02:39:44 {Audio 1 1 1 wave 0 2782.31 0 1 2 0 0 -1 1}
+debug 2024/07/25 02:39:44 Release length: 2759.356000
+debug 2024/07/25 02:39:44 Length mod: -0.008284
+debug 2024/07/25 02:39:44 [{1-Mama 411.21103544687105} {2-That’s-All 268.47695140623057} {3-Home-by-the-Sea 295.26788481310854} {4-Second-Home-by-the-Sea 386.0060027004009} {5-Illegal-Alien 317.8253809198895} {6-Taking-It-All-Too-Hard 240.3148642179446} {7-Just-a-Job-to-Do 289.8639257922654} {8-Silver-Rainbow 272.1468041741166} {9-It’s-Gonna-Get-Better 300.8734840959235}]
+debug 2024/07/25 02:39:44 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:39:46 Export res:Exported to FLAC format: ./code/rripper/testdata/1-Mama.flacBatchCommand finished: OK
+debug 2024/07/25 02:39:46 411.21103544687105
+debug 2024/07/25 02:39:47 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:39:48 Export res:Exported to FLAC format: ./code/rripper/testdata/2-That’s-All.flacBatchCommand finished: OK
+debug 2024/07/25 02:39:48 679.6879868531016
+debug 2024/07/25 02:39:49 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:39:51 Export res:Exported to FLAC format: ./code/rripper/testdata/3-Home-by-the-Sea.flacBatchCommand finished: OK
+debug 2024/07/25 02:39:51 974.9558716662102
+debug 2024/07/25 02:39:52 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:39:53 Export res:Exported to FLAC format: ./code/rripper/testdata/4-Second-Home-by-the-Sea.flacBatchCommand finished: OK
+debug 2024/07/25 02:39:53 1360.961874366611
+debug 2024/07/25 02:39:54 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:39:56 Export res:Exported to FLAC format: ./code/rripper/testdata/5-Illegal-Alien.flacBatchCommand finished: OK
+debug 2024/07/25 02:39:56 1678.7872552865006
+debug 2024/07/25 02:39:57 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:39:58 Export res:Exported to FLAC format: ./code/rripper/testdata/6-Taking-It-All-Too-Hard.flacBatchCommand finished: OK
+debug 2024/07/25 02:39:58 1919.1021195044452
+debug 2024/07/25 02:39:59 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:40:00 Export res:Exported to FLAC format: ./code/rripper/testdata/7-Just-a-Job-to-Do.flacBatchCommand finished: OK
+debug 2024/07/25 02:40:00 2208.9660452967105
+debug 2024/07/25 02:40:01 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:40:03 Export res:Exported to FLAC format: ./code/rripper/testdata/8-Silver-Rainbow.flacBatchCommand finished: OK
+debug 2024/07/25 02:40:03 2481.1128494708273
+debug 2024/07/25 02:40:04 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:40:05 Export res:Exported to FLAC format: ./code/rripper/testdata/9-It’s-Gonna-Get-Better.flacBatchCommand finished: OK
+debug 2024/07/25 02:40:05 2781.986333566751
+debug 2024/07/25 02:40:06 batch cmd abt to be run
+debug 2024/07/25 02:40:30 Artist: genesis Release: genesis
+debug 2024/07/25 02:40:39 3
+debug 2024/07/25 02:40:39 &{72ce18dd-f6fc-449b-b542-2abc5d56e548 Genesis Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1983-10-03 00:00:00 +0000 UTC US 075678011610  normal [] [0xc0001211a0] map[]}
+debug 2024/07/25 02:40:40 {Audio 1 1 1 wave 0 2782.31 0 1 2 0 0 -1 1}
+debug 2024/07/25 02:40:40 Release length: 2759.356000
+debug 2024/07/25 02:40:40 Length mod: -0.008284
+debug 2024/07/25 02:40:40 [{1-Mama 411.21103544687105} {2-That’s-All 268.47695140623057} {3-Home-by-the-Sea 295.26788481310854} {4-Second-Home-by-the-Sea 386.0060027004009} {5-Illegal-Alien 317.8253809198895} {6-Taking-It-All-Too-Hard 240.3148642179446} {7-Just-a-Job-to-Do 289.8639257922654} {8-Silver-Rainbow 272.1468041741166} {9-It’s-Gonna-Get-Better 300.8734840959235}]
+debug 2024/07/25 02:40:40 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:40:42 Export res:Exported to FLAC format: ./code/rripper/testdata/1-Mama.flacBatchCommand finished: OK
+debug 2024/07/25 02:40:42 411.21103544687105
+debug 2024/07/25 02:40:43 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:40:44 Export res:Exported to FLAC format: ./code/rripper/testdata/2-That’s-All.flacBatchCommand finished: OK
+debug 2024/07/25 02:40:44 679.6879868531016
+debug 2024/07/25 02:40:45 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:40:46 Export res:Exported to FLAC format: ./code/rripper/testdata/3-Home-by-the-Sea.flacBatchCommand finished: OK
+debug 2024/07/25 02:40:46 974.9558716662102
+debug 2024/07/25 02:40:47 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:40:49 Export res:Exported to FLAC format: ./code/rripper/testdata/4-Second-Home-by-the-Sea.flacBatchCommand finished: OK
+debug 2024/07/25 02:40:49 1360.961874366611
+debug 2024/07/25 02:40:50 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:40:52 Export res:Exported to FLAC format: ./code/rripper/testdata/5-Illegal-Alien.flacBatchCommand finished: OK
+debug 2024/07/25 02:40:52 1678.7872552865006
+debug 2024/07/25 02:40:53 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:40:54 Export res:Exported to FLAC format: ./code/rripper/testdata/6-Taking-It-All-Too-Hard.flacBatchCommand finished: OK
+debug 2024/07/25 02:40:54 1919.1021195044452
+debug 2024/07/25 02:40:55 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:40:56 Export res:Exported to FLAC format: ./code/rripper/testdata/7-Just-a-Job-to-Do.flacBatchCommand finished: OK
+debug 2024/07/25 02:40:56 2208.9660452967105
+debug 2024/07/25 02:40:57 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:40:58 Export res:Exported to FLAC format: ./code/rripper/testdata/8-Silver-Rainbow.flacBatchCommand finished: OK
+debug 2024/07/25 02:40:58 2481.1128494708273
+debug 2024/07/25 02:40:59 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:41:00 Export res:Exported to FLAC format: ./code/rripper/testdata/9-It’s-Gonna-Get-Better.flacBatchCommand finished: OK
+debug 2024/07/25 02:41:00 2781.986333566751
+debug 2024/07/25 02:41:01 batch cmd abt to be run
+debug 2024/07/25 02:47:02 batch cmd abt to be run
+debug 2024/07/25 02:47:02 batch cmd abt to be run
+debug 2024/07/25 02:47:03 batch cmd abt to be run
+debug 2024/07/25 02:47:03 batch cmd abt to be run
+debug 2024/07/25 02:47:03 batch cmd abt to be run
+debug 2024/07/25 02:47:03 batch cmd abt to be run
+debug 2024/07/25 02:47:04 batch cmd abt to be run
+debug 2024/07/25 02:47:04 batch cmd abt to be run
+debug 2024/07/25 02:47:05 batch cmd abt to be run
+debug 2024/07/25 02:47:05 batch cmd abt to be run
+debug 2024/07/25 02:47:05 batch cmd abt to be run
+debug 2024/07/25 02:47:06 batch cmd abt to be run
+debug 2024/07/25 02:47:06 batch cmd abt to be run
+debug 2024/07/25 02:47:06 batch cmd abt to be run
+debug 2024/07/25 02:47:06 batch cmd abt to be run
+debug 2024/07/25 02:47:06 batch cmd abt to be run
+debug 2024/07/25 02:47:06 batch cmd abt to be run
+debug 2024/07/25 02:47:06 batch cmd abt to be run
+debug 2024/07/25 02:47:06 batch cmd abt to be run
+debug 2024/07/25 02:47:06 batch cmd abt to be run
+debug 2024/07/25 02:47:06 batch cmd abt to be run
+debug 2024/07/25 02:47:06 batch cmd abt to be run
+debug 2024/07/25 02:47:06 batch cmd abt to be run
+debug 2024/07/25 02:47:06 batch cmd abt to be run
+debug 2024/07/25 02:47:07 batch cmd abt to be run
+debug 2024/07/25 02:47:07 batch cmd abt to be run
+debug 2024/07/25 02:47:07 batch cmd abt to be run
+debug 2024/07/25 02:47:07 batch cmd abt to be run
+debug 2024/07/25 02:47:07 batch cmd abt to be run
+debug 2024/07/25 02:47:07 batch cmd abt to be run
+debug 2024/07/25 02:47:07 batch cmd abt to be run
+debug 2024/07/25 02:47:08 batch cmd abt to be run
+debug 2024/07/25 02:47:08 batch cmd abt to be run
+debug 2024/07/25 02:47:08 batch cmd abt to be run
+debug 2024/07/25 02:47:09 batch cmd abt to be run
+debug 2024/07/25 02:47:09 batch cmd abt to be run
+debug 2024/07/25 02:47:09 batch cmd abt to be run
+debug 2024/07/25 02:47:09 batch cmd abt to be run
+debug 2024/07/25 02:47:10 batch cmd abt to be run
+debug 2024/07/25 02:47:10 batch cmd abt to be run
+debug 2024/07/25 02:47:11 batch cmd abt to be run
+debug 2024/07/25 02:47:12 batch cmd abt to be run
+debug 2024/07/25 02:47:12 batch cmd abt to be run
+debug 2024/07/25 02:47:12 batch cmd abt to be run
+debug 2024/07/25 02:47:13 batch cmd abt to be run
+debug 2024/07/25 02:47:13 batch cmd abt to be run
+debug 2024/07/25 02:47:13 batch cmd abt to be run
+debug 2024/07/25 02:47:13 batch cmd abt to be run
+debug 2024/07/25 02:47:14 batch cmd abt to be run
+debug 2024/07/25 02:47:14 batch cmd abt to be run
+debug 2024/07/25 02:47:14 batch cmd abt to be run
+debug 2024/07/25 02:47:14 batch cmd abt to be run
+debug 2024/07/25 02:47:14 batch cmd abt to be run
+debug 2024/07/25 02:47:14 batch cmd abt to be run
+debug 2024/07/25 02:47:15 batch cmd abt to be run
+debug 2024/07/25 02:47:15 batch cmd abt to be run
+debug 2024/07/25 02:47:15 batch cmd abt to be run
+debug 2024/07/25 02:47:16 batch cmd abt to be run
+debug 2024/07/25 02:47:16 batch cmd abt to be run
+debug 2024/07/25 02:47:17 batch cmd abt to be run
+debug 2024/07/25 02:47:17 batch cmd abt to be run
+debug 2024/07/25 02:47:18 batch cmd abt to be run
+debug 2024/07/25 02:47:18 batch cmd abt to be run
+debug 2024/07/25 02:47:18 batch cmd abt to be run
+debug 2024/07/25 02:47:18 batch cmd abt to be run
+debug 2024/07/25 02:47:19 batch cmd abt to be run
+debug 2024/07/25 02:47:19 batch cmd abt to be run
+debug 2024/07/25 02:47:20 batch cmd abt to be run
+debug 2024/07/25 02:47:20 Artist: simon and garfunkle Release: bridge over troubled water
+debug 2024/07/25 02:47:23 batch cmd abt to be run
+debug 2024/07/25 02:47:38 batch cmd abt to be run
+debug 2024/07/25 02:47:38 batch cmd abt to be run
+debug 2024/07/25 02:47:39 batch cmd abt to be run
+debug 2024/07/25 02:47:39 batch cmd abt to be run
+debug 2024/07/25 02:47:39 batch cmd abt to be run
+debug 2024/07/25 02:47:39 batch cmd abt to be run
+debug 2024/07/25 02:47:40 batch cmd abt to be run
+debug 2024/07/25 02:47:41 batch cmd abt to be run
+debug 2024/07/25 02:47:41 Artist: simon and garfunkel Release: bridge over troubled water
+debug 2024/07/25 02:48:23 6
+debug 2024/07/25 02:48:24 &{8d44b76f-a05b-434b-9781-79b60b0d5253 Bridge Over Troubled Water Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1970-01-26 00:00:00 +0000 UTC US   normal [] [0xc000404420] map[]}
+debug 2024/07/25 02:48:26 {Audio 1 1 1 wave 0 2206 0 1 2 0 0 -1 1}
+debug 2024/07/25 02:48:26 Release length: 2206.226000
+debug 2024/07/25 02:48:26 Length mod: 0.000102
+debug 2024/07/25 02:48:26 [{1-Bridge-Over-Troubled-Water 291.97038588685166} {2-El-cóndor-pasa-(If-I-Could) 185.98113621559727} {3-Cecilia 174.98225181575015} {4-Keep-the-Customer-Satisfied 152.98448301605583} {5-So-Long,-Frank-Lloyd-Wright 220.97758657874732} {6-The-Boxer 307.9687631957202} {7-Baby-Driver 194.98022345183585} {8-The-Only-Living-Boy-in-New-York 236.9759638876159} {9-Why-Don’t-You-Write-Me 165.20924307719503} {10-Bye-Bye-Love 174.98225181575015} {11-Song-for-the-Asking 98.98995959862437}]
+debug 2024/07/25 02:48:26 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:48:30 Export res:Exported to FLAC format: ./code/rripper/testdata/1-Bridge-Over-Troubled-Water.flacBatchCommand finished: OK
+debug 2024/07/25 02:48:30 291.97038588685166
+debug 2024/07/25 02:48:30 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:48:32 Export res:Exported to FLAC format: ./code/rripper/testdata/2-El-cóndor-pasa-(If-I-Could).flacBatchCommand finished: OK
+debug 2024/07/25 02:48:32 477.95152210244896
+debug 2024/07/25 02:48:32 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:48:34 Export res:Exported to FLAC format: ./code/rripper/testdata/3-Cecilia.flacBatchCommand finished: OK
+debug 2024/07/25 02:48:34 652.9337739181991
+debug 2024/07/25 02:48:34 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:48:36 Export res:Exported to FLAC format: ./code/rripper/testdata/4-Keep-the-Customer-Satisfied.flacBatchCommand finished: OK
+debug 2024/07/25 02:48:36 805.9182569342549
+debug 2024/07/25 02:48:36 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:48:39 Export res:Exported to FLAC format: ./code/rripper/testdata/5-So-Long,-Frank-Lloyd-Wright.flacBatchCommand finished: OK
+debug 2024/07/25 02:48:39 1026.8958435130023
+debug 2024/07/25 02:48:39 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:48:42 Export res:Exported to FLAC format: ./code/rripper/testdata/6-The-Boxer.flacBatchCommand finished: OK
+debug 2024/07/25 02:48:42 1334.8646067087225
+debug 2024/07/25 02:48:42 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:48:45 Export res:Exported to FLAC format: ./code/rripper/testdata/7-Baby-Driver.flacBatchCommand finished: OK
+debug 2024/07/25 02:48:45 1529.8448301605583
+debug 2024/07/25 02:48:45 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:48:47 Export res:Exported to FLAC format: ./code/rripper/testdata/8-The-Only-Living-Boy-in-New-York.flacBatchCommand finished: OK
+debug 2024/07/25 02:48:47 1766.8207940481743
+debug 2024/07/25 02:48:48 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:48:50 Export res:Exported to FLAC format: ./code/rripper/testdata/9-Why-Don’t-You-Write-Me.flacBatchCommand finished: OK
+debug 2024/07/25 02:48:50 1932.0300371253693
+debug 2024/07/25 02:48:50 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:48:52 Export res:Exported to FLAC format: ./code/rripper/testdata/10-Bye-Bye-Love.flacBatchCommand finished: OK
+debug 2024/07/25 02:48:52 2107.0122889411196
+debug 2024/07/25 02:48:52 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:48:53 Export res:Exported to FLAC format: ./code/rripper/testdata/11-Song-for-the-Asking.flacBatchCommand finished: OK
+debug 2024/07/25 02:48:53 2206.002248539744
+debug 2024/07/25 02:48:53 batch cmd abt to be run
+debug 2024/07/25 02:49:21 Artist: simon and garfunkel Release: bridge over troubled water
+debug 2024/07/25 02:49:27 6
+debug 2024/07/25 02:49:28 &{8d44b76f-a05b-434b-9781-79b60b0d5253 Bridge Over Troubled Water Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1970-01-26 00:00:00 +0000 UTC US   normal [] [0xc000254480] map[]}
+debug 2024/07/25 02:49:29 {Audio 1 1 1 wave 0 2206 0 1 2 0 0 -1 1}
+debug 2024/07/25 02:49:29 Release length: 2206.226000
+debug 2024/07/25 02:49:29 Length mod: 0.000102
+debug 2024/07/25 02:49:29 [{1-Bridge-Over-Troubled-Water 291.97038588685166} {2-El-cóndor-pasa-(If-I-Could) 185.98113621559727} {3-Cecilia 174.98225181575015} {4-Keep-the-Customer-Satisfied 152.98448301605583} {5-So-Long,-Frank-Lloyd-Wright 220.97758657874732} {6-The-Boxer 307.9687631957202} {7-Baby-Driver 194.98022345183585} {8-The-Only-Living-Boy-in-New-York 236.9759638876159} {9-Why-Don’t-You-Write-Me 165.20924307719503} {10-Bye-Bye-Love 174.98225181575015} {11-Song-for-the-Asking 98.98995959862437}]
+debug 2024/07/25 02:49:29 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:49:32 Export res:Exported to FLAC format: ./code/rripper/testdata/1-Bridge-Over-Troubled-Water.flacBatchCommand finished: OK
+debug 2024/07/25 02:49:32 291.97038588685166
+debug 2024/07/25 02:49:33 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:49:35 Export res:Exported to FLAC format: ./code/rripper/testdata/2-El-cóndor-pasa-(If-I-Could).flacBatchCommand finished: OK
+debug 2024/07/25 02:49:35 477.95152210244896
+debug 2024/07/25 02:49:35 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:49:37 Export res:Exported to FLAC format: ./code/rripper/testdata/3-Cecilia.flacBatchCommand finished: OK
+debug 2024/07/25 02:49:37 652.9337739181991
+debug 2024/07/25 02:49:37 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:49:39 Export res:Exported to FLAC format: ./code/rripper/testdata/4-Keep-the-Customer-Satisfied.flacBatchCommand finished: OK
+debug 2024/07/25 02:49:39 805.9182569342549
+debug 2024/07/25 02:49:39 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:49:42 Export res:Exported to FLAC format: ./code/rripper/testdata/5-So-Long,-Frank-Lloyd-Wright.flacBatchCommand finished: OK
+debug 2024/07/25 02:49:42 1026.8958435130023
+debug 2024/07/25 02:49:42 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:49:45 Export res:Exported to FLAC format: ./code/rripper/testdata/6-The-Boxer.flacBatchCommand finished: OK
+debug 2024/07/25 02:49:45 1334.8646067087225
+debug 2024/07/25 02:49:45 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:49:47 Export res:Exported to FLAC format: ./code/rripper/testdata/7-Baby-Driver.flacBatchCommand finished: OK
+debug 2024/07/25 02:49:47 1529.8448301605583
+debug 2024/07/25 02:49:47 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:49:50 Export res:Exported to FLAC format: ./code/rripper/testdata/8-The-Only-Living-Boy-in-New-York.flacBatchCommand finished: OK
+debug 2024/07/25 02:49:50 1766.8207940481743
+debug 2024/07/25 02:49:50 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:49:52 Export res:Exported to FLAC format: ./code/rripper/testdata/9-Why-Don’t-You-Write-Me.flacBatchCommand finished: OK
+debug 2024/07/25 02:49:52 1932.0300371253693
+debug 2024/07/25 02:49:52 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:49:53 Export res:Exported to FLAC format: ./code/rripper/testdata/10-Bye-Bye-Love.flacBatchCommand finished: OK
+debug 2024/07/25 02:49:53 2107.0122889411196
+debug 2024/07/25 02:49:53 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:49:54 Export res:Exported to FLAC format: ./code/rripper/testdata/11-Song-for-the-Asking.flacBatchCommand finished: OK
+debug 2024/07/25 02:49:54 2206.002248539744
+debug 2024/07/25 02:49:54 batch cmd abt to be run
+debug 2024/07/25 02:52:07 batch cmd abt to be run
+debug 2024/07/25 02:52:08 batch cmd abt to be run
+debug 2024/07/25 02:52:09 batch cmd abt to be run
+debug 2024/07/25 02:52:09 batch cmd abt to be run
+debug 2024/07/25 02:52:09 batch cmd abt to be run
+debug 2024/07/25 02:52:09 batch cmd abt to be run
+debug 2024/07/25 02:52:09 batch cmd abt to be run
+debug 2024/07/25 02:52:09 batch cmd abt to be run
+debug 2024/07/25 02:52:09 batch cmd abt to be run
+debug 2024/07/25 02:52:09 batch cmd abt to be run
+debug 2024/07/25 02:52:09 batch cmd abt to be run
+debug 2024/07/25 02:52:09 batch cmd abt to be run
+debug 2024/07/25 02:52:09 batch cmd abt to be run
+debug 2024/07/25 02:52:09 batch cmd abt to be run
+debug 2024/07/25 02:52:09 batch cmd abt to be run
+debug 2024/07/25 02:52:09 batch cmd abt to be run
+debug 2024/07/25 02:52:09 batch cmd abt to be run
+debug 2024/07/25 02:52:09 batch cmd abt to be run
+debug 2024/07/25 02:52:09 batch cmd abt to be run
+debug 2024/07/25 02:52:09 batch cmd abt to be run
+debug 2024/07/25 02:52:09 batch cmd abt to be run
+debug 2024/07/25 02:52:09 batch cmd abt to be run
+debug 2024/07/25 02:52:09 batch cmd abt to be run
+debug 2024/07/25 02:52:09 batch cmd abt to be run
+debug 2024/07/25 02:52:11 batch cmd abt to be run
+debug 2024/07/25 02:52:12 batch cmd abt to be run
+debug 2024/07/25 02:52:12 batch cmd abt to be run
+debug 2024/07/25 02:52:12 batch cmd abt to be run
+debug 2024/07/25 02:52:12 batch cmd abt to be run
+debug 2024/07/25 02:52:12 batch cmd abt to be run
+debug 2024/07/25 02:52:12 batch cmd abt to be run
+debug 2024/07/25 02:52:13 batch cmd abt to be run
+debug 2024/07/25 02:52:13 batch cmd abt to be run
+debug 2024/07/25 02:52:14 batch cmd abt to be run
+debug 2024/07/25 02:52:14 batch cmd abt to be run
+debug 2024/07/25 02:52:14 batch cmd abt to be run
+debug 2024/07/25 02:52:15 batch cmd abt to be run
+debug 2024/07/25 02:52:15 batch cmd abt to be run
+debug 2024/07/25 02:52:15 batch cmd abt to be run
+debug 2024/07/25 02:52:15 batch cmd abt to be run
+debug 2024/07/25 02:52:15 batch cmd abt to be run
+debug 2024/07/25 02:52:15 batch cmd abt to be run
+debug 2024/07/25 02:52:15 batch cmd abt to be run
+debug 2024/07/25 02:52:16 batch cmd abt to be run
+debug 2024/07/25 02:52:17 batch cmd abt to be run
+debug 2024/07/25 02:52:17 batch cmd abt to be run
+debug 2024/07/25 02:52:17 batch cmd abt to be run
+debug 2024/07/25 02:52:17 batch cmd abt to be run
+debug 2024/07/25 02:52:17 batch cmd abt to be run
+debug 2024/07/25 02:52:17 batch cmd abt to be run
+debug 2024/07/25 02:52:17 batch cmd abt to be run
+debug 2024/07/25 02:52:17 batch cmd abt to be run
+debug 2024/07/25 02:52:17 batch cmd abt to be run
+debug 2024/07/25 02:52:17 batch cmd abt to be run
+debug 2024/07/25 02:52:17 batch cmd abt to be run
+debug 2024/07/25 02:52:17 batch cmd abt to be run
+debug 2024/07/25 02:52:17 batch cmd abt to be run
+debug 2024/07/25 02:52:17 batch cmd abt to be run
+debug 2024/07/25 02:52:17 batch cmd abt to be run
+debug 2024/07/25 02:52:17 batch cmd abt to be run
+debug 2024/07/25 02:52:17 batch cmd abt to be run
+debug 2024/07/25 02:52:17 batch cmd abt to be run
+debug 2024/07/25 02:52:17 batch cmd abt to be run
+debug 2024/07/25 02:52:17 batch cmd abt to be run
+debug 2024/07/25 02:52:17 batch cmd abt to be run
+debug 2024/07/25 02:52:17 batch cmd abt to be run
+debug 2024/07/25 02:52:17 batch cmd abt to be run
+debug 2024/07/25 02:52:17 batch cmd abt to be run
+debug 2024/07/25 02:52:17 batch cmd abt to be run
+debug 2024/07/25 02:52:17 batch cmd abt to be run
+debug 2024/07/25 02:52:17 batch cmd abt to be run
+debug 2024/07/25 02:52:17 batch cmd abt to be run
+debug 2024/07/25 02:52:17 batch cmd abt to be run
+debug 2024/07/25 02:52:17 batch cmd abt to be run
+debug 2024/07/25 02:52:17 batch cmd abt to be run
+debug 2024/07/25 02:52:17 batch cmd abt to be run
+debug 2024/07/25 02:52:18 batch cmd abt to be run
+debug 2024/07/25 02:52:18 batch cmd abt to be run
+debug 2024/07/25 02:52:18 batch cmd abt to be run
+debug 2024/07/25 02:52:18 batch cmd abt to be run
+debug 2024/07/25 02:52:18 batch cmd abt to be run
+debug 2024/07/25 02:52:19 batch cmd abt to be run
+debug 2024/07/25 02:52:19 batch cmd abt to be run
+debug 2024/07/25 02:52:19 batch cmd abt to be run
+debug 2024/07/25 02:52:20 batch cmd abt to be run
+debug 2024/07/25 02:52:22 Artist: michael jackson Release: thriller
+debug 2024/07/25 02:52:26 0
+debug 2024/07/25 02:52:27 &{9c4c939e-5697-44d3-b2f2-b04226cf15f8 Thriller Official half-speed mastered {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1982-01-01 00:00:00 +0000 UTC US 074644811216  normal [] [0xc0003c8420] map[]}
+debug 2024/07/25 02:52:28 {Audio 1 1 1 wave 0 2206 0 1 2 0 0 -1 1}
+debug 2024/07/25 02:52:28 Release length: 2544.000000
+debug 2024/07/25 02:52:28 Length mod: 0.142316
+debug 2024/07/25 02:52:28 [{1-Wanna-Be-Startin’-Somethin’ 312.71508210526315} {2-Baby-Be-Mine 224.22702315789473} {3-The-Girl-Is-Mine 190.7218357894737} {4-Thriller 308.4195452631579} {5-Beat-It 222.50880842105263} {6-Billie-Jean 252.57756631578948} {7-Human-Nature 211.34041263157894} {8-P.Y.T.-(Pretty-Young-Thing) 205.32666105263158} {9-The-Lady-in-My-Life 257.7322105263158}]
+debug 2024/07/25 02:52:28 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:52:30 Export res:Exported to FLAC format: ./code/rripper/testdata/1-Wanna-Be-Startin’-Somethin’.flacBatchCommand finished: OK
+debug 2024/07/25 02:52:30 312.71508210526315
+debug 2024/07/25 02:52:30 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:52:31 Export res:Exported to FLAC format: ./code/rripper/testdata/2-Baby-Be-Mine.flacBatchCommand finished: OK
+debug 2024/07/25 02:52:31 536.9421052631578
+debug 2024/07/25 02:52:31 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:52:32 Export res:Exported to FLAC format: ./code/rripper/testdata/3-The-Girl-Is-Mine.flacBatchCommand finished: OK
+debug 2024/07/25 02:52:32 727.6639410526316
+debug 2024/07/25 02:52:32 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:52:33 Export res:Exported to FLAC format: ./code/rripper/testdata/4-Thriller.flacBatchCommand finished: OK
+debug 2024/07/25 02:52:33 1036.0834863157895
+debug 2024/07/25 02:52:33 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:52:34 Export res:Exported to FLAC format: ./code/rripper/testdata/5-Beat-It.flacBatchCommand finished: OK
+debug 2024/07/25 02:52:34 1258.5922947368422
+debug 2024/07/25 02:52:34 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:52:36 Export res:Exported to FLAC format: ./code/rripper/testdata/6-Billie-Jean.flacBatchCommand finished: OK
+debug 2024/07/25 02:52:36 1511.1698610526316
+debug 2024/07/25 02:52:36 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:52:37 Export res:Exported to FLAC format: ./code/rripper/testdata/7-Human-Nature.flacBatchCommand finished: OK
+debug 2024/07/25 02:52:37 1722.5102736842105
+debug 2024/07/25 02:52:37 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:52:38 Export res:Exported to FLAC format: ./code/rripper/testdata/8-P.Y.T.-(Pretty-Young-Thing).flacBatchCommand finished: OK
+debug 2024/07/25 02:52:38 1927.836934736842
+debug 2024/07/25 02:52:38 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:52:39 Export res:Exported to FLAC format: ./code/rripper/testdata/9-The-Lady-in-My-Life.flacBatchCommand finished: OK
+debug 2024/07/25 02:52:39 2185.5691452631577
+debug 2024/07/25 02:52:39 batch cmd abt to be run
+debug 2024/07/25 02:52:58 Artist: michael jackson Release: thriller
+debug 2024/07/25 02:53:01 0
+debug 2024/07/25 02:53:01 &{9c4c939e-5697-44d3-b2f2-b04226cf15f8 Thriller Official half-speed mastered {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1982-01-01 00:00:00 +0000 UTC US 074644811216  normal [] [0xc0002545a0] map[]}
+debug 2024/07/25 02:53:02 {Audio 1 1 1 wave 0 2206 0 1 2 0 0 -1 1}
+debug 2024/07/25 02:53:02 Release length: 2544.000000
+debug 2024/07/25 02:53:02 Length mod: 0.142316
+debug 2024/07/25 02:53:02 [{1-Wanna-Be-Startin’-Somethin’ 312.71508210526315} {2-Baby-Be-Mine 224.22702315789473} {3-The-Girl-Is-Mine 190.7218357894737} {4-Thriller 308.4195452631579} {5-Beat-It 222.50880842105263} {6-Billie-Jean 252.57756631578948} {7-Human-Nature 211.34041263157894} {8-P.Y.T.-(Pretty-Young-Thing) 205.32666105263158} {9-The-Lady-in-My-Life 257.7322105263158}]
+debug 2024/07/25 02:53:02 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:53:04 Export res:Exported to FLAC format: ./code/rripper/testdata/1-Wanna-Be-Startin’-Somethin’.flacBatchCommand finished: OK
+debug 2024/07/25 02:53:04 312.71508210526315
+debug 2024/07/25 02:53:04 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:53:05 Export res:Exported to FLAC format: ./code/rripper/testdata/2-Baby-Be-Mine.flacBatchCommand finished: OK
+debug 2024/07/25 02:53:05 536.9421052631578
+debug 2024/07/25 02:53:05 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:53:06 Export res:Exported to FLAC format: ./code/rripper/testdata/3-The-Girl-Is-Mine.flacBatchCommand finished: OK
+debug 2024/07/25 02:53:06 727.6639410526316
+debug 2024/07/25 02:53:06 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:53:07 Export res:Exported to FLAC format: ./code/rripper/testdata/4-Thriller.flacBatchCommand finished: OK
+debug 2024/07/25 02:53:07 1036.0834863157895
+debug 2024/07/25 02:53:07 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:53:08 Export res:Exported to FLAC format: ./code/rripper/testdata/5-Beat-It.flacBatchCommand finished: OK
+debug 2024/07/25 02:53:08 1258.5922947368422
+debug 2024/07/25 02:53:08 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:53:09 Export res:Exported to FLAC format: ./code/rripper/testdata/6-Billie-Jean.flacBatchCommand finished: OK
+debug 2024/07/25 02:53:09 1511.1698610526316
+debug 2024/07/25 02:53:10 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:53:10 Export res:Exported to FLAC format: ./code/rripper/testdata/7-Human-Nature.flacBatchCommand finished: OK
+debug 2024/07/25 02:53:10 1722.5102736842105
+debug 2024/07/25 02:53:11 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:53:11 Export res:Exported to FLAC format: ./code/rripper/testdata/8-P.Y.T.-(Pretty-Young-Thing).flacBatchCommand finished: OK
+debug 2024/07/25 02:53:11 1927.836934736842
+debug 2024/07/25 02:53:11 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:53:13 Export res:Exported to FLAC format: ./code/rripper/testdata/9-The-Lady-in-My-Life.flacBatchCommand finished: OK
+debug 2024/07/25 02:53:13 2185.5691452631577
+debug 2024/07/25 02:53:13 batch cmd abt to be run
+debug 2024/07/25 02:56:56 batch cmd abt to be run
+debug 2024/07/25 02:56:56 batch cmd abt to be run
+debug 2024/07/25 02:56:56 batch cmd abt to be run
+debug 2024/07/25 02:56:57 batch cmd abt to be run
+debug 2024/07/25 02:56:57 batch cmd abt to be run
+debug 2024/07/25 02:56:57 batch cmd abt to be run
+debug 2024/07/25 02:56:57 batch cmd abt to be run
+debug 2024/07/25 02:56:57 batch cmd abt to be run
+debug 2024/07/25 02:56:58 batch cmd abt to be run
+debug 2024/07/25 02:56:58 batch cmd abt to be run
+debug 2024/07/25 02:56:58 batch cmd abt to be run
+debug 2024/07/25 02:56:59 batch cmd abt to be run
+debug 2024/07/25 02:56:59 batch cmd abt to be run
+debug 2024/07/25 02:56:59 batch cmd abt to be run
+debug 2024/07/25 02:56:59 batch cmd abt to be run
+debug 2024/07/25 02:56:59 batch cmd abt to be run
+debug 2024/07/25 02:56:59 batch cmd abt to be run
+debug 2024/07/25 02:57:00 batch cmd abt to be run
+debug 2024/07/25 02:57:00 batch cmd abt to be run
+debug 2024/07/25 02:57:00 batch cmd abt to be run
+debug 2024/07/25 02:57:01 batch cmd abt to be run
+debug 2024/07/25 02:57:01 batch cmd abt to be run
+debug 2024/07/25 02:57:01 batch cmd abt to be run
+debug 2024/07/25 02:57:01 batch cmd abt to be run
+debug 2024/07/25 02:57:02 batch cmd abt to be run
+debug 2024/07/25 02:57:02 batch cmd abt to be run
+debug 2024/07/25 02:57:02 batch cmd abt to be run
+debug 2024/07/25 02:57:02 batch cmd abt to be run
+debug 2024/07/25 02:57:03 batch cmd abt to be run
+debug 2024/07/25 02:57:03 Artist: michael jackson Release: thriller
+debug 2024/07/25 02:57:08 0
+debug 2024/07/25 02:57:09 &{9c4c939e-5697-44d3-b2f2-b04226cf15f8 Thriller Official half-speed mastered {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1982-01-01 00:00:00 +0000 UTC US 074644811216  normal [] [0xc00012c780] map[]}
+debug 2024/07/25 02:57:10 {Audio 1 1 0 wave 0 2573.72 0 1 2 0 0 -1 1}
+debug 2024/07/25 02:57:10 Release length: 2544.000000
+debug 2024/07/25 02:57:10 Length mod: -0.011615
+debug 2024/07/25 02:57:10 Length mod: -0.011498
+debug 2024/07/25 02:57:10 [{1-Wanna-Be-Startin’-Somethin’ 368.1854181940395} {2-Baby-Be-Mine 264.0010828259459} {3-The-Girl-Is-Mine 224.55264516229883} {4-Thriller 363.12792618587963} {5-Beat-It 261.97808602268196} {6-Billie-Jean 297.38053007980113} {7-Human-Nature 248.82860680146626} {8-P.Y.T.-(Pretty-Young-Thing) 241.74811799004243} {9-The-Lady-in-My-Life 303.449520489593}]
+debug 2024/07/25 02:57:10 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:57:12 Export res:Exported to FLAC format: ./code/rripper/testdata/1-Wanna-Be-Startin’-Somethin’.flacBatchCommand finished: OK
+debug 2024/07/25 02:57:12 368.1854181940395
+debug 2024/07/25 02:57:12 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:57:13 Export res:Exported to FLAC format: ./code/rripper/testdata/2-Baby-Be-Mine.flacBatchCommand finished: OK
+debug 2024/07/25 02:57:13 632.1865010199854
+debug 2024/07/25 02:57:13 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:57:14 Export res:Exported to FLAC format: ./code/rripper/testdata/3-The-Girl-Is-Mine.flacBatchCommand finished: OK
+debug 2024/07/25 02:57:14 856.7391461822842
+debug 2024/07/25 02:57:14 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:57:16 Export res:Exported to FLAC format: ./code/rripper/testdata/4-Thriller.flacBatchCommand finished: OK
+debug 2024/07/25 02:57:16 1219.867072368164
+debug 2024/07/25 02:57:16 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:57:17 Export res:Exported to FLAC format: ./code/rripper/testdata/5-Beat-It.flacBatchCommand finished: OK
+debug 2024/07/25 02:57:17 1481.8451583908459
+debug 2024/07/25 02:57:17 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:57:19 Export res:Exported to FLAC format: ./code/rripper/testdata/6-Billie-Jean.flacBatchCommand finished: OK
+debug 2024/07/25 02:57:19 1779.2256884706471
+debug 2024/07/25 02:57:19 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:57:20 Export res:Exported to FLAC format: ./code/rripper/testdata/7-Human-Nature.flacBatchCommand finished: OK
+debug 2024/07/25 02:57:20 2028.0542952721134
+debug 2024/07/25 02:57:20 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:57:21 Export res:Exported to FLAC format: ./code/rripper/testdata/8-P.Y.T.-(Pretty-Young-Thing).flacBatchCommand finished: OK
+debug 2024/07/25 02:57:21 2269.802413262156
+debug 2024/07/25 02:57:21 Select res:BatchCommand finished: OK
+debug 2024/07/25 02:57:23 Export res:Exported to FLAC format: ./code/rripper/testdata/9-The-Lady-in-My-Life.flacBatchCommand finished: OK
+debug 2024/07/25 02:57:23 2573.2519337517488
+debug 2024/07/25 02:57:23 batch cmd abt to be run
+debug 2024/07/25 03:26:29 batch cmd abt to be run
+debug 2024/07/25 03:26:29 batch cmd abt to be run
+debug 2024/07/25 03:26:29 batch cmd abt to be run
+debug 2024/07/25 03:26:29 batch cmd abt to be run
+debug 2024/07/25 03:26:30 batch cmd abt to be run
+debug 2024/07/25 03:26:30 batch cmd abt to be run
+debug 2024/07/25 03:26:30 batch cmd abt to be run
+debug 2024/07/25 03:26:30 batch cmd abt to be run
+debug 2024/07/25 03:26:31 batch cmd abt to be run
+debug 2024/07/25 03:26:31 batch cmd abt to be run
+debug 2024/07/25 03:26:31 batch cmd abt to be run
+debug 2024/07/25 03:26:31 batch cmd abt to be run
+debug 2024/07/25 03:26:31 batch cmd abt to be run
+debug 2024/07/25 03:26:31 batch cmd abt to be run
+debug 2024/07/25 03:26:32 batch cmd abt to be run
+debug 2024/07/25 03:26:32 batch cmd abt to be run
+debug 2024/07/25 03:26:35 batch cmd abt to be run
+debug 2024/07/25 03:26:35 batch cmd abt to be run
+debug 2024/07/25 03:26:36 batch cmd abt to be run
+debug 2024/07/25 03:26:36 batch cmd abt to be run
+debug 2024/07/25 03:26:36 batch cmd abt to be run
+debug 2024/07/25 03:26:36 batch cmd abt to be run
+debug 2024/07/25 03:26:36 batch cmd abt to be run
+debug 2024/07/25 03:26:36 batch cmd abt to be run
+debug 2024/07/25 03:26:37 batch cmd abt to be run
+debug 2024/07/25 03:26:38 Artist: michael jackson Release: thriller
+debug 2024/07/25 03:26:52 0
+debug 2024/07/25 03:26:52 &{9c4c939e-5697-44d3-b2f2-b04226cf15f8 Thriller Official half-speed mastered {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1982-01-01 00:00:00 +0000 UTC US 074644811216  normal [] [0xc00030a6c0] map[]}
+debug 2024/07/25 03:26:58 {Audio 1 1 1 wave 0 2573.72 0 1 2 0 0 -1 1}
+debug 2024/07/25 03:26:58 Release length: 2544.000000
+debug 2024/07/25 03:26:58 Length mod: -0.011615
+debug 2024/07/25 03:26:58 Length mod: -0.011498
+debug 2024/07/25 03:26:58 [{1-Wanna-Be-Startin’-Somethin’ 368.1854181940395} {2-Baby-Be-Mine 264.0010828259459} {3-The-Girl-Is-Mine 224.55264516229883} {4-Thriller 363.12792618587963} {5-Beat-It 261.97808602268196} {6-Billie-Jean 297.38053007980113} {7-Human-Nature 248.82860680146626} {8-P.Y.T.-(Pretty-Young-Thing) 241.74811799004243} {9-The-Lady-in-My-Life 303.449520489593}]
+debug 2024/07/25 03:26:58 Select res:BatchCommand finished: OK
+debug 2024/07/25 03:27:00 Export res:Exported to FLAC format: ./code/rripper/testdata/1-Wanna-Be-Startin’-Somethin’.flacBatchCommand finished: OK
+debug 2024/07/25 03:27:00 368.1854181940395
+debug 2024/07/25 03:27:00 Select res:BatchCommand finished: OK
+debug 2024/07/25 03:27:01 Export res:Exported to FLAC format: ./code/rripper/testdata/2-Baby-Be-Mine.flacBatchCommand finished: OK
+debug 2024/07/25 03:27:01 632.1865010199854
+debug 2024/07/25 03:27:01 Select res:BatchCommand finished: OK
+debug 2024/07/25 03:27:02 Export res:Exported to FLAC format: ./code/rripper/testdata/3-The-Girl-Is-Mine.flacBatchCommand finished: OK
+debug 2024/07/25 03:27:02 856.7391461822842
+debug 2024/07/25 03:27:02 Select res:BatchCommand finished: OK
+debug 2024/07/25 03:27:04 Export res:Exported to FLAC format: ./code/rripper/testdata/4-Thriller.flacBatchCommand finished: OK
+debug 2024/07/25 03:27:04 1219.867072368164
+debug 2024/07/25 03:27:04 Select res:BatchCommand finished: OK
+debug 2024/07/25 03:27:05 Export res:Exported to FLAC format: ./code/rripper/testdata/5-Beat-It.flacBatchCommand finished: OK
+debug 2024/07/25 03:27:05 1481.8451583908459
+debug 2024/07/25 03:27:05 Select res:BatchCommand finished: OK
+debug 2024/07/25 03:27:06 Export res:Exported to FLAC format: ./code/rripper/testdata/6-Billie-Jean.flacBatchCommand finished: OK
+debug 2024/07/25 03:27:06 1779.2256884706471
+debug 2024/07/25 03:27:06 Select res:BatchCommand finished: OK
+debug 2024/07/25 03:27:08 Export res:Exported to FLAC format: ./code/rripper/testdata/7-Human-Nature.flacBatchCommand finished: OK
+debug 2024/07/25 03:27:08 2028.0542952721134
+debug 2024/07/25 03:27:08 Select res:BatchCommand finished: OK
+debug 2024/07/25 03:27:09 Export res:Exported to FLAC format: ./code/rripper/testdata/8-P.Y.T.-(Pretty-Young-Thing).flacBatchCommand finished: OK
+debug 2024/07/25 03:27:09 2269.802413262156
+debug 2024/07/25 03:27:09 Select res:BatchCommand finished: OK
+debug 2024/07/25 03:27:10 Export res:Exported to FLAC format: ./code/rripper/testdata/9-The-Lady-in-My-Life.flacBatchCommand finished: OK
+debug 2024/07/25 03:27:10 2573.2519337517488
+debug 2024/07/25 03:27:10 batch cmd abt to be run

@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log"
 	"strconv"
+	"strings"
 	"time"
 
 	Internal "github.com/DYankee/RRipper/internal"
@@ -27,12 +28,19 @@ type errMsg struct {
 	err error
 }
 
+type songData struct {
+	songName   string
+	songLength float64
+}
+
 // Model and its functions
 type model struct {
 	mb          Internal.MusicBrainz
 	audacity    Internal.Audacity
 	searchRes   table.Model
 	releaseData table.Model
+	ExportData  []songData
+	TrackInfo   Internal.TrackInfo
 	currentView string
 	inputs      []textinput.Model
 	focusIndex  int
@@ -48,6 +56,7 @@ func New() *model {
 	}
 	m.mb.Init()
 	m.audacity.Connect()
+	m.TrackInfo = m.audacity.GetInfo()
 	var t textinput.Model
 	for i := range m.inputs {
 		t = textinput.New()
@@ -136,19 +145,57 @@ func (m *model) GetReleaseData() tea.Cmd {
 	}
 }
 
-func (m *model) ExportSong() {
-	var releaseLength int
-	for _, k := range m.mb.ReleaseData.Mediums {
-		for _, k := range k.Tracks {
-			releaseLength += k.Length
+func (m *model) GetlengthMod() (lengthMod float64) {
+	m.TrackInfo = m.audacity.GetInfo()
+	var releaseLength float64
+	for _, v := range m.mb.ReleaseData.Mediums {
+		for _, v := range v.Tracks {
+			releaseLength += float64(v.Length) / 1000
 		}
 	}
-	mod := releaseLength - 
-	data := m.mb.ReleaseData.Mediums[0]
-	idx := m.searchRes.Cursor()
-	m.audacity.SelectRegion(0.0, float64(data.Tracks[idx].Length)/1000)
-	// m.audacity.ExportAudio("code/rripper/testdata", data.Mediums[0].Tracks[idx].Recording.Title+".flac")
+	log.Println(m.TrackInfo)
+	log.Printf("Release length: %f", releaseLength)
+	lengthMod = (releaseLength - m.TrackInfo.End) / ((releaseLength + m.TrackInfo.End) / 2)
+	log.Printf("Length mod: %f", lengthMod)
+	lengthMod *= .99
+	log.Printf("Length mod: %f", lengthMod)
+	return lengthMod
 }
+
+func (m *model) buildExportData() {
+	lengthMod := m.GetlengthMod()
+	data := make([]songData, 0)
+	for _, k := range m.mb.ReleaseData.Mediums {
+		for i, k := range k.Tracks {
+			songName := strings.Replace(k.Recording.Title, " ", "-", -1)
+			songName = fmt.Sprintf("%d-"+songName, i+1)
+			data = append(data, songData{
+				songLength: (float64(k.Length) / 1000) - (float64(k.Length)/1000)*lengthMod,
+				songName:   songName,
+			})
+		}
+	}
+	log.Println(data)
+	m.ExportData = data
+}
+
+func (m *model) ExportSongs() {
+
+	var offSet float64
+	offSet = 0.00
+	for _, v := range m.ExportData {
+		res := m.audacity.SelectRegion(offSet, offSet+v.songLength)
+		log.Println("Select res:" + res)
+		res = m.audacity.ExportAudio("./code/rripper/testdata", v.songName+".flac")
+		log.Println("Export res:" + res)
+		offSet += v.songLength
+		log.Println(offSet)
+	}
+}
+
+//func (m *model) ExportSongs() {
+//
+// }
 
 func (m model) Init() tea.Cmd {
 	return nil
@@ -245,7 +292,9 @@ func (m *model) inputHandler(msg tea.KeyMsg) (tea.Model, tea.Cmd) {
 	case "ReleaseResult":
 		switch msg.String() {
 		case "enter":
-			m.ExportSong()
+			m.buildExportData()
+			m.ExportSongs()
+			m.currentView = "Search"
 		case "esc":
 			m.currentView = "Search"
 		case "up", "down":

@@ -2,10 +2,12 @@ package Internal
 
 import (
 	"bufio"
+	"encoding/json"
 	"fmt"
 	"os"
 	"os/exec"
 	"runtime"
+	"strings"
 	"time"
 )
 
@@ -14,6 +16,22 @@ var (
 	FROMNAME string
 	EOL      string
 )
+
+type TrackInfo struct {
+	Name     string  `json:"name"`
+	Focused  int     `json:"focused"`
+	Selected int     `json:"selected"`
+	Kind     string  `json:"kind"`
+	Start    int     `json:"start"`
+	End      float64 `json:"end"`
+	Pan      int     `json:"pan"`
+	Gain     int     `json:"gain"`
+	Channels int     `json:"channels"`
+	Solo     int     `json:"solo"`
+	Mute     int     `json:"mute"`
+	VZoomMin int     `json:"VZoomMin"`
+	VZoomMax int     `json:"VZoomMax"`
+}
 
 func init() {
 	if runtime.GOOS == "windows" {
@@ -112,22 +130,37 @@ func (a Audacity) Do_command(command string) (res string) {
 	return res
 }
 
-func (a Audacity) SelectRegion(startTime float64, endTime float64) (err error) {
+func (a Audacity) SelectRegion(startTime float64, endTime float64) string {
 	cmd := fmt.Sprintf("Select: End=\"%f\" RelativeTo=\"ProjectStart\" Start=\"%f\"", endTime, startTime)
-	a.Do_command(cmd)
-	return err
+	res := a.Do_command(cmd)
+	return res
 }
 
-func (a Audacity) Split() {
-	a.Do_command("SplitNew:")
+func (a Audacity) Split() string {
+	res := a.Do_command("SplitNew:")
+	return res
+
 }
 
-func (a Audacity) SetLabel(labelId int, labelText string) {
+func (a Audacity) SetLabel(labelId int, labelText string) string {
 	cmd := fmt.Sprintf("SetLabel: Label=\"%d\" Text=\"%s\"", labelId, labelText)
-	a.Do_command(cmd)
+	res := a.Do_command(cmd)
+	return res
 }
 
-func (a Audacity) ExportAudio(destination string, fileName string) {
+func (a Audacity) ExportAudio(destination string, fileName string) string {
 	cmd := fmt.Sprintf("Export2: Filename=\"%s/%s\" NumChannels=\"2\"", destination, fileName)
-	a.Do_command(cmd)
+	res := a.Do_command(cmd)
+	return res
+}
+
+func (a Audacity) GetInfo() TrackInfo {
+	info := TrackInfo{}
+	cmd := fmt.Sprintf("GetInfo: Format\"JSON\" Type=\"Tracks\"")
+	res := a.Do_command(cmd)
+	substrings := strings.SplitAfter(strings.Split(res, "[")[1], "]")
+	res = strings.TrimRight(substrings[0], "]")
+	json.Unmarshal([]byte(res), &info)
+	fmt.Println(info)
+	return info
 }
