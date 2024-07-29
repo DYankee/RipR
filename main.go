@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"log"
 	"strconv"
-	"strings"
 	"time"
 
 	Internal "github.com/DYankee/RRipper/internal"
@@ -167,8 +166,7 @@ func (m *model) buildExportData() {
 	data := make([]songData, 0)
 	for _, k := range m.mb.ReleaseData.Mediums {
 		for i, k := range k.Tracks {
-			songName := strings.Replace(k.Recording.Title, " ", "-", -1)
-			songName = fmt.Sprintf("%d-"+songName, i+1)
+			songName := fmt.Sprintf("%d - "+k.Recording.Title, i+1)
 			data = append(data, songData{
 				songLength: (float64(k.Length) / 1000) - (float64(k.Length)/1000)*lengthMod,
 				songName:   songName,
@@ -186,7 +184,7 @@ func (m *model) ExportSongs() {
 	for _, v := range m.ExportData {
 		res := m.audacity.SelectRegion(offSet, offSet+v.songLength)
 		log.Println("Select res:" + res)
-		res = m.audacity.ExportAudio("./code/rripper/testdata", v.songName+".flac")
+		res = m.audacity.ExportAudio("./code/rripper/testdata/billy joel/the stranger", v.songName+".flac")
 		log.Println("Export res:" + res)
 		offSet += v.songLength
 		log.Println(offSet)
@@ -224,8 +222,6 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 		m.releaseData = table.Model(msg)
 		return m, cmd
 	}
-
-	// Handle character input and blinking
 	return m, cmd
 }
 
