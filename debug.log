@@ -1120,3 +1120,945 @@ debug 2024/07/29 02:56:33 Select res:BatchCommand finished: OK
 debug 2024/07/29 02:56:34 Export res:Exported to FLAC format: ./code/rripper/testdata/billy joel/the stranger/10 - The Stranger (reprise).flacBatchCommand finished: OK
 debug 2024/07/29 02:56:34 2533.9900999804654
 debug 2024/07/29 02:56:34 batch cmd abt to be run
+debug 2024/07/29 13:11:17 batch cmd abt to be run
+debug 2024/07/29 13:11:17 batch cmd abt to be run
+debug 2024/07/29 13:11:17 batch cmd abt to be run
+debug 2024/07/29 13:11:17 batch cmd abt to be run
+debug 2024/07/29 13:11:17 batch cmd abt to be run
+debug 2024/07/29 13:11:17 batch cmd abt to be run
+debug 2024/07/29 13:11:17 batch cmd abt to be run
+debug 2024/07/29 13:11:17 batch cmd abt to be run
+debug 2024/07/29 13:11:17 batch cmd abt to be run
+debug 2024/07/29 13:11:17 batch cmd abt to be run
+debug 2024/07/29 13:11:17 batch cmd abt to be run
+debug 2024/07/29 13:11:17 batch cmd abt to be run
+debug 2024/07/29 13:11:17 batch cmd abt to be run
+debug 2024/07/29 13:11:17 batch cmd abt to be run
+debug 2024/07/29 13:11:18 batch cmd abt to be run
+debug 2024/07/29 13:11:32 batch cmd abt to be run
+debug 2024/07/29 14:05:31 batch cmd abt to be run
+debug 2024/07/29 14:05:32 batch cmd abt to be run
+debug 2024/07/29 14:05:32 batch cmd abt to be run
+debug 2024/07/29 14:05:58 batch cmd abt to be run
+debug 2024/07/29 14:06:09 batch cmd abt to be run
+debug 2024/07/29 14:06:09 batch cmd abt to be run
+debug 2024/07/29 14:06:09 batch cmd abt to be run
+debug 2024/07/29 14:06:47 batch cmd abt to be run
+debug 2024/07/29 14:11:55 batch cmd abt to be run
+debug 2024/07/29 14:11:56 batch cmd abt to be run
+debug 2024/07/29 14:11:56 batch cmd abt to be run
+debug 2024/07/29 14:11:57 batch cmd abt to be run
+debug 2024/07/29 14:11:58 batch cmd abt to be run
+debug 2024/07/29 14:11:58 batch cmd abt to be run
+debug 2024/07/29 14:35:23 batch cmd abt to be run
+debug 2024/07/29 14:35:24 batch cmd abt to be run
+debug 2024/07/29 14:38:09 batch cmd abt to be run
+debug 2024/07/29 14:38:09 batch cmd abt to be run
+debug 2024/07/29 14:38:09 batch cmd abt to be run
+debug 2024/07/29 14:38:10 batch cmd abt to be run
+debug 2024/07/29 14:38:10 batch cmd abt to be run
+debug 2024/07/29 14:38:10 batch cmd abt to be run
+debug 2024/07/29 14:38:11 batch cmd abt to be run
+debug 2024/07/29 14:38:11 batch cmd abt to be run
+debug 2024/07/29 14:38:11 batch cmd abt to be run
+debug 2024/07/29 14:38:11 batch cmd abt to be run
+debug 2024/07/29 14:38:13 batch cmd abt to be run
+debug 2024/07/29 14:38:14 batch cmd abt to be run
+debug 2024/07/29 14:38:14 batch cmd abt to be run
+debug 2024/07/29 14:38:14 batch cmd abt to be run
+debug 2024/07/29 14:38:15 batch cmd abt to be run
+debug 2024/07/29 14:38:15 batch cmd abt to be run
+debug 2024/07/29 14:38:15 batch cmd abt to be run
+debug 2024/07/29 14:38:16 batch cmd abt to be run
+debug 2024/07/29 14:38:16 Artist: king gizz Release: K.G.L.W
+debug 2024/07/29 14:38:19 batch cmd abt to be run
+debug 2024/07/29 14:38:20 batch cmd abt to be run
+debug 2024/07/29 14:38:20 batch cmd abt to be run
+debug 2024/07/29 14:38:20 batch cmd abt to be run
+debug 2024/07/29 14:38:20 batch cmd abt to be run
+debug 2024/07/29 14:38:20 batch cmd abt to be run
+debug 2024/07/29 14:38:21 batch cmd abt to be run
+debug 2024/07/29 14:38:21 batch cmd abt to be run
+debug 2024/07/29 14:38:21 batch cmd abt to be run
+debug 2024/07/29 14:38:22 batch cmd abt to be run
+debug 2024/07/29 14:38:23 Artist: king Release: K.G.L.W
+debug 2024/07/29 14:38:27 0
+debug 2024/07/29 14:38:27 &{80197953-1142-4629-a8dd-0bd988f658f6 K.G.L.W. Official Green Tangerine LP edition {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 2023-01-01 00:00:00 +0000 UTC AU 0842812149344  normal [] [0xc0003aa6c0 0xc00058e180] map[]}
+debug 2024/07/29 14:38:29 {Audio 1 1 0 wave 0 5090.5 0 1 1 0 0 -1 1}
+debug 2024/07/29 14:38:29 Release length: 5038.569000
+debug 2024/07/29 14:38:29 Length mod: -0.010254
+debug 2024/07/29 14:38:29 Length mod: -0.010151
+debug 2024/07/29 14:38:29 [{1 - K.G.L.W. 97.52606895258391} {2 - Automation 211.9428780596657} {3 - Minimum Brain Size 261.29180029922594} {4 - Straws in the Wind 345.1343595255477} {5 - Some of Us 234.8935159587263} {6 - Ontology 240.61804346638374} {7 - Intrasport 255.19048635070808} {8 - Oddlife 300.5260774118806} {9 - Honey 276.6329683350109} {10 - The Hungry Wolf of Fate 313.3085321642888} {1 - If Not Now, Then When? 232.33480267534955} {2 - O.N.E. 222.23328951555175} {3 - Pleura 254.55813162690472} {4 - Supreme Ascendancy 221.22313819957196} {5 - Static Electricity 352.54280927694344} {6 - East West Link 189.90844740419877} {7 - Ataraxia 320.2179671655905} {8 - See Me 246.4769210990665} {9 - K.G.L.W. 513.1568685177285}]
+debug 2024/07/29 14:38:30 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:38:39 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/07/29 14:38:39 97.52606895258391
+debug 2024/07/29 14:38:39 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:38:40 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/07/29 14:38:40 309.4689470122496
+debug 2024/07/29 14:38:40 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:38:40 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/07/29 14:38:40 570.7607473114756
+debug 2024/07/29 14:38:40 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:38:41 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/07/29 14:38:41 915.8951068370234
+debug 2024/07/29 14:38:41 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:38:41 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/07/29 14:38:41 1150.7886227957497
+debug 2024/07/29 14:38:41 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:38:42 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/07/29 14:38:42 1391.4066662621335
+debug 2024/07/29 14:38:42 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:38:42 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/07/29 14:38:42 1646.5971526128417
+debug 2024/07/29 14:38:42 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:38:42 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/07/29 14:38:42 1947.1232300247223
+debug 2024/07/29 14:38:42 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:38:43 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/07/29 14:38:43 2223.7561983597334
+debug 2024/07/29 14:38:43 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:38:43 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/07/29 14:38:43 2537.0647305240223
+debug 2024/07/29 14:38:43 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:38:44 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/07/29 14:38:44 2769.399533199372
+debug 2024/07/29 14:38:44 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:38:45 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/07/29 14:38:45 2991.632822714924
+debug 2024/07/29 14:38:45 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:38:45 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/07/29 14:38:45 3246.1909543418287
+debug 2024/07/29 14:38:45 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:38:46 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/07/29 14:38:46 3467.414092541401
+debug 2024/07/29 14:38:46 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:38:46 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/07/29 14:38:46 3819.9569018183442
+debug 2024/07/29 14:38:46 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:38:46 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/07/29 14:38:46 4009.865349222543
+debug 2024/07/29 14:38:46 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:38:47 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/07/29 14:38:47 4330.083316388133
+debug 2024/07/29 14:38:47 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:38:47 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/07/29 14:38:47 4576.5602374872
+debug 2024/07/29 14:38:47 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:38:48 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/07/29 14:38:48 5089.717106004928
+debug 2024/07/29 14:38:48 batch cmd abt to be run
+debug 2024/07/29 14:39:09 batch cmd abt to be run
+debug 2024/07/29 14:39:09 batch cmd abt to be run
+debug 2024/07/29 14:39:10 batch cmd abt to be run
+debug 2024/07/29 14:39:10 batch cmd abt to be run
+debug 2024/07/29 14:39:10 batch cmd abt to be run
+debug 2024/07/29 14:39:11 batch cmd abt to be run
+debug 2024/07/29 14:39:11 batch cmd abt to be run
+debug 2024/07/29 14:39:11 batch cmd abt to be run
+debug 2024/07/29 14:39:12 batch cmd abt to be run
+debug 2024/07/29 14:39:12 Artist:  Release: K.G.L.W
+debug 2024/07/29 14:39:14 0
+debug 2024/07/29 14:39:20 batch cmd abt to be run
+debug 2024/07/29 14:39:21 batch cmd abt to be run
+debug 2024/07/29 14:39:22 batch cmd abt to be run
+debug 2024/07/29 14:39:22 batch cmd abt to be run
+debug 2024/07/29 14:39:23 batch cmd abt to be run
+debug 2024/07/29 14:39:23 batch cmd abt to be run
+debug 2024/07/29 14:39:23 batch cmd abt to be run
+debug 2024/07/29 14:39:24 batch cmd abt to be run
+debug 2024/07/29 14:39:24 batch cmd abt to be run
+debug 2024/07/29 14:39:25 Artist:  Release: k.g.l.w
+debug 2024/07/29 14:39:26 batch cmd abt to be run
+debug 2024/07/29 14:39:27 batch cmd abt to be run
+debug 2024/07/29 14:39:27 batch cmd abt to be run
+debug 2024/07/29 14:39:28 batch cmd abt to be run
+debug 2024/07/29 14:39:28 batch cmd abt to be run
+debug 2024/07/29 14:39:29 batch cmd abt to be run
+debug 2024/07/29 14:39:29 batch cmd abt to be run
+debug 2024/07/29 14:39:29 batch cmd abt to be run
+debug 2024/07/29 14:39:30 batch cmd abt to be run
+debug 2024/07/29 14:39:30 Artist: king Release: k.g.l.w
+debug 2024/07/29 14:39:32 0
+debug 2024/07/29 14:39:32 &{80197953-1142-4629-a8dd-0bd988f658f6 K.G.L.W. Official Green Tangerine LP edition {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 2023-01-01 00:00:00 +0000 UTC AU 0842812149344  normal [] [0xc000196630 0xc000196d50] map[]}
+debug 2024/07/29 14:39:46 {Audio 1 1 1 wave 0 5090.5 0 1 1 0 0 -1 1}
+debug 2024/07/29 14:39:46 Release length: 5038.569000
+debug 2024/07/29 14:39:46 Length mod: -0.010254
+debug 2024/07/29 14:39:46 Length mod: -0.010151
+debug 2024/07/29 14:39:46 [{1 - K.G.L.W. 97.52606895258391} {2 - Automation 211.9428780596657} {3 - Minimum Brain Size 261.29180029922594} {4 - Straws in the Wind 345.1343595255477} {5 - Some of Us 234.8935159587263} {6 - Ontology 240.61804346638374} {7 - Intrasport 255.19048635070808} {8 - Oddlife 300.5260774118806} {9 - Honey 276.6329683350109} {10 - The Hungry Wolf of Fate 313.3085321642888} {1 - If Not Now, Then When? 232.33480267534955} {2 - O.N.E. 222.23328951555175} {3 - Pleura 254.55813162690472} {4 - Supreme Ascendancy 221.22313819957196} {5 - Static Electricity 352.54280927694344} {6 - East West Link 189.90844740419877} {7 - Ataraxia 320.2179671655905} {8 - See Me 246.4769210990665} {9 - K.G.L.W. 513.1568685177285}]
+debug 2024/07/29 14:39:46 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:39:56 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/07/29 14:39:56 97.52606895258391
+debug 2024/07/29 14:39:56 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:39:57 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/07/29 14:39:57 309.4689470122496
+debug 2024/07/29 14:39:57 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:39:57 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/07/29 14:39:57 570.7607473114756
+debug 2024/07/29 14:39:57 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:39:57 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/07/29 14:39:57 915.8951068370234
+debug 2024/07/29 14:39:57 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:39:58 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/07/29 14:39:58 1150.7886227957497
+debug 2024/07/29 14:39:58 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:39:58 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/07/29 14:39:58 1391.4066662621335
+debug 2024/07/29 14:39:58 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:39:58 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/07/29 14:39:58 1646.5971526128417
+debug 2024/07/29 14:39:58 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:39:59 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/07/29 14:39:59 1947.1232300247223
+debug 2024/07/29 14:39:59 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:39:59 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/07/29 14:39:59 2223.7561983597334
+debug 2024/07/29 14:39:59 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:40:00 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/07/29 14:40:00 2537.0647305240223
+debug 2024/07/29 14:40:00 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:40:00 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/07/29 14:40:00 2769.399533199372
+debug 2024/07/29 14:40:00 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:40:00 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/07/29 14:40:00 2991.632822714924
+debug 2024/07/29 14:40:00 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:40:01 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/07/29 14:40:01 3246.1909543418287
+debug 2024/07/29 14:40:01 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:40:01 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/07/29 14:40:01 3467.414092541401
+debug 2024/07/29 14:40:01 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:40:02 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/07/29 14:40:02 3819.9569018183442
+debug 2024/07/29 14:40:02 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:40:02 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/07/29 14:40:02 4009.865349222543
+debug 2024/07/29 14:40:02 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:40:02 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/07/29 14:40:02 4330.083316388133
+debug 2024/07/29 14:40:02 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:40:03 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/07/29 14:40:03 4576.5602374872
+debug 2024/07/29 14:40:03 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:40:03 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/07/29 14:40:03 5089.717106004928
+debug 2024/07/29 14:40:03 batch cmd abt to be run
+debug 2024/07/29 14:40:34 batch cmd abt to be run
+debug 2024/07/29 14:40:34 batch cmd abt to be run
+debug 2024/07/29 14:40:34 batch cmd abt to be run
+debug 2024/07/29 14:42:44 batch cmd abt to be run
+debug 2024/07/29 14:42:44 batch cmd abt to be run
+debug 2024/07/29 14:42:44 batch cmd abt to be run
+debug 2024/07/29 14:42:44 batch cmd abt to be run
+debug 2024/07/29 14:42:45 batch cmd abt to be run
+debug 2024/07/29 14:42:46 batch cmd abt to be run
+debug 2024/07/29 14:42:46 batch cmd abt to be run
+debug 2024/07/29 14:42:47 batch cmd abt to be run
+debug 2024/07/29 14:42:48 batch cmd abt to be run
+debug 2024/07/29 14:42:48 batch cmd abt to be run
+debug 2024/07/29 14:42:48 batch cmd abt to be run
+debug 2024/07/29 14:42:49 batch cmd abt to be run
+debug 2024/07/29 14:42:50 batch cmd abt to be run
+debug 2024/07/29 14:42:50 Artist: king Release: k.g.l.w
+debug 2024/07/29 14:42:52 0
+debug 2024/07/29 14:42:52 &{80197953-1142-4629-a8dd-0bd988f658f6 K.G.L.W. Official Green Tangerine LP edition {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 2023-01-01 00:00:00 +0000 UTC AU 0842812149344  normal [] [0xc0005642a0 0xc000564720] map[]}
+debug 2024/07/29 14:42:53 {Audio 1 1 1 wave 0 5090.5 0 1 1 0 0 -1 1}
+debug 2024/07/29 14:42:53 Release length: 5038.569000
+debug 2024/07/29 14:42:53 Length mod: -0.010254
+debug 2024/07/29 14:42:53 Length mod: -0.010151
+debug 2024/07/29 14:42:53 [{1 - K.G.L.W. 97.52606895258391} {2 - Automation 211.9428780596657} {3 - Minimum Brain Size 261.29180029922594} {4 - Straws in the Wind 345.1343595255477} {5 - Some of Us 234.8935159587263} {6 - Ontology 240.61804346638374} {7 - Intrasport 255.19048635070808} {8 - Oddlife 300.5260774118806} {9 - Honey 276.6329683350109} {10 - The Hungry Wolf of Fate 313.3085321642888} {1 - If Not Now, Then When? 232.33480267534955} {2 - O.N.E. 222.23328951555175} {3 - Pleura 254.55813162690472} {4 - Supreme Ascendancy 221.22313819957196} {5 - Static Electricity 352.54280927694344} {6 - East West Link 189.90844740419877} {7 - Ataraxia 320.2179671655905} {8 - See Me 246.4769210990665} {9 - K.G.L.W. 513.1568685177285}]
+debug 2024/07/29 14:42:53 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:42:53 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/1 - K.G.L.W..flacBatchCommand finished: OK
+debug 2024/07/29 14:42:53 97.52606895258391
+debug 2024/07/29 14:42:53 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:42:54 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/2 - Automation.flacBatchCommand finished: OK
+debug 2024/07/29 14:42:54 309.4689470122496
+debug 2024/07/29 14:42:54 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:42:55 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/3 - Minimum Brain Size.flacBatchCommand finished: OK
+debug 2024/07/29 14:42:55 570.7607473114756
+debug 2024/07/29 14:42:55 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:42:56 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/4 - Straws in the Wind.flacBatchCommand finished: OK
+debug 2024/07/29 14:42:56 915.8951068370234
+debug 2024/07/29 14:42:56 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:42:57 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/5 - Some of Us.flacBatchCommand finished: OK
+debug 2024/07/29 14:42:57 1150.7886227957497
+debug 2024/07/29 14:42:57 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:42:58 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/6 - Ontology.flacBatchCommand finished: OK
+debug 2024/07/29 14:42:58 1391.4066662621335
+debug 2024/07/29 14:42:58 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:42:59 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/7 - Intrasport.flacBatchCommand finished: OK
+debug 2024/07/29 14:42:59 1646.5971526128417
+debug 2024/07/29 14:42:59 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:43:00 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/8 - Oddlife.flacBatchCommand finished: OK
+debug 2024/07/29 14:43:00 1947.1232300247223
+debug 2024/07/29 14:43:00 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:43:01 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/9 - Honey.flacBatchCommand finished: OK
+debug 2024/07/29 14:43:01 2223.7561983597334
+debug 2024/07/29 14:43:01 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:43:02 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/10 - The Hungry Wolf of Fate.flacBatchCommand finished: OK
+debug 2024/07/29 14:43:02 2537.0647305240223
+debug 2024/07/29 14:43:02 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:43:03 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/1 - If Not Now, Then When?.flacBatchCommand finished: OK
+debug 2024/07/29 14:43:03 2769.399533199372
+debug 2024/07/29 14:43:03 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:43:04 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/2 - O.N.E..flacBatchCommand finished: OK
+debug 2024/07/29 14:43:04 2991.632822714924
+debug 2024/07/29 14:43:04 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:43:05 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/3 - Pleura.flacBatchCommand finished: OK
+debug 2024/07/29 14:43:05 3246.1909543418287
+debug 2024/07/29 14:43:05 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:43:05 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/4 - Supreme Ascendancy.flacBatchCommand finished: OK
+debug 2024/07/29 14:43:05 3467.414092541401
+debug 2024/07/29 14:43:05 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:43:07 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/5 - Static Electricity.flacBatchCommand finished: OK
+debug 2024/07/29 14:43:07 3819.9569018183442
+debug 2024/07/29 14:43:07 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:43:07 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/6 - East West Link.flacBatchCommand finished: OK
+debug 2024/07/29 14:43:07 4009.865349222543
+debug 2024/07/29 14:43:07 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:43:08 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/7 - Ataraxia.flacBatchCommand finished: OK
+debug 2024/07/29 14:43:08 4330.083316388133
+debug 2024/07/29 14:43:08 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:43:09 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/8 - See Me.flacBatchCommand finished: OK
+debug 2024/07/29 14:43:09 4576.5602374872
+debug 2024/07/29 14:43:09 Select res:BatchCommand finished: OK
+debug 2024/07/29 14:43:11 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/9 - K.G.L.W..flacBatchCommand finished: OK
+debug 2024/07/29 14:43:11 5089.717106004928
+debug 2024/07/29 14:43:11 batch cmd abt to be run
+debug 2024/07/29 15:18:19 batch cmd abt to be run
+debug 2024/07/29 15:18:19 batch cmd abt to be run
+debug 2024/07/29 15:18:19 batch cmd abt to be run
+debug 2024/07/29 15:18:19 batch cmd abt to be run
+debug 2024/07/29 15:18:20 batch cmd abt to be run
+debug 2024/07/29 15:18:21 batch cmd abt to be run
+debug 2024/07/29 15:18:22 batch cmd abt to be run
+debug 2024/07/29 15:18:22 batch cmd abt to be run
+debug 2024/07/29 15:18:23 batch cmd abt to be run
+debug 2024/07/29 15:18:23 batch cmd abt to be run
+debug 2024/07/29 15:18:23 batch cmd abt to be run
+debug 2024/07/29 15:18:23 batch cmd abt to be run
+debug 2024/07/29 15:18:24 batch cmd abt to be run
+debug 2024/07/29 15:18:24 batch cmd abt to be run
+debug 2024/07/29 15:18:24 batch cmd abt to be run
+debug 2024/07/29 15:18:24 batch cmd abt to be run
+debug 2024/07/29 15:18:24 batch cmd abt to be run
+debug 2024/07/29 15:18:24 batch cmd abt to be run
+debug 2024/07/29 15:18:25 batch cmd abt to be run
+debug 2024/07/29 15:18:25 batch cmd abt to be run
+debug 2024/07/29 15:18:25 batch cmd abt to be run
+debug 2024/07/29 15:18:26 batch cmd abt to be run
+debug 2024/07/29 15:18:26 batch cmd abt to be run
+debug 2024/07/29 15:18:27 batch cmd abt to be run
+debug 2024/07/29 15:18:28 batch cmd abt to be run
+debug 2024/07/29 15:18:28 batch cmd abt to be run
+debug 2024/07/29 15:18:28 batch cmd abt to be run
+debug 2024/07/29 15:18:29 batch cmd abt to be run
+debug 2024/07/29 15:18:29 batch cmd abt to be run
+debug 2024/07/29 15:18:30 batch cmd abt to be run
+debug 2024/07/29 15:18:30 batch cmd abt to be run
+debug 2024/07/29 15:18:31 batch cmd abt to be run
+debug 2024/07/29 15:18:31 Artist: king Release: K.G.L.W
+debug 2024/07/29 15:18:54 0
+debug 2024/07/29 15:18:54 &{80197953-1142-4629-a8dd-0bd988f658f6 K.G.L.W. Official Green Tangerine LP edition {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 2023-01-01 00:00:00 +0000 UTC AU 0842812149344  normal [] [0xc00020f020 0xc00020f4a0] map[]}
+debug 2024/07/29 15:18:54 {Audio 1 1 0 wave 0 5090.5 0 1 1 0 0 -1 1}
+debug 2024/07/29 15:18:54 Release length: 5038.569000
+debug 2024/07/29 15:18:54 Length mod: -0.010254
+debug 2024/07/29 15:18:54 Length mod: -0.010151
+debug 2024/07/29 15:18:54 [{2 - K.G.L.W. 97.52606895258391} {3 - Automation 211.9428780596657} {4 - Minimum Brain Size 261.29180029922594} {5 - Straws in the Wind 345.1343595255477} {6 - Some of Us 234.8935159587263} {7 - Ontology 240.61804346638374} {8 - Intrasport 255.19048635070808} {9 - Oddlife 300.5260774118806} {10 - Honey 276.6329683350109} {11 - The Hungry Wolf of Fate 313.3085321642888} {12 - If Not Now, Then When? 232.33480267534955} {13 - O.N.E. 222.23328951555175} {14 - Pleura 254.55813162690472} {15 - Supreme Ascendancy 221.22313819957196} {16 - Static Electricity 352.54280927694344} {17 - East West Link 189.90844740419877} {18 - Ataraxia 320.2179671655905} {19 - See Me 246.4769210990665} {20 - K.G.L.W. 513.1568685177285}]
+debug 2024/07/29 15:18:54 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:18:55 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/2 - K.G.L.W..flacBatchCommand finished: OK
+debug 2024/07/29 15:18:55 97.52606895258391
+debug 2024/07/29 15:18:55 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:18:56 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/3 - Automation.flacBatchCommand finished: OK
+debug 2024/07/29 15:18:56 309.4689470122496
+debug 2024/07/29 15:18:56 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:18:57 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/4 - Minimum Brain Size.flacBatchCommand finished: OK
+debug 2024/07/29 15:18:57 570.7607473114756
+debug 2024/07/29 15:18:57 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:18:59 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/5 - Straws in the Wind.flacBatchCommand finished: OK
+debug 2024/07/29 15:18:59 915.8951068370234
+debug 2024/07/29 15:18:59 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:19:00 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/6 - Some of Us.flacBatchCommand finished: OK
+debug 2024/07/29 15:19:00 1150.7886227957497
+debug 2024/07/29 15:19:00 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:19:01 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/7 - Ontology.flacBatchCommand finished: OK
+debug 2024/07/29 15:19:01 1391.4066662621335
+debug 2024/07/29 15:19:01 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:19:03 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/8 - Intrasport.flacBatchCommand finished: OK
+debug 2024/07/29 15:19:03 1646.5971526128417
+debug 2024/07/29 15:19:03 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:19:04 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/9 - Oddlife.flacBatchCommand finished: OK
+debug 2024/07/29 15:19:04 1947.1232300247223
+debug 2024/07/29 15:19:04 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:19:06 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/10 - Honey.flacBatchCommand finished: OK
+debug 2024/07/29 15:19:06 2223.7561983597334
+debug 2024/07/29 15:19:06 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:19:07 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/11 - The Hungry Wolf of Fate.flacBatchCommand finished: OK
+debug 2024/07/29 15:19:07 2537.0647305240223
+debug 2024/07/29 15:19:07 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:19:08 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/12 - If Not Now, Then When?.flacBatchCommand finished: OK
+debug 2024/07/29 15:19:08 2769.399533199372
+debug 2024/07/29 15:19:08 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:19:09 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/07/29 15:19:09 2991.632822714924
+debug 2024/07/29 15:19:09 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:19:10 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/14 - Pleura.flacBatchCommand finished: OK
+debug 2024/07/29 15:19:10 3246.1909543418287
+debug 2024/07/29 15:19:10 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:19:11 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/15 - Supreme Ascendancy.flacBatchCommand finished: OK
+debug 2024/07/29 15:19:11 3467.414092541401
+debug 2024/07/29 15:19:12 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:19:13 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/16 - Static Electricity.flacBatchCommand finished: OK
+debug 2024/07/29 15:19:13 3819.9569018183442
+debug 2024/07/29 15:19:13 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:19:14 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/17 - East West Link.flacBatchCommand finished: OK
+debug 2024/07/29 15:19:14 4009.865349222543
+debug 2024/07/29 15:19:14 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:19:16 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/18 - Ataraxia.flacBatchCommand finished: OK
+debug 2024/07/29 15:19:16 4330.083316388133
+debug 2024/07/29 15:19:16 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:19:17 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/19 - See Me.flacBatchCommand finished: OK
+debug 2024/07/29 15:19:17 4576.5602374872
+debug 2024/07/29 15:19:17 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:19:20 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/20 - K.G.L.W..flacBatchCommand finished: OK
+debug 2024/07/29 15:19:20 5089.717106004928
+debug 2024/07/29 15:19:20 batch cmd abt to be run
+debug 2024/07/29 15:19:43 batch cmd abt to be run
+debug 2024/07/29 15:19:43 batch cmd abt to be run
+debug 2024/07/29 15:19:44 batch cmd abt to be run
+debug 2024/07/29 15:19:44 batch cmd abt to be run
+debug 2024/07/29 15:19:44 batch cmd abt to be run
+debug 2024/07/29 15:19:44 batch cmd abt to be run
+debug 2024/07/29 15:19:44 batch cmd abt to be run
+debug 2024/07/29 15:19:46 batch cmd abt to be run
+debug 2024/07/29 15:19:46 batch cmd abt to be run
+debug 2024/07/29 15:19:47 batch cmd abt to be run
+debug 2024/07/29 15:19:47 batch cmd abt to be run
+debug 2024/07/29 15:19:47 batch cmd abt to be run
+debug 2024/07/29 15:19:48 batch cmd abt to be run
+debug 2024/07/29 15:19:48 Artist: king Release: KGLW
+debug 2024/07/29 15:19:50 0
+debug 2024/07/29 15:19:50 &{80197953-1142-4629-a8dd-0bd988f658f6 K.G.L.W. Official Green Tangerine LP edition {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 2023-01-01 00:00:00 +0000 UTC AU 0842812149344  normal [] [0xc000099050 0xc000099650] map[]}
+debug 2024/07/29 15:19:51 {Audio 1 1 1 wave 0 5090.5 0 1 1 0 0 -1 1}
+debug 2024/07/29 15:19:51 Release length: 5038.569000
+debug 2024/07/29 15:19:51 Length mod: -0.010254
+debug 2024/07/29 15:19:51 Length mod: -0.010151
+debug 2024/07/29 15:19:51 [{1 - K.G.L.W. 97.52606895258391} {2 - Automation 211.9428780596657} {3 - Minimum Brain Size 261.29180029922594} {4 - Straws in the Wind 345.1343595255477} {5 - Some of Us 234.8935159587263} {6 - Ontology 240.61804346638374} {7 - Intrasport 255.19048635070808} {8 - Oddlife 300.5260774118806} {9 - Honey 276.6329683350109} {10 - The Hungry Wolf of Fate 313.3085321642888} {11 - If Not Now, Then When? 232.33480267534955} {12 - O.N.E. 222.23328951555175} {13 - Pleura 254.55813162690472} {14 - Supreme Ascendancy 221.22313819957196} {15 - Static Electricity 352.54280927694344} {16 - East West Link 189.90844740419877} {17 - Ataraxia 320.2179671655905} {18 - See Me 246.4769210990665} {19 - K.G.L.W. 513.1568685177285}]
+debug 2024/07/29 15:19:51 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:19:52 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/1 - K.G.L.W..flacBatchCommand finished: OK
+debug 2024/07/29 15:19:52 97.52606895258391
+debug 2024/07/29 15:19:52 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:19:53 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/2 - Automation.flacBatchCommand finished: OK
+debug 2024/07/29 15:19:53 309.4689470122496
+debug 2024/07/29 15:19:53 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:19:54 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/3 - Minimum Brain Size.flacBatchCommand finished: OK
+debug 2024/07/29 15:19:54 570.7607473114756
+debug 2024/07/29 15:19:54 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:19:56 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/4 - Straws in the Wind.flacBatchCommand finished: OK
+debug 2024/07/29 15:19:56 915.8951068370234
+debug 2024/07/29 15:19:56 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:19:57 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/5 - Some of Us.flacBatchCommand finished: OK
+debug 2024/07/29 15:19:57 1150.7886227957497
+debug 2024/07/29 15:19:57 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:19:59 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/6 - Ontology.flacBatchCommand finished: OK
+debug 2024/07/29 15:19:59 1391.4066662621335
+debug 2024/07/29 15:19:59 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:20:00 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/7 - Intrasport.flacBatchCommand finished: OK
+debug 2024/07/29 15:20:00 1646.5971526128417
+debug 2024/07/29 15:20:00 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:20:02 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/8 - Oddlife.flacBatchCommand finished: OK
+debug 2024/07/29 15:20:02 1947.1232300247223
+debug 2024/07/29 15:20:02 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:20:03 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/9 - Honey.flacBatchCommand finished: OK
+debug 2024/07/29 15:20:03 2223.7561983597334
+debug 2024/07/29 15:20:03 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:20:05 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/10 - The Hungry Wolf of Fate.flacBatchCommand finished: OK
+debug 2024/07/29 15:20:05 2537.0647305240223
+debug 2024/07/29 15:20:05 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:20:06 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/11 - If Not Now, Then When?.flacBatchCommand finished: OK
+debug 2024/07/29 15:20:06 2769.399533199372
+debug 2024/07/29 15:20:06 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:20:07 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/12 - O.N.E..flacBatchCommand finished: OK
+debug 2024/07/29 15:20:07 2991.632822714924
+debug 2024/07/29 15:20:07 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:20:08 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/13 - Pleura.flacBatchCommand finished: OK
+debug 2024/07/29 15:20:08 3246.1909543418287
+debug 2024/07/29 15:20:08 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:20:10 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/14 - Supreme Ascendancy.flacBatchCommand finished: OK
+debug 2024/07/29 15:20:10 3467.414092541401
+debug 2024/07/29 15:20:10 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:20:11 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/15 - Static Electricity.flacBatchCommand finished: OK
+debug 2024/07/29 15:20:11 3819.9569018183442
+debug 2024/07/29 15:20:11 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:20:12 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/16 - East West Link.flacBatchCommand finished: OK
+debug 2024/07/29 15:20:12 4009.865349222543
+debug 2024/07/29 15:20:12 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:20:14 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/17 - Ataraxia.flacBatchCommand finished: OK
+debug 2024/07/29 15:20:14 4330.083316388133
+debug 2024/07/29 15:20:14 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:20:15 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/18 - See Me.flacBatchCommand finished: OK
+debug 2024/07/29 15:20:15 4576.5602374872
+debug 2024/07/29 15:20:15 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:20:18 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/19 - K.G.L.W..flacBatchCommand finished: OK
+debug 2024/07/29 15:20:18 5089.717106004928
+debug 2024/07/29 15:20:18 batch cmd abt to be run
+debug 2024/07/29 15:50:12 batch cmd abt to be run
+debug 2024/07/29 15:50:12 batch cmd abt to be run
+debug 2024/07/29 15:50:12 batch cmd abt to be run
+debug 2024/07/29 15:50:12 batch cmd abt to be run
+debug 2024/07/29 15:50:13 batch cmd abt to be run
+debug 2024/07/29 15:50:15 batch cmd abt to be run
+debug 2024/07/29 15:50:15 batch cmd abt to be run
+debug 2024/07/29 15:50:16 batch cmd abt to be run
+debug 2024/07/29 15:50:16 batch cmd abt to be run
+debug 2024/07/29 15:50:24 batch cmd abt to be run
+debug 2024/07/29 15:50:24 Artist: king Release: kglw
+debug 2024/07/29 15:50:26 0
+debug 2024/07/29 15:50:27 &{80197953-1142-4629-a8dd-0bd988f658f6 K.G.L.W. Official Green Tangerine LP edition {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 2023-01-01 00:00:00 +0000 UTC AU 0842812149344  normal [] [0xc000296300 0xc000296780] map[]}
+debug 2024/07/29 15:50:27 {Audio 1 1 1 wave 0 5090.5 0 1 1 0 0 -1 1}
+debug 2024/07/29 15:50:27 Release length: 5038.569000
+debug 2024/07/29 15:50:27 Length mod: -0.010254
+debug 2024/07/29 15:50:27 Length mod: -0.010151
+debug 2024/07/29 15:50:27 [{001 - K.G.L.W. 97.52606895258391} {002 - Automation 211.9428780596657} {003 - Minimum Brain Size 261.29180029922594} {004 - Straws in the Wind 345.1343595255477} {005 - Some of Us 234.8935159587263} {006 - Ontology 240.61804346638374} {007 - Intrasport 255.19048635070808} {008 - Oddlife 300.5260774118806} {009 - Honey 276.6329683350109} {0010 - The Hungry Wolf of Fate 313.3085321642888} {1011 - If Not Now, Then When? 232.33480267534955} {1012 - O.N.E. 222.23328951555175} {1013 - Pleura 254.55813162690472} {1014 - Supreme Ascendancy 221.22313819957196} {1015 - Static Electricity 352.54280927694344} {1016 - East West Link 189.90844740419877} {1017 - Ataraxia 320.2179671655905} {1018 - See Me 246.4769210990665} {1019 - K.G.L.W. 513.1568685177285}]
+debug 2024/07/29 15:50:27 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:50:28 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/001 - K.G.L.W..flacBatchCommand finished: OK
+debug 2024/07/29 15:50:28 97.52606895258391
+debug 2024/07/29 15:50:28 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:50:29 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/002 - Automation.flacBatchCommand finished: OK
+debug 2024/07/29 15:50:29 309.4689470122496
+debug 2024/07/29 15:50:29 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:50:30 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/003 - Minimum Brain Size.flacBatchCommand finished: OK
+debug 2024/07/29 15:50:30 570.7607473114756
+debug 2024/07/29 15:50:30 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:50:31 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/004 - Straws in the Wind.flacBatchCommand finished: OK
+debug 2024/07/29 15:50:31 915.8951068370234
+debug 2024/07/29 15:50:31 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:50:32 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/005 - Some of Us.flacBatchCommand finished: OK
+debug 2024/07/29 15:50:32 1150.7886227957497
+debug 2024/07/29 15:50:32 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:50:33 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/006 - Ontology.flacBatchCommand finished: OK
+debug 2024/07/29 15:50:33 1391.4066662621335
+debug 2024/07/29 15:50:33 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:50:34 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/007 - Intrasport.flacBatchCommand finished: OK
+debug 2024/07/29 15:50:34 1646.5971526128417
+debug 2024/07/29 15:50:34 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:50:35 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/008 - Oddlife.flacBatchCommand finished: OK
+debug 2024/07/29 15:50:35 1947.1232300247223
+debug 2024/07/29 15:50:35 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:50:36 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/009 - Honey.flacBatchCommand finished: OK
+debug 2024/07/29 15:50:36 2223.7561983597334
+debug 2024/07/29 15:50:36 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:50:37 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/0010 - The Hungry Wolf of Fate.flacBatchCommand finished: OK
+debug 2024/07/29 15:50:37 2537.0647305240223
+debug 2024/07/29 15:50:37 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:50:38 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/1011 - If Not Now, Then When?.flacBatchCommand finished: OK
+debug 2024/07/29 15:50:38 2769.399533199372
+debug 2024/07/29 15:50:38 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:50:39 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/1012 - O.N.E..flacBatchCommand finished: OK
+debug 2024/07/29 15:50:39 2991.632822714924
+debug 2024/07/29 15:50:39 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:50:40 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/1013 - Pleura.flacBatchCommand finished: OK
+debug 2024/07/29 15:50:40 3246.1909543418287
+debug 2024/07/29 15:50:40 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:50:41 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/1014 - Supreme Ascendancy.flacBatchCommand finished: OK
+debug 2024/07/29 15:50:41 3467.414092541401
+debug 2024/07/29 15:50:41 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:50:42 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/1015 - Static Electricity.flacBatchCommand finished: OK
+debug 2024/07/29 15:50:42 3819.9569018183442
+debug 2024/07/29 15:50:42 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:50:43 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/1016 - East West Link.flacBatchCommand finished: OK
+debug 2024/07/29 15:50:43 4009.865349222543
+debug 2024/07/29 15:50:43 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:50:44 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/1017 - Ataraxia.flacBatchCommand finished: OK
+debug 2024/07/29 15:50:44 4330.083316388133
+debug 2024/07/29 15:50:44 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:50:45 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/1018 - See Me.flacBatchCommand finished: OK
+debug 2024/07/29 15:50:45 4576.5602374872
+debug 2024/07/29 15:50:45 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:50:47 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/1019 - K.G.L.W..flacBatchCommand finished: OK
+debug 2024/07/29 15:50:47 5089.717106004928
+debug 2024/07/29 15:50:47 batch cmd abt to be run
+debug 2024/07/29 15:51:46 batch cmd abt to be run
+debug 2024/07/29 15:51:46 batch cmd abt to be run
+debug 2024/07/29 15:51:46 batch cmd abt to be run
+debug 2024/07/29 15:51:46 batch cmd abt to be run
+debug 2024/07/29 15:51:46 batch cmd abt to be run
+debug 2024/07/29 15:51:49 batch cmd abt to be run
+debug 2024/07/29 15:51:49 batch cmd abt to be run
+debug 2024/07/29 15:51:49 batch cmd abt to be run
+debug 2024/07/29 15:51:49 batch cmd abt to be run
+debug 2024/07/29 15:51:50 batch cmd abt to be run
+debug 2024/07/29 15:51:53 Artist: king Release: kglw
+debug 2024/07/29 15:51:54 0
+debug 2024/07/29 15:51:55 &{80197953-1142-4629-a8dd-0bd988f658f6 K.G.L.W. Official Green Tangerine LP edition {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 2023-01-01 00:00:00 +0000 UTC AU 0842812149344  normal [] [0xc000098fc0 0xc000099440] map[]}
+debug 2024/07/29 15:51:59 {Audio 1 1 1 wave 0 5090.5 0 1 1 0 0 -1 1}
+debug 2024/07/29 15:51:59 Release length: 5038.569000
+debug 2024/07/29 15:51:59 Length mod: -0.010254
+debug 2024/07/29 15:51:59 Length mod: -0.010151
+debug 2024/07/29 15:51:59 [{101 - K.G.L.W. 97.52606895258391} {102 - Automation 211.9428780596657} {103 - Minimum Brain Size 261.29180029922594} {104 - Straws in the Wind 345.1343595255477} {105 - Some of Us 234.8935159587263} {106 - Ontology 240.61804346638374} {107 - Intrasport 255.19048635070808} {108 - Oddlife 300.5260774118806} {109 - Honey 276.6329683350109} {1010 - The Hungry Wolf of Fate 313.3085321642888} {2011 - If Not Now, Then When? 232.33480267534955} {2012 - O.N.E. 222.23328951555175} {2013 - Pleura 254.55813162690472} {2014 - Supreme Ascendancy 221.22313819957196} {2015 - Static Electricity 352.54280927694344} {2016 - East West Link 189.90844740419877} {2017 - Ataraxia 320.2179671655905} {2018 - See Me 246.4769210990665} {2019 - K.G.L.W. 513.1568685177285}]
+debug 2024/07/29 15:51:59 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:52:00 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/101 - K.G.L.W..flacBatchCommand finished: OK
+debug 2024/07/29 15:52:00 97.52606895258391
+debug 2024/07/29 15:52:00 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:52:00 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/102 - Automation.flacBatchCommand finished: OK
+debug 2024/07/29 15:52:00 309.4689470122496
+debug 2024/07/29 15:52:00 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:52:01 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/103 - Minimum Brain Size.flacBatchCommand finished: OK
+debug 2024/07/29 15:52:01 570.7607473114756
+debug 2024/07/29 15:52:01 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:52:03 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/104 - Straws in the Wind.flacBatchCommand finished: OK
+debug 2024/07/29 15:52:03 915.8951068370234
+debug 2024/07/29 15:52:03 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:52:03 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/105 - Some of Us.flacBatchCommand finished: OK
+debug 2024/07/29 15:52:03 1150.7886227957497
+debug 2024/07/29 15:52:03 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:52:04 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/106 - Ontology.flacBatchCommand finished: OK
+debug 2024/07/29 15:52:04 1391.4066662621335
+debug 2024/07/29 15:52:04 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:52:05 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/107 - Intrasport.flacBatchCommand finished: OK
+debug 2024/07/29 15:52:05 1646.5971526128417
+debug 2024/07/29 15:52:05 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:52:06 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/108 - Oddlife.flacBatchCommand finished: OK
+debug 2024/07/29 15:52:06 1947.1232300247223
+debug 2024/07/29 15:52:06 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:52:07 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/109 - Honey.flacBatchCommand finished: OK
+debug 2024/07/29 15:52:07 2223.7561983597334
+debug 2024/07/29 15:52:07 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:52:08 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/1010 - The Hungry Wolf of Fate.flacBatchCommand finished: OK
+debug 2024/07/29 15:52:08 2537.0647305240223
+debug 2024/07/29 15:52:09 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:52:09 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/2011 - If Not Now, Then When?.flacBatchCommand finished: OK
+debug 2024/07/29 15:52:09 2769.399533199372
+debug 2024/07/29 15:52:09 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:52:10 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/2012 - O.N.E..flacBatchCommand finished: OK
+debug 2024/07/29 15:52:10 2991.632822714924
+debug 2024/07/29 15:52:10 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:52:11 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/2013 - Pleura.flacBatchCommand finished: OK
+debug 2024/07/29 15:52:11 3246.1909543418287
+debug 2024/07/29 15:52:11 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:52:12 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/2014 - Supreme Ascendancy.flacBatchCommand finished: OK
+debug 2024/07/29 15:52:12 3467.414092541401
+debug 2024/07/29 15:52:12 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:52:13 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/2015 - Static Electricity.flacBatchCommand finished: OK
+debug 2024/07/29 15:52:13 3819.9569018183442
+debug 2024/07/29 15:52:13 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:52:14 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/2016 - East West Link.flacBatchCommand finished: OK
+debug 2024/07/29 15:52:14 4009.865349222543
+debug 2024/07/29 15:52:14 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:52:15 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/2017 - Ataraxia.flacBatchCommand finished: OK
+debug 2024/07/29 15:52:15 4330.083316388133
+debug 2024/07/29 15:52:15 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:52:16 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/2018 - See Me.flacBatchCommand finished: OK
+debug 2024/07/29 15:52:16 4576.5602374872
+debug 2024/07/29 15:52:16 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:52:18 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizzard Wizzard/K.G.L.W/2019 - K.G.L.W..flacBatchCommand finished: OK
+debug 2024/07/29 15:52:18 5089.717106004928
+debug 2024/07/29 15:52:18 batch cmd abt to be run
+debug 2024/07/29 15:57:07 batch cmd abt to be run
+debug 2024/07/29 15:57:08 batch cmd abt to be run
+debug 2024/07/29 15:57:08 batch cmd abt to be run
+debug 2024/07/29 15:57:08 batch cmd abt to be run
+debug 2024/07/29 15:57:08 batch cmd abt to be run
+debug 2024/07/29 15:57:09 batch cmd abt to be run
+debug 2024/07/29 15:57:09 batch cmd abt to be run
+debug 2024/07/29 15:57:10 batch cmd abt to be run
+debug 2024/07/29 15:57:10 batch cmd abt to be run
+debug 2024/07/29 15:57:10 batch cmd abt to be run
+debug 2024/07/29 15:57:11 Artist: king Release: kglw
+debug 2024/07/29 15:57:13 0
+debug 2024/07/29 15:57:13 &{80197953-1142-4629-a8dd-0bd988f658f6 K.G.L.W. Official Green Tangerine LP edition {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 2023-01-01 00:00:00 +0000 UTC AU 0842812149344  normal [] [0xc0003d4300 0xc0003d4780] map[]}
+debug 2024/07/29 15:57:29 batch cmd abt to be run
+debug 2024/07/29 15:57:31 Artist: king Release: kglw
+debug 2024/07/29 15:57:32 0
+debug 2024/07/29 15:57:32 &{80197953-1142-4629-a8dd-0bd988f658f6 K.G.L.W. Official Green Tangerine LP edition {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 2023-01-01 00:00:00 +0000 UTC AU 0842812149344  normal [] [0xc000099560 0xc0000999b0] map[]}
+debug 2024/07/29 15:57:37 {Audio 1 1 1 wave 0 5090.5 0 1 1 0 0 -1 1}
+debug 2024/07/29 15:57:37 Release length: 5038.569000
+debug 2024/07/29 15:57:37 Length mod: -0.010254
+debug 2024/07/29 15:57:37 Length mod: -0.010151
+debug 2024/07/29 15:57:37 [{101 - K.G.L.W. 97.52606895258391} {102 - Automation 211.9428780596657} {103 - Minimum Brain Size 261.29180029922594} {104 - Straws in the Wind 345.1343595255477} {105 - Some of Us 234.8935159587263} {106 - Ontology 240.61804346638374} {107 - Intrasport 255.19048635070808} {108 - Oddlife 300.5260774118806} {109 - Honey 276.6329683350109} {1010 - The Hungry Wolf of Fate 313.3085321642888} {2011 - If Not Now, Then When? 232.33480267534955} {2012 - O.N.E. 222.23328951555175} {2013 - Pleura 254.55813162690472} {2014 - Supreme Ascendancy 221.22313819957196} {2015 - Static Electricity 352.54280927694344} {2016 - East West Link 189.90844740419877} {2017 - Ataraxia 320.2179671655905} {2018 - See Me 246.4769210990665} {2019 - K.G.L.W. 513.1568685177285}]
+debug 2024/07/29 15:57:37 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:57:37 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W/101 - K.G.L.W..flacBatchCommand finished: OK
+debug 2024/07/29 15:57:37 97.52606895258391
+debug 2024/07/29 15:57:37 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:57:38 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W/102 - Automation.flacBatchCommand finished: OK
+debug 2024/07/29 15:57:38 309.4689470122496
+debug 2024/07/29 15:57:38 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:57:39 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W/103 - Minimum Brain Size.flacBatchCommand finished: OK
+debug 2024/07/29 15:57:39 570.7607473114756
+debug 2024/07/29 15:57:39 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:57:40 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W/104 - Straws in the Wind.flacBatchCommand finished: OK
+debug 2024/07/29 15:57:40 915.8951068370234
+debug 2024/07/29 15:57:40 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:57:41 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W/105 - Some of Us.flacBatchCommand finished: OK
+debug 2024/07/29 15:57:41 1150.7886227957497
+debug 2024/07/29 15:57:41 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:57:42 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W/106 - Ontology.flacBatchCommand finished: OK
+debug 2024/07/29 15:57:42 1391.4066662621335
+debug 2024/07/29 15:57:42 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:57:43 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W/107 - Intrasport.flacBatchCommand finished: OK
+debug 2024/07/29 15:57:43 1646.5971526128417
+debug 2024/07/29 15:57:43 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:57:44 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W/108 - Oddlife.flacBatchCommand finished: OK
+debug 2024/07/29 15:57:44 1947.1232300247223
+debug 2024/07/29 15:57:44 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:57:45 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W/109 - Honey.flacBatchCommand finished: OK
+debug 2024/07/29 15:57:45 2223.7561983597334
+debug 2024/07/29 15:57:45 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:57:46 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W/1010 - The Hungry Wolf of Fate.flacBatchCommand finished: OK
+debug 2024/07/29 15:57:46 2537.0647305240223
+debug 2024/07/29 15:57:46 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:57:47 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W/2011 - If Not Now, Then When?.flacBatchCommand finished: OK
+debug 2024/07/29 15:57:47 2769.399533199372
+debug 2024/07/29 15:57:47 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:57:48 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/07/29 15:57:48 2991.632822714924
+debug 2024/07/29 15:57:48 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:57:49 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W/2013 - Pleura.flacBatchCommand finished: OK
+debug 2024/07/29 15:57:49 3246.1909543418287
+debug 2024/07/29 15:57:49 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:57:49 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W/2014 - Supreme Ascendancy.flacBatchCommand finished: OK
+debug 2024/07/29 15:57:49 3467.414092541401
+debug 2024/07/29 15:57:49 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:57:51 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W/2015 - Static Electricity.flacBatchCommand finished: OK
+debug 2024/07/29 15:57:51 3819.9569018183442
+debug 2024/07/29 15:57:51 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:57:51 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W/2016 - East West Link.flacBatchCommand finished: OK
+debug 2024/07/29 15:57:51 4009.865349222543
+debug 2024/07/29 15:57:51 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:57:53 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W/2017 - Ataraxia.flacBatchCommand finished: OK
+debug 2024/07/29 15:57:53 4330.083316388133
+debug 2024/07/29 15:57:53 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:57:53 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W/2018 - See Me.flacBatchCommand finished: OK
+debug 2024/07/29 15:57:53 4576.5602374872
+debug 2024/07/29 15:57:53 Select res:BatchCommand finished: OK
+debug 2024/07/29 15:57:55 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W/2019 - K.G.L.W..flacBatchCommand finished: OK
+debug 2024/07/29 15:57:55 5089.717106004928
+debug 2024/07/29 15:57:55 batch cmd abt to be run
+debug 2024/07/29 16:03:14 batch cmd abt to be run
+debug 2024/07/29 16:03:14 batch cmd abt to be run
+debug 2024/07/29 16:03:15 Artist: king Release: kglw
+debug 2024/07/29 16:03:17 0
+debug 2024/07/29 16:03:17 &{80197953-1142-4629-a8dd-0bd988f658f6 K.G.L.W. Official Green Tangerine LP edition {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 2023-01-01 00:00:00 +0000 UTC AU 0842812149344  normal [] [0xc0003d4390 0xc0003d4810] map[]}
+debug 2024/07/29 16:04:28 batch cmd abt to be run
+debug 2024/07/29 16:04:28 batch cmd abt to be run
+debug 2024/07/29 16:04:28 batch cmd abt to be run
+debug 2024/07/29 16:04:28 batch cmd abt to be run
+debug 2024/07/29 16:04:28 batch cmd abt to be run
+debug 2024/07/29 16:04:30 batch cmd abt to be run
+debug 2024/07/29 16:04:30 batch cmd abt to be run
+debug 2024/07/29 16:04:30 batch cmd abt to be run
+debug 2024/07/29 16:04:31 batch cmd abt to be run
+debug 2024/07/29 16:04:31 batch cmd abt to be run
+debug 2024/07/29 16:04:31 Artist: king Release: kglw
+debug 2024/07/29 16:04:34 0
+debug 2024/07/29 16:04:34 &{80197953-1142-4629-a8dd-0bd988f658f6 K.G.L.W. Official Green Tangerine LP edition {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 2023-01-01 00:00:00 +0000 UTC AU 0842812149344  normal [] [0xc0004823f0 0xc000482870] map[]}
+debug 2024/07/29 16:04:35 {Audio 1 1 1 wave 0 5090.5 0 1 1 0 0 -1 1}
+debug 2024/07/29 16:04:35 Release length: 5038.569000
+debug 2024/07/29 16:04:35 Length mod: -0.010254
+debug 2024/07/29 16:04:35 Length mod: -0.010151
+debug 2024/07/29 16:04:35 [{01 - K.G.L.W. 97.52606895258391} {02 - Automation 211.9428780596657} {03 - Minimum Brain Size 261.29180029922594} {04 - Straws in the Wind 345.1343595255477} {05 - Some of Us 234.8935159587263} {06 - Ontology 240.61804346638374} {07 - Intrasport 255.19048635070808} {08 - Oddlife 300.5260774118806} {09 - Honey 276.6329683350109} {010 - The Hungry Wolf of Fate 313.3085321642888} {011 - If Not Now, Then When? 232.33480267534955} {012 - O.N.E. 222.23328951555175} {013 - Pleura 254.55813162690472} {014 - Supreme Ascendancy 221.22313819957196} {015 - Static Electricity 352.54280927694344} {016 - East West Link 189.90844740419877} {017 - Ataraxia 320.2179671655905} {018 - See Me 246.4769210990665} {019 - K.G.L.W. 513.1568685177285}]
+debug 2024/07/29 16:04:35 Select res:BatchCommand finished: OK
+debug 2024/07/29 16:04:36 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W/01 - K.G.L.W..flacBatchCommand finished: OK
+debug 2024/07/29 16:04:36 97.52606895258391
+debug 2024/07/29 16:04:36 Select res:BatchCommand finished: OK
+debug 2024/07/29 16:04:36 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W/02 - Automation.flacBatchCommand finished: OK
+debug 2024/07/29 16:04:36 309.4689470122496
+debug 2024/07/29 16:04:36 Select res:BatchCommand finished: OK
+debug 2024/07/29 16:04:37 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W/03 - Minimum Brain Size.flacBatchCommand finished: OK
+debug 2024/07/29 16:04:37 570.7607473114756
+debug 2024/07/29 16:04:37 Select res:BatchCommand finished: OK
+debug 2024/07/29 16:04:39 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W/04 - Straws in the Wind.flacBatchCommand finished: OK
+debug 2024/07/29 16:04:39 915.8951068370234
+debug 2024/07/29 16:04:39 Select res:BatchCommand finished: OK
+debug 2024/07/29 16:04:39 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W/05 - Some of Us.flacBatchCommand finished: OK
+debug 2024/07/29 16:04:39 1150.7886227957497
+debug 2024/07/29 16:04:40 Select res:BatchCommand finished: OK
+debug 2024/07/29 16:04:40 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W/06 - Ontology.flacBatchCommand finished: OK
+debug 2024/07/29 16:04:40 1391.4066662621335
+debug 2024/07/29 16:04:40 Select res:BatchCommand finished: OK
+debug 2024/07/29 16:04:41 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W/07 - Intrasport.flacBatchCommand finished: OK
+debug 2024/07/29 16:04:41 1646.5971526128417
+debug 2024/07/29 16:04:41 Select res:BatchCommand finished: OK
+debug 2024/07/29 16:04:42 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W/08 - Oddlife.flacBatchCommand finished: OK
+debug 2024/07/29 16:04:42 1947.1232300247223
+debug 2024/07/29 16:04:42 Select res:BatchCommand finished: OK
+debug 2024/07/29 16:04:43 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W/09 - Honey.flacBatchCommand finished: OK
+debug 2024/07/29 16:04:43 2223.7561983597334
+debug 2024/07/29 16:04:43 Select res:BatchCommand finished: OK
+debug 2024/07/29 16:04:45 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W/010 - The Hungry Wolf of Fate.flacBatchCommand finished: OK
+debug 2024/07/29 16:04:45 2537.0647305240223
+debug 2024/07/29 16:04:45 Select res:BatchCommand finished: OK
+debug 2024/07/29 16:04:45 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W/011 - If Not Now, Then When?.flacBatchCommand finished: OK
+debug 2024/07/29 16:04:45 2769.399533199372
+debug 2024/07/29 16:04:46 Select res:BatchCommand finished: OK
+debug 2024/07/29 16:04:46 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W/012 - O.N.E..flacBatchCommand finished: OK
+debug 2024/07/29 16:04:46 2991.632822714924
+debug 2024/07/29 16:04:46 Select res:BatchCommand finished: OK
+debug 2024/07/29 16:04:47 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W/013 - Pleura.flacBatchCommand finished: OK
+debug 2024/07/29 16:04:47 3246.1909543418287
+debug 2024/07/29 16:04:47 Select res:BatchCommand finished: OK
+debug 2024/07/29 16:04:48 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W/014 - Supreme Ascendancy.flacBatchCommand finished: OK
+debug 2024/07/29 16:04:48 3467.414092541401
+debug 2024/07/29 16:04:48 Select res:BatchCommand finished: OK
+debug 2024/07/29 16:04:49 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W/015 - Static Electricity.flacBatchCommand finished: OK
+debug 2024/07/29 16:04:49 3819.9569018183442
+debug 2024/07/29 16:04:49 Select res:BatchCommand finished: OK
+debug 2024/07/29 16:04:50 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W/016 - East West Link.flacBatchCommand finished: OK
+debug 2024/07/29 16:04:50 4009.865349222543
+debug 2024/07/29 16:04:50 Select res:BatchCommand finished: OK
+debug 2024/07/29 16:04:51 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W/017 - Ataraxia.flacBatchCommand finished: OK
+debug 2024/07/29 16:04:51 4330.083316388133
+debug 2024/07/29 16:04:51 Select res:BatchCommand finished: OK
+debug 2024/07/29 16:04:52 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W/018 - See Me.flacBatchCommand finished: OK
+debug 2024/07/29 16:04:52 4576.5602374872
+debug 2024/07/29 16:04:52 Select res:BatchCommand finished: OK
+debug 2024/07/29 16:04:54 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W/019 - K.G.L.W..flacBatchCommand finished: OK
+debug 2024/07/29 16:04:54 5089.717106004928
+debug 2024/07/29 16:04:54 batch cmd abt to be run
+debug 2024/08/10 05:02:18 batch cmd abt to be run
+debug 2024/08/10 05:02:19 batch cmd abt to be run
+debug 2024/08/10 05:02:19 batch cmd abt to be run
+debug 2024/08/10 05:02:19 batch cmd abt to be run
+debug 2024/08/10 05:02:19 batch cmd abt to be run
+debug 2024/08/10 05:02:19 batch cmd abt to be run
+debug 2024/08/10 05:02:19 batch cmd abt to be run
+debug 2024/08/10 05:02:20 batch cmd abt to be run
+debug 2024/08/10 05:02:24 batch cmd abt to be run
+debug 2024/08/10 05:02:24 batch cmd abt to be run
+debug 2024/08/10 05:02:25 batch cmd abt to be run
+debug 2024/08/10 05:02:25 batch cmd abt to be run
+debug 2024/08/10 05:02:26 batch cmd abt to be run
+debug 2024/08/10 05:02:26 batch cmd abt to be run
+debug 2024/08/10 05:02:26 batch cmd abt to be run
+debug 2024/08/10 05:02:27 batch cmd abt to be run
+debug 2024/08/10 05:02:27 batch cmd abt to be run
+debug 2024/08/10 05:02:28 batch cmd abt to be run
+debug 2024/08/10 05:02:28 batch cmd abt to be run
+debug 2024/08/10 05:02:28 batch cmd abt to be run
+debug 2024/08/10 05:02:28 batch cmd abt to be run
+debug 2024/08/10 05:02:28 batch cmd abt to be run
+debug 2024/08/10 05:02:29 batch cmd abt to be run
+debug 2024/08/10 05:02:29 Artist: genesis Release: genesis
+debug 2024/08/10 05:02:33 3
+debug 2024/08/10 05:02:33 &{72ce18dd-f6fc-449b-b542-2abc5d56e548 Genesis Official  {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1983-10-03 00:00:00 +0000 UTC US 075678011610  normal [] [0xc000196240] map[]}
+debug 2024/08/10 05:02:35 {Audio 1 1 0 wave 0 2782.31 0 1 2 0 0 -1 1}
+debug 2024/08/10 05:02:35 Release length: 2759.356000
+debug 2024/08/10 05:02:35 Length mod: -0.008284
+debug 2024/08/10 05:02:35 Length mod: -0.008201
+debug 2024/08/10 05:02:35 [{01 - Mama 411.21103544687105} {02 - That’s All 268.47695140623057} {03 - Home by the Sea 295.26788481310854} {04 - Second Home by the Sea 386.0060027004009} {05 - Illegal Alien 317.8253809198895} {06 - Taking It All Too Hard 240.3148642179446} {07 - Just a Job to Do 289.8639257922654} {08 - Silver Rainbow 272.1468041741166} {09 - It’s Gonna Get Better 300.8734840959235}]
+debug 2024/08/10 05:02:35 Select res:BatchCommand finished: OK
+debug 2024/08/10 05:02:37 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W/01 - Mama.flacBatchCommand finished: OK
+debug 2024/08/10 05:02:37 411.21103544687105
+debug 2024/08/10 05:02:37 Select res:BatchCommand finished: OK
+debug 2024/08/10 05:02:39 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W/02 - That’s All.flacBatchCommand finished: OK
+debug 2024/08/10 05:02:39 679.6879868531016
+debug 2024/08/10 05:02:39 Select res:BatchCommand finished: OK
+debug 2024/08/10 05:02:41 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W/03 - Home by the Sea.flacBatchCommand finished: OK
+debug 2024/08/10 05:02:41 974.9558716662102
+debug 2024/08/10 05:02:41 Select res:BatchCommand finished: OK
+debug 2024/08/10 05:02:44 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W/04 - Second Home by the Sea.flacBatchCommand finished: OK
+debug 2024/08/10 05:02:44 1360.961874366611
+debug 2024/08/10 05:02:44 Select res:BatchCommand finished: OK
+debug 2024/08/10 05:02:46 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W/05 - Illegal Alien.flacBatchCommand finished: OK
+debug 2024/08/10 05:02:46 1678.7872552865006
+debug 2024/08/10 05:02:46 Select res:BatchCommand finished: OK
+debug 2024/08/10 05:02:47 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W/06 - Taking It All Too Hard.flacBatchCommand finished: OK
+debug 2024/08/10 05:02:47 1919.1021195044452
+debug 2024/08/10 05:02:47 Select res:BatchCommand finished: OK
+debug 2024/08/10 05:02:49 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W/07 - Just a Job to Do.flacBatchCommand finished: OK
+debug 2024/08/10 05:02:49 2208.9660452967105
+debug 2024/08/10 05:02:49 Select res:BatchCommand finished: OK
+debug 2024/08/10 05:02:51 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W/08 - Silver Rainbow.flacBatchCommand finished: OK
+debug 2024/08/10 05:02:51 2481.1128494708273
+debug 2024/08/10 05:02:51 Select res:BatchCommand finished: OK
+debug 2024/08/10 05:02:53 Export res:Exported to FLAC format: ./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W/09 - It’s Gonna Get Better.flacBatchCommand finished: OK
+debug 2024/08/10 05:02:53 2781.986333566751
+debug 2024/08/10 05:02:53 batch cmd abt to be run
+debug 2024/08/10 05:03:02 batch cmd abt to be run
+debug 2024/08/10 05:03:02 batch cmd abt to be run
+debug 2024/08/10 05:03:03 batch cmd abt to be run
+debug 2024/08/10 05:03:03 batch cmd abt to be run
+debug 2024/08/10 05:03:03 batch cmd abt to be run
+debug 2024/08/10 05:03:04 batch cmd abt to be run
+debug 2024/08/10 05:03:05 batch cmd abt to be run
+debug 2024/08/10 05:03:05 batch cmd abt to be run
+debug 2024/08/10 05:03:06 batch cmd abt to be run
+debug 2024/08/10 05:03:06 batch cmd abt to be run
+debug 2024/08/10 05:03:07 batch cmd abt to be run
+debug 2024/08/10 05:03:08 batch cmd abt to be run
+debug 2024/08/10 05:03:08 batch cmd abt to be run
+debug 2024/08/10 05:03:08 batch cmd abt to be run
+debug 2024/08/10 05:03:08 batch cmd abt to be run
+debug 2024/08/10 05:03:08 batch cmd abt to be run
+debug 2024/08/10 05:03:09 batch cmd abt to be run
+debug 2024/08/10 05:03:09 batch cmd abt to be run
+debug 2024/08/10 05:03:09 batch cmd abt to be run
+debug 2024/08/10 05:03:09 batch cmd abt to be run
+debug 2024/08/10 05:03:09 batch cmd abt to be run
+debug 2024/08/10 05:03:10 batch cmd abt to be run
+debug 2024/08/10 05:03:10 batch cmd abt to be run
+debug 2024/08/10 05:03:10 batch cmd abt to be run
+debug 2024/08/10 05:03:10 batch cmd abt to be run
+debug 2024/08/10 05:03:10 batch cmd abt to be run
+debug 2024/08/10 05:03:10 batch cmd abt to be run
+debug 2024/08/10 05:03:10 batch cmd abt to be run
+debug 2024/08/10 05:03:10 batch cmd abt to be run
+debug 2024/08/10 05:03:10 batch cmd abt to be run
+debug 2024/08/10 05:03:10 batch cmd abt to be run
+debug 2024/08/10 05:03:10 batch cmd abt to be run
+debug 2024/08/10 05:03:10 batch cmd abt to be run
+debug 2024/08/10 05:03:10 batch cmd abt to be run
+debug 2024/08/10 05:03:10 batch cmd abt to be run
+debug 2024/08/10 05:03:11 batch cmd abt to be run
+debug 2024/08/10 05:03:11 batch cmd abt to be run
+debug 2024/08/10 05:03:11 batch cmd abt to be run
+debug 2024/08/10 05:03:11 batch cmd abt to be run
+debug 2024/08/10 05:03:11 batch cmd abt to be run
+debug 2024/08/10 05:03:11 batch cmd abt to be run
+debug 2024/08/10 05:03:11 batch cmd abt to be run
+debug 2024/08/10 05:03:11 batch cmd abt to be run
+debug 2024/08/10 05:03:11 batch cmd abt to be run
+debug 2024/08/10 05:03:11 batch cmd abt to be run
+debug 2024/08/10 05:03:11 batch cmd abt to be run
+debug 2024/08/10 05:03:11 batch cmd abt to be run
+debug 2024/08/10 05:03:11 batch cmd abt to be run
+debug 2024/08/10 05:03:11 batch cmd abt to be run
+debug 2024/08/10 05:03:11 batch cmd abt to be run
+debug 2024/08/10 05:03:11 batch cmd abt to be run
+debug 2024/08/10 05:03:11 batch cmd abt to be run
+debug 2024/08/10 05:03:11 batch cmd abt to be run
+debug 2024/08/10 05:03:11 batch cmd abt to be run
+debug 2024/08/10 05:03:11 batch cmd abt to be run
+debug 2024/08/10 05:03:11 batch cmd abt to be run
+debug 2024/08/10 05:03:11 batch cmd abt to be run
+debug 2024/08/10 05:03:11 batch cmd abt to be run
+debug 2024/08/10 05:03:11 batch cmd abt to be run
+debug 2024/08/10 05:03:11 batch cmd abt to be run
+debug 2024/08/10 05:03:11 batch cmd abt to be run
+debug 2024/08/10 05:03:11 batch cmd abt to be run
+debug 2024/08/10 05:03:11 batch cmd abt to be run
+debug 2024/08/10 05:03:11 batch cmd abt to be run
+debug 2024/08/10 05:03:11 batch cmd abt to be run
+debug 2024/08/10 05:03:11 batch cmd abt to be run
+debug 2024/08/10 05:03:11 batch cmd abt to be run
+debug 2024/08/10 05:03:11 batch cmd abt to be run
+debug 2024/08/10 05:03:12 batch cmd abt to be run
+debug 2024/08/10 05:03:12 batch cmd abt to be run
+debug 2024/08/10 05:03:12 batch cmd abt to be run
+debug 2024/08/10 05:03:12 batch cmd abt to be run
+debug 2024/08/10 05:03:12 batch cmd abt to be run
+debug 2024/08/10 05:03:12 batch cmd abt to be run
+debug 2024/08/10 05:03:12 batch cmd abt to be run
+debug 2024/08/10 05:03:12 batch cmd abt to be run
+debug 2024/08/10 05:03:12 batch cmd abt to be run
+debug 2024/08/10 05:03:12 batch cmd abt to be run
+debug 2024/08/10 05:03:12 batch cmd abt to be run
+debug 2024/08/10 05:03:12 batch cmd abt to be run
+debug 2024/08/10 05:03:12 batch cmd abt to be run
+debug 2024/08/10 05:03:12 batch cmd abt to be run
+debug 2024/08/10 05:03:13 batch cmd abt to be run
+debug 2024/08/10 05:03:13 batch cmd abt to be run
+debug 2024/08/10 05:03:13 batch cmd abt to be run
+debug 2024/08/10 05:03:13 batch cmd abt to be run
+debug 2024/08/10 05:03:13 batch cmd abt to be run
+debug 2024/08/10 05:03:14 batch cmd abt to be run

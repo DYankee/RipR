@@ -164,9 +164,11 @@ func (m *model) GetlengthMod() (lengthMod float64) {
 func (m *model) buildExportData() {
 	lengthMod := m.GetlengthMod()
 	data := make([]songData, 0)
+	trackidx := 1
 	for _, k := range m.mb.ReleaseData.Mediums {
-		for i, k := range k.Tracks {
-			songName := fmt.Sprintf("%d - "+k.Recording.Title, i+1)
+		for _, k := range k.Tracks {
+			songName := fmt.Sprintf("0%d - "+k.Recording.Title, trackidx)
+			trackidx += 1
 			data = append(data, songData{
 				songLength: (float64(k.Length) / 1000) - (float64(k.Length)/1000)*lengthMod,
 				songName:   songName,
@@ -184,7 +186,7 @@ func (m *model) ExportSongs() {
 	for _, v := range m.ExportData {
 		res := m.audacity.SelectRegion(offSet, offSet+v.songLength)
 		log.Println("Select res:" + res)
-		res = m.audacity.ExportAudio("./code/rripper/testdata/billy joel/the stranger", v.songName+".flac")
+		res = m.audacity.ExportAudio("./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W", v.songName+".flac")
 		log.Println("Export res:" + res)
 		offSet += v.songLength
 		log.Println(offSet)
@@ -364,6 +366,27 @@ func (m *model) LoadingView() string {
 	)
 }
 
+func (m *model) Header() string {
+	headerStyle := lipgloss.NewStyle().
+		BorderStyle(lipgloss.NormalBorder()).
+		BorderForeground(lipgloss.Color("63")).
+		PaddingBottom(m.Height / 3).
+		Width(m.Width - 2)
+
+	head := lipgloss.JoinVertical(lipgloss.Top,
+		"Current view: "+m.currentView,
+		"Index X: "+strconv.Itoa(m.focusIndex),
+		"Index Y: "+strconv.Itoa(m.focusIndex),
+	)
+	head = lipgloss.JoinHorizontal(lipgloss.Center,
+		head,
+		//"Artist: "+m.mb.ReleaseData.ArtistCredit.NameCredits[0].Artist.Name,
+		//"Release: "+m.mb.ReleaseData.Title,
+	)
+
+	return headerStyle.Render(head)
+}
+
 func (m *model) SearchView() string {
 	button := &blurredButton
 	if m.focusIndex == len(m.inputs) {
@@ -374,15 +397,20 @@ func (m *model) SearchView() string {
 		m.Width,
 		m.Height,
 		lipgloss.Center,
-		lipgloss.Center,
+		lipgloss.Top,
 		lipgloss.JoinVertical(
 			lipgloss.Center,
+			m.Header(),
 			lipgloss.JoinVertical(
 				lipgloss.Center,
-				m.inputs[0].View(),
-				m.inputs[1].View()),
-			*button),
+				lipgloss.JoinVertical(
+					lipgloss.Center,
+					m.inputs[0].View(),
+					m.inputs[1].View()),
+				*button),
+		),
 	)
+
 }
 
 func (m *model) ResultView() string {
