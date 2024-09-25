@@ -387,6 +387,15 @@ func (m *model) Header() string {
 	return headerStyle.Render(head)
 }
 
+func (m *model) Footer() string {
+	footerStyle := lipgloss.NewStyle().
+		BorderStyle(lipgloss.NormalBorder()).
+		BorderForeground(lipgloss.Color("63"))
+	footerStyle.PaddingTop(m.Height / 3).
+		Width(m.Width - 2)
+	return footerStyle.Render("test")
+}
+
 func (m *model) SearchView() string {
 	button := &blurredButton
 	if m.focusIndex == len(m.inputs) {
@@ -397,7 +406,7 @@ func (m *model) SearchView() string {
 		m.Width,
 		m.Height,
 		lipgloss.Center,
-		lipgloss.Top,
+		lipgloss.Center,
 		lipgloss.JoinVertical(
 			lipgloss.Center,
 			m.Header(),
@@ -408,9 +417,9 @@ func (m *model) SearchView() string {
 					m.inputs[0].View(),
 					m.inputs[1].View()),
 				*button),
+			m.Footer(),
 		),
 	)
-
 }
 
 func (m *model) ResultView() string {

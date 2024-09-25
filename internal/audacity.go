@@ -143,20 +143,20 @@ func (a Audacity) Split() string {
 }
 
 func (a Audacity) SetLabel(labelId int, labelText string) string {
-	cmd := fmt.Sprintf("SetLabel: Label=\"%d\" Text=\"%s\"", labelId, labelText)
+	cmd := fmt.Sprintf(`SetLabel: Label="%d" Text="%s"`, labelId, labelText)
 	res := a.Do_command(cmd)
 	return res
 }
 
 func (a Audacity) ExportAudio(destination string, fileName string) string {
-	cmd := fmt.Sprintf("Export2: Filename=\"%s/%s\" NumChannels=\"2\"", destination, fileName)
+	cmd := fmt.Sprintf(`Export2: Filename="%s/%s" NumChannels="2"`, destination, fileName)
 	res := a.Do_command(cmd)
 	return res
 }
 
 func (a Audacity) GetInfo() TrackInfo {
 	info := TrackInfo{}
-	cmd := fmt.Sprintf("GetInfo: Format\"JSON\" Type=\"Tracks\"")
+	cmd := `GetInfo: Format "JSON" Type="Tracks"`
 	res := a.Do_command(cmd)
 	substrings := strings.SplitAfter(strings.Split(res, "[")[1], "]")
 	res = strings.TrimRight(substrings[0], "]")
