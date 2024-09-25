@@ -156,7 +156,7 @@ func (a Audacity) ExportAudio(destination string, fileName string) string {
 
 func (a Audacity) GetInfo() TrackInfo {
 	info := TrackInfo{}
-	cmd := `GetInfo: Format "JSON" Type="Tracks"`
+	cmd := `GetInfo: Format="JSON" Type="Tracks"`
 	res := a.Do_command(cmd)
 	substrings := strings.SplitAfter(strings.Split(res, "[")[1], "]")
 	res = strings.TrimRight(substrings[0], "]")
