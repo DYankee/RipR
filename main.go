@@ -54,7 +54,12 @@ func New() *model {
 		inputs:      make([]textinput.Model, 2),
 	}
 	m.mb.Init()
-	m.audacity.Connect()
+	m.audacity.Init()
+	for !m.audacity.Status {
+		println("connecting")
+		m.audacity.Connect()
+		time.Sleep(10000)
+	}
 	m.TrackInfo = m.audacity.GetInfo()
 	var t textinput.Model
 	for i := range m.inputs {
