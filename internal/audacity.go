@@ -149,13 +149,16 @@ func (a *Audacity) ExportAudio(destination string, fileName string) string {
 	return res
 }
 
-func (a *Audacity) GetInfo() TrackInfo {
-	info := TrackInfo{}
-	cmd := `GetInfo: Format="JSON" Type="Tracks"`
+func (a *Audacity) GetInfo() []TrackInfo {
+	info := []TrackInfo{}
+	cmd := `GetInfo: Format="JSON" Type="Clips"`
 	res := a.Do_command(cmd)
 	substrings := strings.SplitAfter(strings.Split(res, "[")[1], "]")
 	res = strings.TrimRight(substrings[0], "]")
-	json.Unmarshal([]byte(res), &info)
+	substrings = strings.Split(res, ",")
+	for i := 0; i < len(substrings); i++ {
+		json.Unmarshal([]byte(substrings[i]), &info[i])
+	}
 	fmt.Println(info)
 	return info
 }

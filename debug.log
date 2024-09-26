@@ -2472,3 +2472,73 @@ debug 2024/09/25 21:59:29 batch cmd abt to be run
 debug 2024/09/25 21:59:30 batch cmd abt to be run
 debug 2024/09/25 21:59:30 batch cmd abt to be run
 debug 2024/09/25 21:59:30 batch cmd abt to be run
+debug 2024/09/25 22:34:36 batch cmd abt to be run
+debug 2024/09/25 22:34:37 batch cmd abt to be run
+debug 2024/09/25 22:34:37 batch cmd abt to be run
+debug 2024/09/25 22:34:38 batch cmd abt to be run
+debug 2024/09/25 22:34:38 batch cmd abt to be run
+debug 2024/09/25 22:34:38 batch cmd abt to be run
+debug 2024/09/25 22:34:39 batch cmd abt to be run
+debug 2024/09/25 22:34:39 batch cmd abt to be run
+debug 2024/09/25 22:34:39 batch cmd abt to be run
+debug 2024/09/25 22:34:39 batch cmd abt to be run
+debug 2024/09/25 22:34:40 batch cmd abt to be run
+debug 2024/09/25 22:34:40 batch cmd abt to be run
+debug 2024/09/25 22:34:40 batch cmd abt to be run
+debug 2024/09/25 22:34:40 batch cmd abt to be run
+debug 2024/09/25 22:34:40 batch cmd abt to be run
+debug 2024/09/25 22:34:40 batch cmd abt to be run
+debug 2024/09/25 22:34:41 batch cmd abt to be run
+debug 2024/09/25 22:34:41 batch cmd abt to be run
+debug 2024/09/25 22:34:41 batch cmd abt to be run
+debug 2024/09/25 22:34:42 batch cmd abt to be run
+debug 2024/09/25 22:34:42 batch cmd abt to be run
+debug 2024/09/25 22:34:42 batch cmd abt to be run
+debug 2024/09/25 22:34:43 batch cmd abt to be run
+debug 2024/09/25 22:34:43 batch cmd abt to be run
+debug 2024/09/25 22:34:44 batch cmd abt to be run
+debug 2024/09/25 22:34:44 batch cmd abt to be run
+debug 2024/09/25 22:34:44 batch cmd abt to be run
+debug 2024/09/25 22:34:44 batch cmd abt to be run
+debug 2024/09/25 22:34:44 batch cmd abt to be run
+debug 2024/09/25 22:34:44 batch cmd abt to be run
+debug 2024/09/25 22:34:45 batch cmd abt to be run
+debug 2024/09/25 22:34:45 batch cmd abt to be run
+debug 2024/09/25 22:34:45 batch cmd abt to be run
+debug 2024/09/25 22:34:45 Artist: michael jackson Release: thriller
+debug 2024/09/25 22:34:47 0
+debug 2024/09/25 22:34:47 &{9c4c939e-5697-44d3-b2f2-b04226cf15f8 Thriller Official half-speed mastered {eng Latn} {[]} {    0001-01-01 00:00:00 +0000 UTC {[]} [] []} 1982-01-01 00:00:00 +0000 UTC US 074644811216  normal [] [0xc0004c4420] map[]}
+debug 2024/09/25 22:34:48 { 0 0  0 0 0 0 0 0 0 0 0}
+debug 2024/09/25 22:34:48 Release length: 2544.000000
+debug 2024/09/25 22:34:48 Length mod: 2.000000
+debug 2024/09/25 22:34:48 Length mod: 1.980000
+debug 2024/09/25 22:34:48 [{01 - Wanna Be Startin’ Somethin’ -356.72} {02 - Baby Be Mine -255.77999999999997} {03 - The Girl Is Mine -217.56} {04 - Thriller -351.82000000000005} {05 - Beat It -253.82000000000005} {06 - Billie Jean -288.12} {07 - Human Nature -241.07999999999998} {08 - P.Y.T. (Pretty Young Thing) -234.21999999999997} {09 - The Lady in My Life -294}]
+debug 2024/09/25 22:34:56 Select res:BatchCommand finished: OK
+debug 2024/09/25 22:34:58 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/09/25 22:34:58 -356.72
+debug 2024/09/25 22:34:59 Select res:BatchCommand finished: OK
+debug 2024/09/25 22:35:01 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/09/25 22:35:01 -612.5
+debug 2024/09/25 22:35:02 Select res:BatchCommand finished: OK
+debug 2024/09/25 22:35:03 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/09/25 22:35:03 -830.06
+debug 2024/09/25 22:35:03 Select res:BatchCommand finished: OK
+debug 2024/09/25 22:35:04 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/09/25 22:35:04 -1181.88
+debug 2024/09/25 22:35:04 Select res:BatchCommand finished: OK
+debug 2024/09/25 22:35:05 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/09/25 22:35:05 -1435.7000000000003
+debug 2024/09/25 22:35:05 Select res:BatchCommand finished: OK
+debug 2024/09/25 22:35:06 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/09/25 22:35:06 -1723.8200000000002
+debug 2024/09/25 22:35:06 Select res:BatchCommand finished: OK
+debug 2024/09/25 22:35:07 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/09/25 22:35:07 -1964.9
+debug 2024/09/25 22:35:07 Select res:BatchCommand finished: OK
+debug 2024/09/25 22:35:08 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/09/25 22:35:08 -2199.12
+debug 2024/09/25 22:35:08 Select res:BatchCommand finished: OK
+debug 2024/09/25 22:35:09 Export res:Could not export to FLAC format!BatchCommand finished: Failed!
+debug 2024/09/25 22:35:09 -2493.12
+debug 2024/09/25 22:35:09 batch cmd abt to be run
+debug 2024/09/25 22:35:09 Artist: michael jackson Release: thriller

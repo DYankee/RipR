@@ -39,7 +39,7 @@ type model struct {
 	searchRes   table.Model
 	releaseData table.Model
 	ExportData  []songData
-	TrackInfo   Internal.TrackInfo
+	SidesInfo   []Internal.TrackInfo
 	currentView string
 	inputs      []textinput.Model
 	focusIndex  int
@@ -60,7 +60,7 @@ func New() *model {
 		m.audacity.Connect()
 		time.Sleep(10000)
 	}
-	m.TrackInfo = m.audacity.GetInfo()
+	m.SidesInfo = m.audacity.GetInfo()
 	var t textinput.Model
 	for i := range m.inputs {
 		t = textinput.New()
@@ -150,14 +150,14 @@ func (m *model) GetReleaseData() tea.Cmd {
 }
 
 func (m *model) GetlengthMod() (lengthMod float64) {
-	m.TrackInfo = m.audacity.GetInfo()
+	m.SidesInfo = m.audacity.GetInfo()
 	var releaseLength float64
 	for _, v := range m.mb.ReleaseData.Mediums {
 		for _, v := range v.Tracks {
 			releaseLength += float64(v.Length) / 1000
 		}
 	}
-	log.Println(m.TrackInfo)
+	log.Println(m.SidesInfo)
 	log.Printf("Release length: %f", releaseLength)
 	lengthMod = (releaseLength - m.TrackInfo.End) / ((releaseLength + m.TrackInfo.End) / 2)
 	log.Printf("Length mod: %f", lengthMod)
