@@ -144,13 +144,6 @@ func (a *Audacity) GetInfo() []TrackInfo {
 	info := []TrackInfo{}
 	cmd := `GetInfo: Format="JSON" Type="Clips"`
 	res := a.Do_command(cmd)
-	//substrings := strings.SplitAfter(strings.Split(res, "[")[1], "]")
-	//res = strings.TrimRight(substrings[0], "]")
-	//substrings = strings.SplitAfter(res, "},")
-	//for k, v := range substrings {
-	//	substrings[k] = strings.TrimRight(v, ",")
-	//	println(substrings[k])
-	//}
 	err := json.Unmarshal([]byte(res), &info)
 	if err != nil {
 		println(err)
