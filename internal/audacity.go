@@ -9,7 +9,6 @@ import (
 	"os"
 	"os/exec"
 	"runtime"
-	"strings"
 )
 
 type osInfo struct {
@@ -19,19 +18,11 @@ type osInfo struct {
 }
 
 type TrackInfo struct {
-	Name     string  `json:"name"`
-	Focused  int     `json:"focused"`
-	Selected int     `json:"selected"`
-	Kind     string  `json:"kind"`
-	Start    int     `json:"start"`
-	End      float64 `json:"end"`
-	Pan      int     `json:"pan"`
-	Gain     int     `json:"gain"`
-	Channels int     `json:"channels"`
-	Solo     int     `json:"solo"`
-	Mute     int     `json:"mute"`
-	VZoomMin int     `json:"VZoomMin"`
-	VZoomMax int     `json:"VZoomMax"`
+	Track int     `json:"track"`
+	Start int     `json:"start"`
+	End   float64 `json:"end"`
+	Color int     `json:"color"`
+	Name  string  `json:"name"`
 }
 
 type Connection struct {
@@ -153,11 +144,16 @@ func (a *Audacity) GetInfo() []TrackInfo {
 	info := []TrackInfo{}
 	cmd := `GetInfo: Format="JSON" Type="Clips"`
 	res := a.Do_command(cmd)
-	substrings := strings.SplitAfter(strings.Split(res, "[")[1], "]")
-	res = strings.TrimRight(substrings[0], "]")
-	substrings = strings.Split(res, ",")
-	for i := 0; i < len(substrings); i++ {
-		json.Unmarshal([]byte(substrings[i]), &info[i])
+	//substrings := strings.SplitAfter(strings.Split(res, "[")[1], "]")
+	//res = strings.TrimRight(substrings[0], "]")
+	//substrings = strings.SplitAfter(res, "},")
+	//for k, v := range substrings {
+	//	substrings[k] = strings.TrimRight(v, ",")
+	//	println(substrings[k])
+	//}
+	err := json.Unmarshal([]byte(res), &info)
+	if err != nil {
+		println(err)
 	}
 	fmt.Println(info)
 	return info
