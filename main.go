@@ -11,6 +11,7 @@ import (
 	"github.com/charmbracelet/bubbles/textinput"
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
+	"github.com/michiwend/gomusicbrainz"
 )
 
 var (
@@ -23,6 +24,9 @@ var (
 	blurredButton = fmt.Sprintf("[ %s ]", blurredStyle.Render("Submit"))
 )
 
+type searchRes gomusicbrainz.ReleaseSearchResponse
+type releaseData table.Model
+
 type errMsg struct {
 	err error
 }
@@ -32,20 +36,26 @@ type songData struct {
 	songLength float64
 }
 
+type sideData struct {
+	sideData       Internal.TrackInfo
+	songExportData []songData
+	lengthMod      float64
+}
+
 // Model and its functions
 type model struct {
-	mb          Internal.MusicBrainz
-	audacity    Internal.Audacity
-	searchRes   table.Model
-	releaseData table.Model
-	ExportData  []songData
-	SidesInfo   []Internal.TrackInfo
-	currentView string
-	inputs      []textinput.Model
-	focusIndex  int
-	focusIndexY int
-	Width       int
-	Height      int
+	mb             Internal.MusicBrainz
+	audacity       Internal.Audacity
+	searchRes      searchRes
+	searchResTable table.Model
+	releaseData    table.Model
+	sideData       []sideData
+	currentView    string
+	inputs         []textinput.Model
+	focusIndex     int
+	focusIndexY    int
+	Width          int
+	Height         int
 }
 
 func New() *model {
@@ -60,7 +70,10 @@ func New() *model {
 		m.audacity.Connect()
 		time.Sleep(10000)
 	}
-	m.SidesInfo = m.audacity.GetInfo()
+	data := m.audacity.GetInfo()
+	for i := 0; i < len(data); i++ {
+		m.sideData[i].sideData = data[i]
+	}
 	var t textinput.Model
 	for i := range m.inputs {
 		t = textinput.New()
@@ -83,43 +96,46 @@ func New() *model {
 	return &m
 }
 
-type searchRes table.Model
-type releaseData table.Model
-
 func (m *model) searchRelease() tea.Cmd {
 	return func() tea.Msg {
-		err := m.mb.SearchRelease(m.inputs[0].Value(), m.inputs[1].Value(), "12vinyl")
+		resData, err := m.mb.SearchRelease(m.inputs[0].Value(), m.inputs[1].Value(), "12vinyl")
 		if err != nil {
 			return errMsg{err}
 		}
-		resData := m.mb.ReleaseSearchResponses
-
-		colums := []table.Column{
-			{Title: "#", Width: 5},
-			{Title: "MB ID", Width: 10},
-			{Title: "Release Name", Width: 30},
-			{Title: "Artist", Width: 10},
-			{Title: "County", Width: 10},
-			{Title: "Year", Width: 30},
-		}
-
-		//build rows
-		rows := make([]table.Row, len(resData.Releases))
-		for i, k := range resData.Releases {
-			rows[i] = table.Row{strconv.Itoa(i), string(k.ID), k.Title, k.ArtistCredit.NameCredits[0].Artist.Name, k.CountryCode, strconv.Itoa(k.Date.Year())}
-		}
-		t := table.New(
-			table.WithColumns(colums),
-			table.WithRows(rows))
-		m.searchRes = t
-		return searchRes(t)
+		return searchRes(resData)
 	}
+}
+
+func (m *model) buildReleaseTable(resData searchRes) {
+	colums := []table.Column{
+		{Title: "#", Width: 5},
+		{Title: "MB ID", Width: 10},
+		{Title: "Release Name", Width: 30},
+		{Title: "Artist", Width: 10},
+		{Title: "County", Width: 10},
+		{Title: "Year", Width: 30},
+	}
+
+	//build rows
+	if len(resData.Releases) == 0 {
+		panic(100)
+	}
+	rows := make([]table.Row, len(resData.Releases))
+	for i, k := range resData.Releases {
+		rows[i] = table.Row{strconv.Itoa(i), string(k.ID), k.Title, k.ArtistCredit.NameCredits[0].Artist.Name, k.CountryCode, strconv.Itoa(k.Date.Year())}
+	}
+	t := table.New(
+		table.WithColumns(colums),
+		table.WithRows(rows))
+	m.searchResTable = t
 }
 
 func (m *model) GetReleaseData() tea.Cmd {
 	return func() tea.Msg {
-		log.Println(m.searchRes.Cursor())
-		id := m.mb.ReleaseSearchResponses.Releases[m.searchRes.Cursor()].ID
+		log.Println(m.searchResTable.Cursor())
+		log.Println(m.searchRes)
+		//log.Println(m.mb.ReleaseSearchResponse.Releases)
+		id := m.searchRes.Releases[m.searchResTable.Cursor()].ID
 		err := m.mb.GetReleaseData(id)
 		if err != nil {
 			return errMsg{err}
@@ -149,52 +165,53 @@ func (m *model) GetReleaseData() tea.Cmd {
 	}
 }
 
-func (m *model) GetlengthMod() (lengthMod float64) {
-	m.SidesInfo = m.audacity.GetInfo()
+func (m *model) GetlengthMod() {
 	var releaseLength float64
-	for _, v := range m.mb.ReleaseData.Mediums {
+	for k, v := range m.mb.ReleaseData.Mediums {
 		for _, v := range v.Tracks {
 			releaseLength += float64(v.Length) / 1000
 		}
+		log.Printf("Release length: %f", releaseLength)
+		log.Println(m.sideData[k].sideData)
+		m.sideData[k].lengthMod = (releaseLength - m.sideData[k].sideData.End) / ((releaseLength + m.sideData[k].sideData.End) / 2)
+		log.Printf("Length mod: %f", m.sideData[k].lengthMod)
+
+		releaseLength = 0
 	}
-	log.Println(m.SidesInfo)
-	log.Printf("Release length: %f", releaseLength)
-	lengthMod = (releaseLength - m.TrackInfo.End) / ((releaseLength + m.TrackInfo.End) / 2)
-	log.Printf("Length mod: %f", lengthMod)
-	lengthMod *= .99
-	log.Printf("Length mod: %f", lengthMod)
-	return lengthMod
+	//mod := (float64(k.Length) / 1000) - (float64(k.Length)/1000)*(m.sideData[x].lengthMod)
 }
 
 func (m *model) buildExportData() {
-	lengthMod := m.GetlengthMod()
-	data := make([]songData, 0)
 	trackidx := 1
-	for _, k := range m.mb.ReleaseData.Mediums {
-		for _, k := range k.Tracks {
+	for x, v := range m.mb.ReleaseData.Mediums {
+		data := []songData{}
+		for _, k := range v.Tracks {
 			songName := fmt.Sprintf("0%d - "+k.Recording.Title, trackidx)
 			trackidx += 1
 			data = append(data, songData{
-				songLength: (float64(k.Length) / 1000) - (float64(k.Length)/1000)*lengthMod,
+				songLength: float64(k.Length),
 				songName:   songName,
 			})
 		}
+		log.Println(data)
+		m.sideData[x].songExportData = data
+		m.GetlengthMod()
 	}
-	log.Println(data)
-	m.ExportData = data
 }
 
 func (m *model) ExportSongs() {
 
 	var offSet float64
-	offSet = 0.00
-	for _, v := range m.ExportData {
-		res := m.audacity.SelectRegion(offSet, offSet+v.songLength)
-		log.Println("Select res:" + res)
-		res = m.audacity.ExportAudio("./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W", v.songName+".flac")
-		log.Println("Export res:" + res)
-		offSet += v.songLength
-		log.Println(offSet)
+	for _, k := range m.sideData {
+		offSet = float64(k.sideData.Start)
+		for _, v := range k.songExportData {
+			res := m.audacity.SelectRegion(offSet, offSet+v.songLength)
+			log.Println("Select res:" + res)
+			res = m.audacity.ExportAudio("./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W", v.songName+".flac")
+			log.Println("Export res:" + res)
+			offSet += v.songLength
+			log.Println(offSet)
+		}
 	}
 }
 
@@ -221,8 +238,9 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	case tea.KeyMsg:
 		return m.inputHandler(msg)
 	case searchRes:
+		m.buildReleaseTable(msg)
+		m.searchRes = msg
 		m.currentView = "SearchResult"
-		m.searchRes = table.Model(msg)
 		return m, cmd
 	case releaseData:
 		m.currentView = "ReleaseResult"
@@ -286,9 +304,9 @@ func (m *model) inputHandler(msg tea.KeyMsg) (tea.Model, tea.Cmd) {
 
 			// Cycle indexes
 			if s == "up" || s == "shift+tab" {
-				m.searchRes.MoveUp(1)
+				m.searchResTable.MoveUp(1)
 			} else {
-				m.searchRes.MoveDown(1)
+				m.searchResTable.MoveDown(1)
 			}
 
 		}
@@ -339,7 +357,7 @@ func (m *model) updateInputs(msg tea.Msg) tea.Cmd {
 		m.inputs[i].PromptStyle = noStyle
 		m.inputs[i].TextStyle = noStyle
 	}
-	log.Println("batch cmd abt to be run")
+	// log.Println("batch cmd abt to be run")
 	return tea.Batch(cmds...)
 }
 
@@ -433,7 +451,7 @@ func (m *model) ResultView() string {
 		m.Height,
 		lipgloss.Center,
 		lipgloss.Center,
-		m.searchRes.View())
+		m.searchResTable.View())
 }
 
 func (m *model) ReleaseView() string {
