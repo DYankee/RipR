@@ -25,7 +25,7 @@ var (
 )
 
 type searchRes gomusicbrainz.ReleaseSearchResponse
-type releaseData table.Model
+type releaseData gomusicbrainz.Release
 
 type errMsg struct {
 	err error
@@ -42,20 +42,25 @@ type sideData struct {
 	lengthMod      float64
 }
 
+func (sd *sideData) getSideLength() float64 {
+	return float64(sd.sideData.End) - float64(sd.sideData.Start)
+}
+
 // Model and its functions
 type model struct {
-	mb             Internal.MusicBrainz
-	audacity       Internal.Audacity
-	searchRes      searchRes
-	searchResTable table.Model
-	releaseData    table.Model
-	sideData       []sideData
-	currentView    string
-	inputs         []textinput.Model
-	focusIndex     int
-	focusIndexY    int
-	Width          int
-	Height         int
+	mb               Internal.MusicBrainz
+	audacity         Internal.Audacity
+	searchRes        searchRes
+	searchResTable   table.Model
+	releaseData      releaseData
+	releaseDataTable table.Model
+	sideData         []sideData
+	currentView      string
+	inputs           []textinput.Model
+	focusIndex       int
+	focusIndexY      int
+	Width            int
+	Height           int
 }
 
 func New() *model {
@@ -69,10 +74,6 @@ func New() *model {
 		println("connecting")
 		m.audacity.Connect()
 		time.Sleep(10000)
-	}
-	data := m.audacity.GetInfo()
-	for i := 0; i < len(data); i++ {
-		m.sideData[i].sideData = data[i]
 	}
 	var t textinput.Model
 	for i := range m.inputs {
@@ -141,73 +142,98 @@ func (m *model) GetReleaseData() tea.Cmd {
 			return errMsg{err}
 		}
 		resData := m.mb.ReleaseData
-		colums := []table.Column{
-			{Title: "Track #", Width: 10},
-			{Title: "Name", Width: 30},
-			{Title: "length", Width: 30},
-		}
-		log.Println(resData)
-		//build rows
-
-		rows := make([]table.Row, 0)
-		for _, k := range resData.Mediums {
-			for _, k := range k.Tracks {
-				length := time.Millisecond * time.Duration(k.Length)
-				rows = append(rows, table.Row{k.Number, k.Recording.Title, length.String()})
-			}
-		}
-
-		t := table.New(
-			table.WithColumns(colums),
-			table.WithRows(rows))
-		m.currentView = "Loading"
-		return releaseData(t)
+		return releaseData(resData)
 	}
 }
 
-func (m *model) GetlengthMod() {
-	var releaseLength float64
-	for k, v := range m.mb.ReleaseData.Mediums {
-		for _, v := range v.Tracks {
-			releaseLength += float64(v.Length) / 1000
-		}
-		log.Printf("Release length: %f", releaseLength)
-		log.Println(m.sideData[k].sideData)
-		m.sideData[k].lengthMod = (releaseLength - m.sideData[k].sideData.End) / ((releaseLength + m.sideData[k].sideData.End) / 2)
-		log.Printf("Length mod: %f", m.sideData[k].lengthMod)
+func (m *model) buildReleaseResTable(rd releaseData) {
+	colums := []table.Column{
+		{Title: "Track #", Width: 10},
+		{Title: "Name", Width: 30},
+		{Title: "length", Width: 30},
+	}
+	log.Println(rd)
+	//build rows
 
-		releaseLength = 0
+	rows := make([]table.Row, 0)
+	for _, k := range rd.Mediums {
+		for _, k := range k.Tracks {
+			length := time.Millisecond * time.Duration(k.Length)
+			rows = append(rows, table.Row{k.Number, k.Recording.Title, length.String()})
+		}
+	}
+
+	t := table.New(
+		table.WithColumns(colums),
+		table.WithRows(rows))
+	m.currentView = "Loading"
+	m.releaseDataTable = t
+}
+
+func (m *model) GetlengthMod() {
+
+	var sideLength float64
+	for k, v := range m.sideData {
+		for _, v := range v.songExportData {
+			sideLength += float64(v.songLength) / 1000
+		}
+		log.Printf("Side length: %f", sideLength)
+		log.Println(m.sideData[k].getSideLength())
+		dif := sideLength - m.sideData[k].getSideLength()
+		total := sideLength + m.sideData[k].getSideLength()
+		log.Printf("Lenght difference: %f", dif)
+		log.Printf("Lenght total: %f", total)
+
+		m.sideData[k].lengthMod = (dif / total) / 2
+		log.Printf("Side Length mod: %f", m.sideData[k].lengthMod)
+
+		sideLength = 0
 	}
 	//mod := (float64(k.Length) / 1000) - (float64(k.Length)/1000)*(m.sideData[x].lengthMod)
 }
 
 func (m *model) buildExportData() {
-	trackidx := 1
-	for x, v := range m.mb.ReleaseData.Mediums {
-		data := []songData{}
-		for _, k := range v.Tracks {
-			songName := fmt.Sprintf("0%d - "+k.Recording.Title, trackidx)
-			trackidx += 1
-			data = append(data, songData{
-				songLength: float64(k.Length),
+
+	data := m.audacity.GetInfo()
+	log.Println("Printing audacity side data")
+	log.Println(data)
+
+	var curSide, oldSide byte
+	oldSide = 'A'
+	m.sideData = append(m.sideData, sideData{})
+	sideIdx := 0
+
+	for _, medium := range m.releaseData.Mediums {
+		for k2, t := range medium.Tracks {
+			curSide = t.Number[0]
+			log.Println(curSide)
+			if curSide != oldSide {
+				m.sideData = append(m.sideData, sideData{})
+				sideIdx++
+			}
+			songName := fmt.Sprintf("%c%d - "+t.Recording.Title, t.Number[0], k2+1)
+			m.sideData[sideIdx].songExportData = append(m.sideData[sideIdx].songExportData, songData{
+				songLength: float64(t.Length),
 				songName:   songName,
 			})
+			m.sideData[sideIdx].sideData = data[sideIdx]
+			oldSide = curSide
 		}
-		log.Println(data)
-		m.sideData[x].songExportData = data
-		m.GetlengthMod()
 	}
+	m.GetlengthMod()
 }
 
 func (m *model) ExportSongs() {
-
 	var offSet float64
 	for _, k := range m.sideData {
+		log.Println(k)
+		log.Println(k.sideData)
+
 		offSet = float64(k.sideData.Start)
 		for _, v := range k.songExportData {
 			res := m.audacity.SelectRegion(offSet, offSet+v.songLength)
 			log.Println("Select res:" + res)
-			res = m.audacity.ExportAudio("./code/rripper/testdata/King Gizzard & the Lizard Wizard/K.G.L.W", v.songName+".flac")
+			res = m.audacity.ExportAudio("./code/rripper/testdata/thriller", v.songName+".flac")
 			log.Println("Export res:" + res)
 			offSet += v.songLength
 			log.Println(offSet)
@@ -243,8 +269,9 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 		m.currentView = "SearchResult"
 		return m, cmd
 	case releaseData:
+		m.buildReleaseResTable(msg)
+		m.releaseData = msg
 		m.currentView = "ReleaseResult"
-		m.releaseData = table.Model(msg)
 		return m, cmd
 	}
 	return m, cmd
@@ -323,9 +350,9 @@ func (m *model) inputHandler(msg tea.KeyMsg) (tea.Model, tea.Cmd) {
 
 			// Cycle indexes
 			if s == "up" || s == "shift+tab" {
-				m.releaseData.MoveUp(1)
+				m.releaseDataTable.MoveUp(1)
 			} else {
-				m.releaseData.MoveDown(1)
+				m.releaseDataTable.MoveDown(1)
 			}
 		}
 	}
@@ -460,7 +487,7 @@ func (m *model) ReleaseView() string {
 		m.Height,
 		lipgloss.Center,
 		lipgloss.Center,
-		m.releaseData.View())
+		m.releaseDataTable.View())
 }
 
 //-------------------------------------------------------------------------------------------------------------------------------------
