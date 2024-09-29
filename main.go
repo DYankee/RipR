@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"log"
+	"math"
 	"strconv"
 	"time"
 
@@ -43,7 +44,12 @@ type sideData struct {
 }
 
 func (sd *sideData) getSideLength() float64 {
-	return float64(sd.sideData.End) - float64(sd.sideData.Start)
+	log.Println("getting side length")
+	log.Println(sd.sideData.End)
+	log.Println(sd.sideData.Start)
+	len := sd.sideData.End - float64(sd.sideData.Start)
+	log.Println(len)
+	return len
 }
 
 // Model and its functions
@@ -171,20 +177,19 @@ func (m *model) buildReleaseResTable(rd releaseData) {
 }
 
 func (m *model) GetlengthMod() {
-
 	var sideLength float64
 	for k, v := range m.sideData {
 		for _, v := range v.songExportData {
 			sideLength += float64(v.songLength) / 1000
 		}
 		log.Printf("Side length: %f", sideLength)
-		log.Println(m.sideData[k].getSideLength())
-		dif := sideLength - m.sideData[k].getSideLength()
+		log.Printf("Audacity Side length %f", m.sideData[k].getSideLength())
+		dif := math.Abs(sideLength - m.sideData[k].getSideLength())
 		total := sideLength + m.sideData[k].getSideLength()
 		log.Printf("Lenght difference: %f", dif)
 		log.Printf("Lenght total: %f", total)
 
-		m.sideData[k].lengthMod = (dif / total) / 2
+		m.sideData[k].lengthMod = ((dif / total) / 2) * 100
 		log.Printf("Side Length mod: %f", m.sideData[k].lengthMod)
 
 		sideLength = 0
