@@ -9,6 +9,7 @@ import (
 	"os"
 	"os/exec"
 	"runtime"
+	"strings"
 )
 
 type osInfo struct {
@@ -19,7 +20,7 @@ type osInfo struct {
 
 type TrackInfo struct {
 	Track int     `json:"track"`
-	Start int     `json:"start"`
+	Start float64 `json:"start"`
 	End   float64 `json:"end"`
 	Color int     `json:"color"`
 	Name  string  `json:"name"`
@@ -145,10 +146,18 @@ func (a *Audacity) GetInfo() []TrackInfo {
 	cmd := `GetInfo: Format="JSON" Type="Clips"`
 	res := a.Do_command(cmd)
 	log.Println(res)
+	substrings := strings.SplitAfter(strings.Split(res, "[")[1], "]")
+	res = strings.TrimRight(substrings[0], "]")
+	substrings = strings.SplitAfter(res, "},")
 
-	err := json.Unmarshal([]byte(res), &info[0])
-	if err != nil {
-		println(err)
+	log.Println(res)
+	for k, v := range substrings {
+		info = append(info, TrackInfo{})
+		v = strings.Trim(v, ",")
+		err := json.Unmarshal([]byte(v), &info[k])
+		if err != nil {
+			println(err)
+		}
 	}
 	log.Println("Get Info result")
 	log.Println(info)
