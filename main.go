@@ -44,12 +44,36 @@ type sideData struct {
 }
 
 func (sd *sideData) getSideLength() float64 {
-	log.Println("getting side length")
-	log.Println(sd.sideData.End)
-	log.Println(sd.sideData.Start)
+	// log.Println("getting side length")
+	// log.Println(sd.sideData.End)
+	// log.Println(sd.sideData.Start)
 	len := sd.sideData.End - float64(sd.sideData.Start)
-	log.Println(len)
+	// log.Println(len)
 	return len
+}
+
+func (m *model) GetlengthMod() {
+	var sideLength float64
+	for k, v := range m.sideData {
+		for _, v := range v.songExportData {
+			sideLength += float64(v.songLength)
+		}
+		sideLength /= 1000
+		log.Printf("Side length: %f", sideLength)
+		log.Printf("Audacity Side length %f", m.sideData[k].getSideLength())
+
+		dif := math.Abs(sideLength - m.sideData[k].getSideLength())
+		log.Printf("Length difference: %f", dif)
+		total := sideLength + m.sideData[k].getSideLength()
+		log.Printf("Length total: %f", total)
+
+		m.sideData[k].lengthMod = ((dif / total) / 2)
+		log.Printf("Side Length mod: %f", m.sideData[k].lengthMod)
+
+		sideLength = 0
+	}
+	//mod := (float64(k.Length) / 1000) - (float64(k.Length)/1000)*(m.sideData[x].lengthMod)
+
 }
 
 // Model and its functions
@@ -114,7 +138,7 @@ func (m *model) searchRelease() tea.Cmd {
 }
 
 func (m *model) buildReleaseTable(resData searchRes) {
-	colums := []table.Column{
+	columns := []table.Column{
 		{Title: "#", Width: 5},
 		{Title: "MB ID", Width: 10},
 		{Title: "Release Name", Width: 30},
@@ -132,7 +156,7 @@ func (m *model) buildReleaseTable(resData searchRes) {
 		rows[i] = table.Row{strconv.Itoa(i), string(k.ID), k.Title, k.ArtistCredit.NameCredits[0].Artist.Name, k.CountryCode, strconv.Itoa(k.Date.Year())}
 	}
 	t := table.New(
-		table.WithColumns(colums),
+		table.WithColumns(columns),
 		table.WithRows(rows))
 	m.searchResTable = t
 }
@@ -153,7 +177,7 @@ func (m *model) GetReleaseData() tea.Cmd {
 }
 
 func (m *model) buildReleaseResTable(rd releaseData) {
-	colums := []table.Column{
+	columns := []table.Column{
 		{Title: "Track #", Width: 10},
 		{Title: "Name", Width: 30},
 		{Title: "length", Width: 30},
@@ -170,35 +194,13 @@ func (m *model) buildReleaseResTable(rd releaseData) {
 	}
 
 	t := table.New(
-		table.WithColumns(colums),
+		table.WithColumns(columns),
 		table.WithRows(rows))
 	m.currentView = "Loading"
 	m.releaseDataTable = t
 }
 
-func (m *model) GetlengthMod() {
-	var sideLength float64
-	for k, v := range m.sideData {
-		for _, v := range v.songExportData {
-			sideLength += float64(v.songLength) / 1000
-		}
-		log.Printf("Side length: %f", sideLength)
-		log.Printf("Audacity Side length %f", m.sideData[k].getSideLength())
-		dif := math.Abs(sideLength - m.sideData[k].getSideLength())
-		total := sideLength + m.sideData[k].getSideLength()
-		log.Printf("Lenght difference: %f", dif)
-		log.Printf("Lenght total: %f", total)
-
-		m.sideData[k].lengthMod = ((dif / total) / 2) * 100
-		log.Printf("Side Length mod: %f", m.sideData[k].lengthMod)
-
-		sideLength = 0
-	}
-	//mod := (float64(k.Length) / 1000) - (float64(k.Length)/1000)*(m.sideData[x].lengthMod)
-}
-
 func (m *model) buildExportData() {
-
 	data := m.audacity.GetInfo()
 	log.Println("Printing audacity side data")
 	log.Println(data)
@@ -225,22 +227,39 @@ func (m *model) buildExportData() {
 			oldSide = curSide
 		}
 	}
-	m.GetlengthMod()
+
 }
 
 func (m *model) ExportSongs() {
-	var offSet float64
-	for _, k := range m.sideData {
-		log.Println(k)
-		log.Println(k.sideData)
 
-		offSet = float64(k.sideData.Start)
-		for _, v := range k.songExportData {
-			res := m.audacity.SelectRegion(offSet, offSet+v.songLength)
+	for _, sd := range m.sideData {
+		for _, s := range sd.songExportData {
+			log.Printf("Song length %f", s.songLength)
+			s.songLength = s.songLength + (s.songLength * sd.lengthMod)
+			log.Printf("Song length after mod %f", s.songLength)
+			s.songLength = s.songLength / 1000
+			log.Printf("Song length converted to correct time %f", s.songLength)
+		}
+	}
+
+	log.Println(m.sideData[1].songExportData[0].songLength)
+
+	var offSet float64
+	for _, sd := range m.sideData {
+		log.Println(sd)
+		log.Println(sd.sideData)
+
+		offSet = float64(sd.sideData.Start)
+		for _, s := range sd.songExportData {
+			s.songLength = (s.songLength / 1000) + ((s.songLength / 1000) * sd.lengthMod)
+			log.Printf("Exporting songs")
+			log.Printf("offset: %f song length: %f", offSet, s.songLength)
+
+			res := m.audacity.SelectRegion(offSet, offSet+s.songLength)
 			log.Println("Select res:" + res)
-			res = m.audacity.ExportAudio("./code/rripper/testdata/thriller", v.songName+".flac")
+			res = m.audacity.ExportAudio("./code/rripper/testdata/thriller", s.songName+".flac")
 			log.Println("Export res:" + res)
-			offSet += v.songLength
+			offSet += s.songLength
 			log.Println(offSet)
 		}
 	}
@@ -346,6 +365,7 @@ func (m *model) inputHandler(msg tea.KeyMsg) (tea.Model, tea.Cmd) {
 		switch msg.String() {
 		case "enter":
 			m.buildExportData()
+			m.GetlengthMod()
 			m.ExportSongs()
 			m.currentView = "Search"
 		case "esc":
