@@ -18,7 +18,7 @@ type osInfo struct {
 	eol      string
 }
 
-type TrackInfo struct {
+type ClipInfo struct {
 	Track int     `json:"track"`
 	Start float64 `json:"start"`
 	End   float64 `json:"end"`
@@ -28,7 +28,7 @@ type TrackInfo struct {
 
 type Connection struct {
 	send    *os.File
-	recieve *os.File
+	receive *os.File
 }
 
 type Audacity struct {
@@ -80,7 +80,7 @@ func (a *Audacity) Connect() error {
 		a.Status = true
 		log.Println("-- File to read from has been opened")
 	}
-	a.connection.recieve = fromfile
+	a.connection.receive = fromfile
 
 	if !a.Status {
 		err = errors.New("cannot connect to audacity")
@@ -95,18 +95,18 @@ func (a *Audacity) OpenFile(file string) {
 }
 
 func (a *Audacity) Close() {
-	a.connection.recieve.Close()
+	a.connection.receive.Close()
 	a.connection.send.Close()
 }
 
-// send custom command to audacity. reffer to https://manual.audacityteam.org/man/scripting_reference.html for formatting.
+// send custom command to audacity. refer to https://manual.audacityteam.org/man/scripting_reference.html for formatting.
 func (a *Audacity) Do_command(command string) (res string) {
 	//send command
 	fmt.Println("Send: >>> \n" + command)
 	a.connection.send.Write([]byte(command + a.osInfo.eol))
 
 	//get response
-	scanner := bufio.NewScanner(a.connection.recieve)
+	scanner := bufio.NewScanner(a.connection.receive)
 	for scanner.Scan() {
 		text := scanner.Text()
 		res += text
@@ -141,8 +141,8 @@ func (a *Audacity) ExportAudio(destination string, fileName string) string {
 	return res
 }
 
-func (a *Audacity) GetInfo() []TrackInfo {
-	info := []TrackInfo{}
+func (a *Audacity) GetClips() []ClipInfo {
+	info := []ClipInfo{}
 	cmd := `GetInfo: Format="JSON" Type="Clips"`
 	res := a.Do_command(cmd)
 	log.Println(res)
@@ -152,7 +152,7 @@ func (a *Audacity) GetInfo() []TrackInfo {
 
 	log.Println(res)
 	for k, v := range substrings {
-		info = append(info, TrackInfo{})
+		info = append(info, ClipInfo{})
 		v = strings.Trim(v, ",")
 		err := json.Unmarshal([]byte(v), &info[k])
 		if err != nil {
