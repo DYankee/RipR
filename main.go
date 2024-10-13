@@ -25,6 +25,19 @@ var (
 	blurredButton = fmt.Sprintf("[ %s ]", blurredStyle.Render("Submit"))
 )
 
+type view int
+
+const (
+	SEARCH view = iota
+	LOADING
+	SEARCH_RESULT
+	RELEASE_RESULT
+)
+
+func (v view) String() string {
+	return [...]string{"Search", "Loading", "Search result", "Release result"}[v-1]
+}
+
 type searchRes gomusicbrainz.ReleaseSearchResponse
 type releaseData gomusicbrainz.Release
 
@@ -38,16 +51,20 @@ type songData struct {
 }
 
 type sideData struct {
-	sideData       Internal.TrackInfo
+	clipInfo       Internal.ClipInfo
 	songExportData []songData
 	lengthMod      float64
+}
+
+func (sd *sideData) calcLengthMod() {
+
 }
 
 func (sd *sideData) getSideLength() float64 {
 	// log.Println("getting side length")
 	// log.Println(sd.sideData.End)
 	// log.Println(sd.sideData.Start)
-	len := sd.sideData.End - float64(sd.sideData.Start)
+	len := sd.clipInfo.End - float64(sd.clipInfo.Start)
 	// log.Println(len)
 	return len
 }
@@ -85,7 +102,7 @@ type model struct {
 	releaseData      releaseData
 	releaseDataTable table.Model
 	sideData         []sideData
-	currentView      string
+	currentView      view
 	inputs           []textinput.Model
 	focusIndex       int
 	focusIndexY      int
@@ -95,7 +112,7 @@ type model struct {
 
 func New() *model {
 	m := model{
-		currentView: "Search",
+		currentView: SEARCH,
 		inputs:      make([]textinput.Model, 2),
 	}
 	m.mb.Init()
@@ -196,12 +213,12 @@ func (m *model) buildReleaseResTable(rd releaseData) {
 	t := table.New(
 		table.WithColumns(columns),
 		table.WithRows(rows))
-	m.currentView = "Loading"
+	m.currentView = LOADING
 	m.releaseDataTable = t
 }
 
 func (m *model) buildExportData() {
-	data := m.audacity.GetInfo()
+	data := m.audacity.GetClips()
 	log.Println("Printing audacity side data")
 	log.Println(data)
 
@@ -223,7 +240,7 @@ func (m *model) buildExportData() {
 				songLength: float64(t.Length),
 				songName:   songName,
 			})
-			m.sideData[sideIdx].sideData = data[sideIdx]
+			m.sideData[sideIdx].clipInfo = data[sideIdx]
 			oldSide = curSide
 		}
 	}
@@ -247,9 +264,9 @@ func (m *model) ExportSongs() {
 	var offSet float64
 	for _, sd := range m.sideData {
 		log.Println(sd)
-		log.Println(sd.sideData)
+		log.Println(sd.clipInfo)
 
-		offSet = float64(sd.sideData.Start)
+		offSet = float64(sd.clipInfo.Start)
 		for _, s := range sd.songExportData {
 			s.songLength = (s.songLength / 1000) + ((s.songLength / 1000) * sd.lengthMod)
 			log.Printf("Exporting songs")
@@ -290,12 +307,12 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	case searchRes:
 		m.buildReleaseTable(msg)
 		m.searchRes = msg
-		m.currentView = "SearchResult"
+		m.currentView = SEARCH_RESULT
 		return m, cmd
 	case releaseData:
 		m.buildReleaseResTable(msg)
 		m.releaseData = msg
-		m.currentView = "ReleaseResult"
+		m.currentView = RELEASE_RESULT
 		return m, cmd
 	}
 	return m, cmd
@@ -312,7 +329,7 @@ func (m *model) inputHandler(msg tea.KeyMsg) (tea.Model, tea.Cmd) {
 	}
 
 	switch m.currentView {
-	case "Search":
+	case SEARCH:
 		switch msg.String() {
 		// Set focus to next input
 		case "tab", "shift+tab", "enter", "up", "down":
@@ -325,7 +342,7 @@ func (m *model) inputHandler(msg tea.KeyMsg) (tea.Model, tea.Cmd) {
 					m.inputs[0].Value(),
 					m.inputs[1].Value(),
 				)
-				m.currentView = "Loading"
+				m.currentView = LOADING
 				return m, m.searchRelease()
 			}
 
@@ -344,12 +361,12 @@ func (m *model) inputHandler(msg tea.KeyMsg) (tea.Model, tea.Cmd) {
 		}
 
 	// result screen controls
-	case "SearchResult":
+	case SEARCH_RESULT:
 		switch msg.String() {
 		case "enter":
 			return m, m.GetReleaseData()
 		case "esc":
-			m.currentView = "Search"
+			m.currentView = SEARCH
 		case "up", "down":
 			s := msg.String()
 
@@ -361,15 +378,15 @@ func (m *model) inputHandler(msg tea.KeyMsg) (tea.Model, tea.Cmd) {
 			}
 
 		}
-	case "ReleaseResult":
+	case RELEASE_RESULT:
 		switch msg.String() {
 		case "enter":
 			m.buildExportData()
 			m.GetlengthMod()
 			m.ExportSongs()
-			m.currentView = "Search"
+			m.currentView = SEARCH
 		case "esc":
-			m.currentView = "Search"
+			m.currentView = SEARCH
 		case "up", "down":
 			s := msg.String()
 
@@ -381,7 +398,7 @@ func (m *model) inputHandler(msg tea.KeyMsg) (tea.Model, tea.Cmd) {
 			}
 		}
 	}
-	if m.currentView == "Search" {
+	if m.currentView == SEARCH {
 		cmd = m.updateInputs(msg)
 	}
 
@@ -419,13 +436,13 @@ func (m *model) updateInputs(msg tea.Msg) tea.Cmd {
 func (m model) View() string {
 	var view string
 	switch m.currentView {
-	case "Search":
+	case SEARCH:
 		view = m.SearchView()
-	case "Loading":
+	case LOADING:
 		view = m.LoadingView()
-	case "SearchResult":
+	case SEARCH_RESULT:
 		view = m.ResultView()
-	case "ReleaseResult":
+	case RELEASE_RESULT:
 		view = m.ReleaseView()
 	}
 	return view
@@ -449,7 +466,7 @@ func (m *model) Header() string {
 		Width(m.Width - 2)
 
 	head := lipgloss.JoinVertical(lipgloss.Top,
-		"Current view: "+m.currentView,
+		"Current view: "+m.currentView.String(),
 		"Index X: "+strconv.Itoa(m.focusIndex),
 		"Index Y: "+strconv.Itoa(m.focusIndex),
 	)
