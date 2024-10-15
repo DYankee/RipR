@@ -106,7 +106,7 @@ func (a *Audacity) Close() {
 // send custom command to audacity. refer to https://manual.audacityteam.org/man/scripting_reference.html for formatting.
 func (a *Audacity) Do_command(command string) (res string) {
 	//send command
-	fmt.Println("Send: >>> \n" + command)
+	log.Println("Send: >>> \n" + command)
 	a.connection.send.Write([]byte(command + a.osInfo.eol))
 
 	//get response
@@ -118,7 +118,7 @@ func (a *Audacity) Do_command(command string) (res string) {
 			break
 		}
 	}
-	fmt.Println("Received: <<< \n" + res)
+	log.Println("Received: <<< \n" + res)
 	return res
 }
 
