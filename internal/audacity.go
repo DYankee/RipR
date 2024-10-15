@@ -26,6 +26,10 @@ type ClipInfo struct {
 	Name  string  `json:"name"`
 }
 
+func (ci *ClipInfo) GetClipLength() float64 {
+	return ci.End - ci.Start
+}
+
 type Connection struct {
 	send    *os.File
 	receive *os.File

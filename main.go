@@ -16,7 +16,10 @@ import (
 )
 
 var (
+	DefaultBorderStyle = lipgloss.NewStyle().BorderStyle(lipgloss.NormalBorder())
+
 	focusedStyle = lipgloss.NewStyle().Foreground(lipgloss.Color("205"))
+
 	blurredStyle = lipgloss.NewStyle().Foreground(lipgloss.Color("240"))
 	cursorStyle  = focusedStyle
 	noStyle      = lipgloss.NewStyle()
@@ -35,62 +38,52 @@ const (
 )
 
 func (v view) String() string {
-	return [...]string{"Search", "Loading", "Search result", "Release result"}[v-1]
+	return [...]string{"Search", "Loading", "Search result", "Release result"}[v]
 }
 
 type searchRes gomusicbrainz.ReleaseSearchResponse
-type releaseData gomusicbrainz.Release
+
+type releaseData struct {
+	releaseData gomusicbrainz.Release
+	SplitIdx    int
+}
 
 type errMsg struct {
 	err error
 }
 
 type songData struct {
-	songName   string
-	songLength float64
+	songName     string
+	songLength   float64
+	songPosition int
 }
 
 type sideData struct {
 	clipInfo       Internal.ClipInfo
 	songExportData []songData
+	sideEnd        int
+	sideLength     float64
 	lengthMod      float64
 }
 
 func (sd *sideData) calcLengthMod() {
-
-}
-
-func (sd *sideData) getSideLength() float64 {
-	// log.Println("getting side length")
-	// log.Println(sd.sideData.End)
-	// log.Println(sd.sideData.Start)
-	len := sd.clipInfo.End - float64(sd.clipInfo.Start)
-	// log.Println(len)
-	return len
-}
-
-func (m *model) GetlengthMod() {
-	var sideLength float64
-	for k, v := range m.sideData {
-		for _, v := range v.songExportData {
-			sideLength += float64(v.songLength)
+	if sd.songExportData != nil {
+		for _, v := range sd.songExportData {
+			sd.sideLength += float64(v.songLength)
 		}
-		sideLength /= 1000
-		log.Printf("Side length: %f", sideLength)
-		log.Printf("Audacity Side length %f", m.sideData[k].getSideLength())
+		sd.sideLength /= 1000
+		log.Printf("Side length: %f", sd.sideLength)
+		log.Printf("Audacity Side length %f", sd.clipInfo.GetClipLength())
 
-		dif := math.Abs(sideLength - m.sideData[k].getSideLength())
+		dif := math.Abs(sd.sideLength - sd.clipInfo.GetClipLength())
 		log.Printf("Length difference: %f", dif)
-		total := sideLength + m.sideData[k].getSideLength()
+		total := sd.sideLength + sd.clipInfo.GetClipLength()
 		log.Printf("Length total: %f", total)
 
-		m.sideData[k].lengthMod = ((dif / total) / 2)
-		log.Printf("Side Length mod: %f", m.sideData[k].lengthMod)
-
-		sideLength = 0
+		sd.lengthMod = ((dif / total) / 2)
+	} else {
+		log.Fatal("No song export data for side")
 	}
-	//mod := (float64(k.Length) / 1000) - (float64(k.Length)/1000)*(m.sideData[x].lengthMod)
-
 }
 
 // Model and its functions
@@ -102,10 +95,10 @@ type model struct {
 	releaseData      releaseData
 	releaseDataTable table.Model
 	sideData         []sideData
+	sideIdx          int
 	currentView      view
 	inputs           []textinput.Model
 	focusIndex       int
-	focusIndexY      int
 	Width            int
 	Height           int
 }
@@ -114,6 +107,7 @@ func New() *model {
 	m := model{
 		currentView: SEARCH,
 		inputs:      make([]textinput.Model, 2),
+		sideIdx:     0,
 	}
 	m.mb.Init()
 	m.audacity.Init()
@@ -121,6 +115,12 @@ func New() *model {
 		println("connecting")
 		m.audacity.Connect()
 		time.Sleep(10000)
+	}
+	data := m.audacity.GetClips()
+	for _, v := range data {
+		m.sideData = append(m.sideData, sideData{
+			clipInfo: v,
+		})
 	}
 	var t textinput.Model
 	for i := range m.inputs {
@@ -157,20 +157,19 @@ func (m *model) searchRelease() tea.Cmd {
 func (m *model) buildReleaseTable(resData searchRes) {
 	columns := []table.Column{
 		{Title: "#", Width: 5},
-		{Title: "MB ID", Width: 10},
-		{Title: "Release Name", Width: 30},
+		{Title: "Release Name", Width: 20},
 		{Title: "Artist", Width: 10},
 		{Title: "County", Width: 10},
-		{Title: "Year", Width: 30},
+		{Title: "Year", Width: 5},
 	}
 
 	//build rows
 	if len(resData.Releases) == 0 {
-		panic(100)
+		log.Fatal("No results")
 	}
 	rows := make([]table.Row, len(resData.Releases))
 	for i, k := range resData.Releases {
-		rows[i] = table.Row{strconv.Itoa(i), string(k.ID), k.Title, k.ArtistCredit.NameCredits[0].Artist.Name, k.CountryCode, strconv.Itoa(k.Date.Year())}
+		rows[i] = table.Row{strconv.Itoa(i), k.Title, k.ArtistCredit.NameCredits[0].Artist.Name, k.CountryCode, strconv.Itoa(k.Date.Year())}
 	}
 	t := table.New(
 		table.WithColumns(columns),
@@ -188,99 +187,73 @@ func (m *model) GetReleaseData() tea.Cmd {
 		if err != nil {
 			return errMsg{err}
 		}
-		resData := m.mb.ReleaseData
-		return releaseData(resData)
+		m.releaseData.releaseData = m.mb.ReleaseData
+		return m.releaseData
 	}
 }
 
-func (m *model) buildReleaseResTable(rd releaseData) {
+func (m *model) buildReleaseResTable() {
 	columns := []table.Column{
-		{Title: "Track #", Width: 10},
-		{Title: "Name", Width: 30},
-		{Title: "length", Width: 30},
+		{Title: "Track #", Width: 8},
+		{Title: "Name", Width: 20},
+		{Title: "length", Width: 10},
+		{Title: "EOS", Width: 4},
 	}
-	log.Println(rd)
 	//build rows
 
 	rows := make([]table.Row, 0)
-	for _, k := range rd.Mediums {
-		for _, k := range k.Tracks {
-			length := time.Millisecond * time.Duration(k.Length)
-			rows = append(rows, table.Row{k.Number, k.Recording.Title, length.String()})
+	for _, med := range m.releaseData.releaseData.Mediums {
+		for _, t := range med.Tracks {
+			length := time.Millisecond * time.Duration(t.Length)
+			log.Println(m.releaseData.SplitIdx)
+			if m.releaseData.SplitIdx == t.Position {
+				rows = append(rows, table.Row{strconv.Itoa(t.Position), t.Recording.Title, length.String(), "[x]"})
+			} else {
+				rows = append(rows, table.Row{strconv.Itoa(t.Position), t.Recording.Title, length.String(), "[]"})
+			}
 		}
 	}
-
-	t := table.New(
+	m.releaseDataTable = table.New(
 		table.WithColumns(columns),
 		table.WithRows(rows))
-	m.currentView = LOADING
-	m.releaseDataTable = t
 }
 
-func (m *model) buildExportData() {
-	data := m.audacity.GetClips()
-	log.Println("Printing audacity side data")
-	log.Println(data)
+//func (m *model) buildExportData() {
+//}
 
-	var curSide, oldSide byte
-	oldSide = 'A'
-	m.sideData = append(m.sideData, sideData{})
-	sideIdx := 0
-
-	for _, medium := range m.releaseData.Mediums {
-		for k2, t := range medium.Tracks {
-			curSide = t.Number[0]
-			log.Println(curSide)
-			if curSide != oldSide {
-				m.sideData = append(m.sideData, sideData{})
-				sideIdx++
-			}
-			songName := fmt.Sprintf("%c%d - "+t.Recording.Title, t.Number[0], k2+1)
-			m.sideData[sideIdx].songExportData = append(m.sideData[sideIdx].songExportData, songData{
-				songLength: float64(t.Length),
-				songName:   songName,
-			})
-			m.sideData[sideIdx].clipInfo = data[sideIdx]
-			oldSide = curSide
-		}
-	}
-
-}
-
-func (m *model) ExportSongs() {
-
-	for _, sd := range m.sideData {
-		for _, s := range sd.songExportData {
-			log.Printf("Song length %f", s.songLength)
-			s.songLength = s.songLength + (s.songLength * sd.lengthMod)
-			log.Printf("Song length after mod %f", s.songLength)
-			s.songLength = s.songLength / 1000
-			log.Printf("Song length converted to correct time %f", s.songLength)
-		}
-	}
-
-	log.Println(m.sideData[1].songExportData[0].songLength)
-
-	var offSet float64
-	for _, sd := range m.sideData {
-		log.Println(sd)
-		log.Println(sd.clipInfo)
-
-		offSet = float64(sd.clipInfo.Start)
-		for _, s := range sd.songExportData {
-			s.songLength = (s.songLength / 1000) + ((s.songLength / 1000) * sd.lengthMod)
-			log.Printf("Exporting songs")
-			log.Printf("offset: %f song length: %f", offSet, s.songLength)
-
-			res := m.audacity.SelectRegion(offSet, offSet+s.songLength)
-			log.Println("Select res:" + res)
-			res = m.audacity.ExportAudio("./code/rripper/testdata/thriller", s.songName+".flac")
-			log.Println("Export res:" + res)
-			offSet += s.songLength
-			log.Println(offSet)
-		}
-	}
-}
+// func (m *model) ExportSongs() {
+// 	for _, sd := range m.sideData {
+// 		for _, s := range sd.songExportData {
+// 			log.Printf("Song length %f", s.songLength)
+// 			s.songLength = s.songLength + (s.songLength * sd.lengthMod)
+// 			log.Printf("Song length after mod %f", s.songLength)
+// 			s.songLength = s.songLength / 1000
+// 			log.Printf("Song length converted to correct time %f", s.songLength)
+// 		}
+// 	}
+//
+// 	log.Println(m.sideData[1].songExportData[0].songLength)
+//
+// 	var offSet float64
+// 	for _, sd := range m.sideData {
+// 		log.Println(sd)
+// 		log.Println(sd.clipInfo)
+//
+// 		offSet = float64(sd.clipInfo.Start)
+// 		for _, s := range sd.songExportData {
+// 			s.songLength = (s.songLength / 1000) + ((s.songLength / 1000) * sd.lengthMod)
+// 			log.Printf("Exporting songs")
+// 			log.Printf("offset: %f song length: %f", offSet, s.songLength)
+//
+// 			res := m.audacity.SelectRegion(offSet, offSet+s.songLength)
+// 			log.Println("Select res:" + res)
+// 			res = m.audacity.ExportAudio("./code/rripper/testdata/thriller", s.songName+".flac")
+// 			log.Println("Export res:" + res)
+// 			offSet += s.songLength
+// 			log.Println(offSet)
+// 		}
+// 	}
+// }
 
 //func (m *model) ExportSongs() {
 //
@@ -307,11 +280,12 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	case searchRes:
 		m.buildReleaseTable(msg)
 		m.searchRes = msg
+		m.focusIndex = 0
 		m.currentView = SEARCH_RESULT
 		return m, cmd
 	case releaseData:
-		m.buildReleaseResTable(msg)
 		m.releaseData = msg
+		m.buildReleaseResTable()
 		m.currentView = RELEASE_RESULT
 		return m, cmd
 	}
@@ -381,21 +355,36 @@ func (m *model) inputHandler(msg tea.KeyMsg) (tea.Model, tea.Cmd) {
 	case RELEASE_RESULT:
 		switch msg.String() {
 		case "enter":
-			m.buildExportData()
-			m.GetlengthMod()
-			m.ExportSongs()
-			m.currentView = SEARCH
+			if m.focusIndex == 1 {
+				// m.buildExportData()
+				// m.ExportSongs()
+				m.currentView = SEARCH
+			} else {
+				m.releaseData.SplitIdx = m.searchResTable.Cursor()
+				m.buildReleaseResTable()
+			}
 		case "esc":
 			m.currentView = SEARCH
 		case "up", "down":
 			s := msg.String()
 
 			// Cycle indexes
-			if s == "up" || s == "shift+tab" {
-				m.releaseDataTable.MoveUp(1)
+			if s == "down" {
+				if m.releaseDataTable.Cursor() == len(m.releaseDataTable.Rows())-1 {
+					m.releaseDataTable.Blur()
+					m.focusIndex = 1
+				} else {
+					m.releaseDataTable.MoveDown(1)
+				}
 			} else {
-				m.releaseDataTable.MoveDown(1)
+				if m.focusIndex == 1 {
+					m.focusIndex = 0
+					m.releaseDataTable.Focus()
+				} else {
+					m.releaseDataTable.MoveUp(1)
+				}
 			}
+
 		}
 	}
 	if m.currentView == SEARCH {
@@ -441,7 +430,7 @@ func (m model) View() string {
 	case LOADING:
 		view = m.LoadingView()
 	case SEARCH_RESULT:
-		view = m.ResultView()
+		view = m.SearchResultView()
 	case RELEASE_RESULT:
 		view = m.ReleaseView()
 	}
@@ -462,30 +451,29 @@ func (m *model) Header() string {
 	headerStyle := lipgloss.NewStyle().
 		BorderStyle(lipgloss.NormalBorder()).
 		BorderForeground(lipgloss.Color("63")).
-		PaddingBottom(m.Height / 3).
-		Width(m.Width - 2)
-
-	head := lipgloss.JoinVertical(lipgloss.Top,
-		"Current view: "+m.currentView.String(),
-		"Index X: "+strconv.Itoa(m.focusIndex),
-		"Index Y: "+strconv.Itoa(m.focusIndex),
+		Width(m.Width - 2).Align(lipgloss.Center)
+	head := lipgloss.JoinHorizontal(lipgloss.Center,
+		"| Current view: "+m.currentView.String()+" |",
+		"| Index X: "+strconv.Itoa(m.focusIndex)+" |",
 	)
-	head = lipgloss.JoinHorizontal(lipgloss.Center,
-		head,
-		//"Artist: "+m.mb.ReleaseData.ArtistCredit.NameCredits[0].Artist.Name,
-		//"Release: "+m.mb.ReleaseData.Title,
-	)
-
+	switch m.currentView {
+	case SEARCH_RESULT:
+		head = lipgloss.JoinVertical(lipgloss.Center,
+			head,
+			lipgloss.JoinHorizontal(
+				lipgloss.Center,
+				"| Current Search artist: "+m.inputs[0].Value()+" |",
+				"| Current Search release: "+m.inputs[1].Value()+" |",
+			),
+		)
+	case RELEASE_RESULT:
+		head = lipgloss.JoinVertical(lipgloss.Center,
+			head,
+			"| Current Release: "+m.releaseData.releaseData.Title+" | "+m.releaseData.releaseData.Disambiguation+" |",
+			"| Cursor pos: "+strconv.Itoa(m.releaseDataTable.Cursor()),
+		)
+	}
 	return headerStyle.Render(head)
-}
-
-func (m *model) Footer() string {
-	footerStyle := lipgloss.NewStyle().
-		BorderStyle(lipgloss.NormalBorder()).
-		BorderForeground(lipgloss.Color("63"))
-	footerStyle.PaddingTop(m.Height / 3).
-		Width(m.Width - 2)
-	return footerStyle.Render("test")
 }
 
 func (m *model) SearchView() string {
@@ -493,6 +481,21 @@ func (m *model) SearchView() string {
 	if m.focusIndex == len(m.inputs) {
 		button = &focusedButton
 	}
+	headerH := lipgloss.Height(m.Header())
+	log.Println(headerH)
+	bodystyle := lipgloss.NewStyle().
+		Width(m.Width - 2).
+		PaddingTop((m.Height / 2) - (headerH)).
+		PaddingBottom((m.Height / 2) - (headerH + 2)).
+		BorderStyle(lipgloss.NormalBorder()).
+		BorderForeground(lipgloss.Color("63")).
+		AlignHorizontal(lipgloss.Center)
+
+	body := lipgloss.JoinVertical(
+		lipgloss.Center,
+		m.inputs[0].View(),
+		m.inputs[1].View(),
+		*button)
 
 	return lipgloss.Place(
 		m.Width,
@@ -502,34 +505,66 @@ func (m *model) SearchView() string {
 		lipgloss.JoinVertical(
 			lipgloss.Center,
 			m.Header(),
-			lipgloss.JoinVertical(
-				lipgloss.Center,
-				lipgloss.JoinVertical(
-					lipgloss.Center,
-					m.inputs[0].View(),
-					m.inputs[1].View()),
-				*button),
-			m.Footer(),
+			bodystyle.Render(body),
 		),
 	)
 }
 
-func (m *model) ResultView() string {
+func (m *model) SearchResultView() string {
+	headerH := lipgloss.Height(m.Header())
+	bodystyle := lipgloss.NewStyle().
+		Width(m.Width - 2).
+		PaddingTop((m.Height / 2) - (headerH + 20)).
+		PaddingBottom((m.Height / 2) - (headerH)).
+		MarginTop(0).
+		BorderStyle(lipgloss.NormalBorder()).
+		BorderForeground(lipgloss.Color("63")).
+		AlignHorizontal(lipgloss.Center)
+
 	return lipgloss.Place(
 		m.Width,
 		m.Height,
 		lipgloss.Center,
 		lipgloss.Center,
-		m.searchResTable.View())
+		lipgloss.JoinVertical(
+			lipgloss.Center,
+			m.Header(),
+			bodystyle.Render(m.searchResTable.View()),
+		))
 }
 
 func (m *model) ReleaseView() string {
+
+	button := &blurredButton
+	if m.focusIndex == 1 {
+		button = &focusedButton
+	}
+	headerH := lipgloss.Height(m.Header())
+	bodystyle := lipgloss.NewStyle().
+		Width(m.Width - 2).
+		PaddingTop((m.Height / 2) - (headerH + 20)).
+		PaddingBottom((m.Height / 2) - (headerH)).
+		MarginTop(0).
+		BorderStyle(lipgloss.NormalBorder()).
+		BorderForeground(lipgloss.Color("63")).
+		AlignHorizontal(lipgloss.Center)
+
+	body := lipgloss.JoinVertical(
+		lipgloss.Center,
+		m.releaseDataTable.View(),
+		*button,
+	)
 	return lipgloss.Place(
 		m.Width,
 		m.Height,
 		lipgloss.Center,
 		lipgloss.Center,
-		m.releaseDataTable.View())
+		lipgloss.JoinVertical(
+			lipgloss.Center,
+			m.Header(),
+			bodystyle.Render(body),
+		),
+	)
 }
 
 //-------------------------------------------------------------------------------------------------------------------------------------
