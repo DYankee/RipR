@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log"
 	"math"
+	"os"
 	"strconv"
 	"time"
 
@@ -35,18 +36,14 @@ const (
 	LOADING
 	SEARCH_RESULT
 	RELEASE_RESULT
+	EXPORTING
 )
 
 func (v view) String() string {
-	return [...]string{"Search", "Loading", "Search result", "Release result"}[v]
+	return [...]string{"Search", "Loading", "Search result", "Release result", "Exporting"}[v]
 }
 
 type searchRes gomusicbrainz.ReleaseSearchResponse
-
-type releaseData struct {
-	releaseData gomusicbrainz.Release
-	SplitIdx    int
-}
 
 type errMsg struct {
 	err error
@@ -71,8 +68,9 @@ func (sd *sideData) calcLengthMod() {
 		for _, v := range sd.songExportData {
 			sd.sideLength += float64(v.songLength)
 		}
-		sd.sideLength /= 1000
 		log.Printf("Side length: %f", sd.sideLength)
+		sd.sideLength /= 1000
+		log.Printf("converted Side length: %f", sd.sideLength)
 		log.Printf("Audacity Side length %f", sd.clipInfo.GetClipLength())
 
 		dif := math.Abs(sd.sideLength - sd.clipInfo.GetClipLength())
@@ -81,6 +79,8 @@ func (sd *sideData) calcLengthMod() {
 		log.Printf("Length total: %f", total)
 
 		sd.lengthMod = ((dif / total) / 2)
+		log.Printf("Length mod: %f", total)
+
 	} else {
 		log.Fatal("No song export data for side")
 	}
@@ -92,7 +92,7 @@ type model struct {
 	audacity         Internal.Audacity
 	searchRes        searchRes
 	searchResTable   table.Model
-	releaseData      releaseData
+	releaseData      gomusicbrainz.Release
 	releaseDataTable table.Model
 	sideData         []sideData
 	sideIdx          int
@@ -106,7 +106,7 @@ type model struct {
 func New() *model {
 	m := model{
 		currentView: SEARCH,
-		inputs:      make([]textinput.Model, 2),
+		inputs:      make([]textinput.Model, 3),
 		sideIdx:     0,
 	}
 	m.mb.Init()
@@ -136,6 +136,8 @@ func New() *model {
 			t.TextStyle = focusedStyle
 		case 1:
 			t.Placeholder = "Release"
+		case 2:
+			t.Placeholder = "Output Directory"
 		}
 
 		m.inputs[i] = t
@@ -187,8 +189,7 @@ func (m *model) GetReleaseData() tea.Cmd {
 		if err != nil {
 			return errMsg{err}
 		}
-		m.releaseData.releaseData = m.mb.ReleaseData
-		return m.releaseData
+		return m.mb.ReleaseData
 	}
 }
 
@@ -197,20 +198,14 @@ func (m *model) buildReleaseResTable() {
 		{Title: "Track #", Width: 8},
 		{Title: "Name", Width: 20},
 		{Title: "length", Width: 10},
-		{Title: "EOS", Width: 4},
 	}
 	//build rows
 
 	rows := make([]table.Row, 0)
-	for _, med := range m.releaseData.releaseData.Mediums {
+	for _, med := range m.releaseData.Mediums {
 		for _, t := range med.Tracks {
 			length := time.Millisecond * time.Duration(t.Length)
-			log.Println(m.releaseData.SplitIdx)
-			if m.releaseData.SplitIdx == t.Position {
-				rows = append(rows, table.Row{strconv.Itoa(t.Position), t.Recording.Title, length.String(), "[x]"})
-			} else {
-				rows = append(rows, table.Row{strconv.Itoa(t.Position), t.Recording.Title, length.String(), "[]"})
-			}
+			rows = append(rows, table.Row{strconv.Itoa(t.Position), t.Recording.Title, length.String()})
 		}
 	}
 	m.releaseDataTable = table.New(
@@ -218,46 +213,52 @@ func (m *model) buildReleaseResTable() {
 		table.WithRows(rows))
 }
 
-//func (m *model) buildExportData() {
-//}
+func (m *model) buildExportData() {
+	for _, Mediums := range m.releaseData.Mediums {
+		for _, t := range Mediums.Tracks {
+			m.sideData[0].songExportData = append(m.sideData[0].songExportData, songData{
+				songName:     t.Recording.Title,
+				songLength:   float64(t.Recording.Length),
+				songPosition: t.Position,
+			})
+		}
+	}
+	m.sideData[0].calcLengthMod()
+}
 
-// func (m *model) ExportSongs() {
-// 	for _, sd := range m.sideData {
-// 		for _, s := range sd.songExportData {
-// 			log.Printf("Song length %f", s.songLength)
-// 			s.songLength = s.songLength + (s.songLength * sd.lengthMod)
-// 			log.Printf("Song length after mod %f", s.songLength)
-// 			s.songLength = s.songLength / 1000
-// 			log.Printf("Song length converted to correct time %f", s.songLength)
-// 		}
-// 	}
-//
-// 	log.Println(m.sideData[1].songExportData[0].songLength)
-//
-// 	var offSet float64
-// 	for _, sd := range m.sideData {
-// 		log.Println(sd)
-// 		log.Println(sd.clipInfo)
-//
-// 		offSet = float64(sd.clipInfo.Start)
-// 		for _, s := range sd.songExportData {
-// 			s.songLength = (s.songLength / 1000) + ((s.songLength / 1000) * sd.lengthMod)
-// 			log.Printf("Exporting songs")
-// 			log.Printf("offset: %f song length: %f", offSet, s.songLength)
-//
-// 			res := m.audacity.SelectRegion(offSet, offSet+s.songLength)
-// 			log.Println("Select res:" + res)
-// 			res = m.audacity.ExportAudio("./code/rripper/testdata/thriller", s.songName+".flac")
-// 			log.Println("Export res:" + res)
-// 			offSet += s.songLength
-// 			log.Println(offSet)
-// 		}
-// 	}
-// }
-
-//func (m *model) ExportSongs() {
-//
-// }
+func (m *model) ExportSongs() {
+	for _, sd := range m.sideData {
+		for _, s := range sd.songExportData {
+			log.Printf("Song length %f", s.songLength)
+			s.songLength = s.songLength + (s.songLength * sd.lengthMod)
+			log.Printf("Song length after mod %f", s.songLength)
+			s.songLength = s.songLength / 1000
+			log.Printf("Song length converted to correct time %f", s.songLength)
+		}
+	}
+	var offSet float64
+	for _, sd := range m.sideData {
+		log.Println(sd)
+		log.Println(sd.clipInfo)
+		offSet = float64(sd.clipInfo.Start)
+		for _, s := range sd.songExportData {
+			s.songLength = ((s.songLength / 1000) + ((s.songLength * sd.lengthMod) / 1000) + 1)
+			log.Printf("Exporting songs")
+			log.Printf("offset: %f song length: %f", offSet, s.songLength)
+			res := m.audacity.SelectRegion(offSet, offSet+s.songLength)
+			log.Println("Select res:" + res)
+			os.Mkdir(m.inputs[2].Value(), 0700)
+			wd, err := os.Getwd()
+			if err != nil {
+				log.Println(err)
+			}
+			res = m.audacity.ExportAudio(wd+"/"+m.inputs[2].Value(), strconv.Itoa(s.songPosition)+"_"+s.songName+".flac")
+			log.Println("Export res:" + res)
+			offSet += s.songLength
+			log.Println(offSet)
+		}
+	}
+}
 
 func (m model) Init() tea.Cmd {
 	return nil
@@ -283,7 +284,7 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 		m.focusIndex = 0
 		m.currentView = SEARCH_RESULT
 		return m, cmd
-	case releaseData:
+	case gomusicbrainz.Release:
 		m.releaseData = msg
 		m.buildReleaseResTable()
 		m.currentView = RELEASE_RESULT
@@ -355,14 +356,10 @@ func (m *model) inputHandler(msg tea.KeyMsg) (tea.Model, tea.Cmd) {
 	case RELEASE_RESULT:
 		switch msg.String() {
 		case "enter":
-			if m.focusIndex == 1 {
-				// m.buildExportData()
-				// m.ExportSongs()
-				m.currentView = SEARCH
-			} else {
-				m.releaseData.SplitIdx = m.searchResTable.Cursor()
-				m.buildReleaseResTable()
-			}
+			m.currentView = EXPORTING
+			m.buildExportData()
+			m.ExportSongs()
+			m.currentView = SEARCH
 		case "esc":
 			m.currentView = SEARCH
 		case "up", "down":
@@ -370,19 +367,9 @@ func (m *model) inputHandler(msg tea.KeyMsg) (tea.Model, tea.Cmd) {
 
 			// Cycle indexes
 			if s == "down" {
-				if m.releaseDataTable.Cursor() == len(m.releaseDataTable.Rows())-1 {
-					m.releaseDataTable.Blur()
-					m.focusIndex = 1
-				} else {
-					m.releaseDataTable.MoveDown(1)
-				}
+				m.releaseDataTable.MoveDown(1)
 			} else {
-				if m.focusIndex == 1 {
-					m.focusIndex = 0
-					m.releaseDataTable.Focus()
-				} else {
-					m.releaseDataTable.MoveUp(1)
-				}
+				m.releaseDataTable.MoveUp(1)
 			}
 
 		}
@@ -433,6 +420,8 @@ func (m model) View() string {
 		view = m.SearchResultView()
 	case RELEASE_RESULT:
 		view = m.ReleaseView()
+	case EXPORTING:
+		view = m.ExportingView()
 	}
 	return view
 }
@@ -469,7 +458,7 @@ func (m *model) Header() string {
 	case RELEASE_RESULT:
 		head = lipgloss.JoinVertical(lipgloss.Center,
 			head,
-			"| Current Release: "+m.releaseData.releaseData.Title+" | "+m.releaseData.releaseData.Disambiguation+" |",
+			"| Current Release: "+m.releaseData.Title+" | "+m.releaseData.Disambiguation+" |",
 			"| Cursor pos: "+strconv.Itoa(m.releaseDataTable.Cursor()),
 		)
 	}
@@ -495,6 +484,7 @@ func (m *model) SearchView() string {
 		lipgloss.Center,
 		m.inputs[0].View(),
 		m.inputs[1].View(),
+		m.inputs[2].View(),
 		*button)
 
 	return lipgloss.Place(
@@ -565,6 +555,10 @@ func (m *model) ReleaseView() string {
 			bodystyle.Render(body),
 		),
 	)
+}
+
+func (m *model) ExportingView() string {
+	return lipgloss.Place(m.Width, m.Height, lipgloss.Center, lipgloss.Center, "Exporting")
 }
 
 //-------------------------------------------------------------------------------------------------------------------------------------
