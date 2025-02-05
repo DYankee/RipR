@@ -42,8 +42,8 @@ func (m *MusicBrainz) Init() error {
 	var err error
 	m.Client, err = gomusicbrainz.NewWS2Client(
 		"https://musicbrainz.org/ws/2",
-		"RRipper",
-		"0.0.2-beta",
+		"RipR",
+		"0.2.0-beta",
 		"http://github.com/Dyankee/RRipper")
 	if err != nil {
 		return err
