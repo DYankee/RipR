@@ -8,7 +8,8 @@ import (
 	"strconv"
 	"time"
 
-	Internal "github.com/DYankee/RRipper/internal"
+	Audacity "github.com/DYankee/RRipper/internal/audacity"
+	MusicBrainz "github.com/DYankee/RRipper/internal/musicbrainz"
 	"github.com/charmbracelet/bubbles/table"
 	"github.com/charmbracelet/bubbles/textinput"
 	tea "github.com/charmbracelet/bubbletea"
@@ -29,6 +30,7 @@ var (
 	blurredButton = fmt.Sprintf("[ %s ]", blurredStyle.Render("Submit"))
 )
 
+// List of view states
 type view int
 
 const (
@@ -56,7 +58,7 @@ type songData struct {
 }
 
 type sideData struct {
-	clipInfo       Internal.ClipInfo
+	clipInfo       Audacity.ClipInfo
 	songExportData []songData
 	sideEnd        int
 	sideLength     float64
@@ -88,8 +90,8 @@ func (sd *sideData) calcLengthMod() {
 
 // Model and its functions
 type model struct {
-	mb               Internal.MusicBrainz
-	audacity         Internal.Audacity
+	mb               MusicBrainz.MusicBrainz
+	audacity         Audacity.Audacity
 	searchRes        searchRes
 	searchResTable   table.Model
 	releaseData      gomusicbrainz.Release

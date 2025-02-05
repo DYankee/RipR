@@ -1,4 +1,4 @@
-package Internal
+package Audacity
 
 import (
 	"bufio"
@@ -12,27 +12,15 @@ import (
 	"strings"
 )
 
+type Connection struct {
+	send    *os.File
+	receive *os.File
+}
+
 type osInfo struct {
 	toName   string
 	fromName string
 	eol      string
-}
-
-type ClipInfo struct {
-	Track int     `json:"track"`
-	Start float64 `json:"start"`
-	End   float64 `json:"end"`
-	Color int     `json:"color"`
-	Name  string  `json:"name"`
-}
-
-func (ci *ClipInfo) GetClipLength() float64 {
-	return ci.End - ci.Start
-}
-
-type Connection struct {
-	send    *os.File
-	receive *os.File
 }
 
 type Audacity struct {
@@ -55,7 +43,7 @@ func (a *Audacity) Init() {
 	}
 }
 
-// Establish a connection to audacity
+// open a file in audacity
 func (a *Audacity) Open(fileName string) {
 	c := exec.Command("audacity", fileName)
 	err := c.Start()
@@ -64,6 +52,7 @@ func (a *Audacity) Open(fileName string) {
 	}
 }
 
+// Establish a connection to audacity
 func (a *Audacity) Connect() error {
 	a.Status = false
 	toFile, err := os.OpenFile(a.osInfo.toName, os.O_RDWR, os.ModeNamedPipe)
