@@ -1,3 +1,7 @@
+github.com/DYankee/godacity v0.1.0-alpha h1:/deurM+KKeMqtF+PMWLdJS8l5AIqzJaO5stdZzuCJfg=
+github.com/DYankee/godacity v0.1.0-alpha/go.mod h1:VX682Hj/xkP1F0vevSpbpg45/glI0+tUVIMXA8XfEAM=
+github.com/DYankee/godacity v0.1.1-alpha h1:kfAKB8oW5L+nqk9XTMgVwXUN/ExLMXOkx/iljgrpZhg=
+github.com/DYankee/godacity v0.1.1-alpha/go.mod h1:VX682Hj/xkP1F0vevSpbpg45/glI0+tUVIMXA8XfEAM=
 github.com/atotto/clipboard v0.1.4 h1:EH0zSVneZPSuFR11BlR9YppQTVDbh5+16AmcJi4g1z4=
 github.com/atotto/clipboard v0.1.4/go.mod h1:ZY9tmq7sm5xIbd9bOK4onWV4S6X0u6GY7Vn0Yu86PYI=
 github.com/aymanbagabas/go-osc52/v2 v2.0.1 h1:HwpRHbFMcZLEVr42D4p7XBqjyuxQH5SMiErDT4WkJ2k=

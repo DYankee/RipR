@@ -9,6 +9,8 @@ import (
 	"time"
 
 	Internal "github.com/DYankee/RRipper/internal"
+	"github.com/DYankee/godacity"
+	"github.com/DYankee/godacity/clips"
 	"github.com/charmbracelet/bubbles/table"
 	"github.com/charmbracelet/bubbles/textinput"
 	tea "github.com/charmbracelet/bubbletea"
@@ -56,14 +58,14 @@ type songData struct {
 }
 
 type sideData struct {
-	clipInfo       Internal.ClipInfo
+	clipInfo       clips.ClipInfo
 	songExportData []songData
 	sideEnd        int
 	sideLength     float64
 	lengthMod      float64
 }
 
-func (sd *sideData) calcLengthMod() {
+func (sd *sideData) calcLengthMod() error {
 	if sd.songExportData != nil {
 		for _, v := range sd.songExportData {
 			sd.sideLength += float64(v.songLength)
@@ -71,11 +73,15 @@ func (sd *sideData) calcLengthMod() {
 		log.Printf("Side length: %f", sd.sideLength)
 		sd.sideLength /= 1000
 		log.Printf("converted Side length: %f", sd.sideLength)
-		log.Printf("Audacity Side length %f", sd.clipInfo.GetClipLength())
+		sl, err := sd.clipInfo.GetClipLength()
+		if err != nil {
+			return err
+		}
+		log.Printf("Audacity Side length %f", sl)
 
-		dif := math.Abs(sd.sideLength - sd.clipInfo.GetClipLength())
+		dif := math.Abs(sd.sideLength - sl)
 		log.Printf("Length difference: %f", dif)
-		total := sd.sideLength + sd.clipInfo.GetClipLength()
+		total := sd.sideLength + sl
 		log.Printf("Length total: %f", total)
 
 		sd.lengthMod = ((dif / total) / 2)
@@ -84,12 +90,13 @@ func (sd *sideData) calcLengthMod() {
 	} else {
 		log.Fatal("No song export data for side")
 	}
+	return nil
 }
 
 // Model and its functions
 type model struct {
 	mb               Internal.MusicBrainz
-	audacity         Internal.Audacity
+	audacity         *godacity.Audacity
 	searchRes        searchRes
 	searchResTable   table.Model
 	releaseData      gomusicbrainz.Release
@@ -110,13 +117,20 @@ func New() *model {
 		sideIdx:     0,
 	}
 	m.mb.Init()
-	m.audacity.Init()
-	for !m.audacity.Status {
-		println("connecting")
-		m.audacity.Connect()
-		time.Sleep(10000)
+
+	var err error
+	m.audacity, err = godacity.NewAudacity(&godacity.Config{
+		AutoStart:    true,
+		StartTimeout: 15 * time.Second,
+	})
+	if err != nil {
+		panic(fmt.Sprintf("failed to connect to Audacity: %v", err))
 	}
-	data := m.audacity.GetClips()
+
+	data, err := m.audacity.Clips.GetClips()
+	if err != nil {
+		panic(err)
+	}
 	for _, v := range data {
 		m.sideData = append(m.sideData, sideData{
 			clipInfo: v,
@@ -226,7 +240,7 @@ func (m *model) buildExportData() {
 	m.sideData[0].calcLengthMod()
 }
 
-func (m *model) ExportSongs() {
+func (m *model) ExportSongs() error {
 	for _, sd := range m.sideData {
 		for _, s := range sd.songExportData {
 			log.Printf("Song length %f", s.songLength)
@@ -245,19 +259,24 @@ func (m *model) ExportSongs() {
 			s.songLength = ((s.songLength / 1000) + ((s.songLength * sd.lengthMod) / 1000) + 1)
 			log.Printf("Exporting songs")
 			log.Printf("offset: %f song length: %f", offSet, s.songLength)
-			res := m.audacity.SelectRegion(offSet, offSet+s.songLength)
-			log.Println("Select res:" + res)
+			err := m.audacity.Tracks.SelectRegion(offSet, offSet+s.songLength)
+			if err != nil {
+				return err
+			}
 			os.Mkdir(m.inputs[2].Value(), 0700)
 			wd, err := os.Getwd()
 			if err != nil {
 				log.Println(err)
 			}
-			res = m.audacity.ExportAudio(wd+"/"+m.inputs[2].Value(), strconv.Itoa(s.songPosition)+"_"+s.songName+".flac")
-			log.Println("Export res:" + res)
+			err = m.audacity.IO.ExportAudio(wd+"/"+m.inputs[2].Value(), strconv.Itoa(s.songPosition)+"_"+s.songName+".flac")
+			if err != nil {
+				log.Println(err)
+			}
 			offSet += s.songLength
 			log.Println(offSet)
 		}
 	}
+	return nil
 }
 
 func (m model) Init() tea.Cmd {
