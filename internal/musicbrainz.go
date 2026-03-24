@@ -7,35 +7,16 @@ import (
 	"github.com/ryanuber/columnize"
 )
 
-type ReleaseQuerry struct {
+type ReleaseQuery struct {
 	Album  string
 	Artist string
 	Format string
 }
 
 type MusicBrainz struct {
-	Client                *gomusicbrainz.WS2Client
-	ReleaseSearchResponse gomusicbrainz.ReleaseSearchResponse
-	ReleaseQuerrys        []ReleaseQuerry
-	ReleaseData           gomusicbrainz.Release
-}
-
-func (m *MusicBrainz) DisplayReleaseData() {
-	var id int
-	output := []string{}
-	output = append(output, "# | Posistion | Title | Length1 | Length2 | Artist")
-	for _, release := range m.ReleaseData.Mediums[1].Tracks {
-		id += 1
-		formated := fmt.Sprintf("%d | %d | %s | %d | %d",
-			id,
-			release.Position,
-			release.Recording.Title,
-			release.Length,
-			release.Recording.Length)
-		output = append(output, formated)
-	}
-	fin := columnize.SimpleFormat(output)
-	fmt.Println(fin)
+	Client         *gomusicbrainz.WS2Client
+	ReleaseData    gomusicbrainz.Release
+	ReleaseQueries []ReleaseQuery
 }
 
 func (m *MusicBrainz) Init() error {
@@ -44,46 +25,23 @@ func (m *MusicBrainz) Init() error {
 		"https://musicbrainz.org/ws/2",
 		"RipR",
 		"0.2.0-beta",
-		"http://github.com/Dyankee/RRipper")
+		"http://github.com/Dyankee/RRipper",
+	)
+	return err
+}
+
+func (m *MusicBrainz) SearchRelease(
+	artist, release, format string,
+) (gomusicbrainz.ReleaseSearchResponse, error) {
+	query := fmt.Sprintf(
+		"release:%s AND artist:%s AND format:%s",
+		release, artist, format,
+	)
+	res, err := m.Client.SearchRelease(query, -1, -1)
 	if err != nil {
-		return err
+		return gomusicbrainz.ReleaseSearchResponse{}, err
 	}
-	return nil
-}
-
-func (m *MusicBrainz) GetReleasesByFormat(resData *gomusicbrainz.ReleaseSearchResponse, format string) (res gomusicbrainz.ReleaseSearchResponse) {
-
-	for i := 0; i < len(resData.Releases); i++ {
-		if resData.Releases[i].Mediums[0].Format == format {
-			res.Releases = append(res.Releases, resData.Releases[i])
-		}
-	}
-	return res
-}
-
-func (m *MusicBrainz) DisplayReleaseRes(resData *gomusicbrainz.ReleaseSearchResponse) {
-	var id int
-	output := []string{}
-	output = append(output, "# | Name | Artist | Format | Release Date | Country")
-	for _, release := range resData.Releases {
-		id += 1
-		formated := fmt.Sprintf("%d | %s | %s | %s | %d | %s",
-			id,
-			release.Title,
-			release.ArtistCredit.NameCredits[0].Artist.Name,
-			release.Mediums[0].Format,
-			release.Date.Year(),
-			release.CountryCode)
-		output = append(output, formated)
-	}
-	fin := columnize.SimpleFormat(output)
-	fmt.Println(fin)
-}
-
-func (m *MusicBrainz) SearchRelease(artist string, release string, format string) (gomusicbrainz.ReleaseSearchResponse, error) {
-	querry := fmt.Sprintf("release:%s AND artist:%s AND format:%s", release, artist, format)
-	res, err := m.Client.SearchRelease(querry, -1, -1)
-	return *res, err
+	return *res, nil
 }
 
 func (m *MusicBrainz) GetReleaseData(id gomusicbrainz.MBID) error {
@@ -95,20 +53,47 @@ func (m *MusicBrainz) GetReleaseData(id gomusicbrainz.MBID) error {
 	return nil
 }
 
-func (m *MusicBrainz) GetQuerry(album string, artist string) {
-	querryData := ReleaseQuerry{
-		Album:  album,
-		Artist: artist,
-		Format: "12vinyl",
+func (m *MusicBrainz) GetReleasesByFormat(
+	resData *gomusicbrainz.ReleaseSearchResponse,
+	format string,
+) gomusicbrainz.ReleaseSearchResponse {
+	var res gomusicbrainz.ReleaseSearchResponse
+	for _, r := range resData.Releases {
+		if len(r.Mediums) > 0 && r.Mediums[0].Format == format {
+			res.Releases = append(res.Releases, r)
+		}
 	}
-	m.ReleaseQuerrys = append(m.ReleaseQuerrys, querryData)
+	return res
 }
 
-func (m *MusicBrainz) TestQuerry(album string, artist string, format string) {
-	querryData := ReleaseQuerry{
-		Artist: artist,
-		Album:  album,
-		Format: format,
+func (m *MusicBrainz) DisplayReleaseRes(
+	resData *gomusicbrainz.ReleaseSearchResponse,
+) {
+	output := []string{
+		"# | Name | Artist | Format | Release Date | Country",
 	}
-	m.ReleaseQuerrys = append(m.ReleaseQuerrys, querryData)
+	for i, r := range resData.Releases {
+		output = append(output, fmt.Sprintf(
+			"%d | %s | %s | %s | %d | %s",
+			i+1, r.Title,
+			r.ArtistCredit.NameCredits[0].Artist.Name,
+			r.Mediums[0].Format,
+			r.Date.Year(), r.CountryCode,
+		))
+	}
+	fmt.Println(columnize.SimpleFormat(output))
+}
+
+func (m *MusicBrainz) DisplayReleaseData() {
+	output := []string{
+		"# | Position | Title | Length | Recording Length",
+	}
+	for i, t := range m.ReleaseData.Mediums[0].Tracks {
+		output = append(output, fmt.Sprintf(
+			"%d | %d | %s | %d | %d",
+			i+1, t.Position, t.Recording.Title,
+			t.Length, t.Recording.Length,
+		))
+	}
+	fmt.Println(columnize.SimpleFormat(output))
 }
