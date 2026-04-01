@@ -85,11 +85,18 @@ func (m rootModel) View() tea.View {
 		Align(lipgloss.Center).
 		Width(m.width).
 		Render("footer")
-	content := m.viewMap[m.currentView].View()
 
-	// Render the active sub-view
-	lipgloss.JoinVertical(lipgloss.Top, header, content, footer)
-	return
+	contentView := m.viewMap[m.currentView].View()
+
+	result := lipgloss.JoinVertical(
+		lipgloss.Top,
+		header,
+		contentView.Content,
+		footer,
+	)
+
+	v := tea.NewView(result)
+	return v
 }
 
 func main() {
