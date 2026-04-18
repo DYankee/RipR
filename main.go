@@ -1,112 +1,120 @@
+// main.go
 package main
 
 import (
 	"log"
 
-	"github.com/DYankee/RRipper/views" // Update this to your actual module path
-
 	tea "charm.land/bubbletea/v2"
 	"charm.land/lipgloss/v2"
+	Internal "github.com/DYankee/RRipper/internal"
+	"github.com/DYankee/RRipper/models"
 )
 
-// viewName defines the keys for our view map
-type viewName string
+type modelName string
 
 const (
-	searchView  viewName = "search"
-	resultsView viewName = "results"
+	searchModel  modelName = "search"
+	resultsModel modelName = "results"
 )
 
-// rootModel is the "Master" model that manages sub-views and global state
 type rootModel struct {
-	width       int
-	height      int
-	currentView viewName
-	viewMap     map[viewName]tea.Model
+	width        int
+	height       int
+	currentModel modelName
+	viewMap      map[modelName]tea.Model
+	mbClient     *Internal.MusicBrainz
+	loading      bool
 }
 
 func newRootModel() rootModel {
-	// Initialize the map with copies of your search view
-	vm := make(map[viewName]tea.Model)
-	vm[searchView] = views.InitialModel()
-	vm[resultsView] = views.InitialModel() // Using a copy as requested
+	vm := make(map[modelName]tea.Model)
+	vm[searchModel] = models.InitialSearchModel()
+	// Results will be initialized once data is received
 
 	return rootModel{
-		currentView: searchView,
-		viewMap:     vm,
+		currentModel: searchModel,
+		viewMap:      vm,
 	}
 }
 
 func (m rootModel) Init() tea.Cmd {
-	// Initialize the starting view
-	return m.viewMap[m.currentView].Init()
+	return m.viewMap[m.currentModel].Init()
 }
 
 func (m rootModel) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	var cmd tea.Cmd
 
-	if msg, ok := msg.(tea.WindowSizeMsg); ok {
+	switch msg := msg.(type) {
+
+	case tea.WindowSizeMsg:
 		m.height = msg.Height
 		m.width = msg.Width
-	}
 
-	// 1. Global Keybindings (Switching views)
-	if msg, ok := msg.(tea.KeyPressMsg); ok {
+	case tea.KeyPressMsg:
 		switch msg.String() {
 		case "ctrl+c":
 			return m, tea.Quit
-		case "f1": // Example: Swap to Search
-			m.currentView = searchView
-			return m, m.viewMap[m.currentView].Init()
-		case "f2": // Example: Swap to Results
-			m.currentView = resultsView
-			return m, m.viewMap[m.currentView].Init()
+		case "f1":
+			m.currentModel = searchModel
+			return m, nil
 		}
+
+	// 1. User clicked "Submit" in the Search View
+	case models.SearchRequestMsg:
+		m.loading = true
+		return m, m.performSearch(msg.Artist, msg.Album)
+
+		// 2. API Call Succeeded
+	case models.SearchResultMsg:
+		m.loading = false
+		m.currentModel = resultsView
+		m.viewMap[resultsView] = models.NewResultsModel(msg.Response)
+		return m, nil
+
+		// 3. API Call Failed
+	case models.SearchErrorMsg:
+		m.loading = false
+		// You could update a status message here
+		log.Printf("Error: %v", msg.Err)
+		return m, nil
+
+	case tea.WindowSizeMsg:
+		m.width, m.height = msg.Width, msg.Height
 	}
 
-	// 2. Pass messages to the ACTIVE sub-model
-	activeModel := m.viewMap[m.currentView]
-	newModel, newCmd := activeModel.Update(msg)
-
-	// Update the map with the modified state of the sub-model
-	m.viewMap[m.currentView] = newModel
-	cmd = newCmd
-
+	// Pass messages to sub-models
+	var cmd tea.Cmd
+	if active, ok := m.viewMap[m.currentModel]; ok {
+		m.viewMap[m.currentModel], cmd = active.Update(msg)
+	}
 	return m, cmd
 }
 
 func (m rootModel) View() tea.View {
 	header := lipgloss.NewStyle().
-		Align(lipgloss.Center).
 		Width(m.width).
 		Border(lipgloss.NormalBorder(), false, false, true, false).
-		Render("header")
-	footer := lipgloss.NewStyle().
-		Align(lipgloss.Center).
-		Width(m.width).
-		Render("footer")
+		Render("RRipper v2")
 
-	contentView := m.viewMap[m.currentView].View()
+	content := m.viewMap[m.currentModel].View().Content
 
-	result := lipgloss.JoinVertical(
-		lipgloss.Top,
-		header,
-		contentView.Content,
-		footer,
-	)
+	result := lipgloss.JoinVertical(lipgloss.Left, header, content)
+	return tea.NewView(result)
+}
 
-	v := tea.NewView(result)
-	return v
+func (m rootModel) performSearch(artist, album string) tea.Cmd {
+	return func() tea.Msg {
+		// You might want to make 'format' an input in your UI later,
+		// for now we'll use "CD" as a placeholder.
+		res, err := m.mbClient.SearchRelease(artist, album, "CD")
+		if err != nil {
+			return models.SearchErrorMsg{Err: err}
+		}
+		return models.SearchResultMsg{Response: res}
+	}
 }
 
 func main() {
-	// Setup logging
-	f, err := tea.LogToFile("debug.log", "debug")
-	if err != nil {
-		log.Fatal(err)
-	}
-	defer f.Close()
-
 	p := tea.NewProgram(newRootModel())
 	if _, err := p.Run(); err != nil {
 		log.Fatal(err)
