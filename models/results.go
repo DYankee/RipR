@@ -10,13 +10,17 @@ import (
 )
 
 type ResultsModel struct {
-	Releases []gomusicbrainz.Release
+	Releases []*gomusicbrainz.Release
 }
 
 func NewResultsModel(res gomusicbrainz.ReleaseSearchResponse) ResultsModel {
 	return ResultsModel{
 		Releases: res.Releases,
 	}
+}
+
+func (m ResultsModel) Init() tea.Cmd {
+	return nil
 }
 
 func (m ResultsModel) Update(msg tea.Msg) (tea.Model, tea.Cmd) { return m, nil }

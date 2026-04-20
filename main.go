@@ -17,12 +17,16 @@ const (
 	resultsModel modelName = "results"
 )
 
+type Dimensions struct {
+	width  int
+	height int
+}
+
 type rootModel struct {
-	width        int
-	height       int
+	Dimensions   Dimensions
+	mbClient     *Internal.MusicBrainz
 	currentModel modelName
 	viewMap      map[modelName]tea.Model
-	mbClient     *Internal.MusicBrainz
 	loading      bool
 }
 
@@ -32,6 +36,7 @@ func newRootModel() rootModel {
 	// Results will be initialized once data is received
 
 	return rootModel{
+		mbClient:     Internal.NewClient(),
 		currentModel: searchModel,
 		viewMap:      vm,
 	}
@@ -47,8 +52,8 @@ func (m rootModel) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	switch msg := msg.(type) {
 
 	case tea.WindowSizeMsg:
-		m.height = msg.Height
-		m.width = msg.Width
+		m.Dimensions.height = msg.Height
+		m.Dimensions.width = msg.Width
 
 	case tea.KeyPressMsg:
 		switch msg.String() {
@@ -60,30 +65,27 @@ func (m rootModel) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 		}
 
 	// 1. User clicked "Submit" in the Search View
-	case models.SearchRequestMsg:
+	case models.SearchSubmittedMsg:
 		m.loading = true
 		return m, m.performSearch(msg.Artist, msg.Album)
 
 		// 2. API Call Succeeded
 	case models.SearchResultMsg:
 		m.loading = false
-		m.currentModel = resultsView
-		m.viewMap[resultsView] = models.NewResultsModel(msg.Response)
+		m.currentModel = resultsModel
+		m.viewMap[resultsModel] = models.NewResultsModel(msg.Response)
 		return m, nil
 
 		// 3. API Call Failed
-	case models.SearchErrorMsg:
+	case models.SearchErrMsg:
 		m.loading = false
 		// You could update a status message here
 		log.Printf("Error: %v", msg.Err)
 		return m, nil
 
-	case tea.WindowSizeMsg:
-		m.width, m.height = msg.Width, msg.Height
 	}
 
 	// Pass messages to sub-models
-	var cmd tea.Cmd
 	if active, ok := m.viewMap[m.currentModel]; ok {
 		m.viewMap[m.currentModel], cmd = active.Update(msg)
 	}
@@ -91,15 +93,39 @@ func (m rootModel) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 }
 
 func (m rootModel) View() tea.View {
-	header := lipgloss.NewStyle().
-		Width(m.width).
+	// Guard against the first frame where dimensions are 0
+	if m.Dimensions.width == 0 || m.Dimensions.height == 0 {
+		return tea.NewView("")
+	}
+
+	headerStyle := lipgloss.NewStyle().
+		Width(m.Dimensions.width).
 		Border(lipgloss.NormalBorder(), false, false, true, false).
-		Render("RRipper v2")
+		BorderForeground(lipgloss.Color("240"))
 
-	content := m.viewMap[m.currentModel].View().Content
+	header := headerStyle.Render("RRipper v2")
 
-	result := lipgloss.JoinVertical(lipgloss.Left, header, content)
-	return tea.NewView(result)
+	// Calculate content height: total height minus header height
+	headerHeight := lipgloss.Height(header)
+	contentHeight := m.Dimensions.height - headerHeight
+
+	// Get the content string from the sub-model
+	contentStr := m.viewMap[m.currentModel].View().Content
+
+	// Style the content to fill the remaining height and width
+	// This ensures the background color #1a1a1a fills the whole screen
+	styledContent := lipgloss.NewStyle().
+		Width(m.Dimensions.width).
+		Height(contentHeight).
+		Background(lipgloss.Color("#1a1a1a")).
+		Render(contentStr)
+
+	result := lipgloss.JoinVertical(lipgloss.Left, header, styledContent)
+
+	// Create the view and ensure we pass the cursor from the sub-model
+	v := tea.NewView(result)
+	v.Cursor = m.viewMap[m.currentModel].View().Cursor
+	return v
 }
 
 func (m rootModel) performSearch(artist, album string) tea.Cmd {
@@ -108,7 +134,7 @@ func (m rootModel) performSearch(artist, album string) tea.Cmd {
 		// for now we'll use "CD" as a placeholder.
 		res, err := m.mbClient.SearchRelease(artist, album, "CD")
 		if err != nil {
-			return models.SearchErrorMsg{Err: err}
+			return models.SearchErrMsg{Err: err}
 		}
 		return models.SearchResultMsg{Response: res}
 	}

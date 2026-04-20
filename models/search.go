@@ -50,11 +50,13 @@ func InitialSearchModel() SearchModel {
 	for i := range m.inputs {
 		t = textinput.New()
 		t.CharLimit = 100
-		// ... (Styling logic remains the same)
 		switch i {
 		case 0:
+			t.SetWidth(20)
 			t.Placeholder = "Artist"
+			t.Focus()
 		case 1:
+			t.SetWidth(20)
 			t.Placeholder = "Album"
 		}
 		m.inputs[i] = t
@@ -139,8 +141,7 @@ func (m SearchModel) View() tea.View {
 		button = &focusedButton
 	}
 	fmt.Fprintf(&b, "\n%s\n", *button)
-
-	v := tea.NewView(b.String())
+	v := tea.NewView(windowStyle.Render(b.String()))
 	v.Cursor = c
 	return v
 }
