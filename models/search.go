@@ -41,7 +41,7 @@ type SearchModel struct {
 	inputs     []textinput.Model
 }
 
-func InitialSearchModel() SearchModel {
+func NewSearchModel() SearchModel {
 	m := SearchModel{
 		inputs: make([]textinput.Model, 2),
 	}

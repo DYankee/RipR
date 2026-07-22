@@ -8,6 +8,7 @@ import (
 	"charm.land/lipgloss/v2"
 	Internal "github.com/DYankee/RRipper/internal"
 	"github.com/DYankee/RRipper/models"
+	"github.com/DYankee/godacity"
 )
 
 type modelName string
@@ -17,14 +18,18 @@ const (
 	resultsModel modelName = "results"
 )
 
-type Dimensions struct {
-	width  int
-	height int
-}
-
 type rootModel struct {
-	Dimensions   Dimensions
-	mbClient     *Internal.MusicBrainz
+	// size information
+	fullWidth    int
+	fullHeight   int
+	headerHeight int
+	footerHeight int
+	showFooter   bool
+
+	// Dependencies
+	mbClient *Internal.MusicBrainz
+	godacity *godacity.Audacity
+
 	currentModel modelName
 	viewMap      map[modelName]tea.Model
 	loading      bool
@@ -32,8 +37,9 @@ type rootModel struct {
 
 func newRootModel() rootModel {
 	vm := make(map[modelName]tea.Model)
-	vm[searchModel] = models.InitialSearchModel()
-	// Results will be initialized once data is received
+
+	// Init models that don't require data
+	vm[searchModel] = models.NewSearchModel()
 
 	return rootModel{
 		mbClient:     Internal.NewClient(),
@@ -52,8 +58,8 @@ func (m rootModel) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	switch msg := msg.(type) {
 
 	case tea.WindowSizeMsg:
-		m.Dimensions.height = msg.Height
-		m.Dimensions.width = msg.Width
+		m.handleWindowSizeMsg(msg)
+		return m, nil
 
 	case tea.KeyPressMsg:
 		switch msg.String() {
@@ -94,12 +100,12 @@ func (m rootModel) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 
 func (m rootModel) View() tea.View {
 	// Guard against the first frame where dimensions are 0
-	if m.Dimensions.width == 0 || m.Dimensions.height == 0 {
+	if m.fullWidth == 0 || m.fullHeight == 0 {
 		return tea.NewView("")
 	}
 
 	headerStyle := lipgloss.NewStyle().
-		Width(m.Dimensions.width).
+		Width(m.fullWidth).
 		Border(lipgloss.NormalBorder(), false, false, true, false).
 		BorderForeground(lipgloss.Color("240"))
 
@@ -107,7 +113,7 @@ func (m rootModel) View() tea.View {
 
 	// Calculate content height: total height minus header height
 	headerHeight := lipgloss.Height(header)
-	contentHeight := m.Dimensions.height - headerHeight
+	contentHeight := m.fullHeight - headerHeight
 
 	// Get the content string from the sub-model
 	contentStr := m.viewMap[m.currentModel].View().Content
@@ -115,7 +121,7 @@ func (m rootModel) View() tea.View {
 	// Style the content to fill the remaining height and width
 	// This ensures the background color #1a1a1a fills the whole screen
 	styledContent := lipgloss.NewStyle().
-		Width(m.Dimensions.width).
+		Width(m.fullWidth).
 		Height(contentHeight).
 		Background(lipgloss.Color("#1a1a1a")).
 		Render(contentStr)
@@ -128,7 +134,7 @@ func (m rootModel) View() tea.View {
 	return v
 }
 
-func (m rootModel) performSearch(artist, album string) tea.Cmd {
+func (m *rootModel) performSearch(artist, album string) tea.Cmd {
 	return func() tea.Msg {
 		// You might want to make 'format' an input in your UI later,
 		// for now we'll use "CD" as a placeholder.
@@ -138,6 +144,11 @@ func (m rootModel) performSearch(artist, album string) tea.Cmd {
 		}
 		return models.SearchResultMsg{Response: res}
 	}
+}
+
+func (m *rootModel) handleWindowSizeMsg(msg tea.WindowSizeMsg) {
+	m.fullHeight = msg.Height
+	m.fullWidth = msg.Width
 }
 
 func main() {
